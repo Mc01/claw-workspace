@@ -1,11 +1,11 @@
 {
     "gateway": {
-        "bind": "lan",
+        "bind": "loopback",
+        "tailscale": {
+            "mode": "serve"
+        },
         "auth": {
             "mode": "token"
-        },
-        "controlUi": {
-            "dangerouslyAllowHostHeaderOriginFallback": true
         }
     },
     "session": {
