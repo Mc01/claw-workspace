@@ -1,0 +1,19 @@
+{
+    "gateway": {
+        "bind": "loopback",
+        "auth": {
+            "mode": "token"
+        }
+    },
+    "session": {
+        "dmScope": "per-channel-peer"
+    },
+    "tools": {
+        "fs": {
+            "workspaceOnly": true
+        },
+        "exec": {
+            "security": "full"
+        }
+    }
+}
