@@ -81,7 +81,6 @@
             {
                 "id": "architect",
                 "name": "System Architect",
-                "description": "Designs high-level blueprints and plans tasks. High-context planning.",
                 "model": {
                     "primary": "synthetic/minimax-m2.1"
                 }
@@ -89,7 +88,6 @@
             {
                 "id": "engineer",
                 "name": "Software Engineer",
-                "description": "Autonomous deep-work agent for coding, refactoring, and logic implementation.",
                 "model": {
                     "primary": "synthetic/glm-5",
                     "fallbacks": [
@@ -100,7 +98,6 @@
             {
                 "id": "reviewer",
                 "name": "Code Reviewer",
-                "description": "QA and security specialist. Uses chain-of-thought to verify code correctness.",
                 "model": {
                     "primary": "synthetic/deepseek-r1"
                 }
@@ -108,7 +105,6 @@
             {
                 "id": "researcher",
                 "name": "Context Researcher",
-                "description": "Fast agent for parsing docs, summarizing logs, and gathering codebase context.",
                 "model": {
                     "primary": "synthetic/deepseek-r1-distill-llama-8b"
                 }
@@ -116,7 +112,6 @@
             {
                 "id": "ui-checker",
                 "name": "UI/UX Specialist",
-                "description": "Vision agent for checking frontend renders and visual layouts.",
                 "model": {
                     "primary": "synthetic/qwen3.5"
                 }
