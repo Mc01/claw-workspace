@@ -22,56 +22,105 @@
         }
     },
     "models": {
+        "mode": "merge",
         "providers": {
             "synthetic": {
-                "type": "openai-compatible",
-                "baseUrl": "https://api.synthetic.new/openai/v1",
-                "apiKey": "${SYNTHETIC_API_KEY}"
+                "baseUrl": "https://api.synthetic.new/anthropic",
+                "apiKey": "${SYNTHETIC_API_KEY}",
+                "api": "anthropic-messages",
+                "models": [
+                    {
+                        "id": "kimi-k2.5",
+                        "name": "Kimi K2.5"
+                    },
+                    {
+                        "id": "glm-5",
+                        "name": "GLM 5"
+                    },
+                    {
+                        "id": "deepseek-r1",
+                        "name": "DeepSeek R1"
+                    },
+                    {
+                        "id": "deepseek-r1-distill-llama-8b",
+                        "name": "DeepSeek Fast"
+                    },
+                    {
+                        "id": "minimax-m2.1",
+                        "name": "MiniMax"
+                    },
+                    {
+                        "id": "qwen3.5",
+                        "name": "Qwen Vision"
+                    }
+                ]
+            }
+        }
+    },
+    "agents": {
+        "defaults": {
+            "model": {
+                "primary": "synthetic/kimi-k2.5"
             }
         },
-        "routing": {
-            "orchestrator": {
-                "provider": "synthetic",
-                "model": "kimi-k2.5",
-                "isDefault": true,
-                "contextWindow": 128000
-            },
-            "subAgents": [
-                {
-                    "id": "heavy-reasoner",
-                    "provider": "synthetic",
-                    "model": "glm-5",
-                    "triggers": [
-                        "code_write",
-                        "system_architecture",
-                        "debug_logic"
-                    ]
-                },
-                {
-                    "id": "fast-worker",
-                    "provider": "synthetic",
-                    "model": "deepseek-r1-distill-llama-8b",
-                    "triggers": [
-                        "fs_read",
-                        "fs_write",
-                        "exec_bash",
-                        "csv_parse"
-                    ]
-                },
-                {
-                    "id": "visionary",
-                    "provider": "synthetic",
-                    "model": "qwen3.5",
-                    "triggers": [
-                        "browser_control",
-                        "vision_analyze"
+        "list": [
+            {
+                "id": "manager",
+                "name": "Project Manager",
+                "default": true,
+                "subagents": {
+                    "allowAgents": [
+                        "architect",
+                        "engineer",
+                        "reviewer",
+                        "researcher",
+                        "ui-checker"
                     ]
                 }
-            ],
-            "fallbacks": [
-                "glm-5",
-                "deepseek-r1"
-            ]
-        }
+            },
+            {
+                "id": "architect",
+                "name": "System Architect",
+                "description": "Designs high-level blueprints and plans tasks. High-context planning.",
+                "model": {
+                    "primary": "synthetic/minimax-m2.1"
+                }
+            },
+            {
+                "id": "engineer",
+                "name": "Software Engineer",
+                "description": "Autonomous deep-work agent for coding, refactoring, and logic implementation.",
+                "model": {
+                    "primary": "synthetic/glm-5",
+                    "fallbacks": [
+                        "synthetic/kimi-k2.5"
+                    ]
+                }
+            },
+            {
+                "id": "reviewer",
+                "name": "Code Reviewer",
+                "description": "QA and security specialist. Uses chain-of-thought to verify code correctness.",
+                "model": {
+                    "primary": "synthetic/deepseek-r1"
+                }
+            },
+            {
+                "id": "researcher",
+                "name": "Context Researcher",
+                "description": "Fast agent for parsing docs, summarizing logs, and gathering codebase context.",
+                "model": {
+                    "primary": "synthetic/deepseek-r1-distill-llama-8b"
+                }
+            },
+            {
+                "id": "ui-checker",
+                "name": "UI/UX Specialist",
+                "description": "Vision agent for checking frontend renders and visual layouts.",
+                "model": {
+                    "primary": "synthetic/qwen3.5"
+                }
+            }
+        ]
     }
 }
