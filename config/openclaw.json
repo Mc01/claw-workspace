@@ -1,9 +1,6 @@
 {
     "gateway": {
-        "bind": "loopback",
-        "tailscale": {
-            "mode": "serve"
-        },
+        "bind": "lan",
         "auth": {
             "mode": "token"
         }
