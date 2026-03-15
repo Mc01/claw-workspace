@@ -30,28 +30,28 @@
                 "api": "anthropic-messages",
                 "models": [
                     {
-                        "id": "kimi-k2.5",
+                        "id": "hf:moonshotai/Kimi-K2.5",
                         "name": "Kimi K2.5"
                     },
                     {
-                        "id": "glm-5",
-                        "name": "GLM 5"
+                        "id": "hf:zai-org/GLM-4.7-Flash",
+                        "name": "GLM 4.7 Flash"
                     },
                     {
-                        "id": "deepseek-r1",
+                        "id": "hf:deepseek-ai/DeepSeek-R1-0528",
                         "name": "DeepSeek R1"
                     },
                     {
-                        "id": "deepseek-r1-distill-llama-8b",
-                        "name": "DeepSeek Fast"
-                    },
-                    {
-                        "id": "minimax-m2.1",
+                        "id": "hf:MiniMaxAI/MiniMax-M2.5",
                         "name": "MiniMax"
                     },
                     {
-                        "id": "qwen3.5",
+                        "id": "hf:Qwen/Qwen3.5-397B-A17B",
                         "name": "Qwen Vision"
+                    },
+                    {
+                        "id": "hf:Qwen/Qwen3-Coder-480B-A35B-Instruct",
+                        "name": "Qwen Coder"
                     }
                 ]
             }
@@ -60,7 +60,7 @@
     "agents": {
         "defaults": {
             "model": {
-                "primary": "synthetic/kimi-k2.5"
+                "primary": "synthetic/hf:nvidia/Kimi-K2.5-NVFP4"
             }
         },
         "list": [
@@ -82,16 +82,16 @@
                 "id": "architect",
                 "name": "System Architect",
                 "model": {
-                    "primary": "synthetic/minimax-m2.1"
+                    "primary": "synthetic/hf:MiniMaxAI/MiniMax-M2.5"
                 }
             },
             {
                 "id": "engineer",
                 "name": "Software Engineer",
                 "model": {
-                    "primary": "synthetic/glm-5",
+                    "primary": "synthetic/hf:Qwen/Qwen3-Coder-480B-A35B-Instruct",
                     "fallbacks": [
-                        "synthetic/kimi-k2.5"
+                        "synthetic/hf:nvidia/Kimi-K2.5-NVFP4"
                     ]
                 }
             },
@@ -99,21 +99,21 @@
                 "id": "reviewer",
                 "name": "Code Reviewer",
                 "model": {
-                    "primary": "synthetic/deepseek-r1"
+                    "primary": "synthetic/hf:deepseek-ai/DeepSeek-R1-0528"
                 }
             },
             {
                 "id": "researcher",
                 "name": "Context Researcher",
                 "model": {
-                    "primary": "synthetic/deepseek-r1-distill-llama-8b"
+                    "primary": "synthetic/hf:zai-org/GLM-4.7-Flash"
                 }
             },
             {
                 "id": "ui-checker",
                 "name": "UI/UX Specialist",
                 "model": {
-                    "primary": "synthetic/qwen3.5"
+                    "primary": "synthetic/hf:Qwen/Qwen3.5-397B-A17B"
                 }
             }
         ]
