@@ -3,6 +3,9 @@
         "bind": "lan",
         "auth": {
             "mode": "token"
+        },
+        "controlUi": {
+            "dangerouslyAllowHostHeaderOriginFallback": true
         }
     },
     "session": {
