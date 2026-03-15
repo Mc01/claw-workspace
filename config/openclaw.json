@@ -3,6 +3,11 @@
         "bind": "lan",
         "auth": {
             "mode": "token"
+        },
+        "controlUi": {
+            "allowedOrigins": [
+                "https://vps-73da905b.tail73b9a1.ts.net"
+            ]
         }
     },
     "session": {
