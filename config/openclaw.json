@@ -20,5 +20,58 @@
         "exec": {
             "security": "full"
         }
+    },
+    "models": {
+        "providers": {
+            "synthetic": {
+                "type": "openai-compatible",
+                "baseUrl": "https://api.synthetic.new/openai/v1",
+                "apiKey": "${SYNTHETIC_API_KEY}"
+            }
+        },
+        "routing": {
+            "orchestrator": {
+                "provider": "synthetic",
+                "model": "kimi-k2.5",
+                "isDefault": true,
+                "contextWindow": 128000
+            },
+            "subAgents": [
+                {
+                    "id": "heavy-reasoner",
+                    "provider": "synthetic",
+                    "model": "glm-5",
+                    "triggers": [
+                        "code_write",
+                        "system_architecture",
+                        "debug_logic"
+                    ]
+                },
+                {
+                    "id": "fast-worker",
+                    "provider": "synthetic",
+                    "model": "deepseek-r1-distill-llama-8b",
+                    "triggers": [
+                        "fs_read",
+                        "fs_write",
+                        "exec_bash",
+                        "csv_parse"
+                    ]
+                },
+                {
+                    "id": "visionary",
+                    "provider": "synthetic",
+                    "model": "qwen3.5",
+                    "triggers": [
+                        "browser_control",
+                        "vision_analyze"
+                    ]
+                }
+            ],
+            "fallbacks": [
+                "glm-5",
+                "deepseek-r1"
+            ]
+        }
     }
 }
