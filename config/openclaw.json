@@ -67,6 +67,10 @@
         "defaults": {
             "model": {
                 "primary": "synthetic/hf:nvidia/Kimi-K2.5-NVFP4"
+            },
+            "memorySearch": {
+                "provider": "synthetic",
+                "model": "hf:nomic-ai/nomic-embed-text-v1.5"
             }
         },
         "list": [
