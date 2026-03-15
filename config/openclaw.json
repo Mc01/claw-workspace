@@ -69,8 +69,12 @@
                 "primary": "synthetic/hf:nvidia/Kimi-K2.5-NVFP4"
             },
             "memorySearch": {
-                "provider": "synthetic",
-                "model": "hf:nomic-ai/nomic-embed-text-v1.5"
+                "provider": "openai",
+                "model": "hf:nomic-ai/nomic-embed-text-v1.5",
+                "remote": {
+                    "baseUrl": "https://api.synthetic.new/openai/v1",
+                    "apiKey": "${SYNTHETIC_API_KEY}"
+                }
             }
         },
         "list": [
