@@ -2,7 +2,13 @@
     "gateway": {
         "bind": "lan",
         "auth": {
-            "mode": "token"
+            "mode": "token",
+            "rateLimit": {
+                "maxAttempts": 10,
+                "windowMs": 60000,
+                "lockoutMs": 300000,
+                "exemptLoopback": true
+            }
         },
         "controlUi": {
             "allowedOrigins": [
