@@ -1,7 +1,7 @@
 import { useAccount } from 'wagmi';
 import { useChamaFactory } from '../hooks/useChamaFactory';
-import { ChamaCard } from '../components/ChamaCard';
-import { Wallet, AlertCircle } from 'lucide-react';
+import { ChamaCard, ChamaCardSkeleton } from '../components/ChamaCard';
+import { Wallet, PlusCircle, Compass, Users, TrendingUp, Trophy, LayoutGrid } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 export function MyChamas() {
@@ -14,96 +14,137 @@ export function MyChamas() {
 
   if (!isConnected) {
     return (
-      <div className="text-center py-12">
-        <div className="w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center mx-auto mb-4">
-          <Wallet className="w-8 h-8 text-gray-400" />
+      <div className="glass-card p-12 text-center animate-fade-in">
+        <div className="w-16 h-16 rounded-2xl bg-primary-500/10 flex items-center justify-center mx-auto mb-4">
+          <Wallet className="w-8 h-8 text-primary-400/60" />
         </div>
-        <h2 className="text-xl font-semibold text-gray-900 mb-2">
+        <h2 className="text-xl font-semibold text-white mb-2">
           Connect Your Wallet
         </h2>
-        <p className="text-gray-600 mb-6">
-          Connect your wallet to view your Chamas
+        <p className="text-white/40 mb-6 max-w-sm mx-auto">
+          Connect your wallet to view your Chamas and track your savings progress.
         </p>
       </div>
     );
   }
 
   return (
-    <div className="space-y-6">
-      <div className="flex items-center justify-between">
-        <h1 className="text-2xl font-bold text-gray-900">My Chamas</h1>
-        <Link
-          to="/discover"
-          className="text-primary-600 hover:text-primary-700 font-medium"
-        >
-          Discover more
-        </Link>
+    <div className="space-y-8 animate-fade-in">
+      {/* Page Header */}
+      <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+        <div>
+          <h1 className="text-2xl md:text-3xl font-bold text-white flex items-center gap-3">
+            <LayoutGrid className="w-8 h-8 text-primary-400" />
+            My Dashboard
+          </h1>
+          <p className="text-white/40 mt-1">Your savings overview</p>
+        </div>
+        <div className="flex items-center gap-3">
+          <Link to="/app/discover" className="btn-ghost inline-flex items-center gap-2 text-sm">
+            <Compass className="w-4 h-4" />
+            Discover
+          </Link>
+          <Link to="/app/create" className="btn-primary inline-flex items-center gap-2 text-sm">
+            <PlusCircle className="w-4 h-4" />
+            Create
+          </Link>
+        </div>
       </div>
 
-      {/* Stats */}
+      {/* Stats Dashboard */}
       <div className="grid sm:grid-cols-3 gap-4">
-        <div className="bg-white rounded-xl border border-gray-200 p-4">
-          <p className="text-sm text-gray-600 mb-1">Joined Chamas</p>
-          <p className="text-2xl font-bold text-gray-900">
-            {isLoadingChamas ? '-' : userChamas?.length || 0}
-          </p>
-        </div>
-        <div className="bg-white rounded-xl border border-gray-200 p-4">
-          <p className="text-sm text-gray-600 mb-1">Active</p>
-          <p className="text-2xl font-bold text-green-600">
-            {isLoadingChamas ? '-' : '0'}
-          </p>
-        </div>
-        <div className="bg-white rounded-xl border border-gray-200 p-4">
-          <p className="text-sm text-gray-600 mb-1">Graduated</p>
-          <p className="text-2xl font-bold text-primary-600">
-            {isLoadingChamas ? '-' : '0'}
-          </p>
-        </div>
+        <DashboardStat
+          icon={<Users className="w-5 h-5 text-blue-400" />}
+          label="Joined Chamas"
+          value={isLoadingChamas ? '—' : (userChamas?.length || 0).toString()}
+          gradient="from-blue-500/20 to-cyan-500/20"
+        />
+        <DashboardStat
+          icon={<TrendingUp className="w-5 h-5 text-primary-400" />}
+          label="Active"
+          value={isLoadingChamas ? '—' : '0'}
+          gradient="from-primary-500/20 to-emerald-500/20"
+        />
+        <DashboardStat
+          icon={<Trophy className="w-5 h-5 text-amber-400" />}
+          label="Graduated"
+          value={isLoadingChamas ? '—' : '0'}
+          gradient="from-amber-500/20 to-orange-500/20"
+        />
       </div>
 
       {/* Chama List */}
       {isLoadingChamas ? (
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {[...Array(3)].map((_, i) => (
-            <div key={i} className="bg-white rounded-xl border border-gray-200 p-6 animate-pulse">
-              <div className="h-6 bg-gray-200 rounded w-3/4 mb-4" />
-              <div className="h-4 bg-gray-200 rounded w-1/2 mb-6" />
-              <div className="h-3 bg-gray-200 rounded w-full" />
-            </div>
+            <ChamaCardSkeleton key={i} />
           ))}
         </div>
       ) : userChamas && userChamas.length > 0 ? (
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {userChamas.map((chamaAddress) => (
-            <ChamaCard key={chamaAddress} address={chamaAddress} />
-          ))}
-        </div>
-      ) : (
-        <div className="text-center py-12 bg-white rounded-xl border border-gray-200">
-          <AlertCircle className="w-12 h-12 text-gray-400 mx-auto mb-4" />
-          <h3 className="text-lg font-medium text-gray-900 mb-2">
-            No Chamas yet
-          </h3>
-          <p className="text-gray-600 mb-6">
-            You haven't joined any Chamas yet. Start by discovering existing ones or create your own.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-3 justify-center">
-            <Link
-              to="/discover"
-              className="inline-flex items-center justify-center px-6 py-2 bg-primary-600 text-white font-medium rounded-lg hover:bg-primary-700 transition-colors"
-            >
-              Discover Chamas
-            </Link>
-            <Link
-              to="/create"
-              className="inline-flex items-center justify-center px-6 py-2 border border-gray-300 text-gray-700 font-medium rounded-lg hover:bg-gray-50 transition-colors"
-            >
-              Create Chama
-            </Link>
+        <div>
+          <h2 className="text-lg font-semibold text-white/80 mb-4">Your Chamas</h2>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {userChamas.map((chamaAddress) => (
+              <ChamaCard key={chamaAddress} address={chamaAddress} />
+            ))}
           </div>
         </div>
+      ) : (
+        <EmptyDashboard />
       )}
+    </div>
+  );
+}
+
+function DashboardStat({ icon, label, value, gradient }: {
+  icon: React.ReactNode;
+  label: string;
+  value: string;
+  gradient: string;
+}) {
+  return (
+    <div className="glass-card p-5 relative overflow-hidden">
+      {/* Background gradient */}
+      <div className={`absolute inset-0 bg-gradient-to-br ${gradient} opacity-30 pointer-events-none`} />
+      <div className="relative z-10">
+        <div className="flex items-center gap-2 mb-3">
+          {icon}
+          <span className="text-sm text-white/40 font-medium">{label}</span>
+        </div>
+        <p className="text-3xl font-bold text-white">{value}</p>
+      </div>
+    </div>
+  );
+}
+
+function EmptyDashboard() {
+  return (
+    <div className="glass-card p-12 text-center">
+      <div className="w-16 h-16 rounded-2xl bg-primary-500/10 flex items-center justify-center mx-auto mb-4">
+        <Users className="w-8 h-8 text-primary-400/60" />
+      </div>
+      <h3 className="text-lg font-semibold text-white mb-2">
+        No Chamas Yet
+      </h3>
+      <p className="text-white/40 mb-6 max-w-sm mx-auto">
+        You haven't joined any Chamas yet. Start by discovering existing ones or create your own savings circle.
+      </p>
+      <div className="flex flex-col sm:flex-row gap-3 justify-center">
+        <Link
+          to="/app/discover"
+          className="btn-primary inline-flex items-center justify-center gap-2"
+        >
+          <Compass className="w-4 h-4" />
+          Discover Chamas
+        </Link>
+        <Link
+          to="/app/create"
+          className="btn-secondary inline-flex items-center justify-center gap-2"
+        >
+          <PlusCircle className="w-4 h-4" />
+          Create Chama
+        </Link>
+      </div>
     </div>
   );
 }

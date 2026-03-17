@@ -1,4 +1,4 @@
-export { Home } from './Home';
+export { Landing } from './Landing';
 export { Discover } from './Discover';
 export { Create } from './Create';
 export { ChamaDetail } from './ChamaDetail';

@@ -1,27 +1,32 @@
 import { useParams, Link } from 'react-router-dom';
 import { useAccount } from 'wagmi';
-import { ArrowLeft, Users, Clock, User, ExternalLink } from 'lucide-react';
+import {
+  ArrowLeft, Users, Clock, User, ExternalLink,
+  Target, TrendingUp, Loader2, AlertTriangle, CheckCircle,
+  Coins,
+} from 'lucide-react';
 import { useChama, useJoinChama, useContribute, useRefund } from '../hooks/useChama';
 import { ProgressBar } from '../components/ProgressBar';
-import { formatAddress, formatAmount, formatDateTime, isExpired, getDaysRemaining } from '../lib/utils';
+import { formatAddress, formatAmount, formatDateTime, isExpired, getDaysRemaining, cn } from '../lib/utils';
 import { useState } from 'react';
-import { cn } from '../lib/utils';
+import { useToast } from '../components/Toast';
 
 export function ChamaDetail() {
   const { address } = useParams<{ address: string }>();
   const { address: userAddress } = useAccount();
   const [contributionAmount, setContributionAmount] = useState('');
+  const { addToast } = useToast();
 
-  const { 
-    params, 
-    progress, 
-    graduated, 
-    memberCount, 
-    members, 
-    isMember, 
-    userContribution, 
+  const {
+    params,
+    progress,
+    graduated,
+    memberCount,
+    members,
+    isMember,
+    userContribution,
     creator,
-    isLoading 
+    isLoading,
   } = useChama(address || null);
 
   const { join, isPending: isJoining } = useJoinChama(address || null);
@@ -30,32 +35,55 @@ export function ChamaDetail() {
 
   const expired = isExpired(params?.deadline);
   const daysLeft = getDaysRemaining(params?.deadline);
-
-  // Check if user has contributed
   const hasContributed = userContribution !== undefined && userContribution > BigInt(0);
+  const pct = Number(progress?.percentage || 0) / 100;
 
   const handleContribute = async () => {
     if (!contributionAmount) return;
-    await contribute(contributionAmount, 18);
-    setContributionAmount('');
+    const toastId = addToast('Submitting contribution... Confirm in wallet', 'pending', 0);
+    try {
+      await contribute(contributionAmount, 18);
+      addToast('Contribution successful!', 'success');
+      setContributionAmount('');
+    } catch {
+      addToast('Contribution failed', 'error');
+    }
+  };
+
+  const handleJoin = async () => {
+    addToast('Joining Chama... Confirm in wallet', 'pending', 0);
+    try {
+      await join();
+      addToast('Joined successfully!', 'success');
+    } catch {
+      addToast('Failed to join', 'error');
+    }
+  };
+
+  const handleRefund = async () => {
+    addToast('Claiming refund... Confirm in wallet', 'pending', 0);
+    try {
+      await refund();
+      addToast('Refund claimed!', 'success');
+    } catch {
+      addToast('Refund failed', 'error');
+    }
   };
 
   if (isLoading) {
-    return (
-      <div className="max-w-4xl mx-auto">
-        <div className="animate-pulse space-y-6">
-          <div className="h-8 bg-gray-200 rounded w-1/3" />
-          <div className="h-64 bg-gray-200 rounded" />
-        </div>
-      </div>
-    );
+    return <DetailSkeleton />;
   }
 
   if (!address || !params) {
     return (
-      <div className="text-center py-12">
-        <p className="text-gray-500">Chama not found</p>
-        <Link to="/discover" className="text-primary-600 hover:underline mt-2 inline-block">
+      <div className="glass-card p-12 text-center animate-fade-in">
+        <div className="w-16 h-16 rounded-2xl bg-red-500/10 flex items-center justify-center mx-auto mb-4">
+          <AlertTriangle className="w-8 h-8 text-red-400/60" />
+        </div>
+        <h2 className="text-xl font-semibold text-white mb-2">Chama Not Found</h2>
+        <p className="text-white/40 mb-6">This Chama doesn't exist or couldn't be loaded.</p>
+        <Link to="/app/discover" className="btn-primary inline-flex items-center gap-2">
+          <ArrowLeft className="w-4 h-4" />
           Back to Discover
         </Link>
       </div>
@@ -63,84 +91,80 @@ export function ChamaDetail() {
   }
 
   return (
-    <div className="max-w-4xl mx-auto space-y-6">
+    <div className="max-w-5xl mx-auto space-y-6 animate-fade-in">
       {/* Back Link */}
-      <Link 
-        to="/discover" 
-        className="inline-flex items-center gap-2 text-gray-600 hover:text-gray-900"
+      <Link
+        to="/app/discover"
+        className="inline-flex items-center gap-2 text-white/40 hover:text-white/70 transition-colors text-sm"
       >
         <ArrowLeft className="w-4 h-4" />
         Back to Discover
       </Link>
 
-      {/* Header */}
-      <div className="bg-white rounded-xl border border-gray-200 p-6">
-        <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4">
+      {/* Header Card */}
+      <div className="glass-card p-6 md:p-8">
+        <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4 mb-6">
           <div>
-            <h1 className="text-2xl font-bold text-gray-900 mb-2">
+            <h1 className="text-2xl md:text-3xl font-bold text-white mb-2">
               Chama #{address.slice(-6)}
             </h1>
-            <p className="text-sm text-gray-500 font-mono">
+            <p className="text-sm text-white/30 font-mono">
               {formatAddress(address)}
             </p>
           </div>
           <span className={cn(
-            "px-4 py-2 rounded-full text-sm font-medium self-start",
-            graduated
-              ? "bg-green-100 text-green-700"
-              : expired
-              ? "bg-red-100 text-red-700"
-              : "bg-primary-100 text-primary-700"
+            graduated ? "badge-graduated" : expired ? "badge-expired" : "badge-active",
+            "self-start text-sm px-4 py-1.5"
           )}>
-            {graduated ? 'Graduated' : expired ? 'Expired' : 'Active'}
+            {graduated ? '🏆 Graduated' : expired ? '⏰ Expired' : '🟢 Active'}
           </span>
         </div>
 
-        <ProgressBar
-          current={progress?.current}
-          target={progress?.target}
-          percentage={progress?.percentage}
-          className="mt-6"
-        />
+        {/* Large progress visualization */}
+        <div className="glass-card p-6 bg-white/[0.02]">
+          <div className="flex items-center justify-between mb-4">
+            <span className="text-white/50 text-sm font-medium">Savings Progress</span>
+            <span className={cn(
+              "text-2xl font-bold",
+              pct >= 100 ? "text-amber-400" : "text-primary-400"
+            )}>
+              {pct.toFixed(1)}%
+            </span>
+          </div>
+          <ProgressBar
+            current={progress?.current}
+            target={progress?.target}
+            percentage={progress?.percentage}
+          />
+        </div>
       </div>
 
       {/* Stats Grid */}
-      <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
-        <div className="bg-white rounded-xl border border-gray-200 p-4">
-          <div className="flex items-center gap-2 text-gray-500 mb-1">
-            <Users className="w-4 h-4" />
-            <span className="text-sm">Members</span>
-          </div>
-          <p className="text-2xl font-bold text-gray-900">{memberCount ? memberCount.toString() : '0'}</p>
-        </div>
-
-        <div className="bg-white rounded-xl border border-gray-200 p-4">
-          <div className="flex items-center gap-2 text-gray-500 mb-1">
-            <Clock className="w-4 h-4" />
-            <span className="text-sm">{expired ? 'Ended' : 'Time Left'}</span>
-          </div>
-          <p className="text-2xl font-bold text-gray-900">
-            {expired ? 'Ended' : `${daysLeft} days`}
-          </p>
-        </div>
-
-        <div className="bg-white rounded-xl border border-gray-200 p-4">
-          <div className="flex items-center gap-2 text-gray-500 mb-1">
-            <span className="text-sm">Target</span>
-          </div>
-          <p className="text-2xl font-bold text-gray-900">
-            {formatAmount(progress?.target, 18)}
-          </p>
-        </div>
-
-        <div className="bg-white rounded-xl border border-gray-200 p-4">
-          <div className="flex items-center gap-2 text-gray-500 mb-1">
-            <span className="text-sm">Raised</span>
-          </div>
-          <p className="text-2xl font-bold text-gray-900">
-            {formatAmount(progress?.current, 18)}
-          </p>
-        </div>
+      <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
+        <StatCard
+          icon={<Users className="w-5 h-5 text-blue-400" />}
+          label="Members"
+          value={memberCount ? memberCount.toString() : '0'}
+          accent="blue"
+        />
+        <StatCard
+          icon={<Clock className="w-5 h-5 text-amber-400" />}
+          label={expired ? 'Status' : 'Time Left'}
+          value={expired ? 'Ended' : `${daysLeft} days`}
+          accent="amber"
+        />
+        <StatCard
+          icon={<Target className="w-5 h-5 text-primary-400" />}
+          label="Target"
+          value={formatAmount(progress?.target, 18)}
+          accent="green"
+        />
+        <StatCard
+          icon={<TrendingUp className="w-5 h-5 text-emerald-400" />}
+          label="Raised"
+          value={formatAmount(progress?.current, 18)}
+          accent="emerald"
+        />
       </div>
 
       {/* Two Column Layout */}
@@ -149,35 +173,40 @@ export function ChamaDetail() {
         <div className="space-y-6">
           {/* Join Section */}
           {!isMember && !graduated && !expired && (
-            <div className="bg-white rounded-xl border border-gray-200 p-6">
-              <h3 className="font-semibold text-lg text-gray-900 mb-4">Join Chama</h3>
-              <p className="text-gray-600 mb-4">
+            <ActionCard title="Join Chama" icon={<Users className="w-5 h-5 text-primary-400" />}>
+              <p className="text-white/40 text-sm mb-4">
                 Join this savings group to start contributing towards the goal.
               </p>
               <button
-                onClick={() => join()}
+                onClick={handleJoin}
                 disabled={isJoining}
-                className="w-full py-3 bg-primary-600 text-white font-medium rounded-lg hover:bg-primary-700 disabled:opacity-50 transition-colors"
+                className="w-full btn-primary py-3 flex items-center justify-center gap-2"
               >
-                {isJoining ? 'Joining...' : 'Join Chama'}
+                {isJoining ? (
+                  <>
+                    <Loader2 className="w-4 h-4 animate-spin" />
+                    Joining...
+                  </>
+                ) : (
+                  'Join Chama'
+                )}
               </button>
-            </div>
+            </ActionCard>
           )}
 
           {/* Contribute Section */}
           {isMember && !graduated && !expired && (
-            <div className="bg-white rounded-xl border border-gray-200 p-6">
-              <h3 className="font-semibold text-lg text-gray-900 mb-4">Contribute</h3>
+            <ActionCard title="Contribute" icon={<Coins className="w-5 h-5 text-primary-400" />}>
               <div className="space-y-4">
                 <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2">
-                    Amount ({formatAddress(params.tokenAddress)})
+                  <label className="block text-sm font-medium text-white/50 mb-2">
+                    Amount
                   </label>
                   <input
                     type="number"
                     value={contributionAmount}
                     onChange={(e) => setContributionAmount(e.target.value)}
-                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500"
+                    className="input-dark"
                     placeholder="Enter amount"
                     min="0.01"
                     step="0.01"
@@ -186,38 +215,54 @@ export function ChamaDetail() {
                 <button
                   onClick={handleContribute}
                   disabled={isContributing || !contributionAmount}
-                  className="w-full py-3 bg-primary-600 text-white font-medium rounded-lg hover:bg-primary-700 disabled:opacity-50 transition-colors"
+                  className="w-full btn-primary py-3 flex items-center justify-center gap-2 disabled:opacity-50"
                 >
-                  {isContributing ? 'Contributing...' : 'Contribute'}
+                  {isContributing ? (
+                    <>
+                      <Loader2 className="w-4 h-4 animate-spin" />
+                      Confirming...
+                    </>
+                  ) : (
+                    'Contribute'
+                  )}
                 </button>
               </div>
-            </div>
+            </ActionCard>
           )}
 
           {/* Refund Section */}
           {isMember && expired && !graduated && hasContributed && (
-            <div className="bg-white rounded-xl border border-gray-200 p-6">
-              <h3 className="font-semibold text-lg text-gray-900 mb-4">Claim Refund</h3>
-              <p className="text-gray-600 mb-4">
-                This Chama did not reach its target. Claim your contribution back.
+            <ActionCard title="Claim Refund" icon={<AlertTriangle className="w-5 h-5 text-amber-400" />}>
+              <p className="text-white/40 text-sm mb-4">
+                This Chama did not reach its target. You can claim your contribution back.
               </p>
               <button
-                onClick={() => refund()}
+                onClick={handleRefund}
                 disabled={isRefunding}
-                className="w-full py-3 bg-red-600 text-white font-medium rounded-lg hover:bg-red-700 disabled:opacity-50 transition-colors"
+                className="w-full py-3 rounded-xl font-semibold bg-amber-500/20 text-amber-400 border border-amber-500/30 hover:bg-amber-500/30 transition-all flex items-center justify-center gap-2"
               >
-                {isRefunding ? 'Processing...' : 'Claim Refund'}
+                {isRefunding ? (
+                  <>
+                    <Loader2 className="w-4 h-4 animate-spin" />
+                    Processing...
+                  </>
+                ) : (
+                  'Claim Refund'
+                )}
               </button>
-            </div>
+            </ActionCard>
           )}
 
           {/* Your Contribution */}
           {isMember && (
-            <div className="bg-white rounded-xl border border-gray-200 p-6">
-              <h3 className="font-semibold text-lg text-gray-900 mb-4">Your Contribution</h3>
+            <div className="glass-card p-6">
+              <h3 className="font-semibold text-white mb-4 flex items-center gap-2">
+                <CheckCircle className="w-5 h-5 text-primary-400" />
+                Your Contribution
+              </h3>
               <div className="flex items-center justify-between">
-                <span className="text-gray-600">Total Contributed</span>
-                <span className="text-2xl font-bold text-primary-600">
+                <span className="text-white/40">Total Contributed</span>
+                <span className="text-2xl font-bold text-primary-400">
                   {formatAmount(userContribution, 18)}
                 </span>
               </div>
@@ -228,53 +273,47 @@ export function ChamaDetail() {
         {/* Right Column - Details */}
         <div className="space-y-6">
           {/* Chama Info */}
-          <div className="bg-white rounded-xl border border-gray-200 p-6">
-            <h3 className="font-semibold text-lg text-gray-900 mb-4">Chama Details</h3>
-            <div className="space-y-3">
-              <div className="flex justify-between py-2 border-b border-gray-100">
-                <span className="text-gray-600">Creator</span>
-                <span className="font-mono text-sm">{formatAddress(creator)}</span>
-              </div>
-              <div className="flex justify-between py-2 border-b border-gray-100">
-                <span className="text-gray-600">Min Contribution</span>
-                <span>{formatAmount(params.minContribution, 18)}</span>
-              </div>
-              <div className="flex justify-between py-2 border-b border-gray-100">
-                <span className="text-gray-600">Token</span>
-                <span className="font-mono text-sm">{formatAddress(params.tokenAddress)}</span>
-              </div>
-              <div className="flex justify-between py-2 border-b border-gray-100">
-                <span className="text-gray-600">Deadline</span>
-                <span>{formatDateTime(params.deadline)}</span>
-              </div>
+          <div className="glass-card p-6">
+            <h3 className="font-semibold text-white mb-4">Chama Details</h3>
+            <div className="space-y-0">
+              <DetailRow label="Creator" value={formatAddress(creator)} mono />
+              <DetailRow label="Min Contribution" value={formatAmount(params.minContribution, 18)} />
+              <DetailRow label="Token" value={formatAddress(params.tokenAddress)} mono />
+              <DetailRow label="Deadline" value={formatDateTime(params.deadline)} last />
             </div>
           </div>
 
           {/* Members List */}
-          <div className="bg-white rounded-xl border border-gray-200 p-6">
-            <h3 className="font-semibold text-lg text-gray-900 mb-4">
+          <div className="glass-card p-6">
+            <h3 className="font-semibold text-white mb-4">
               Members ({memberCount ? memberCount.toString() : '0'})
             </h3>
-            <div className="space-y-2 max-h-64 overflow-y-auto">
-              {members?.map((member) => (
-                <div 
-                  key={member}
-                  className="flex items-center gap-2 py-2 px-3 bg-gray-50 rounded-lg"
-                >
-                  <User className="w-4 h-4 text-gray-400" />
-                  <span className="font-mono text-sm flex-1">{formatAddress(member)}</span>
-                  {member === creator && (
-                    <span className="text-xs bg-primary-100 text-primary-700 px-2 py-1 rounded">
-                      Creator
+            <div className="space-y-2 max-h-64 overflow-y-auto pr-1">
+              {members && members.length > 0 ? (
+                members.map((member) => (
+                  <div
+                    key={member}
+                    className="flex items-center gap-2 py-2.5 px-3 bg-white/[0.03] rounded-xl"
+                  >
+                    <div className="w-7 h-7 rounded-lg bg-white/[0.06] flex items-center justify-center">
+                      <User className="w-3.5 h-3.5 text-white/40" />
+                    </div>
+                    <span className="font-mono text-sm text-white/60 flex-1">
+                      {formatAddress(member)}
                     </span>
-                  )}
-                  {member === userAddress && (
-                    <span className="text-xs bg-gray-200 text-gray-700 px-2 py-1 rounded">
-                      You
-                    </span>
-                  )}
-                </div>
-              ))}
+                    {member === creator && (
+                      <span className="badge-active text-[10px]">Creator</span>
+                    )}
+                    {member === userAddress && (
+                      <span className="px-2 py-0.5 rounded-full text-[10px] font-semibold bg-white/10 text-white/60">
+                        You
+                      </span>
+                    )}
+                  </div>
+                ))
+              ) : (
+                <p className="text-white/30 text-sm text-center py-4">No members yet</p>
+              )}
             </div>
           </div>
 
@@ -283,12 +322,83 @@ export function ChamaDetail() {
             href={`https://celoscan.io/address/${address}`}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center justify-center gap-2 w-full py-3 border border-gray-300 rounded-lg text-gray-600 hover:bg-gray-50 transition-colors"
+            className="btn-secondary w-full flex items-center justify-center gap-2 py-3 text-sm"
           >
             View on Celo Explorer
             <ExternalLink className="w-4 h-4" />
           </a>
         </div>
+      </div>
+    </div>
+  );
+}
+
+function StatCard({ icon, label, value, accent }: {
+  icon: React.ReactNode;
+  label: string;
+  value: string;
+  accent: string;
+}) {
+  return (
+    <div className="glass-card p-4">
+      <div className="flex items-center gap-2 mb-2">
+        {icon}
+        <span className="text-xs text-white/40 font-medium">{label}</span>
+      </div>
+      <p className="text-xl font-bold text-white">{value}</p>
+    </div>
+  );
+}
+
+function ActionCard({ title, icon, children }: {
+  title: string;
+  icon: React.ReactNode;
+  children: React.ReactNode;
+}) {
+  return (
+    <div className="glass-card p-6">
+      <h3 className="font-semibold text-white mb-4 flex items-center gap-2">
+        {icon}
+        {title}
+      </h3>
+      {children}
+    </div>
+  );
+}
+
+function DetailRow({ label, value, mono, last }: {
+  label: string;
+  value: string;
+  mono?: boolean;
+  last?: boolean;
+}) {
+  return (
+    <div className={cn(
+      "flex justify-between items-center py-3",
+      !last && "border-b border-white/[0.06]"
+    )}>
+      <span className="text-white/40 text-sm">{label}</span>
+      <span className={cn("text-sm text-white/80", mono && "font-mono")}>{value}</span>
+    </div>
+  );
+}
+
+function DetailSkeleton() {
+  return (
+    <div className="max-w-5xl mx-auto space-y-6 animate-fade-in">
+      <div className="skeleton h-4 w-32" />
+      <div className="glass-card p-8">
+        <div className="skeleton h-8 w-48 mb-4" />
+        <div className="skeleton h-4 w-32 mb-8" />
+        <div className="skeleton h-24 w-full rounded-xl" />
+      </div>
+      <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
+        {[...Array(4)].map((_, i) => (
+          <div key={i} className="glass-card p-4">
+            <div className="skeleton h-4 w-16 mb-2" />
+            <div className="skeleton h-6 w-20" />
+          </div>
+        ))}
       </div>
     </div>
   );

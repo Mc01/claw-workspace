@@ -1,7 +1,8 @@
 import { useState } from 'react';
-import { Search, Filter } from 'lucide-react';
+import { Link } from 'react-router-dom';
+import { Search, Filter, PlusCircle, Compass } from 'lucide-react';
 import { useChamaFactory } from '../hooks/useChamaFactory';
-import { ChamaCard } from '../components/ChamaCard';
+import { ChamaCard, ChamaCardSkeleton } from '../components/ChamaCard';
 
 type FilterType = 'all' | 'open' | 'graduated';
 
@@ -10,10 +11,7 @@ export function Discover() {
   const [searchTerm, setSearchTerm] = useState('');
   const [filter, setFilter] = useState<FilterType>('all');
 
-  // Filter chamas based on status and search
   const filteredChamas = allChamas?.filter((chamaAddress) => {
-    // Note: In a real app, we'd have the name stored on-chain or indexed
-    // For now, we just filter by address contains
     if (searchTerm && !chamaAddress.toLowerCase().includes(searchTerm.toLowerCase())) {
       return false;
     }
@@ -21,39 +19,54 @@ export function Discover() {
   });
 
   return (
-    <div className="space-y-6">
+    <div className="space-y-8 animate-fade-in">
+      {/* Page Header */}
       <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
-        <h1 className="text-2xl font-bold text-gray-900">Discover Chamas</h1>
-        
-        {/* Search and Filter */}
-        <div className="flex flex-col sm:flex-row gap-3">
-          <div className="relative">
-            <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-400" />
-            <input
-              type="text"
-              placeholder="Search by address..."
-              value={searchTerm}
-              onChange={(e) => setSearchTerm(e.target.value)}
-              className="pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
-            />
-          </div>
-          
-          <div className="flex items-center gap-2 bg-white border border-gray-300 rounded-lg p-1">
-            <Filter className="w-4 h-4 text-gray-400 ml-2" />
-            {(['all', 'open', 'graduated'] as FilterType[]).map((f) => (
-              <button
-                key={f}
-                onClick={() => setFilter(f)}
-                className={`px-3 py-1.5 rounded-md text-sm font-medium transition-colors ${
-                  filter === f
-                    ? 'bg-primary-100 text-primary-700'
-                    : 'text-gray-600 hover:bg-gray-100'
-                }`}
-              >
-                {f.charAt(0).toUpperCase() + f.slice(1)}
-              </button>
-            ))}
-          </div>
+        <div>
+          <h1 className="text-2xl md:text-3xl font-bold text-white flex items-center gap-3">
+            <Compass className="w-8 h-8 text-primary-400" />
+            Discover Chamas
+          </h1>
+          <p className="text-white/40 mt-1">Find and join community savings groups</p>
+        </div>
+
+        <Link
+          to="/app/create"
+          className="btn-primary inline-flex items-center gap-2 text-sm self-start"
+        >
+          <PlusCircle className="w-4 h-4" />
+          Create Chama
+        </Link>
+      </div>
+
+      {/* Search and Filters */}
+      <div className="flex flex-col sm:flex-row gap-3">
+        <div className="relative flex-1">
+          <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 text-white/30" />
+          <input
+            type="text"
+            placeholder="Search by address..."
+            value={searchTerm}
+            onChange={(e) => setSearchTerm(e.target.value)}
+            className="input-dark pl-11"
+          />
+        </div>
+
+        <div className="flex items-center gap-1 glass-card p-1">
+          <Filter className="w-4 h-4 text-white/30 ml-3 mr-1" />
+          {(['all', 'open', 'graduated'] as FilterType[]).map((f) => (
+            <button
+              key={f}
+              onClick={() => setFilter(f)}
+              className={`px-4 py-2 rounded-lg text-sm font-medium transition-all duration-200 ${
+                filter === f
+                  ? 'bg-primary-500/20 text-primary-400'
+                  : 'text-white/40 hover:text-white/60 hover:bg-white/[0.04]'
+              }`}
+            >
+              {f.charAt(0).toUpperCase() + f.slice(1)}
+            </button>
+          ))}
         </div>
       </div>
 
@@ -61,11 +74,7 @@ export function Discover() {
       {isLoadingChamas ? (
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {[...Array(6)].map((_, i) => (
-            <div key={i} className="bg-white rounded-xl border border-gray-200 p-6 animate-pulse">
-              <div className="h-6 bg-gray-200 rounded w-3/4 mb-4" />
-              <div className="h-4 bg-gray-200 rounded w-1/2 mb-6" />
-              <div className="h-3 bg-gray-200 rounded w-full" />
-            </div>
+            <ChamaCardSkeleton key={i} />
           ))}
         </div>
       ) : filteredChamas && filteredChamas.length > 0 ? (
@@ -75,11 +84,31 @@ export function Discover() {
           ))}
         </div>
       ) : (
-        <div className="text-center py-12">
-          <p className="text-gray-500">
-            {searchTerm ? 'No Chamas match your search' : 'No Chamas found. Be the first to create one!'}
-          </p>
-        </div>
+        <EmptyState searchTerm={searchTerm} />
+      )}
+    </div>
+  );
+}
+
+function EmptyState({ searchTerm }: { searchTerm: string }) {
+  return (
+    <div className="glass-card p-12 text-center">
+      <div className="w-16 h-16 rounded-2xl bg-primary-500/10 flex items-center justify-center mx-auto mb-4">
+        <Compass className="w-8 h-8 text-primary-400/60" />
+      </div>
+      <h3 className="text-lg font-semibold text-white mb-2">
+        {searchTerm ? 'No Chamas Found' : 'No Chamas Yet'}
+      </h3>
+      <p className="text-white/40 mb-6 max-w-sm mx-auto">
+        {searchTerm
+          ? 'No Chamas match your search. Try a different address.'
+          : 'Be the first to create a savings circle for your community.'}
+      </p>
+      {!searchTerm && (
+        <Link to="/app/create" className="btn-primary inline-flex items-center gap-2">
+          <PlusCircle className="w-4 h-4" />
+          Create First Chama
+        </Link>
       )}
     </div>
   );
