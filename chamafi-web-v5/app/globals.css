@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #1a1008;
+  --foreground: #f5e6c8;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  background: #1a1008;
+  color: #f5e6c8;
+  font-family: system-ui, -apple-system, sans-serif;
+  overflow-x: hidden;
+}
+
+/* ── Gradient text ───────────────────────────────────────────── */
+.gold-text {
+  background: linear-gradient(135deg, #fbbf24 0%, #cd7f32 50%, #d97706 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ── Glass card ──────────────────────────────────────────────── */
+.glass-earth {
+  background: rgba(42, 20, 5, 0.6);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(212, 160, 23, 0.2);
+}
+
+/* ── Adinkra border ──────────────────────────────────────────── */
+.adinkra-border {
+  border: 1.5px solid transparent;
+  background: linear-gradient(#1a1008, #1a1008) padding-box,
+              linear-gradient(135deg, #d4a017, #cd7f32, #c8431e) border-box;
+  border-radius: 12px;
+}
+
+/* ── Ticker ──────────────────────────────────────────────────── */
+.ticker-track { animation: ticker-scroll 30s linear infinite; }
+
+@keyframes ticker-scroll {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* ── Float ───────────────────────────────────────────────────── */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50%       { transform: translateY(-12px); }
+}
+.animate-float { animation: float 5s ease-in-out infinite; }
+
+/* ── Scrollbar ───────────────────────────────────────────────── */
+::-webkit-scrollbar       { width: 6px; }
+::-webkit-scrollbar-track { background: #1a1008; }
+::-webkit-scrollbar-thumb { background: #c9902c; border-radius: 3px; }

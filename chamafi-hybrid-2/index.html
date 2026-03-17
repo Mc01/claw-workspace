@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ChamaFi — Savings Circles, Reimagined on Celo</title>
+  <meta name="description" content="ChamaFi brings African savings circles on-chain. Higher yield than traditional Chamas. Instant access, no lockups. Powered by Celo." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&family=Playfair+Display:ital,wght@1,400;1,600;1,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/src/style.css" />
+</head>
+<body>
+  <canvas id="seed-canvas"></canvas>
+  <div class="adinkra-overlay" id="adinkra-overlay"></div>
+
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <div class="nav-logo">
+        <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><circle cx="16" cy="16" r="14" fill="#C4622D" stroke="#D4A017" stroke-width="2"/><path d="M8 16 Q16 8 24 16 Q16 24 8 16Z" fill="#D4A017" opacity="0.8"/><circle cx="16" cy="16" r="4" fill="#E8D5A3"/></svg>
+        <span class="nav-brand">ChamaFi</span>
+      </div>
+      <div class="nav-links">
+        <a href="#what-is-chamafi">About</a>
+        <a href="#how-it-works">How It Works</a>
+        <a href="#mechanics">Mechanics</a>
+        <a href="#platforms">Platforms</a>
+        <a href="#minipay" class="nav-cta">Get Started</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ======================================================= -->
+  <!-- HERO                                                      -->
+  <!-- ======================================================= -->
+  <section class="hero" id="hero">
+    <div class="sky-gradient"></div>
+    <div class="sun-container" id="sun-container">
+      <div class="sun-glow"></div>
+      <div class="sun" id="sun">
+        <div class="sun-inner"></div>
+        <div class="sun-ray" style="--angle:0deg"></div>
+        <div class="sun-ray" style="--angle:45deg"></div>
+        <div class="sun-ray" style="--angle:90deg"></div>
+        <div class="sun-ray" style="--angle:135deg"></div>
+        <div class="sun-ray" style="--angle:180deg"></div>
+        <div class="sun-ray" style="--angle:225deg"></div>
+        <div class="sun-ray" style="--angle:270deg"></div>
+        <div class="sun-ray" style="--angle:315deg"></div>
+      </div>
+    </div>
+    <div class="horizon"></div>
+    <div class="grass-field" id="grass-field"></div>
+    <div class="hero-content">
+      <div class="hero-badge"><span class="badge-dot"></span>Built on Celo · Powered by Community</div>
+      <h1 class="hero-title">Savings circles,<br/><em class="hero-tagline">reimagined on Celo</em></h1>
+      <p class="hero-subtitle">Higher yield than traditional Chamas. Instant access, no lockups.</p>
+      <div class="hero-actions">
+        <a href="#minipay" class="btn-primary">Open in MiniPay</a>
+        <a href="#how-it-works" class="btn-secondary">How It Works →</a>
+      </div>
+    </div>
+    <div class="scroll-indicator"><div class="scroll-line"></div><span>Scroll</span></div>
+  </section>
+
+  <!-- ======================================================= -->
+  <!-- STATS                                                     -->
+  <!-- ======================================================= -->
+  <section class="stats-section" id="stats">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-card"><div class="stat-circle"><svg class="stat-ring" viewBox="0 0 100 100"><circle cx="50" cy="50" r="40" fill="none" stroke="#E8D5A3" stroke-width="2" opacity="0.2"/><circle cx="50" cy="50" r="40" fill="none" stroke="#D4A017" stroke-width="2" stroke-dasharray="251" stroke-dashoffset="251" class="ring-fill"/></svg><div class="stat-value" data-target="2400000" data-prefix="$">$0</div></div><div class="stat-label">Total Saved</div><div class="stat-sub">across all chamas</div></div>
+        <div class="stat-card"><div class="stat-circle"><svg class="stat-ring" viewBox="0 0 100 100"><circle cx="50" cy="50" r="40" fill="none" stroke="#E8D5A3" stroke-width="2" opacity="0.2"/><circle cx="50" cy="50" r="40" fill="none" stroke="#C4622D" stroke-width="2" stroke-dasharray="251" stroke-dashoffset="251" class="ring-fill"/></svg><div class="stat-value" data-target="1847" data-prefix="">0</div></div><div class="stat-label">Active Chamas</div><div class="stat-sub">saving together</div></div>
+        <div class="stat-card"><div class="stat-circle"><svg class="stat-ring" viewBox="0 0 100 100"><circle cx="50" cy="50" r="40" fill="none" stroke="#E8D5A3" stroke-width="2" opacity="0.2"/><circle cx="50" cy="50" r="40" fill="none" stroke="#4A7C3F" stroke-width="2" stroke-dasharray="251" stroke-dashoffset="251" class="ring-fill"/></svg><div class="stat-value" data-target="8" data-suffix="%" data-prefix="">0</div></div><div class="stat-label">APY Yield</div><div class="stat-sub">on idle savings</div></div>
+        <div class="stat-card"><div class="stat-circle"><svg class="stat-ring" viewBox="0 0 100 100"><circle cx="50" cy="50" r="40" fill="none" stroke="#E8D5A3" stroke-width="2" opacity="0.2"/><circle cx="50" cy="50" r="40" fill="none" stroke="#D4A017" stroke-width="2" stroke-dasharray="251" stroke-dashoffset="251" class="ring-fill"/></svg><div class="stat-value" data-target="300000000" data-prefix="">0</div></div><div class="stat-label">Target Users</div><div class="stat-sub">Africans in savings circles</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================================= -->
+  <!-- WHAT IS CHAMAFI                                           -->
+  <!-- ======================================================= -->
+  <section class="what-section" id="what-is-chamafi">
+    <div class="container">
+      <div class="what-grid">
+        <div class="what-text">
+          <div class="section-tag">What is ChamaFi</div>
+          <h2 class="section-title">Africa's savings tradition,<br/>upgraded for DeFi</h2>
+          <p class="what-lead">For generations, 300M+ Africans have pooled savings in Chamas — community circles built on trust. ChamaFi digitizes these groups on Celo, turning them into yield-generating DeFi vaults.</p>
+          <div class="what-pillars">
+            <div class="pillar">
+              <div class="pillar-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="#D4A017" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </div>
+              <div>
+                <h4>Digitize Existing Groups</h4>
+                <p>Migrate your WhatsApp Chama on-chain in minutes. No new habits — just a better tool.</p>
+              </div>
+            </div>
+            <div class="pillar">
+              <div class="pillar-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18" stroke="#4A7C3F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><polyline points="17 6 23 6 23 12" stroke="#4A7C3F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </div>
+              <div>
+                <h4>Higher Yield</h4>
+                <p>Funds earn 8%+ APY via rehypothecation while they sit in the pool — more than any bank account in Africa.</p>
+              </div>
+            </div>
+            <div class="pillar">
+              <div class="pillar-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="#C4622D" stroke-width="1.5"/><polyline points="12 6 12 12 16 14" stroke="#C4622D" stroke-width="1.5" stroke-linecap="round"/></svg>
+              </div>
+              <div>
+                <h4>Instant Access, No Lockups</h4>
+                <p>LP tokens are liquid. Exit anytime by removing liquidity or selling on the bonding curve — no waiting for your turn.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="what-visual">
+          <div class="what-card-stack">
+            <div class="stack-card stack-card-back">
+              <div class="stack-label">Traditional Chama</div>
+              <div class="stack-metric red">0% yield · Wait for turn · Trust-based</div>
+            </div>
+            <div class="stack-card stack-card-front">
+              <div class="stack-header">
+                <svg width="28" height="28" viewBox="0 0 32 32" fill="none"><circle cx="16" cy="16" r="14" fill="#C4622D" stroke="#D4A017" stroke-width="2"/><path d="M8 16 Q16 8 24 16 Q16 24 8 16Z" fill="#D4A017" opacity="0.8"/><circle cx="16" cy="16" r="4" fill="#E8D5A3"/></svg>
+                <span class="stack-label">ChamaFi Chama</span>
+              </div>
+              <div class="stack-stat-row">
+                <div class="stack-stat"><div class="stack-stat-val">8%+</div><div class="stack-stat-sub">APY yield</div></div>
+                <div class="stack-stat"><div class="stack-stat-val">Instant</div><div class="stack-stat-sub">Exit</div></div>
+                <div class="stack-stat"><div class="stack-stat-val">100%</div><div class="stack-stat-sub">On-chain</div></div>
+              </div>
+              <div class="stack-metric green">Trustless · Liquid · Higher yield</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="grass-divider" id="grass-divider-1"></div>
+
+  <!-- ======================================================= -->
+  <!-- HOW IT WORKS                                              -->
+  <!-- ======================================================= -->
+  <section class="how-it-works" id="how-it-works">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Simple Process</div>
+        <h2 class="section-title">How It Works</h2>
+        <p class="section-subtitle">From zero to yield-generating savings circle in five steps.</p>
+      </div>
+      <div class="steps-container">
+        <div class="steps-line"></div>
+        <div class="step" data-step="1">
+          <div class="step-num">01</div>
+          <div class="step-content">
+            <div class="step-tag">Join or Create</div>
+            <h3>Create or Join a Chama</h3>
+            <p>Open ChamaFi in MiniPay, on the web, or in Farcaster. Name your circle, set target size and contribution amount, then invite members with a shareable link — or join an existing one.</p>
+          </div>
+        </div>
+        <div class="step" data-step="2">
+          <div class="step-num">02</div>
+          <div class="step-content">
+            <div class="step-tag">Incubation Phase</div>
+            <h3>Contribute Capital</h3>
+            <p>Members contribute cUSD into the shared pool. The Chama is in <strong>Incubation</strong> until the target capital is reached. Funds earn yield from day one via rehypothecation.</p>
+          </div>
+        </div>
+        <div class="step" data-step="3">
+          <div class="step-num">03</div>
+          <div class="step-content">
+            <div class="step-tag">Graduation</div>
+            <h3>Graduate Instantly at 100%</h3>
+            <p>When the pool hits its target, the Chama <strong>graduates automatically</strong>. No waiting, no admin approval — the smart contract handles everything on-chain.</p>
+          </div>
+        </div>
+        <div class="step" data-step="4">
+          <div class="step-num">04</div>
+          <div class="step-content">
+            <div class="step-tag">LP Tokens</div>
+            <h3>Earn LP Tokens + Yield</h3>
+            <p>Upon graduation, members receive <strong>LP tokens</strong> proportional to their contribution. These tokens represent your share of the pool and accrue yield from the underlying DeFi strategy.</p>
+          </div>
+        </div>
+        <div class="step" data-step="5">
+          <div class="step-num">05</div>
+          <div class="step-content">
+            <div class="step-tag">Exit Anytime</div>
+            <h3>Exit Anytime</h3>
+            <p>No lockups. Redeem LP tokens via <code>remove_liquidity</code> to withdraw your share + accrued yield, or sell your LP tokens on the bonding curve for instant liquidity — your choice, your timeline.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="grass-divider" id="grass-divider-2"></div>
+
+  <!-- ======================================================= -->
+  <!-- THE MECHANICS                                             -->
+  <!-- ======================================================= -->
+  <section class="mechanics-section" id="mechanics">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Protocol Design</div>
+        <h2 class="section-title">The Mechanics</h2>
+        <p class="section-subtitle">Under the hood: how ChamaFi manages trust, yield, and liquidity without intermediaries.</p>
+      </div>
+
+      <!-- Lifecycle flow -->
+      <div class="lifecycle-flow reveal">
+        <div class="lifecycle-step">
+          <div class="lc-icon lc-incubation">
+            <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><circle cx="14" cy="14" r="11" stroke="#D4A017" stroke-width="1.5" stroke-dasharray="4 2"/><circle cx="14" cy="14" r="5" fill="#D4A017" opacity="0.3"/><circle cx="14" cy="14" r="2" fill="#D4A017"/></svg>
+          </div>
+          <div class="lc-label">Incubation</div>
+          <div class="lc-desc">Members contribute<br/>capital to the pool</div>
+        </div>
+        <div class="lifecycle-arrow">→</div>
+        <div class="lifecycle-step">
+          <div class="lc-icon lc-graduation">
+            <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><path d="M14 3 L26 9 L14 15 L2 9 Z" stroke="#4A7C3F" stroke-width="1.5" fill="none"/><path d="M6 12 L6 20 Q14 25 22 20 L22 12" stroke="#4A7C3F" stroke-width="1.5" fill="none"/></svg>
+          </div>
+          <div class="lc-label">Graduation</div>
+          <div class="lc-desc">100% target reached<br/>auto-triggers on-chain</div>
+        </div>
+        <div class="lifecycle-arrow">→</div>
+        <div class="lifecycle-step">
+          <div class="lc-icon lc-lp">
+            <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect x="4" y="10" width="20" height="14" rx="3" stroke="#C4622D" stroke-width="1.5" fill="none"/><path d="M10 10 V7 Q14 4 18 7 V10" stroke="#C4622D" stroke-width="1.5" fill="none"/><path d="M11 17 l2 2 4-4" stroke="#C4622D" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </div>
+          <div class="lc-label">LP Tokens</div>
+          <div class="lc-desc">Members receive shares<br/>proportional to contribution</div>
+        </div>
+        <div class="lifecycle-arrow">→</div>
+        <div class="lifecycle-step">
+          <div class="lc-icon lc-yield">
+            <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><polyline points="4 20 10 14 15 17 24 8" stroke="#D4A017" stroke-width="1.5" stroke-linecap="round"/><polyline points="19 8 24 8 24 13" stroke="#D4A017" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </div>
+          <div class="lc-label">Yield Accrual</div>
+          <div class="lc-desc">Rehypothecation<br/>earns 8%+ APY</div>
+        </div>
+        <div class="lifecycle-arrow">→</div>
+        <div class="lifecycle-step">
+          <div class="lc-icon lc-exit">
+            <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><path d="M18 14 L24 14 M21 11 L24 14 L21 17" stroke="#4A7C3F" stroke-width="1.5" stroke-linecap="round"/><path d="M14 4 L4 4 L4 24 L14 24" stroke="#4A7C3F" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </div>
+          <div class="lc-label">Exit</div>
+          <div class="lc-desc">remove_liquidity or<br/>sell on bonding curve</div>
+        </div>
+      </div>
+
+      <!-- Mechanics cards -->
+      <div class="mechanics-grid">
+        <div class="mech-card reveal">
+          <div class="mech-icon" style="--micon:#D4A017">
+            <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><circle cx="14" cy="14" r="11" stroke="currentColor" stroke-width="1.5" stroke-dasharray="4 2"/><path d="M14 6 L14 14 L19 14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </div>
+          <h3>Auto-Refund on Missed Deadline</h3>
+          <p>If a Chama fails to reach its target capital before the deadline, the smart contract automatically refunds all contributors in full — no admin needed, no loss of funds.</p>
+          <div class="mech-code">contract.refundAll() ← triggered on deadline</div>
+        </div>
+        <div class="mech-card reveal">
+          <div class="mech-icon" style="--micon:#4A7C3F">
+            <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><polyline points="4 20 10 14 15 17 24 8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><circle cx="14" cy="14" r="3" fill="currentColor" opacity="0.4"/></svg>
+          </div>
+          <h3>Yield via Rehypothecation</h3>
+          <p>LP tokens held in the pool are deployed to Celo's DeFi ecosystem (e.g. Mento, Uniswap V3) to earn yield. Accrued yield is reflected in LP token value — no manual claiming needed.</p>
+          <div class="mech-code">pool → DeFi strategy → LP value ↑</div>
+        </div>
+        <div class="mech-card reveal">
+          <div class="mech-icon" style="--micon:#C4622D">
+            <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><path d="M8 20 Q14 8 20 20" stroke="currentColor" stroke-width="1.5" fill="none"/><circle cx="14" cy="14" r="3" fill="currentColor" opacity="0.5"/><path d="M4 20 L24 20" stroke="currentColor" stroke-width="1" opacity="0.5"/></svg>
+          </div>
+          <h3>Bonding Curve Exit</h3>
+          <p>Don't want to wait? Sell your LP tokens on the embedded bonding curve for instant cUSD. The curve maintains price stability and ensures there's always a buyer — no counterparty needed.</p>
+          <div class="mech-code">LP tokens → bonding curve → cUSD</div>
+        </div>
+        <div class="mech-card reveal">
+          <div class="mech-icon" style="--micon:#E8D5A3">
+            <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect x="4" y="4" width="9" height="9" rx="2" stroke="currentColor" stroke-width="1.5" fill="none"/><rect x="15" y="4" width="9" height="9" rx="2" stroke="currentColor" stroke-width="1.5" fill="none"/><rect x="4" y="15" width="9" height="9" rx="2" stroke="currentColor" stroke-width="1.5" fill="none"/><path d="M19.5 15 L19.5 24 M15 19.5 L24 19.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </div>
+          <h3>Remove Liquidity Exit</h3>
+          <p>Prefer to withdraw your full share? Call <code>remove_liquidity</code> to burn your LP tokens and receive your contribution plus all accrued yield — principal protected, gains included.</p>
+          <div class="mech-code">remove_liquidity() → principal + yield</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================================= -->
+  <!-- FEATURES                                                  -->
+  <!-- ======================================================= -->
+  <section class="features-section" id="features">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">What You Get</div>
+        <h2 class="section-title">Built for Real Communities</h2>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card"><div class="feature-adinkra-bg" data-adinkra="0"></div><div class="feature-icon" style="--icon-color:#D4A017"><svg width="28" height="28" viewBox="0 0 28 28" fill="none"><path d="M14 3 L25 9 L25 19 L14 25 L3 19 L3 9 Z" stroke="currentColor" stroke-width="1.5" fill="none"/><circle cx="14" cy="14" r="4" fill="currentColor" opacity="0.6"/></svg></div><h3>Trustless Contracts</h3><p>Smart contracts hold all funds. No admin keys, no single point of failure. The code is the law.</p><div class="feature-tag">Solidity · Celo</div></div>
+        <div class="feature-card"><div class="feature-adinkra-bg" data-adinkra="1"></div><div class="feature-icon" style="--icon-color:#C4622D"><svg width="28" height="28" viewBox="0 0 28 28" fill="none"><circle cx="14" cy="14" r="10" stroke="currentColor" stroke-width="1.5" fill="none"/><circle cx="14" cy="14" r="6" stroke="currentColor" stroke-width="1" fill="none" opacity="0.5"/><circle cx="14" cy="14" r="2" fill="currentColor"/></svg></div><h3>LP Token Liquidity</h3><p>Every contribution mints LP tokens. Exit anytime via remove_liquidity or the bonding curve — zero lockup.</p><div class="feature-tag">DeFi Liquidity</div></div>
+        <div class="feature-card"><div class="feature-adinkra-bg" data-adinkra="2"></div><div class="feature-icon" style="--icon-color:#4A7C3F"><svg width="28" height="28" viewBox="0 0 28 28" fill="none"><path d="M4 14 Q8 4 14 4 Q20 4 24 14" stroke="currentColor" stroke-width="1.5" fill="none"/><path d="M4 14 Q8 24 14 24 Q20 24 24 14" stroke="currentColor" stroke-width="1" fill="none" opacity="0.5"/><circle cx="14" cy="14" r="3" fill="currentColor"/></svg></div><h3>Auto Yield 8%+</h3><p>Idle funds earn yield automatically through Celo's DeFi ecosystem. Your savings work while you sleep.</p><div class="feature-tag">DeFi Integrated</div></div>
+        <div class="feature-card"><div class="feature-adinkra-bg" data-adinkra="3"></div><div class="feature-icon" style="--icon-color:#D4A017"><svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect x="4" y="8" width="20" height="14" rx="2" stroke="currentColor" stroke-width="1.5" fill="none"/><path d="M9 8 V6 Q14 4 19 6 V8" stroke="currentColor" stroke-width="1.5" fill="none"/><path d="M11 16 l2 2 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></div><h3>MiniPay Native</h3><p>Designed for Opera MiniPay. Zero gas friction, stablecoin payments, works on low-end devices.</p><div class="feature-tag">cUSD · USDC</div></div>
+        <div class="feature-card"><div class="feature-adinkra-bg" data-adinkra="4"></div><div class="feature-icon" style="--icon-color:#C4622D"><svg width="28" height="28" viewBox="0 0 28 28" fill="none"><path d="M14 4 L18 12 L26 12 L20 18 L22 26 L14 22 L6 26 L8 18 L2 12 L10 12 Z" stroke="currentColor" stroke-width="1.5" fill="none"/></svg></div><h3>Auto-Refund Safety</h3><p>If a Chama misses its target deadline, every member is automatically refunded. No trust required, no risk of stuck funds.</p><div class="feature-tag">Protected Capital</div></div>
+        <div class="feature-card"><div class="feature-adinkra-bg" data-adinkra="5"></div><div class="feature-icon" style="--icon-color:#4A7C3F"><svg width="28" height="28" viewBox="0 0 28 28" fill="none"><circle cx="10" cy="10" r="5" stroke="currentColor" stroke-width="1.5" fill="none"/><circle cx="20" cy="10" r="5" stroke="currentColor" stroke-width="1.5" fill="none"/><circle cx="15" cy="20" r="5" stroke="currentColor" stroke-width="1.5" fill="none"/></svg></div><h3>Agent Support</h3><p>AI-powered savings advisors help your chama optimize contributions, yields, and exit timing.</p><div class="feature-tag">AI · Autonomous</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHERE TO USE / PLATFORMS -->
+  <section class="platforms-section" id="platforms">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Where to Use</div>
+        <h2 class="section-title">Available on Every Surface</h2>
+        <p class="section-subtitle">One protocol, three interfaces &#8212; use ChamaFi wherever you are.</p>
+      </div>
+      <div class="platforms-grid">
+
+        <div class="platform-card platform-web reveal">
+          <div class="platform-badge">Full Experience</div>
+          <div class="platform-icon">
+            <svg width="52" height="52" viewBox="0 0 52 52" fill="none">
+              <rect x="6" y="10" width="40" height="30" rx="3" stroke="#D4A017" stroke-width="1.5" fill="none"/>
+              <path d="M6 18 L46 18" stroke="#D4A017" stroke-width="1" opacity="0.4"/>
+              <circle cx="11" cy="14" r="1.5" fill="#C4622D"/>
+              <circle cx="16" cy="14" r="1.5" fill="#D4A017"/>
+              <circle cx="21" cy="14" r="1.5" fill="#4A7C3F"/>
+              <path d="M22 40 L30 40" stroke="#E8D5A3" stroke-width="2" stroke-linecap="round"/>
+              <rect x="24" y="40" width="4" height="6" fill="#D4A017" opacity="0.5"/>
+            </svg>
+          </div>
+          <h3>Web App</h3>
+          <div class="platform-scope">Full Experience</div>
+          <p>The complete ChamaFi protocol in your browser. Create and manage Chamas, monitor yield, view LP positions, access all mechanics.</p>
+          <ul class="platform-features">
+            <li>Full Chama creation &amp; management</li>
+            <li>LP token dashboard</li>
+            <li>Bonding curve explorer</li>
+            <li>WalletConnect + injected wallets</li>
+          </ul>
+          <a href="https://chamafi.vercel.app" target="_blank" class="platform-cta">Open Web App &rarr;</a>
+        </div>
+
+        <div class="platform-card platform-minipay reveal">
+          <div class="platform-badge minipay-badge">Simplified</div>
+          <div class="platform-icon">
+            <svg width="52" height="52" viewBox="0 0 52 52" fill="none">
+              <rect x="14" y="4" width="24" height="44" rx="4" stroke="#C4622D" stroke-width="1.5" fill="none"/>
+              <path d="M14 12 L38 12" stroke="#C4622D" stroke-width="1" opacity="0.4"/>
+              <path d="M14 40 L38 40" stroke="#C4622D" stroke-width="1" opacity="0.4"/>
+              <circle cx="26" cy="45" r="2" fill="#C4622D"/>
+              <rect x="20" y="18" width="12" height="16" rx="2" fill="#C4622D" opacity="0.15" stroke="#C4622D" stroke-width="1"/>
+              <path d="M23 26 l2 2 4-4" stroke="#C4622D" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3>MiniPay</h3>
+          <div class="platform-scope">Opera MiniPay</div>
+          <p>A simplified, mobile-first interface optimized for Opera MiniPay users across Africa. Auto-connect, cUSD stablecoin focus, minimal gas.</p>
+          <ul class="platform-features">
+            <li>Auto-connect (no wallet prompt)</li>
+            <li>One-tap contributions</li>
+            <li>cUSD &amp; USDC payments</li>
+            <li>Works on low-end devices</li>
+          </ul>
+          <a href="https://minipay.opera.com" target="_blank" class="platform-cta minipay-cta">Open in MiniPay &rarr;</a>
+        </div>
+
+        <div class="platform-card platform-farcaster reveal">
+          <div class="platform-badge farcaster-badge">Embedded</div>
+          <div class="platform-icon">
+            <svg width="52" height="52" viewBox="0 0 52 52" fill="none">
+              <rect x="8" y="8" width="36" height="36" rx="8" stroke="#8B5CF6" stroke-width="1.5" fill="none"/>
+              <path d="M16 20 L26 28 L36 20" stroke="#8B5CF6" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+              <path d="M16 28 L26 36 L36 28" stroke="#8B5CF6" stroke-width="1" stroke-linecap="round" fill="none" opacity="0.5"/>
+            </svg>
+          </div>
+          <h3>Farcaster</h3>
+          <div class="platform-scope">Mini App (424x695)</div>
+          <p>A Farcaster Mini App embedded directly in your feed. Share Chama invites as frames, join from casts, and earn yield without leaving Warpcast.</p>
+          <ul class="platform-features">
+            <li>Mini App in Warpcast</li>
+            <li>Cast-native Chama invites</li>
+            <li>Quick Auth via Farcaster ID</li>
+            <li>Frame previews for circles</li>
+          </ul>
+          <a href="https://warpcast.com" target="_blank" class="platform-cta farcaster-cta">Open on Farcaster &rarr;</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- MINIPAY CTA -->
+  <section class="minipay-section" id="minipay">
+    <div class="container">
+      <div class="minipay-card">
+        <div class="savings-pulse" id="savings-pulse">
+          <div class="pulse-ring pulse-ring-1"></div>
+          <div class="pulse-ring pulse-ring-2"></div>
+          <div class="pulse-ring pulse-ring-3"></div>
+          <div class="pulse-center"><svg width="48" height="48" viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="20" fill="#C4622D" opacity="0.9"/><path d="M16 24 Q24 12 32 24 Q24 36 16 24Z" fill="#D4A017"/><circle cx="24" cy="24" r="6" fill="#E8D5A3"/></svg></div>
+        </div>
+        <h2 class="minipay-title">Start Your Chama Today</h2>
+        <p class="minipay-subtitle">Join thousands of Africans building wealth together. Open ChamaFi in MiniPay and create your first savings circle in 60 seconds.</p>
+        <div class="minipay-actions">
+          <a href="https://minipay.opera.com" target="_blank" class="btn-minipay">Open in MiniPay</a>
+          <div class="minipay-meta"><span>&#10003; Free to start</span><span>&#10003; No bank needed</span><span>&#10003; cUSD stablecoin</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- FOOTER -->
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo"><svg width="40" height="40" viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="18" fill="#C4622D" stroke="#D4A017" stroke-width="2"/><path d="M10 20 Q20 10 30 20 Q20 30 10 20Z" fill="#D4A017" opacity="0.8"/><circle cx="20" cy="20" r="5" fill="#E8D5A3"/></svg><span>ChamaFi</span></div>
+          <p>Savings circles for the next billion. Built on Celo, powered by community.</p>
+          <div class="footer-adinkra-row"><span class="adinkra-small">&#10022;</span><span class="adinkra-small">&#9672;</span><span class="adinkra-small">&#11041;</span><span class="adinkra-small">&#10022;</span></div>
+        </div>
+        <div class="footer-links">
+          <h4>Protocol</h4>
+          <a href="#how-it-works">How It Works</a>
+          <a href="#mechanics">Mechanics</a>
+          <a href="#platforms">Platforms</a>
+          <a href="#features">Features</a>
+        </div>
+        <div class="footer-links">
+          <h4>Community</h4>
+          <a href="https://t.me/chamafi" target="_blank">Telegram</a>
+          <a href="https://x.com/chamafi_" target="_blank">Twitter / X</a>
+          <a href="https://warpcast.com/~/channel/chamafi" target="_blank">Farcaster</a>
+          <a href="https://forum.celo.org" target="_blank">Celo Forum</a>
+        </div>
+        <div class="footer-links">
+          <h4>Build</h4>
+          <a href="https://github.com/chamafi" target="_blank">GitHub</a>
+          <a href="#mechanics">Smart Contracts</a>
+          <a href="#" >API Docs</a>
+          <a href="#" >Audit Reports</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-chain"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="7" fill="#FCFF52" stroke="#000" stroke-width="0.5"/><path d="M5 8 Q8 4 11 8 Q8 12 5 8Z" fill="#000" opacity="0.6"/></svg>Built on Celo</div>
+        <p>&#169; 2026 ChamaFi. Open source. Community owned.</p>
+        <div class="footer-legal"><a href="#">Privacy</a><a href="#">Terms</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>

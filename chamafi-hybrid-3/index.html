@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ChamaFi — Savings Circles, Reimagined on Celo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body class="loading">
+
+<div id="page-transition" class="page-transition">
+  <div class="pt-wipe"></div>
+  <div class="pt-logo">
+    <svg viewBox="0 0 60 60" fill="none">
+      <circle cx="30" cy="30" r="28" stroke="#C4E86A" stroke-width="3"/>
+      <path d="M30 48 L30 20 M30 20 L20 32 M30 20 L40 32 M30 30 L18 24 M30 30 L42 24" stroke="#C4E86A" stroke-width="2.5" stroke-linecap="round"/>
+    </svg>
+    <span>ChamaFi</span>
+  </div>
+</div>
+
+<nav id="navbar" class="navbar">
+  <div class="nav-inner">
+    <a href="#" class="nav-logo">
+      <svg class="nav-logo-icon" viewBox="0 0 32 32" fill="none">
+        <circle cx="16" cy="16" r="14" stroke="currentColor" stroke-width="2"/>
+        <path d="M16 26 L16 10 M16 10 L10 17 M16 10 L22 17 M16 18 L9 14 M16 18 L23 14" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+      </svg>
+      ChamaFi
+    </a>
+    <div class="nav-links">
+      <a href="#what-is-chamafi" class="nav-link">About</a>
+      <a href="#how-it-works" class="nav-link">How It Works</a>
+      <a href="#mechanics" class="nav-link">Mechanics</a>
+      <a href="#where-to-use" class="nav-link">Platforms</a>
+      <a href="#faq" class="nav-link">FAQ</a>
+    </div>
+    <a href="https://app.chamafi.xyz" class="btn btn-nav">Launch App <span class="btn-arrow">&#8594;</span></a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="hero" class="hero">
+  <div class="sun-container" id="sun-container">
+    <div class="sun" id="sun">
+      <div class="sun-rays" id="sun-rays"></div>
+      <div class="sun-core"></div>
+      <div class="sun-glow"></div>
+    </div>
+  </div>
+  <div class="sky-layer sky-dawn" id="sky-dawn"></div>
+  <div class="sky-layer sky-day" id="sky-day"></div>
+
+  <div class="hero-content">
+    <div class="hero-badge reveal-up" data-delay="200">
+      <span class="badge-dot"></span>
+      Community Savings &middot; Celo Blockchain
+    </div>
+    <h1 class="hero-title">
+      <span class="title-line reveal-up" data-delay="300">Savings circles,</span>
+      <span class="title-line title-green reveal-up" data-delay="450">reimagined on Celo</span>
+    </h1>
+    <p class="hero-sub reveal-up" data-delay="600">
+      Higher yield than traditional Chamas.<br/>
+      Instant access, no lockups.
+    </p>
+    <div class="hero-actions reveal-up" data-delay="750">
+      <a href="https://app.chamafi.xyz" class="btn btn-primary">
+        <span class="btn-text">Start Your Chama</span>
+        <span class="btn-fill"></span>
+      </a>
+      <a href="#how-it-works" class="btn btn-ghost">
+        See How It Works <span class="btn-arrow">&#8595;</span>
+      </a>
+    </div>
+    <div class="hero-pills reveal-up" data-delay="900">
+      <div class="pill pill-green">
+        <span class="pill-num" data-target="2847">0</span><span>Members</span>
+      </div>
+      <div class="pill pill-earth">
+        <span class="pill-num" data-target="142">0</span><span>Active Groups</span>
+      </div>
+      <div class="pill pill-brown">
+        <span>$</span><span class="pill-num" data-target="890">0</span><span>K Saved</span>
+      </div>
+      <div class="pill pill-yield">
+        <span class="pill-num" data-target="18">0</span><span>% APY</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-scene" id="hero-scene">
+    <svg id="main-tree" class="main-tree" viewBox="0 0 200 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path id="trunk" class="tree-part trunk" d="M100 280 L100 180" stroke="#6B3A2A" stroke-width="12" stroke-linecap="round"/>
+      <path id="branch-l1" class="tree-part" d="M100 220 Q80 200 60 190" stroke="#6B3A2A" stroke-width="7" stroke-linecap="round"/>
+      <path id="branch-r1" class="tree-part" d="M100 210 Q120 195 145 185" stroke="#6B3A2A" stroke-width="7" stroke-linecap="round"/>
+      <path id="branch-l2" class="tree-part" d="M100 195 Q75 175 55 165" stroke="#6B3A2A" stroke-width="5" stroke-linecap="round"/>
+      <path id="branch-r2" class="tree-part" d="M100 190 Q125 170 148 162" stroke="#6B3A2A" stroke-width="5" stroke-linecap="round"/>
+      <path id="branch-top" class="tree-part" d="M100 185 L100 155" stroke="#6B3A2A" stroke-width="5" stroke-linecap="round"/>
+      <path class="tree-part sub" d="M60 190 Q48 178 40 170" stroke="#5C3124" stroke-width="3" stroke-linecap="round"/>
+      <path class="tree-part sub" d="M145 185 Q155 172 162 165" stroke="#5C3124" stroke-width="3" stroke-linecap="round"/>
+      <path class="tree-part sub" d="M55 165 Q43 155 35 148" stroke="#5C3124" stroke-width="3" stroke-linecap="round"/>
+      <path class="tree-part sub" d="M148 162 Q160 153 168 148" stroke="#5C3124" stroke-width="3" stroke-linecap="round"/>
+      <path class="tree-part sub" d="M100 155 Q88 140 80 132 M100 155 Q112 140 120 132" stroke="#5C3124" stroke-width="2.5" stroke-linecap="round"/>
+      <ellipse class="tree-part foliage" cx="45" cy="162" rx="28" ry="22" fill="#2D5016"/>
+      <ellipse class="tree-part foliage" cx="160" cy="158" rx="28" ry="22" fill="#3A6B1E"/>
+      <ellipse class="tree-part foliage" cx="78" cy="128" rx="24" ry="20" fill="#4A8025"/>
+      <ellipse class="tree-part foliage" cx="122" cy="128" rx="24" ry="20" fill="#3D7020"/>
+      <ellipse class="tree-part foliage" cx="100" cy="108" rx="32" ry="28" fill="#5A9B30"/>
+      <ellipse class="tree-part foliage-hi" cx="100" cy="100" rx="20" ry="16" fill="#7ABF42"/>
+      <ellipse class="tree-part foliage-hi" cx="82" cy="122" rx="14" ry="11" fill="#6AAF32"/>
+    </svg>
+    <div class="grass-field" id="grass-field"></div>
+    <div class="small-trees">
+      <svg class="small-tree st-left" viewBox="0 0 60 100" fill="none">
+        <path d="M30 95 L30 50" stroke="#6B3A2A" stroke-width="5" stroke-linecap="round"/>
+        <ellipse cx="20" cy="52" rx="16" ry="13" fill="#2D5016"/>
+        <ellipse cx="40" cy="52" rx="16" ry="13" fill="#3A6B1E"/>
+        <ellipse cx="30" cy="40" rx="20" ry="16" fill="#4A8025"/>
+        <ellipse cx="30" cy="34" rx="12" ry="10" fill="#6AAF32"/>
+      </svg>
+      <svg class="small-tree st-right" viewBox="0 0 60 100" fill="none">
+        <path d="M30 95 L30 55" stroke="#6B3A2A" stroke-width="4" stroke-linecap="round"/>
+        <ellipse cx="22" cy="57" rx="14" ry="11" fill="#2D5016"/>
+        <ellipse cx="38" cy="57" rx="14" ry="11" fill="#3A6B1E"/>
+        <ellipse cx="30" cy="45" rx="18" ry="14" fill="#5A9B30"/>
+        <ellipse cx="30" cy="39" rx="10" ry="8" fill="#7ABF42"/>
+      </svg>
+    </div>
+  </div>
+
+  <div class="scroll-hint reveal-up" data-delay="1200">
+    <div class="scroll-mouse"><div class="scroll-wheel"></div></div>
+    <span>Scroll to explore</span>
+  </div>
+</section>
+
+<!-- STATS -->
+<section id="stats" class="stats-section">
+  <div class="stats-bg-pattern"></div>
+  <div class="container">
+    <div class="stats-grid">
+      <div class="stat-card reveal-up" data-delay="0">
+        <div class="stat-icon">&#127807;</div>
+        <div class="stat-num"><span class="counter" data-target="2847">0</span></div>
+        <div class="stat-label">Active Members</div>
+        <div class="stat-bar"><div class="stat-bar-fill" data-width="82"></div></div>
+      </div>
+      <div class="stat-card reveal-up" data-delay="100">
+        <div class="stat-icon">&#127974;</div>
+        <div class="stat-num"><span class="counter" data-target="142">0</span></div>
+        <div class="stat-label">Chama Groups</div>
+        <div class="stat-bar"><div class="stat-bar-fill" data-width="65"></div></div>
+      </div>
+      <div class="stat-card reveal-up" data-delay="200">
+        <div class="stat-icon">&#128176;</div>
+        <div class="stat-num"><span class="counter" data-target="890000" data-prefix="$">0</span></div>
+        <div class="stat-label">Total Saved (cUSD)</div>
+        <div class="stat-bar"><div class="stat-bar-fill" data-width="91"></div></div>
+      </div>
+      <div class="stat-card reveal-up" data-delay="300">
+        <div class="stat-icon">&#128200;</div>
+        <div class="stat-num"><span class="counter" data-target="18" data-suffix="%">0</span></div>
+        <div class="stat-label">Average APY Earned</div>
+        <div class="stat-bar"><div class="stat-bar-fill" data-width="72"></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHAT IS CHAMAFI -->
+<section id="what-is-chamafi" class="what-section">
+  <div class="container">
+    <div class="what-inner">
+      <div class="what-text">
+        <div class="section-header reveal-up" style="text-align:left; margin-bottom:40px;">
+          <span class="section-tag">Mission</span>
+          <h2 class="section-title">What is <span class="text-green">ChamaFi?</span></h2>
+        </div>
+        <p class="what-lead reveal-up" data-delay="100">
+          ChamaFi digitizes existing Chama savings groups across Africa — bringing the trust of community finance onto the Celo blockchain.
+        </p>
+        <p class="what-body reveal-up" data-delay="200">
+          300 million+ Africans participate in savings circles (Chamas, Susus, Tontines). These informal groups work — but they're limited by cash, geography, and trust. ChamaFi keeps the human element while replacing the limitations with smart contracts.
+        </p>
+        <div class="what-pillars reveal-up" data-delay="300">
+          <div class="pillar">
+            <div class="pillar-icon">&#128200;</div>
+            <div>
+              <strong>Higher Yield</strong>
+              <span>Capital earns while incubating — rehypothecated in DeFi protocols</span>
+            </div>
+          </div>
+          <div class="pillar">
+            <div class="pillar-icon">&#9889;</div>
+            <div>
+              <strong>Instant Access</strong>
+              <span>Graduate at 100% — no waiting periods, no lockups, no permission</span>
+            </div>
+          </div>
+          <div class="pillar">
+            <div class="pillar-icon">&#127757;</div>
+            <div>
+              <strong>300M+ Africans</strong>
+              <span>Already in savings circles — we bring them on-chain, not replace them</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="what-visual reveal-up" data-delay="150">
+        <div class="chama-circle-diagram">
+          <div class="ccd-center">
+            <svg viewBox="0 0 60 60" fill="none" width="48" height="48">
+              <circle cx="30" cy="30" r="28" stroke="#C4E86A" stroke-width="2.5"/>
+              <path d="M30 46 L30 18 M30 18 L20 28 M30 18 L40 28 M30 32 L18 26 M30 32 L42 26" stroke="#C4E86A" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+            <span>ChamaFi</span>
+          </div>
+          <div class="ccd-member" style="--angle:0deg">
+            <div class="ccd-avatar">AW</div><span>Amara</span>
+          </div>
+          <div class="ccd-member" style="--angle:60deg">
+            <div class="ccd-avatar" style="background:#D4821A">KA</div><span>Kwame</span>
+          </div>
+          <div class="ccd-member" style="--angle:120deg">
+            <div class="ccd-avatar" style="background:#6B3A2A">FO</div><span>Fatima</span>
+          </div>
+          <div class="ccd-member" style="--angle:180deg">
+            <div class="ccd-avatar" style="background:#3A6B1E">BO</div><span>Bola</span>
+          </div>
+          <div class="ccd-member" style="--angle:240deg">
+            <div class="ccd-avatar" style="background:#7ABF42;color:#1A1A1A">TM</div><span>Tau</span>
+          </div>
+          <div class="ccd-member" style="--angle:300deg">
+            <div class="ccd-avatar" style="background:#5A9B30">NJ</div><span>Njeri</span>
+          </div>
+        </div>
+        <div class="what-stat-row">
+          <div class="wsr-item">
+            <span class="wsr-num">300M+</span>
+            <span class="wsr-label">Chama Participants</span>
+          </div>
+          <div class="wsr-divider"></div>
+          <div class="wsr-item">
+            <span class="wsr-num">$180B</span>
+            <span class="wsr-label">Annual Savings Volume</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section id="how-it-works" class="how-section">
+  <div class="container">
+    <div class="section-header reveal-up">
+      <span class="section-tag">Process</span>
+      <h2 class="section-title">Five Steps to <span class="text-green">Graduate</span></h2>
+      <p class="section-sub">From creation to yield — powered by smart contracts on Celo.</p>
+    </div>
+    <div class="steps-container">
+      <div class="steps-line"><div class="steps-progress" id="steps-progress"></div></div>
+      <div class="step-card reveal-left" data-step="1">
+        <div class="step-number">01</div>
+        <div class="step-content">
+          <div class="step-icon-wrap">
+            <svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="22" fill="#F0E6D3" stroke="#6B3A2A" stroke-width="2"/><path d="M16 32 L16 20 L24 14 L32 20 L32 32 Z" stroke="#6B3A2A" stroke-width="2" fill="#D4B896"/><path d="M20 32 L20 26 L28 26 L28 32" stroke="#6B3A2A" stroke-width="1.5" fill="#C4A47C"/><circle cx="24" cy="22" r="3" fill="#6B3A2A"/></svg>
+          </div>
+          <h3>Create or Join a Chama</h3>
+          <p>Start a new savings circle or join an existing one. Set your contribution amount, member cap, and deadline. Every rule is encoded in a smart contract — immutable and transparent.</p>
+          <div class="step-badge">Smart Contract Deployed</div>
+        </div>
+      </div>
+      <div class="step-card reveal-right" data-step="2">
+        <div class="step-number">02</div>
+        <div class="step-content">
+          <div class="step-icon-wrap">
+            <svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="22" fill="#E8F5D4" stroke="#4A8025" stroke-width="2"/><path d="M24 34 L24 14" stroke="#4A8025" stroke-width="2" stroke-linecap="round"/><path d="M24 14 L16 22 M24 14 L32 22" stroke="#4A8025" stroke-width="2" stroke-linecap="round"/><path d="M24 24 L14 20 M24 24 L34 20" stroke="#3A6B1E" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </div>
+          <h3>Contribute Capital</h3>
+          <p>Each member deposits their share in cUSD. During incubation, pooled capital earns yield through DeFi rehypothecation — your savings work while you wait.</p>
+          <div class="step-badge green">Capital Earns Yield</div>
+        </div>
+      </div>
+      <div class="step-card reveal-left" data-step="3">
+        <div class="step-number">03</div>
+        <div class="step-content">
+          <div class="step-icon-wrap">
+            <svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="22" fill="#FFF3E0" stroke="#D4821A" stroke-width="2"/><circle cx="24" cy="24" r="10" fill="#F5A623" opacity="0.3"/><circle cx="24" cy="24" r="6" fill="#F5A623"/><path d="M24 8 L24 12 M24 36 L24 40 M8 24 L12 24 M36 24 L40 24" stroke="#D4821A" stroke-width="2" stroke-linecap="round"/></svg>
+          </div>
+          <h3>Graduate Instantly at 100%</h3>
+          <p>Once the Chama is fully funded, it graduates automatically. No waiting, no admin approval. Missed deadline? All contributions are auto-refunded — no questions asked.</p>
+          <div class="step-badge gold">Instant Graduation</div>
+        </div>
+      </div>
+      <div class="step-card reveal-right" data-step="4">
+        <div class="step-number">04</div>
+        <div class="step-content">
+          <div class="step-icon-wrap">
+            <svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="22" fill="#E8F5D4" stroke="#4A8025" stroke-width="2"/><rect x="14" y="22" width="20" height="12" rx="2" stroke="#4A8025" stroke-width="2" fill="#C4E86A" fill-opacity="0.4"/><path d="M18 22 L18 18 Q18 14 24 14 Q30 14 30 18 L30 22" stroke="#4A8025" stroke-width="2" fill="none"/><circle cx="24" cy="28" r="3" fill="#4A8025"/></svg>
+          </div>
+          <h3>Earn LP Tokens + Yield</h3>
+          <p>On graduation, members receive LP tokens representing their share of the pool. These LP tokens continue earning yield from rehypothecation — your stake keeps growing.</p>
+          <div class="step-badge green">LP Tokens Issued</div>
+        </div>
+      </div>
+      <div class="step-card reveal-left" data-step="5">
+        <div class="step-number">05</div>
+        <div class="step-content">
+          <div class="step-icon-wrap">
+            <svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="22" fill="#F0E6D3" stroke="#6B3A2A" stroke-width="2"/><path d="M14 24 L34 24" stroke="#6B3A2A" stroke-width="2" stroke-linecap="round"/><path d="M26 16 L34 24 L26 32" stroke="#6B3A2A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <h3>Exit Anytime</h3>
+          <p>Two exit paths: call <code>remove_liquidity</code> to redeem LP tokens for your cUSD plus yield, or sell your LP tokens on the bonding curve for instant liquidity. Full sovereignty, zero lockup.</p>
+          <div class="step-badge">No Lockup</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- THE MECHANICS -->
+<section id="mechanics" class="mechanics-section">
+  <div class="container">
+    <div class="section-header reveal-up">
+      <span class="section-tag">Protocol</span>
+      <h2 class="section-title">The <span class="text-green">Mechanics</span></h2>
+      <p class="section-sub">Under the hood — how ChamaFi actually works on-chain.</p>
+    </div>
+    <div class="mechanics-flow">
+      <div class="mf-stage mf-incubation reveal-up" data-delay="0">
+        <div class="mf-stage-header">
+          <span class="mf-stage-num">Phase 1</span>
+          <h3>Incubation</h3>
+        </div>
+        <div class="mf-stage-body">
+          <p>Members join and contribute capital. The pool is deployed into yield-bearing DeFi positions via rehypothecation — earning while the Chama fills up.</p>
+          <div class="mf-items">
+            <div class="mf-item">&#128176; Capital pooled in smart contract</div>
+            <div class="mf-item">&#128200; Rehypothecated for yield</div>
+            <div class="mf-item">&#9200; Deadline enforced on-chain</div>
+            <div class="mf-item mf-warn">&#9888; Miss deadline &#8594; auto-refund</div>
+          </div>
+        </div>
+      </div>
+      <div class="mf-arrow reveal-up" data-delay="100">
+        <div class="mf-arrow-line"></div>
+        <span>100% filled</span>
+      </div>
+      <div class="mf-stage mf-graduation reveal-up" data-delay="200">
+        <div class="mf-stage-header">
+          <span class="mf-stage-num">Phase 2</span>
+          <h3>Graduation</h3>
+        </div>
+        <div class="mf-stage-body">
+          <p>When fully funded, the contract graduates instantly — no admin needed. LP tokens are minted and distributed to each member proportional to their contribution.</p>
+          <div class="mf-items">
+            <div class="mf-item">&#127881; Instant graduation, no delay</div>
+            <div class="mf-item">&#128203; LP tokens minted &amp; distributed</div>
+            <div class="mf-item">&#128200; Yield accumulation continues</div>
+          </div>
+        </div>
+      </div>
+      <div class="mf-arrow reveal-up" data-delay="300">
+        <div class="mf-arrow-line"></div>
+        <span>LP tokens in hand</span>
+      </div>
+      <div class="mf-stage mf-exit reveal-up" data-delay="400">
+        <div class="mf-stage-header">
+          <span class="mf-stage-num">Phase 3</span>
+          <h3>Exit</h3>
+        </div>
+        <div class="mf-stage-body">
+          <p>LP holders choose how to exit. No lockup, no permission required — full sovereignty over your capital.</p>
+          <div class="mf-exit-options">
+            <div class="mf-exit-opt">
+              <div class="mf-exit-label">Option A</div>
+              <code>remove_liquidity</code>
+              <span>Redeem LP &#8594; cUSD + accrued yield</span>
+            </div>
+            <div class="mf-exit-or">OR</div>
+            <div class="mf-exit-opt">
+              <div class="mf-exit-label">Option B</div>
+              <code>sell on bonding curve</code>
+              <span>Sell LP tokens to buyers instantly</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mechanics-cards">
+      <div class="mc-card reveal-up" data-delay="0">
+        <div class="mc-icon">&#128260;</div>
+        <h4>Rehypothecation</h4>
+        <p>While incubating, pooled cUSD is deployed into Celo DeFi protocols. The yield accrues to LP token holders — traditional chamas earn 0% on idle capital.</p>
+      </div>
+      <div class="mc-card reveal-up" data-delay="100">
+        <div class="mc-icon">&#127861;</div>
+        <h4>Bonding Curve</h4>
+        <p>LP tokens trade on an automated bonding curve. The curve provides instant liquidity without requiring a counterparty — exit any time at a fair price.</p>
+      </div>
+      <div class="mc-card reveal-up" data-delay="200">
+        <div class="mc-icon">&#128272;</div>
+        <h4>Auto-Refund</h4>
+        <p>If a Chama fails to reach 100% before its deadline, all contributions are automatically returned to depositors. Zero loss, zero admin, zero trust required.</p>
+      </div>
+      <div class="mc-card reveal-up" data-delay="300">
+        <div class="mc-icon">&#128203;</div>
+        <h4>LP Token Yield</h4>
+        <p>LP tokens are productive assets — a claim on the pool plus ongoing yield from protocol fees and rehypothecation. Hold them or sell them — the math works either way.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHERE TO USE -->
+<section id="where-to-use" class="where-section">
+  <div class="container">
+    <div class="section-header reveal-up">
+      <span class="section-tag">Platforms</span>
+      <h2 class="section-title">Where to <span class="text-green">Use ChamaFi</span></h2>
+      <p class="section-sub">One protocol. Three surfaces. Meet users where they already are.</p>
+    </div>
+    <div class="where-grid">
+      <div class="where-card wc-primary reveal-up" data-delay="0">
+        <div class="wc-platform-badge">Full Experience</div>
+        <div class="wc-icon-wrap">
+          <svg viewBox="0 0 48 48" fill="none" width="56" height="56"><rect x="4" y="8" width="40" height="28" rx="3" stroke="#4A8025" stroke-width="2" fill="#E8F5D4"/><path d
