@@ -209,6 +209,44 @@
             </div>
           </div>
         </div>
+        <div class="what-comparison reveal-up" data-delay="350">
+          <table class="comparison-table">
+            <thead>
+              <tr>
+                <th>Feature</th>
+                <th>Traditional Chama</th>
+                <th class="ct-highlight">ChamaFi</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Yield on idle capital</td>
+                <td class="ct-bad">0%</td>
+                <td class="ct-good">8%+ APY</td>
+              </tr>
+              <tr>
+                <td>Exit flexibility</td>
+                <td class="ct-bad">Wait for rotation</td>
+                <td class="ct-good">Instant, any time</td>
+              </tr>
+              <tr>
+                <td>Lockup period</td>
+                <td class="ct-bad">Months to years</td>
+                <td class="ct-good">No lockup</td>
+              </tr>
+              <tr>
+                <td>Transparency</td>
+                <td class="ct-bad">Cash / trust-based</td>
+                <td class="ct-good">On-chain</td>
+              </tr>
+              <tr>
+                <td>Auto-refund on failure</td>
+                <td class="ct-bad">Manual, disputed</td>
+                <td class="ct-good">Guaranteed by contract</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </div>
       <div class="what-visual reveal-up" data-delay="150">
         <div class="chama-circle-diagram">
@@ -401,8 +439,12 @@
       </div>
       <div class="mc-card reveal-up" data-delay="100">
         <div class="mc-icon">&#127861;</div>
-        <h4>Bonding Curve</h4>
-        <p>LP tokens trade on an automated bonding curve. The curve provides instant liquidity without requiring a counterparty — exit any time at a fair price.</p>
+        <h4>P12YN Bonding Curve</h4>
+        <p>LP tokens trade on an automated bonding curve — instant liquidity without a counterparty. Exit any time at a fair, algorithmically-determined price.</p>
+        <div class="mc-formula">
+          <code>P = P<sub>0</sub> &times; (1 + k &times; s<sup>1.2</sup>)</code>
+          <span class="mc-formula-note">where s = supply, k = curve steepness</span>
+        </div>
       </div>
       <div class="mc-card reveal-up" data-delay="200">
         <div class="mc-icon">&#128272;</div>
@@ -421,13 +463,112 @@
 <!-- WHERE TO USE -->
 <section id="where-to-use" class="where-section">
   <div class="container">
-    <div class="section-header reveal-up">
-      <span class="section-tag">Platforms</span>
-      <h2 class="section-title">Where to <span class="text-green">Use ChamaFi</span></h2>
-      <p class="section-sub">One protocol. Three surfaces. Meet users where they already are.</p>
-    </div>
+    <div class="section-header reveal-up"><span class="section-tag">Platforms</span><h2 class="section-title">Where to <span class="text-green">Use ChamaFi</span></h2><p class="section-sub">One protocol. Three surfaces. Meet users where they already are.</p></div>
     <div class="where-grid">
-      <div class="where-card wc-primary reveal-up" data-delay="0">
+      <div class="where-card wc-web reveal-up" data-delay="0">
         <div class="wc-platform-badge">Full Experience</div>
-        <div class="wc-icon-wrap">
-          <svg viewBox="0 0 48 48" fill="none" width="56" height="56"><rect x="4" y="8" width="40" height="28" rx="3" stroke="#4A8025" stroke-width="2" fill="#E8F5D4"/><path d
+        <div class="wc-icon">&#128187;</div>
+        <h3>Web App</h3>
+        <p>The full ChamaFi experience. Create, manage, and monitor Chamas. Access LP positions, bonding curve trades, and protocol analytics.</p>
+        <div class="wc-features">
+          <div class="wc-feature">&#10003; Create and manage Chamas</div>
+          <div class="wc-feature">&#10003; LP token management</div>
+          <div class="wc-feature">&#10003; Bonding curve trading</div>
+          <div class="wc-feature">&#10003; Full protocol analytics</div>
+        </div>
+        <a href="https://app.chamafi.xyz" class="wc-btn">Open Web App &#8594;</a>
+      </div>
+      <div class="where-card wc-minipay reveal-up" data-delay="100">
+        <div class="wc-platform-badge">Simplified</div>
+        <div class="wc-icon">&#128241;</div>
+        <h3>MiniPay</h3>
+        <p>Optimized for Opera MiniPay on mobile. Simplified flows designed for African users with limited data and screen space. No wallet setup needed.</p>
+        <div class="wc-features">
+          <div class="wc-feature">&#10003; Auto-connect via MiniPay</div>
+          <div class="wc-feature">&#10003; Mobile-first, low-data UX</div>
+          <div class="wc-feature">&#10003; cUSD contributions</div>
+          <div class="wc-feature">&#10003; Celo network only</div>
+        </div>
+        <a href="https://app.chamafi.xyz/minipay" class="wc-btn">Open in MiniPay &#8594;</a>
+      </div>
+      <div class="where-card wc-farcaster reveal-up" data-delay="200">
+        <div class="wc-platform-badge">Embedded</div>
+        <div class="wc-icon">&#127895;</div>
+        <h3>Farcaster Mini App</h3>
+        <p>Embedded inside Farcaster clients. Share Chama invites as casts, contribute directly from your feed, and let your network join without leaving the app.</p>
+        <div class="wc-features">
+          <div class="wc-feature">&#10003; Embedded in Warpcast</div>
+          <div class="wc-feature">&#10003; Share Chama links as casts</div>
+          <div class="wc-feature">&#10003; Quick Auth via Farcaster</div>
+          <div class="wc-feature">&#10003; 424x695 modal UX</div>
+        </div>
+        <a href="https://warpcast.com/~/mini-apps/chamafi" class="wc-btn">Open on Farcaster &#8594;</a>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- FAQ -->
+<section id="faq" class="faq-section">
+  <div class="container">
+    <div class="section-header reveal-up"><span class="section-tag">FAQ</span><h2 class="section-title">Common <span class="text-green">Questions</span></h2></div>
+    <div class="faq-list">
+      <div class="faq-item reveal-up" data-delay="0"><button class="faq-q"><span>What is a chama?</span><span class="faq-icon">+</span></button><div class="faq-a"><p>A chama is a traditional savings group common in East and West Africa. Members pool regular contributions and either take turns receiving the full pot or save collectively. ChamaFi brings this practice on-chain for transparency and yield generation.</p></div></div>
+      <div class="faq-item reveal-up" data-delay="80"><button class="faq-q"><span>What happens if the Chama deadline is missed?</span><span class="faq-icon">+</span></button><div class="faq-a"><p>If a Chama fails to reach 100% funding before its on-chain deadline, the smart contract automatically refunds all contributors. No admin action needed, no funds lost, no trust required.</p></div></div>
+      <div class="faq-item reveal-up" data-delay="160"><button class="faq-q"><span>How do LP tokens work?</span><span class="faq-icon">+</span></button><div class="faq-a"><p>When a Chama graduates (reaches 100%), LP tokens are minted and distributed to members proportional to their contribution. LP tokens represent a claim on the pool plus ongoing yield from rehypothecation. You can hold them to accumulate yield, or sell them on the bonding curve.</p></div></div>
+      <div class="faq-item reveal-up" data-delay="240"><button class="faq-q"><span>What currency does ChamaFi use?</span><span class="faq-icon">+</span></button><div class="faq-a"><p>ChamaFi uses cUSD (Celo Dollar) &mdash; a stablecoin pegged 1:1 to the US Dollar. This protects your savings from crypto volatility while keeping fees near-zero.</p></div></div>
+      <div class="faq-item reveal-up" data-delay="320"><button class="faq-q"><span>How do I exit my position?</span><span class="faq-icon">+</span></button><div class="faq-a"><p>Two paths: call remove_liquidity to redeem your LP tokens directly for cUSD plus accrued yield, or sell your LP tokens on the bonding curve to immediate buyers. No lockup, no waiting period, no admin approval required.</p></div></div>
+      <div class="faq-item reveal-up" data-delay="400"><button class="faq-q"><span>Which platforms can I use ChamaFi on?</span><span class="faq-icon">+</span></button><div class="faq-a"><p>ChamaFi runs on three surfaces: the full Web App at app.chamafi.xyz, a simplified MiniPay interface for Opera MiniPay mobile users, and an embedded Farcaster Mini App for social savings. All three connect to the same on-chain protocol.</p></div></div>
+    </div>
+  </div>
+</section>
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-top">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo"><svg viewBox="0 0 32 32" fill="none"><circle cx="16" cy="16" r="14" stroke="#C4E86A" stroke-width="2"/><path d="M16 26 L16 10 M16 10 L10 17 M16 10 L22 17 M16 18 L9 14 M16 18 L23 14" stroke="#C4E86A" stroke-width="1.8" stroke-linecap="round"/></svg>ChamaFi</div>
+          <p>Savings circles, reimagined on Celo. Higher yield, instant access, rooted in African tradition.</p>
+          <div class="footer-social">
+            <a href="https://x.com/chamafi_xyz" class="social-link" aria-label="X">X</a>
+            <a href="https://warpcast.com/chamafi" class="social-link" aria-label="Farcaster">FC</a>
+            <a href="https://t.me/chamafi" class="social-link" aria-label="Telegram">TG</a>
+            <a href="https://github.com/chamafi-xyz" class="social-link" aria-label="GitHub">GH</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Product</h4>
+          <a href="https://app.chamafi.xyz">Launch Web App</a>
+          <a href="https://app.chamafi.xyz/create">Create Chama</a>
+          <a href="https://app.chamafi.xyz/explore">Explore Groups</a>
+          <a href="https://app.chamafi.xyz/minipay">MiniPay App</a>
+          <a href="https://warpcast.com/~/mini-apps/chamafi">Farcaster App</a>
+        </div>
+        <div class="footer-col">
+          <h4>Protocol</h4>
+          <a href="https://docs.chamafi.xyz">Documentation</a>
+          <a href="https://docs.chamafi.xyz/contracts">Smart Contracts</a>
+          <a href="https://docs.chamafi.xyz/audit">Audit Report</a>
+          <a href="https://celoscan.io/address/0xchamafi">Celoscan</a>
+        </div>
+        <div class="footer-col">
+          <h4>Community</h4>
+          <a href="https://discord.gg/chamafi">Discord</a>
+          <a href="https://forum.celo.org">Celo Forum</a>
+          <a href="https://blog.chamafi.xyz">Blog</a>
+          <a href="mailto:hello@chamafi.xyz">Contact</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <span>&copy; 2025 ChamaFi Protocol. Built on Celo.</span>
+      <span>Privacy &middot; Terms &middot; Audit</span>
+    </div>
+  </div>
+</footer>
+
+<script src="/main.js"></script>
+</body>
+</html>
