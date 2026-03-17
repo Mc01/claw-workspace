@@ -16,7 +16,7 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-amber-50 to-emerald-50">
+    <div className="min-h-screen bg-slate-900">
       <main>
         <HeroSection surface={surface} />
         <ProblemSection />
