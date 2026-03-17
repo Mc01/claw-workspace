@@ -1,0 +1,10 @@
+{
+  "name": "ChamaFi",
+  "icon": "/icon.png",
+  "description": "Empowering African communities with decentralized finance tools to save, invest, and grow together.",
+  "url": "https://chamafi.com",
+  "viewport": {
+    "width": 424,
+    "height": 695
+  }
+}
