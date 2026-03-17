@@ -11,6 +11,9 @@ document.addEventListener('mousemove', (e) => {
   window._mouseY = e.clientY;
 });
 
+// ---- Mobile detection ----
+const isMobile = /Mobi|Android|iPhone|iPad/i.test(navigator.userAgent);
+
 // ---- Nav scroll ----
 const nav = document.getElementById('nav');
 window.addEventListener('scroll', () => {
@@ -20,11 +23,29 @@ window.addEventListener('scroll', () => {
 // ============================================
 // GRASS FIELD GENERATOR
 // ============================================
+// Inject grass-sway keyframe (needed since CSS var in animation)
+(function() {
+  if (document.getElementById('grass-keyframes')) return;
+  const style = document.createElement('style');
+  style.id = 'grass-keyframes';
+  style.textContent = [
+    '@keyframes grass-sway {',
+    '  0%   { transform: rotate(var(--base-rot)) scaleY(1.00); }',
+    '  25%  { transform: rotate(calc(var(--base-rot) + 6deg)) scaleY(0.98); }',
+    '  50%  { transform: rotate(calc(var(--base-rot) - 5deg)) scaleY(1.01); }',
+    '  75%  { transform: rotate(calc(var(--base-rot) + 4deg)) scaleY(0.99); }',
+    '  100% { transform: rotate(var(--base-rot)) scaleY(1.00); }',
+    '}'
+  ].join('\n');
+  document.head.appendChild(style);
+})();
+
 function buildGrass() {
   const field = document.getElementById('grass-field');
   if (!field) return;
   const w = window.innerWidth;
-  const bladeCount = Math.floor(w / 5);
+  // More blades on desktop, fewer on mobile for perf
+  const bladeCount = isMobile ? Math.max(Math.floor(w / 8), 40) : Math.max(Math.floor(w / 4), 100);
 
   for (let i = 0; i < bladeCount; i++) {
     const blade = document.createElement('div');
@@ -46,6 +67,7 @@ function buildGrass() {
       --base-rot: ${baseRot}deg;
       animation: grass-sway ${dur}s ${delay}s ease-in-out infinite;
       transform: rotate(${baseRot}deg);
+      will-change: transform;
     `;
     blade._baseX = x;
     blade._baseRot = baseRot;
@@ -53,6 +75,16 @@ function buildGrass() {
   }
 }
 buildGrass();
+
+// Rebuild grass on resize/orientation change
+let resizeTimer;
+window.addEventListener('resize', () => {
+  clearTimeout(resizeTimer);
+  resizeTimer = setTimeout(() => {
+    const field = document.getElementById('grass-field');
+    if (field) { field.innerHTML = ''; buildGrass(); refreshBlades(); }
+  }, 300);
+});
 
 // ---- Mouse repulsion on grass ----
 const grassField = document.getElementById('grass-field');
@@ -63,20 +95,26 @@ refreshBlades();
 document.addEventListener('mousemove', (e) => {
   const fieldRect = grassField?.getBoundingClientRect();
   if (!fieldRect) return;
-  if (e.clientY < fieldRect.top - 60) return;
+  // Only affect grass when cursor is near the field
+  if (e.clientY < fieldRect.top - 80 || e.clientY > fieldRect.bottom + 20) return;
+
+  if (isMobile) return; // skip on touch
+  const repelRadius = 140;
+  const maxForce = 28;
 
   grassBlades.forEach(blade => {
     const bx = (parseFloat(blade._baseX) / 100) * window.innerWidth;
     const dist = Math.abs(e.clientX - bx);
-    if (dist < 120) {
-      const force = (1 - dist / 120) * 25;
+    if (dist < repelRadius) {
+      const t = 1 - dist / repelRadius;
+      const force = t * t * maxForce; // quadratic falloff, feels natural
       const dir = e.clientX > bx ? -1 : 1;
       const rot = (blade._baseRot || 0) + dir * force;
-      blade.style.transform = `rotate(${rot}deg)`;
-      blade.style.transition = 'transform 0.1s ease-out';
+      blade.style.transform = `rotate(${rot}deg) scaleY(${1 - t * 0.04})`;
+      blade.style.transition = 'transform 0.08s ease-out';
     } else {
-      blade.style.transform = `rotate(${blade._baseRot || 0}deg)`;
-      blade.style.transition = 'transform 0.4s ease-out';
+      blade.style.transform = `rotate(${blade._baseRot || 0}deg) scaleY(1)`;
+      blade.style.transition = 'transform 0.5s ease-out';
     }
   });
 });
@@ -92,22 +130,28 @@ function updateSun() {
   if (!sunContainer || !hero) return;
   const scrolled = window.scrollY;
   const heroH = hero.offsetHeight;
-  // Slow, dramatic rise: full travel over 70% of hero height
-  const progress = Math.min(scrolled / (heroH * 0.70), 1);
-  // Ease-in-out curve for smoother feel
+
+  // Sun fully rises over 65% of hero scroll, with soft easing
+  const progress = Math.min(scrolled / (heroH * 0.65), 1);
+  // Smooth ease-in-out
   const eased = progress < 0.5
     ? 2 * progress * progress
     : 1 - Math.pow(-2 * progress + 2, 2) / 2;
 
-  // Sun starts at +100px below normal, rises to -80px above (stays below nav)
-  const translateY = 100 - (eased * 200);
-  // Subtle scale: grows slightly as it rises (perspective effect)
-  const scale = 0.85 + eased * 0.25;
-  // Fade out as it disappears past horizon on fast scroll
-  const opacity = eased < 0.85 ? 1 : 1 - ((eased - 0.85) / 0.15) * 0.6;
+  // Calculate safe nav height clearance
+  const navH = document.getElementById('nav')?.offsetHeight || 72;
+  const sunH = sunContainer.offsetHeight || 200;
+  const heroTop = hero.getBoundingClientRect().top + scrolled;
+
+  // Travel: starts 90px below resting pos, rises to a point safely below nav
+  const translateY = 90 - (eased * 180);
+  // Scale: appears to emerge over horizon
+  const scale = 0.82 + eased * 0.28;
+  // Opacity: full for most of rise, fades slightly at very top (below nav)
+  const opacity = eased > 0.90 ? 1 - (eased - 0.90) * 4 * 0.3 : 1;
 
   sunContainer.style.transform = `translateY(${translateY}px) scale(${scale})`;
-  sunContainer.style.opacity = opacity;
+  sunContainer.style.opacity = Math.max(opacity, 0.3);
 }
 
 window.addEventListener('scroll', updateSun, { passive: true });
@@ -141,12 +185,13 @@ function createSeed() {
     tail: Math.random() > 0.5,
     color: Math.random() > 0.5 ? '#D4A017' : '#E8D5A3',
     life: 0,
-    maxLife: 180 + Math.random() * 200,
+    maxLife: isMobile ? (100 + Math.random() * 100) : (180 + Math.random() * 200),
   };
 }
 
-// Init 40 seeds
-for (let i = 0; i < 40; i++) {
+const maxSeeds = isMobile ? 18 : 42;
+// Init seeds
+for (let i = 0; i < maxSeeds; i++) {
   const s = createSeed();
   s.y = Math.random() * canvas.height; // scatter initial positions
   s.life = Math.random() * s.maxLife;
@@ -196,12 +241,13 @@ function drawSeed(s) {
   ctx.restore();
 }
 
+
 function animateSeeds() {
   ctx.clearRect(0, 0, canvas.width, canvas.height);
 
   seeds = seeds.filter(s => s.life < s.maxLife);
 
-  while (seeds.length < 40) {
+  while (seeds.length < maxSeeds) {
     seeds.push(createSeed());
   }
 
