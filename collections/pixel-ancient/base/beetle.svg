@@ -1,0 +1,27 @@
+<svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+  <!-- Base Beetle - Ancient Stone Theme -->
+  <rect width="32" height="32" fill="#8a7f8d" />
+  
+  <!-- Stone body -->
+  <path d="M10,16 C12,14 20,14 22,16 L22,24 C20,26 12,26 10,24 Z" fill="#7d6d7f" />
+  
+  <!-- Head -->
+  <path d="M14,12 C16,10 18,10 20,12 L20,14 C18,16 16,16 14,14 Z" fill="#8a7f8d" />
+  
+  <!-- Bronze shell -->
+  <path d="M12,18 C14,16 18,16 20,18 L20,22 C18,24 14,24 12,22 Z" fill="#d4a017" />
+  
+  <!-- Antennae -->
+  <path d="M16,12 L14,10" stroke="#635c68" stroke-width="0.5" />
+  <path d="M18,12 L20,10" stroke="#635c68" stroke-width="0.5" />
+  
+  <!-- Legs -->
+  <path d="M10,20 L8,22" stroke="#635c68" stroke-width="1" />
+  <path d="M10,22 L8,24" stroke="#635c68" stroke-width="1" />
+  <path d="M22,20 L24,22" stroke="#635c68" stroke-width="1" />
+  <path d="M22,22 L24,24" stroke="#635c68" stroke-width="1" />
+  
+  <!-- Eyes -->
+  <circle cx="16" cy="14" r="0.5" fill="#000" />
+  <circle cx="18" cy="14" r="0.5" fill="#000" />
+</svg>

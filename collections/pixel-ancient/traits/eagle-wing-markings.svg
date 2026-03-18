@@ -1,0 +1,7 @@
+<svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+  <!-- Eagle Trait: Wing Markings -->
+  <path d="M10,18 L8,20" stroke="#d4a017" stroke-width="0.5" />
+  <path d="M12,20 L10,22" stroke="#d4a017" stroke-width="0.5" />
+  <path d="M22,18 L24,20" stroke="#d4a017" stroke-width="0.5" />
+  <path d="M20,20 L22,22" stroke="#d4a017" stroke-width="0.5" />
+</svg>
