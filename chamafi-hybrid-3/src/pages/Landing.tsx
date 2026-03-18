@@ -209,12 +209,6 @@ export function Landing() {
               See How It Works <span className="btn-arrow">↓</span>
             </a>
           </div>
-          <div className="hero-pills reveal-up" data-delay="900">
-            <div className="pill pill-green"><span className="pill-num"><Counter target={2847} /></span><span>Members</span></div>
-            <div className="pill pill-earth"><span className="pill-num"><Counter target={142} /></span><span>Active Groups</span></div>
-            <div className="pill pill-brown"><span>$</span><span className="pill-num"><Counter target={890} /></span><span>K Saved</span></div>
-            <div className="pill pill-yield"><span className="pill-num"><Counter target={18} suffix="%" /></span><span>APY</span></div>
-          </div>
         </div>
 
         <div className="hero-scene">
@@ -265,7 +259,7 @@ export function Landing() {
           </div>
         </div>
 
-        <div className="scroll-hint reveal-up" data-delay="1200">
+        <div className="scroll-hint reveal-up" data-delay="1200" style={{ textAlign: 'center' }}>
           <div className="scroll-mouse"><div className="scroll-wheel" /></div>
           <span>Scroll to explore</span>
         </div>
@@ -527,50 +521,25 @@ export function Landing() {
 
       {/* ───────── FOOTER ───────── */}
       <footer className="footer">
-        <div className="footer-top">
-          <div className="container">
-            <div className="footer-grid">
-              <div className="footer-brand">
-                <div className="footer-logo">
-                  <svg viewBox="0 0 32 32" fill="none" width="28" height="28">
-                    <circle cx="16" cy="16" r="14" stroke="#C4E86A" strokeWidth="2" />
-                    <path d="M16 26 L16 10 M16 10 L10 17 M16 10 L22 17 M16 18 L9 14 M16 18 L23 14" stroke="#C4E86A" strokeWidth="1.8" strokeLinecap="round" />
-                  </svg>
-                  ChamaFi
-                </div>
-                <p>Savings circles, reimagined on Celo. Higher yield, instant access, rooted in African tradition.</p>
-                <div className="footer-social">
-                  <a href="https://x.com/chamafi_xyz" className="social-link">X</a>
-                  <a href="https://warpcast.com/chamafi" className="social-link">FC</a>
-                  <a href="https://t.me/chamafi" className="social-link">TG</a>
-                  <a href="https://github.com/chamafi-xyz" className="social-link">GH</a>
-                </div>
-              </div>
-              <div className="footer-col">
-                <h4>Product</h4>
-                <Link to="/app">Launch Web App</Link>
-                <Link to="/app/create">Create Chama</Link>
-                <Link to="/app">Explore Groups</Link>
-              </div>
-              <div className="footer-col">
-                <h4>Protocol</h4>
-                <a href="https://docs.chamafi.xyz">Documentation</a>
-                <a href="https://docs.chamafi.xyz/contracts">Smart Contracts</a>
-                <a href="https://celoscan.io">Celoscan</a>
-              </div>
-              <div className="footer-col">
-                <h4>Community</h4>
-                <a href="https://forum.celo.org">Celo Forum</a>
-                <a href="https://blog.chamafi.xyz">Blog</a>
-                <a href="mailto:hello@chamafi.xyz">Contact</a>
-              </div>
-            </div>
-          </div>
-        </div>
         <div className="footer-bottom">
           <div className="container">
+            <div className="footer-brand">
+              <div className="footer-logo">
+                <svg viewBox="0 0 32 32" fill="none" width="28" height="28">
+                  <circle cx="16" cy="16" r="14" stroke="#C4E86A" strokeWidth="2" />
+                  <path d="M16 26 L16 10 M16 10 L10 17 M16 10 L22 17 M16 18 L9 14 M16 18 L23 14" stroke="#C4E86A" strokeWidth="1.8" strokeLinecap="round" />
+                </svg>
+                ChamaFi
+              </div>
+              <p>Savings circles, reimagined on Celo. Higher yield, instant access, rooted in African tradition.</p>
+              <div className="footer-social">
+                <a href="https://x.com/chamafi_xyz" className="social-link">X</a>
+                <a href="https://warpcast.com/chamafi" className="social-link">FC</a>
+                <a href="https://t.me/chamafi" className="social-link">TG</a>
+                <a href="https://github.com/chamafi-xyz" className="social-link">GH</a>
+              </div>
+            </div>
             <span>© 2025 ChamaFi Protocol. Built on Celo.</span>
-            <span>Privacy · Terms · Audit</span>
           </div>
         </div>
       </footer>
