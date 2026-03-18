@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion';
 import { cn } from '../lib/utils';
 
 interface ProgressBarProps {
@@ -39,7 +40,11 @@ export function ProgressBar({ current, target, percentage, className, compact }:
           {/* Shimmer effect on the progress bar */}
           {!isComplete && pct > 0 && (
             <div className="absolute inset-0 overflow-hidden rounded-full">
-              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent animate-shimmer" />
+              <motion.div
+                className="absolute inset-y-0 w-1/2 bg-gradient-to-r from-transparent via-white/40 to-transparent"
+                animate={{ x: ['-100%', '200%'] }}
+                transition={{ duration: 1.8, repeat: Infinity, ease: 'linear', repeatDelay: 0.5 }}
+              />
             </div>
           )}
         </div>

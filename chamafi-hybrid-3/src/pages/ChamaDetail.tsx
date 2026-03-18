@@ -86,9 +86,13 @@ function StatCard({ icon, label, value }: {
   return (
     <motion.div
       variants={fadeUp}
-      whileHover={{ y: -4, boxShadow: '0 8px 40px rgba(0,0,0,0.25)' }}
+      whileHover={{
+        y: -5,
+        boxShadow: '0 12px 40px rgba(0,0,0,0.35), 0 0 0 1px rgba(196,232,106,0.15) inset',
+        backgroundColor: 'rgba(255,255,255,0.055)',
+      }}
       transition={{ duration: 0.2 }}
-      className="glass-card p-4 border-sand/5"
+      className="glass-card p-4 border-sand/5 cursor-default"
     >
       <div className="flex items-center gap-2 mb-2">
         {icon}
@@ -324,7 +328,7 @@ export function ChamaDetail() {
       {/* Header card */}
       <motion.div
         variants={fadeUp}
-        whileHover={{ boxShadow: '0 12px 60px rgba(0,0,0,0.4), 0 0 60px rgba(122,191,66,0.05)' }}
+        whileHover={{ boxShadow: '0 16px 70px rgba(0,0,0,0.45), 0 0 80px rgba(122,191,66,0.07)', scale: 1.002 }}
         transition={{ duration: 0.25 }}
         className="glass-card p-6 md:p-8"
       >
