@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" width="80" height="80">
+  <!-- Trait: Dotwork Marking - ceremonial dot pattern body art -->
+  <rect width="80" height="80" fill="#D4C4A8" rx="6"/>
+  <!-- Dot grid pattern - traditional stippling -->
+  <!-- Row 1 -->
+  <circle cx="16" cy="16" r="2.5" fill="#5C3D1A"/>
+  <circle cx="28" cy="12" r="2" fill="#8B6F47"/>
+  <circle cx="40" cy="16" r="3" fill="#5C3D1A"/>
+  <circle cx="52" cy="12" r="2" fill="#8B6F47"/>
+  <circle cx="64" cy="16" r="2.5" fill="#5C3D1A"/>
+  <!-- Row 2 -->
+  <circle cx="10" cy="28" r="2" fill="#8B6F47"/>
+  <circle cx="22" cy="26" r="3" fill="#C8A84A"/>
+  <circle cx="34" cy="28" r="2" fill="#8B6F47"/>
+  <circle cx="46" cy="26" r="3" fill="#C8A84A"/>
+  <circle cx="58" cy="28" r="2" fill="#8B6F47"/>
+  <circle cx="70" cy="26" r="2.5" fill="#5C3D1A"/>
+  <!-- Row 3 (denser center) -->
+  <circle cx="16" cy="40" r="2.5" fill="#5C3D1A"/>
+  <circle cx="24" cy="38" r="1.5" fill="#8B6F47"/>
+  <circle cx="32" cy="40" r="3" fill="#C8A84A"/>
+  <circle cx="40" cy="38" r="2" fill="#5C3D1A"/>
+  <circle cx="48" cy="40" r="3" fill="#C8A84A"/>
+  <circle cx="56" cy="38" r="1.5" fill="#8B6F47"/>
+  <circle cx="64" cy="40" r="2.5" fill="#5C3D1A"/>
+  <!-- Row 4 -->
+  <circle cx="10" cy="52" r="2" fill="#8B6F47"/>
+  <circle cx="22" cy="54" r="3" fill="#C8A84A"/>
+  <circle cx="34" cy="52" r="2" fill="#8B6F47"/>
+  <circle cx="46" cy="54" r="3" fill="#C8A84A"/>
+  <circle cx="58" cy="52" r="2" fill="#8B6F47"/>
+  <circle cx="70" cy="54" r="2.5" fill="#5C3D1A"/>
+  <!-- Row 5 -->
+  <circle cx="16" cy="64" r="2.5" fill="#5C3D1A"/>
+  <circle cx="28" cy="68" r="2" fill="#8B6F47"/>
+  <circle cx="40" cy="64" r="3" fill="#5C3D1A"/>
+  <circle cx="52" cy="68" r="2" fill="#8B6F47"/>
+  <circle cx="64" cy="64" r="2.5" fill="#5C3D1A"/>
+</svg>

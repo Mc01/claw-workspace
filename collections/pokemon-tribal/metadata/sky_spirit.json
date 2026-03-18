@@ -1,0 +1,30 @@
+{
+  "name": "Sky Spirit",
+  "id": "spirit_003",
+  "type": "Flying / Wind",
+  "rarity": "Uncommon",
+  "description": "A swift hawk-like spirit that rides the highest currents. Can vanish into clouds in a single wingbeat.",
+  "element": "Air",
+  "silhouette": "side-profile-right",
+  "style": "Pokemon-Tribal Minimal Vector",
+  "palette": {
+    "primary": "#6B7F8E",
+    "secondary": "#E8DCC8",
+    "accent": "#C8A84A",
+    "dark": "#1A1A2E"
+  },
+  "stats": {
+    "power": 65,
+    "defense": 45,
+    "speed": 95,
+    "spirit": 60,
+    "wisdom": 70
+  },
+  "available_traits": {
+    "masks": ["mask_sky"],
+    "auras": ["aura_golden"],
+    "totems": ["totem_sky"],
+    "markings": ["marking_stripes", "marking_dotwork"]
+  },
+  "lore": "Messengers between worlds. A sighting foretells great change on the winds."
+}

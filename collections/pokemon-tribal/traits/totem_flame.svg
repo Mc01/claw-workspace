@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" width="80" height="80">
+  <!-- Trait: Flame Totem - fire post with perpetual flame top -->
+  <!-- Post - charred wood -->
+  <rect x="36" y="28" width="8" height="48" fill="#2C1A0E" rx="2"/>
+  <!-- Burnt bands -->
+  <rect x="34" y="40" width="12" height="3" fill="#E67E22" rx="1" opacity="0.7"/>
+  <rect x="34" y="52" width="12" height="3" fill="#C0392B" rx="1" opacity="0.7"/>
+  <rect x="34" y="64" width="12" height="3" fill="#E67E22" rx="1" opacity="0.7"/>
+  <!-- Eternal flame on top -->
+  <path d="M40,28 Q34,16 36,8 Q40,18 40,28 Z" fill="#C0392B"/>
+  <path d="M40,28 Q38,12 42,4 Q46,14 40,28 Z" fill="#E67E22"/>
+  <path d="M40,28 Q44,16 46,10 Q44,20 40,28 Z" fill="#C0392B"/>
+  <!-- Inner flame core -->
+  <path d="M40,26 Q38,18 40,12 Q42,18 40,26 Z" fill="#F1C40F" opacity="0.9"/>
+  <!-- Ember sparks -->
+  <circle cx="32" cy="14" r="2" fill="#F1C40F" opacity="0.6"/>
+  <circle cx="48" cy="10" r="1.5" fill="#E67E22" opacity="0.5"/>
+  <circle cx="36" cy="6" r="1.5" fill="#F1C40F" opacity="0.4"/>
+  <!-- Cross beam base -->
+  <rect x="24" y="70" width="32" height="5" fill="#2C1A0E" rx="2"/>
+  <!-- Flame base -->
+  <path d="M30,76 Q40,80 50,76" fill="none" stroke="#E67E22" stroke-width="2" stroke-linecap="round" opacity="0.5"/>
+</svg>

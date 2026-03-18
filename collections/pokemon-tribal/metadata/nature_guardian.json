@@ -1,0 +1,30 @@
+{
+  "name": "Nature Guardian",
+  "id": "spirit_002",
+  "type": "Grass / Earth",
+  "rarity": "Rare",
+  "description": "A moss-covered titan who protects ancient forests. Its bark-like hide deflects all but the mightiest blows.",
+  "element": "Nature",
+  "silhouette": "side-profile-right",
+  "style": "Pokemon-Tribal Minimal Vector",
+  "palette": {
+    "primary": "#4A7C59",
+    "secondary": "#8BC34A",
+    "accent": "#6B8F5E",
+    "dark": "#3A5C40"
+  },
+  "stats": {
+    "power": 70,
+    "defense": 85,
+    "speed": 35,
+    "spirit": 70,
+    "wisdom": 65
+  },
+  "available_traits": {
+    "masks": ["mask_nature"],
+    "auras": ["aura_nature"],
+    "totems": ["totem_nature"],
+    "markings": ["marking_diamonds", "marking_zigzag"]
+  },
+  "lore": "The roots of every tree in the sacred forest are connected to this guardian's heartwood."
+}

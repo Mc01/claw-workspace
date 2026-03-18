@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" width="80" height="80">
+  <!-- Trait: Bone Totem - ancestor spirit post with skull -->
+  <!-- Post -->
+  <rect x="36" y="30" width="8" height="46" fill="#8B7355" rx="2"/>
+  <!-- Post tribal bands -->
+  <rect x="34" y="42" width="12" height="4" fill="#C8A84A" rx="1"/>
+  <rect x="34" y="56" width="12" height="4" fill="#C8A84A" rx="1"/>
+  <rect x="34" y="70" width="12" height="4" fill="#C8A84A" rx="1"/>
+  <!-- Skull top -->
+  <ellipse cx="40" cy="24" rx="14" ry="12" fill="#C8B89A"/>
+  <!-- Skull eye sockets -->
+  <ellipse cx="34" cy="22" rx="4" ry="3.5" fill="#3D2B1F"/>
+  <ellipse cx="46" cy="22" rx="4" ry="3.5" fill="#3D2B1F"/>
+  <!-- Skull nose -->
+  <path d="M38,28 Q40,30 42,28" fill="none" stroke="#8B6F47" stroke-width="1.5" stroke-linecap="round"/>
+  <!-- Skull teeth -->
+  <rect x="34" y="33" width="4" height="5" fill="#D4C4A8" rx="1"/>
+  <rect x="39" y="33" width="4" height="5" fill="#D4C4A8" rx="1"/>
+  <rect x="44" y="33" width="3" height="4" fill="#D4C4A8" rx="1"/>
+  <!-- Side feathers on post -->
+  <path d="M36,48 Q26,44 24,50 Q28,56 36,52 Z" fill="#C8A84A"/>
+  <path d="M44,48 Q54,44 56,50 Q52,56 44,52 Z" fill="#C8A84A"/>
+  <!-- Base cross beam -->
+  <rect x="24" y="70" width="32" height="5" fill="#8B7355" rx="2"/>
+</svg>

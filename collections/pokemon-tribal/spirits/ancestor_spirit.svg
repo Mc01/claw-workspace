@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <!-- Ancestor Spirit - side profile facing right, ghostly elder -->
+  <!-- Palette: bone #D4C4A8, ochre #C8A84A, deep brown #5C3D1A, warm gray #8B7355 -->
+
+  <!-- Spirit trail wisps -->
+  <path d="M65,172 Q48,165 52,150 Q42,140 55,133" fill="none" stroke="#C8B89A" stroke-width="4" stroke-linecap="round" opacity="0.5"/>
+  <path d="M68,182 Q46,174 50,158" fill="none" stroke="#C8B89A" stroke-width="2.5" stroke-linecap="round" opacity="0.3"/>
+
+  <!-- Robe body -->
+  <ellipse cx="100" cy="135" rx="38" ry="48" fill="#C8B89A"/>
+  <!-- Tribal robe bands -->
+  <rect x="70" y="118" width="60" height="5" fill="#8B6F47" rx="1"/>
+  <rect x="74" y="132" width="52" height="4" fill="#8B6F47" rx="1"/>
+  <rect x="70" y="145" width="60" height="4" fill="#8B6F47" rx="1"/>
+  <!-- Diamond pattern on robe -->
+  <polygon points="100,110 106,116 100,122 94,116" fill="#C8A84A" opacity="0.7"/>
+  <polygon points="88,118 94,124 88,130 82,124" fill="#C8A84A" opacity="0.5"/>
+  <polygon points="112,118 118,124 112,130 106,124" fill="#C8A84A" opacity="0.5"/>
+
+  <!-- Neck -->
+  <rect x="93" y="92" width="16" height="18" fill="#C8B89A" rx="3"/>
+
+  <!-- Head - side profile facing right -->
+  <path d="M88,68 Q92,52 108,52 Q126,54 128,70 Q130,85 122,94 Q114,100 104,98 Q92,95 88,84 Z" fill="#D4C4A8"/>
+  <!-- Profile shadow/depth -->
+  <path d="M108,52 Q124,56 128,70 Q128,85 120,93 Q114,99 108,98 L108,52 Z" fill="#C8B89A" opacity="0.4"/>
+
+  <!-- Eye (glowing ancestor spirit) -->
+  <circle cx="116" cy="74" r="5" fill="#2C1A0E"/>
+  <circle cx="116" cy="74" r="3.5" fill="#E8C84A"/>
+  <circle cx="117" cy="73" r="1.5" fill="#FFFDE0"/>
+  <!-- Eye shine ray -->
+  <line x1="119" y1="71" x2="123" y2="67" stroke="#E8C84A" stroke-width="1" opacity="0.7"/>
+
+  <!-- Nose (side profile) -->
+  <path d="M124,76 L128,82 Q126,86 123,85" fill="#C8B89A" stroke="#8B6F47" stroke-width="1"/>
+
+  <!-- Mouth - slight open, wise expression -->
+  <path d="M120,90 Q124,92 126,88" fill="none" stroke="#8B6F47" stroke-width="1.5" stroke-linecap="round"/>
+
+  <!-- Headdress / Elder crown -->
+  <path d="M88,68 Q92,55 108,52 Q118,48 126,58 Q120,45 108,40 Q92,38 82,52 Z" fill="#8B6F47"/>
+  <!-- Headdress feathers -->
+  <line x1="104" y1="42" x2="98" y2="18" stroke="#5C3D1A" stroke-width="2"/>
+  <path d="M98,18 Q88,24 94,32 Q96,20 98,18 Z" fill="#C8A84A"/>
+  <line x1="110" y1="40" x2="108" y2="14" stroke="#5C3D1A" stroke-width="2"/>
+  <path d="M108,14 Q100,18 104,28 Q106,16 108,14 Z" fill="#D4B85A"/>
+  <line x1="116" y1="42" x2="118" y2="16" stroke="#5C3D1A" stroke-width="2"/>
+  <path d="M118,16 Q128,20 122,30 Q120,18 118,16 Z" fill="#B89A3A"/>
+  <!-- Headdress beads row -->
+  <circle cx="88" cy="60" r="3" fill="#C8A84A"/>
+  <circle cx="94" cy="56" r="2.5" fill="#E8C84A"/>
+  <circle cx="100" cy="54" r="2.5" fill="#C8A84A"/>
+  <circle cx="107" cy="52" r="2.5" fill="#E8C84A"/>
+  <circle cx="113" cy="54" r="2.5" fill="#C8A84A"/>
+  <circle cx="119" cy="57" r="3" fill="#E8C84A"/>
+
+  <!-- Left arm/sleeve -->
+  <path d="M76,108 Q58,122 62,140" fill="none" stroke="#C8B89A" stroke-width="11" stroke-linecap="round"/>
+  <!-- Right arm holding staff -->
+  <path d="M124,108 Q140,115 136,132" fill="none" stroke="#C8B89A" stroke-width="9" stroke-linecap="round"/>
+
+  <!-- Ancestral staff -->
+  <line x1="136" y1="132" x2="155" y2="185" stroke="#5C3D1A" stroke-width="5" stroke-linecap="round"/>
+  <!-- Staff skull/orb top -->
+  <circle cx="155" cy="185" r="7" fill="#8B6F47"/>
+  <circle cx="155" cy="185" r="4" fill="#C8A84A"/>
+  <circle cx="155" cy="185" r="2" fill="#E8C84A"/>
+  <!-- Staff band -->
+  <rect x="143" y="158" width="10" height="4" fill="#C8A84A" rx="1" transform="rotate(25,148,160)"/>
+
+  <!-- Floating ancestor orb left -->
+  <circle cx="50" cy="95" r="7" fill="#E8C84A" opacity="0.45"/>
+  <circle cx="50" cy="95" r="4" fill="#FFFDE0" opacity="0.6"/>
+  <!-- Floating orb right -->
+  <circle cx="158" cy="78" r="5" fill="#E8C84A" opacity="0.35"/>
+  <circle cx="158" cy="78" r="2.5" fill="#FFFDE0" opacity="0.5"/>
+
+  <!-- Ground shadow -->
+  <ellipse cx="100" cy="190" rx="40" ry="6" fill="#8B7355" opacity="0.3"/>
+</svg>

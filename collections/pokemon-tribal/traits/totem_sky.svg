@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" width="80" height="80">
+  <!-- Trait: Sky Totem - winged eagle pole -->
+  <!-- Pole -->
+  <rect x="37" y="28" width="6" height="48" fill="#6B7F8E" rx="2"/>
+  <!-- Pole bands -->
+  <rect x="35" y="40" width="10" height="3" fill="#C8A84A" rx="1"/>
+  <rect x="35" y="52" width="10" height="3" fill="#C8A84A" rx="1"/>
+  <rect x="35" y="64" width="10" height="3" fill="#C8A84A" rx="1"/>
+  <!-- Eagle head on top -->
+  <ellipse cx="40" cy="18" rx="12" ry="10" fill="#6B7F8E"/>
+  <!-- Eagle eye -->
+  <circle cx="44" cy="16" r="4" fill="#1A1A2E"/>
+  <circle cx="44" cy="16" r="2.5" fill="#C8A84A"/>
+  <circle cx="45" cy="15" r="1" fill="#FFFDE0"/>
+  <!-- Beak -->
+  <path d="M48,18 L58,22 L48,22 Z" fill="#C8A84A"/>
+  <!-- Wings spread either side -->
+  <path d="M28,28 Q14,22 8,28 Q10,36 20,34 Q28,32 28,28 Z" fill="#5A6B78"/>
+  <path d="M52,28 Q66,22 72,28 Q70,36 60,34 Q52,32 52,28 Z" fill="#5A6B78"/>
+  <!-- Wing feather details -->
+  <path d="M12,28 Q10,32 12,36" fill="none" stroke="#6B7F8E" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M16,26 Q14,30 16,34" fill="none" stroke="#6B7F8E" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M68,28 Q70,32 68,36" fill="none" stroke="#6B7F8E" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M64,26 Q66,30 64,34" fill="none" stroke="#6B7F8E" stroke-width="1.5" stroke-linecap="round"/>
+  <!-- Tribal wing mark -->
+  <path d="M16,30 L20,28 L24,30 L20,34 Z" fill="none" stroke="#C8A84A" stroke-width="1.5"/>
+  <path d="M56,30 L60,28 L64,30 L60,34 Z" fill="none" stroke="#C8A84A" stroke-width="1.5"/>
+</svg>

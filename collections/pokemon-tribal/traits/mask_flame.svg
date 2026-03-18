@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" width="80" height="80">
+  <!-- Trait: Flame Mask - angular fire ritual mask, flame crown -->
+  <!-- Flame crown spikes at top -->
+  <path d="M18,30 Q14,18 18,10 Q22,20 18,30 Z" fill="#E67E22"/>
+  <path d="M26,24 Q24,10 30,4 Q34,16 26,24 Z" fill="#C0392B"/>
+  <path d="M36,22 Q36,6 42,0 Q46,14 36,22 Z" fill="#F1C40F" opacity="0.9"/>
+  <path d="M46,24 Q48,8 54,6 Q54,18 46,24 Z" fill="#C0392B"/>
+  <path d="M54,30 Q58,18 62,12 Q60,24 54,30 Z" fill="#E67E22"/>
+  <!-- Mask face -->
+  <path d="M14,44 Q14,26 40,22 Q66,26 66,44 Q66,60 40,64 Q14,60 14,44 Z" fill="#C0392B"/>
+  <!-- Flame marks on cheeks -->
+  <path d="M20,36 Q24,44 22,52" fill="none" stroke="#E67E22" stroke-width="2" stroke-linecap="round"/>
+  <path d="M56,36 Q60,44 58,52" fill="none" stroke="#E67E22" stroke-width="2" stroke-linecap="round"/>
+  <!-- Eye holes - narrow predator slits -->
+  <ellipse cx="30" cy="40" rx="8" ry="4" fill="#2C1A0E"/>
+  <ellipse cx="50" cy="40" rx="8" ry="4" fill="#2C1A0E"/>
+  <ellipse cx="30" cy="40" rx="5" ry="2.5" fill="#F1C40F"/>
+  <ellipse cx="50" cy="40" rx="5" ry="2.5" fill="#F1C40F"/>
+  <!-- Nose bridge -->
+  <path d="M36,46 L40,52 L44,46" fill="none" stroke="#2C1A0E" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Teeth grin -->
+  <path d="M26,56 Q40,62 54,56" fill="none" stroke="#2C1A0E" stroke-width="2" stroke-linecap="round"/>
+  <line x1="32" y1="56" x2="32" y2="60" stroke="#FFF3E0" stroke-width="2" stroke-linecap="round"/>
+  <line x1="36" y1="57" x2="36" y2="61" stroke="#FFF3E0" stroke-width="2" stroke-linecap="round"/>
+  <line x1="40" y1="58" x2="40" y2="62" stroke="#FFF3E0" stroke-width="2" stroke-linecap="round"/>
+  <line x1="44" y1="57" x2="44" y2="61" stroke="#FFF3E0" stroke-width="2" stroke-linecap="round"/>
+  <line x1="48" y1="56" x2="48" y2="60" stroke="#FFF3E0" stroke-width="2" stroke-linecap="round"/>
+</svg>

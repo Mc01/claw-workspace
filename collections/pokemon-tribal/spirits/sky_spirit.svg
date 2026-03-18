@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <!-- Sky Spirit - side profile, lithe bird-like wind spirit -->
+  <!-- Palette: sky blue #87CEEB muted, storm gray #6B7F8E, ivory #E8DCC8, gold #C8A84A -->
+
+  <!-- Wind trail streaks -->
+  <path d="M160,100 Q175,95 178,85 Q172,82 165,88" fill="none" stroke="#E8DCC8" stroke-width="2" stroke-linecap="round" opacity="0.5"/>
+  <path d="M158,112 Q176,110 182,100" fill="none" stroke="#E8DCC8" stroke-width="1.5" stroke-linecap="round" opacity="0.35"/>
+  <path d="M155,125 Q170,126 176,116" fill="none" stroke="#E8DCC8" stroke-width="1.5" stroke-linecap="round" opacity="0.3"/>
+
+  <!-- Main body - streamlined, aerodynamic -->
+  <ellipse cx="100" cy="130" rx="32" ry="42" fill="#6B7F8E"/>
+  <!-- Feather layers on body -->
+  <path d="M74,128 Q80,120 86,128" fill="#5A6B78" stroke="#87A0B0" stroke-width="0.5"/>
+  <path d="M74,138 Q80,130 86,138" fill="#5A6B78" stroke="#87A0B0" stroke-width="0.5"/>
+  <path d="M74,148 Q80,140 86,148" fill="#5A6B78" stroke="#87A0B0" stroke-width="0.5"/>
+  <path d="M86,124 Q92,116 98,124" fill="#5A6B78" stroke="#87A0B0" stroke-width="0.5"/>
+  <path d="M86,134 Q92,126 98,134" fill="#5A6B78" stroke="#87A0B0" stroke-width="0.5"/>
+  <path d="M86,144 Q92,136 98,144" fill="#5A6B78" stroke="#87A0B0" stroke-width="0.5"/>
+  <!-- Chest bright patch -->
+  <ellipse cx="105" cy="125" rx="14" ry="18" fill="#E8DCC8" opacity="0.7"/>
+  <!-- Tribal chest symbol -->
+  <path d="M98,118 L105,112 L112,118 L105,130 Z" fill="none" stroke="#C8A84A" stroke-width="2"/>
+  <line x1="105" y1="112" x2="105" y2="130" stroke="#C8A84A" stroke-width="1.5"/>
+
+  <!-- Neck - long, elegant -->
+  <path d="M96,90 Q100,80 108,82 L110,98 Q104,100 96,98 Z" fill="#6B7F8E"/>
+
+  <!-- Head - side profile, sharp beak -->
+  <path d="M90,70 Q92,52 108,50 Q124,50 128,64 Q130,76 124,86 Q116,94 104,92 Q90,88 88,78 Z" fill="#6B7F8E"/>
+  <!-- Face plumage lighter -->
+  <path d="M108,50 Q122,52 126,64 Q128,74 122,84 L108,50 Z" fill="#87A0B0" opacity="0.3"/>
+
+  <!-- Eye - sharp predator eye with gold iris -->
+  <circle cx="118" cy="68" r="6" fill="#1A1A2E"/>
+  <circle cx="118" cy="68" r="4" fill="#C8A84A"/>
+  <ellipse cx="118" cy="68" rx="2" ry="3" fill="#1A1A2E"/>
+  <circle cx="119" cy="67" r="1" fill="#FFFDE0"/>
+  <!-- Eye brow ridge -->
+  <path d="M112,62 L122,64" stroke="#5A6B78" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Sharp beak (side) -->
+  <path d="M128,66 L148,72 L128,76 Z" fill="#C8A84A"/>
+  <path d="M128,66 L148,72 L136,69 Z" fill="#E8D08A"/>
+  <!-- Beak ridge line -->
+  <line x1="128" y1="66" x2="148" y2="72" stroke="#5C3D1A" stroke-width="1"/>
+
+  <!-- Tribal head crest/plume -->
+  <path d="M90,68 Q86,55 92,48 Q95,40 98,36" fill="none" stroke="#5A6B78" stroke-width="2"/>
+  <!-- Crest feathers -->
+  <path d="M98,36 Q86,18 92,10 Q100,24 98,36 Z" fill="#6B7F8E"/>
+  <path d="M98,36 Q104,16 114,12 Q108,28 98,36 Z" fill="#87A0B0"/>
+  <path d="M98,36 Q112,22 122,20 Q114,34 98,36 Z" fill="#5A6B78"/>
+  <!-- Crest tribal bands -->
+  <line x1="92" y1="22" x2="98" y2="34" stroke="#C8A84A" stroke-width="1.5"/>
+  <line x1="108" y1="14" x2="100" y2="34" stroke="#C8A84A" stroke-width="1.5"/>
+  <line x1="120" y1="22" x2="100" y2="35" stroke="#C8A84A" stroke-width="1.5"/>
+
+  <!-- Wings -->
+  <!-- Left wing (folded at side) -->
+  <path d="M72,105 Q50,95 42,105 Q38,115 48,118 Q58,120 70,115 Z" fill="#5A6B78"/>
+  <path d="M72,105 Q56,102 44,110 Q48,104 60,100 Z" fill="#87A0B0" opacity="0.5"/>
+  <!-- Wing feather tips -->
+  <path d="M42,105 Q38,112 42,118" fill="none" stroke="#6B7F8E" stroke-width="2" stroke-linecap="round"/>
+  <path d="M44,102 Q36,108 40,114" fill="none" stroke="#6B7F8E" stroke-width="2" stroke-linecap="round"/>
+  <path d="M48,100 Q40,105 42,112" fill="none" stroke="#6B7F8E" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Right wing extended -->
+  <path d="M128,105 Q148,90 165,88 Q168,100 158,105 Q148,112 130,115 Z" fill="#6B7F8E"/>
+  <!-- Wing detail -->
+  <path d="M140,92 Q145,100 138,108" fill="none" stroke="#5A6B78" stroke-width="2"/>
+  <path d="M152,90 Q156,98 150,108" fill="none" stroke="#5A6B78" stroke-width="2"/>
+  <!-- Tribal wing marking -->
+  <path d="M132,100 L140,96 L148,100 L140,106 Z" fill="none" stroke="#C8A84A" stroke-width="1.5"/>
+
+  <!-- Talons/feet -->
+  <path d="M88,170 Q80,178 74,185" fill="none" stroke="#5A6B78" stroke-width="5" stroke-linecap="round"/>
+  <path d="M74,185 Q68,192 62,190" fill="none" stroke="#5A6B78" stroke-width="3" stroke-linecap="round"/>
+  <path d="M74,185 Q72,195 70,198" fill="none" stroke="#5A6B78" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M74,185 Q78,194 80,197" fill="none" stroke="#5A6B78" stroke-width="2.5" stroke-linecap="round"/>
+
+  <path d="M112,170 Q118,178 122,185" fill="none" stroke="#5A6B78" stroke-width="5" stroke-linecap="round"/>
+  <path d="M122,185 Q128,192 132,190" fill="none" stroke="#5A6B78" stroke-width="3" stroke-linecap="round"/>
+  <path d="M122,185 Q120,194 118,198" fill="none" stroke="#5A6B78" stroke-width="2.5" stroke-linecap="round"/>
+
+  <!-- Ground shadow -->
+  <ellipse cx="100" cy="196" rx="36" ry="5" fill="#5A6B78" opacity="0.3"/>
+</svg>

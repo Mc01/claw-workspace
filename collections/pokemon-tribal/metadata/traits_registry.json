@@ -1,0 +1,45 @@
+{
+  "collection": "Pokemon-style Tribal Spirits",
+  "version": "1.0.0",
+  "total_traits": 15,
+  "categories": {
+    "masks": {
+      "count": 5,
+      "items": [
+        { "id": "mask_ancestor", "name": "Ancestor Mask", "rarity": "Legendary", "spirit_affinity": "ancestor_spirit" },
+        { "id": "mask_nature",   "name": "Nature Mask",   "rarity": "Rare",      "spirit_affinity": "nature_guardian" },
+        { "id": "mask_sky",      "name": "Sky Mask",      "rarity": "Uncommon",  "spirit_affinity": "sky_spirit" },
+        { "id": "mask_earth",    "name": "Earth Mask",    "rarity": "Rare",      "spirit_affinity": "earth_guardian" },
+        { "id": "mask_flame",    "name": "Flame Mask",    "rarity": "Rare",      "spirit_affinity": "flame_spirit" }
+      ]
+    },
+    "auras": {
+      "count": 4,
+      "items": [
+        { "id": "aura_golden", "name": "Golden Ancestor Aura", "rarity": "Legendary", "spirit_affinity": "ancestor_spirit" },
+        { "id": "aura_nature", "name": "Nature Leaf Aura",     "rarity": "Rare",      "spirit_affinity": "nature_guardian" },
+        { "id": "aura_flame",  "name": "Flame Corona Aura",    "rarity": "Rare",      "spirit_affinity": "flame_spirit" },
+        { "id": "aura_earth",  "name": "Earth Hex Aura",       "rarity": "Rare",      "spirit_affinity": "earth_guardian" }
+      ]
+    },
+    "totems": {
+      "count": 3,
+      "items": [
+        { "id": "totem_bone",   "name": "Bone Ancestor Totem", "rarity": "Rare",      "spirit_affinity": "ancestor_spirit" },
+        { "id": "totem_nature", "name": "Tree Spirit Totem",   "rarity": "Uncommon",  "spirit_affinity": "nature_guardian" },
+        { "id": "totem_sky",    "name": "Eagle Sky Totem",     "rarity": "Uncommon",  "spirit_affinity": "sky_spirit" },
+        { "id": "totem_flame",  "name": "Eternal Flame Totem", "rarity": "Rare",      "spirit_affinity": "flame_spirit" }
+      ]
+    },
+    "markings": {
+      "count": 4,
+      "items": [
+        { "id": "marking_zigzag",   "name": "Zigzag War Paint",     "rarity": "Common",   "spirit_affinity": "any" },
+        { "id": "marking_diamonds", "name": "Diamond Ceremony Mark", "rarity": "Uncommon", "spirit_affinity": "any" },
+        { "id": "marking_stripes",  "name": "Warrior Stripe Mark",   "rarity": "Common",   "spirit_affinity": "any" },
+        { "id": "marking_spirals",  "name": "Koru Spiral Mark",      "rarity": "Rare",     "spirit_affinity": "ancestor_spirit" },
+        { "id": "marking_dotwork",  "name": "Dotwork Ceremony Mark", "rarity": "Uncommon", "spirit_affinity": "any" }
+      ]
+    }
+  }
+}

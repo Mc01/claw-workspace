@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" width="80" height="80">
+  <!-- Trait: Nature Mask - leaf-shaped wooden mask -->
+  <path d="M16,40 Q16,16 40,12 Q64,16 64,40 Q64,60 40,68 Q16,60 16,40 Z" fill="#4A7C59"/>
+  <!-- Leaf vein pattern on mask surface -->
+  <line x1="40" y1="14" x2="40" y2="66" stroke="#3A5C40" stroke-width="1.5"/>
+  <path d="M40,28 Q50,32 56,40" fill="none" stroke="#3A5C40" stroke-width="1.2"/>
+  <path d="M40,28 Q30,32 24,40" fill="none" stroke="#3A5C40" stroke-width="1.2"/>
+  <path d="M40,42 Q50,46 58,52" fill="none" stroke="#3A5C40" stroke-width="1.2"/>
+  <path d="M40,42 Q30,46 22,52" fill="none" stroke="#3A5C40" stroke-width="1.2"/>
+  <!-- Eye holes - almond shaped -->
+  <ellipse cx="30" cy="36" rx="6" ry="4" fill="#1A2E1A"/>
+  <ellipse cx="50" cy="36" rx="6" ry="4" fill="#1A2E1A"/>
+  <!-- Glowing leaf eyes -->
+  <ellipse cx="30" cy="36" rx="4" ry="2.5" fill="#8BC34A"/>
+  <ellipse cx="50" cy="36" rx="4" ry="2.5" fill="#8BC34A"/>
+  <!-- Nose carved -->
+  <path d="M36,44 L40,50 L44,44" fill="none" stroke="#3A5C40" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Tribal mouth grill -->
+  <path d="M28,56 Q40,60 52,56" fill="none" stroke="#3A5C40" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="34" y1="56" x2="34" y2="60" stroke="#3A5C40" stroke-width="1.5"/>
+  <line x1="40" y1="57" x2="40" y2="61" stroke="#3A5C40" stroke-width="1.5"/>
+  <line x1="46" y1="56" x2="46" y2="60" stroke="#3A5C40" stroke-width="1.5"/>
+</svg>

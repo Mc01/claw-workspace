@@ -1,0 +1,30 @@
+{
+  "name": "Flame Spirit",
+  "id": "spirit_005",
+  "type": "Fire / Spiritual",
+  "rarity": "Rare",
+  "description": "A sleek fire elemental born from the first sacred pyre. Its crest blazes with the colors of a dying sun.",
+  "element": "Fire",
+  "silhouette": "side-profile-right",
+  "style": "Pokemon-Tribal Minimal Vector",
+  "palette": {
+    "primary": "#C0392B",
+    "secondary": "#E67E22",
+    "accent": "#F1C40F",
+    "dark": "#2C1A0E"
+  },
+  "stats": {
+    "power": 85,
+    "defense": 50,
+    "speed": 80,
+    "spirit": 75,
+    "wisdom": 55
+  },
+  "available_traits": {
+    "masks": ["mask_flame"],
+    "auras": ["aura_flame"],
+    "totems": ["totem_flame"],
+    "markings": ["marking_zigzag", "marking_spirals"]
+  },
+  "lore": "It is said the first Flame Spirit leapt from the embers of a fallen star. Its roar sounds like crackling wood."
+}

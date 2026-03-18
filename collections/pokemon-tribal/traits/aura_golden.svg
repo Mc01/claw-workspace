@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" width="80" height="80">
+  <!-- Trait: Golden Ancestor Aura - radial glow halo rings -->
+  <circle cx="40" cy="40" r="36" fill="none" stroke="#E8C84A" stroke-width="3" opacity="0.5"/>
+  <circle cx="40" cy="40" r="28" fill="none" stroke="#C8A84A" stroke-width="2" opacity="0.6"/>
+  <circle cx="40" cy="40" r="20" fill="none" stroke="#E8C84A" stroke-width="1.5" opacity="0.7"/>
+  <!-- Ray spikes -->
+  <line x1="40" y1="4" x2="40" y2="10" stroke="#E8C84A" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="40" y1="70" x2="40" y2="76" stroke="#E8C84A" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="4" y1="40" x2="10" y2="40" stroke="#E8C84A" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="70" y1="40" x2="76" y2="40" stroke="#E8C84A" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="12" y1="12" x2="17" y2="17" stroke="#E8C84A" stroke-width="2" stroke-linecap="round"/>
+  <line x1="63" y1="63" x2="68" y2="68" stroke="#E8C84A" stroke-width="2" stroke-linecap="round"/>
+  <line x1="63" y1="12" x2="68" y2="17" stroke="#E8C84A" stroke-width="2" stroke-linecap="round" transform="scale(-1,1) translate(-80,0)"/>
+  <line x1="12" y1="63" x2="17" y2="68" stroke="#E8C84A" stroke-width="2" stroke-linecap="round" transform="scale(1,-1) translate(0,-80)"/>
+  <!-- Centre core -->
+  <circle cx="40" cy="40" r="6" fill="#E8C84A" opacity="0.7"/>
+  <circle cx="40" cy="40" r="3" fill="#FFFDE0"/>
+</svg>

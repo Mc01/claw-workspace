@@ -1,0 +1,30 @@
+{
+  "name": "Ancestor Spirit",
+  "id": "spirit_001",
+  "type": "Ghost / Spiritual",
+  "rarity": "Legendary",
+  "description": "Ancient elder whose wisdom bridges the world of the living and the dead. Bears a carved staff topped with a glowing spirit orb.",
+  "element": "Spirit",
+  "silhouette": "side-profile-right",
+  "style": "Pokemon-Tribal Minimal Vector",
+  "palette": {
+    "primary": "#D4C4A8",
+    "secondary": "#C8A84A",
+    "accent": "#E8C84A",
+    "dark": "#5C3D1A"
+  },
+  "stats": {
+    "power": 60,
+    "defense": 55,
+    "speed": 40,
+    "spirit": 95,
+    "wisdom": 90
+  },
+  "available_traits": {
+    "masks": ["mask_ancestor"],
+    "auras": ["aura_golden"],
+    "totems": ["totem_bone"],
+    "markings": ["marking_spirals", "marking_dotwork"]
+  },
+  "lore": "Said to appear during the new moon. Carries generations of memory in a single glowing eye."
+}

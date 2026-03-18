@@ -1,0 +1,30 @@
+{
+  "name": "Earth Guardian",
+  "id": "spirit_004",
+  "type": "Rock / Ground",
+  "rarity": "Rare",
+  "description": "A colossal stone behemoth whose footsteps shake the earth. Its amber eyes burn like trapped lava.",
+  "element": "Earth",
+  "silhouette": "side-profile-right",
+  "style": "Pokemon-Tribal Minimal Vector",
+  "palette": {
+    "primary": "#8B7355",
+    "secondary": "#C4A882",
+    "accent": "#E8A030",
+    "dark": "#3D2B1F"
+  },
+  "stats": {
+    "power": 90,
+    "defense": 95,
+    "speed": 20,
+    "spirit": 55,
+    "wisdom": 50
+  },
+  "available_traits": {
+    "masks": ["mask_earth"],
+    "auras": ["aura_earth"],
+    "totems": ["totem_bone"],
+    "markings": ["marking_diamonds", "marking_stripes"]
+  },
+  "lore": "Older than the mountains. Tribes would leave offerings at its feet before planting season."
+}
