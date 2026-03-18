@@ -2,8 +2,20 @@ import { getDefaultConfig } from '@rainbow-me/rainbowkit';
 import { http } from 'wagmi';
 import { celo, celoSepolia, hardhat } from 'wagmi/chains';
 
-// Supported chains — Celo mainnet + Sepolia testnet
-export const supportedChains = [celo, celoSepolia, hardhat] as const;
+// Override chain metadata
+const celoSepoliaChain = {
+  ...celoSepolia,
+  name: 'Celo Sepolia',
+  iconUrl: 'https://assets.coingecko.com/coins/images/11090/standard/InjXBNx9_400x400.jpg',
+} as const;
+
+const localhostChain = {
+  ...hardhat,
+  name: 'Localhost',
+} as const;
+
+// Supported chains — Celo mainnet + Sepolia testnet + Localhost
+export const supportedChains = [celo, celoSepoliaChain, localhostChain] as const;
 
 // Wagmi config with RainbowKit
 export const config = getDefaultConfig({
