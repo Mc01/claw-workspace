@@ -312,77 +312,80 @@ export function Landing() {
       <section id="what-is-chamafi" className="what-section">
         <div className="container">
           <div className="what-inner">
-            <div className="what-text">
-              <div className="section-header reveal-up" style={{ textAlign: 'left', marginBottom: 40 }}>
-                <span className="section-tag">Mission</span>
-                <h2 className="section-title">What is <span className="text-green">ChamaFi?</span></h2>
+            <div className="what-columns">
+              <div className="what-text">
+                <div className="section-header reveal-up" style={{ textAlign: 'left', marginBottom: 40 }}>
+                  <span className="section-tag">Mission</span>
+                  <h2 className="section-title">What is <span className="text-green">ChamaFi?</span></h2>
+                </div>
+                <p className="what-lead reveal-up" data-delay="100">
+                  ChamaFi digitizes existing Chama savings groups across Africa — bringing the trust of community finance onto the Celo blockchain.
+                </p>
+                <p className="what-body reveal-up" data-delay="200">
+                  300 million+ Africans participate in savings circles (Chamas, Susus, Tontines). These informal groups work — but they're limited by cash, geography, and trust. ChamaFi keeps the human element while replacing the limitations with smart contracts.
+                </p>
+                <div className="what-pillars reveal-up" data-delay="300">
+                  {[
+                    { icon: '📈', title: 'Higher Yield', desc: 'Capital earns while incubating — rehypothecated in DeFi protocols' },
+                    { icon: '⚡', title: 'Instant Access', desc: 'Graduate at 100% — no waiting periods, no lockups, no permission' },
+                    { icon: '🌍', title: '300M+ Africans', desc: 'Already in savings circles — we bring them on-chain, not replace them' },
+                  ].map((p, i) => (
+                    <div key={i} className="pillar">
+                      <div className="pillar-icon">{p.icon}</div>
+                      <div><strong>{p.title}</strong><span>{p.desc}</span></div>
+                    </div>
+                  ))}
+                </div>
               </div>
-              <p className="what-lead reveal-up" data-delay="100">
-                ChamaFi digitizes existing Chama savings groups across Africa — bringing the trust of community finance onto the Celo blockchain.
-              </p>
-              <p className="what-body reveal-up" data-delay="200">
-                300 million+ Africans participate in savings circles (Chamas, Susus, Tontines). These informal groups work — but they're limited by cash, geography, and trust. ChamaFi keeps the human element while replacing the limitations with smart contracts.
-              </p>
-              <div className="what-pillars reveal-up" data-delay="300">
-                {[
-                  { icon: '📈', title: 'Higher Yield', desc: 'Capital earns while incubating — rehypothecated in DeFi protocols' },
-                  { icon: '⚡', title: 'Instant Access', desc: 'Graduate at 100% — no waiting periods, no lockups, no permission' },
-                  { icon: '🌍', title: '300M+ Africans', desc: 'Already in savings circles — we bring them on-chain, not replace them' },
-                ].map((p, i) => (
-                  <div key={i} className="pillar">
-                    <div className="pillar-icon">{p.icon}</div>
-                    <div><strong>{p.title}</strong><span>{p.desc}</span></div>
+
+              <div className="what-visual reveal-up" data-delay="150">
+                <div className="chama-circle-diagram">
+                  <div className="ccd-center">
+                    <svg viewBox="0 0 60 60" fill="none" width="48" height="48">
+                      <circle cx="30" cy="30" r="28" stroke="#C4E86A" strokeWidth="2.5" />
+                      <path d="M30 46 L30 18 M30 18 L20 28 M30 18 L40 28 M30 32 L18 26 M30 32 L42 26" stroke="#C4E86A" strokeWidth="2" strokeLinecap="round" />
+                    </svg>
+                    <span>ChamaFi</span>
                   </div>
-                ))}
+                  {([
+                    { angle: '0deg', bg: '#C4E86A', initials: 'AW', name: 'Amara', color: '#1A1A1A' },
+                    { angle: '60deg', bg: '#D4821A', initials: 'KA', name: 'Kwame' },
+                    { angle: '120deg', bg: '#6B3A2A', initials: 'FO', name: 'Fatima' },
+                    { angle: '180deg', bg: '#3A6B1E', initials: 'BO', name: 'Bola' },
+                    { angle: '240deg', bg: '#7ABF42', initials: 'TM', name: 'Tau', color: '#1A1A1A' },
+                    { angle: '300deg', bg: '#5A9B30', initials: 'NJ', name: 'Njeri' },
+                  ] as Array<{ angle: string; bg: string; initials: string; name: string; color?: string }>).map((m, i) => (
+                    <div key={i} className="ccd-member" style={{ '--angle': m.angle } as React.CSSProperties}>
+                      <div className="ccd-avatar" style={{ background: m.bg, color: m.color ?? 'white' }}>{m.initials}</div>
+                      <span>{m.name}</span>
+                    </div>
+                  ))}
+                </div>
+                <div className="what-stat-row">
+                  <div className="wsr-item"><span className="wsr-num">300M+</span><span className="wsr-label">Chama Participants</span></div>
+                  <div className="wsr-divider" />
+                  <div className="wsr-item"><span className="wsr-num">$180B</span><span className="wsr-label">Annual Savings Volume</span></div>
+                </div>
               </div>
             </div>
 
-            <div className="what-visual reveal-up" data-delay="150">
-              <div className="chama-circle-diagram">
-                <div className="ccd-center">
-                  <svg viewBox="0 0 60 60" fill="none" width="48" height="48">
-                    <circle cx="30" cy="30" r="28" stroke="#C4E86A" strokeWidth="2.5" />
-                    <path d="M30 46 L30 18 M30 18 L20 28 M30 18 L40 28 M30 32 L18 26 M30 32 L42 26" stroke="#C4E86A" strokeWidth="2" strokeLinecap="round" />
-                  </svg>
-                  <span>ChamaFi</span>
-                </div>
-                {([
-                  { angle: '0deg', bg: '#C4E86A', initials: 'AW', name: 'Amara', color: '#1A1A1A' },
-                  { angle: '60deg', bg: '#D4821A', initials: 'KA', name: 'Kwame' },
-                  { angle: '120deg', bg: '#6B3A2A', initials: 'FO', name: 'Fatima' },
-                  { angle: '180deg', bg: '#3A6B1E', initials: 'BO', name: 'Bola' },
-                  { angle: '240deg', bg: '#7ABF42', initials: 'TM', name: 'Tau', color: '#1A1A1A' },
-                  { angle: '300deg', bg: '#5A9B30', initials: 'NJ', name: 'Njeri' },
-                ] as Array<{ angle: string; bg: string; initials: string; name: string; color?: string }>).map((m, i) => (
-                  <div key={i} className="ccd-member" style={{ '--angle': m.angle } as React.CSSProperties}>
-                    <div className="ccd-avatar" style={{ background: m.bg, color: m.color ?? 'white' }}>{m.initials}</div>
-                    <span>{m.name}</span>
-                  </div>
-                ))}
-              </div>
-              <div className="what-stat-row">
-                <div className="wsr-item"><span className="wsr-num">300M+</span><span className="wsr-label">Chama Participants</span></div>
-                <div className="wsr-divider" />
-                <div className="wsr-item"><span className="wsr-num">$180B</span><span className="wsr-label">Annual Savings Volume</span></div>
-              </div>
-              <div className="what-comparison reveal-up" data-delay="400">
-                <table className="comparison-table">
-                  <thead>
-                    <tr><th>Feature</th><th>Traditional Chama</th><th className="ct-highlight">ChamaFi</th></tr>
-                  </thead>
-                  <tbody>
-                    {[
-                      ['Yield on idle capital', '0%', '8%+ APY'],
-                      ['Exit flexibility', 'Wait for rotation', 'Instant, any time'],
-                      ['Lockup period', 'Months to years', 'No lockup'],
-                      ['Transparency', 'Cash / trust-based', 'On-chain'],
-                      ['Auto-refund on failure', 'Manual, disputed', 'Guaranteed by contract'],
-                    ].map(([feat, bad, good], i) => (
-                      <tr key={i}><td>{feat}</td><td className="ct-bad">{bad}</td><td className="ct-good">{good}</td></tr>
-                    ))}
-                  </tbody>
-                </table>
-              </div>
+            <div className="what-comparison-full reveal-up" data-delay="400">
+              <table className="comparison-table">
+                <thead>
+                  <tr><th>Feature</th><th>Traditional Chama</th><th className="ct-highlight">ChamaFi</th></tr>
+                </thead>
+                <tbody>
+                  {[
+                    ['Yield on idle capital', '0%', '8%+ APY'],
+                    ['Exit flexibility', 'Wait for rotation', 'Instant, any time'],
+                    ['Lockup period', 'Months to years', 'No lockup'],
+                    ['Transparency', 'Cash / trust-based', 'On-chain'],
+                    ['Auto-refund on failure', 'Manual, disputed', 'Guaranteed by contract'],
+                  ].map(([feat, bad, good], i) => (
+                    <tr key={i}><td>{feat}</td><td className="ct-bad">{bad}</td><td className="ct-good">{good}</td></tr>
+                  ))}
+                </tbody>
+              </table>
             </div>
           </div>
         </div>
@@ -528,7 +531,7 @@ export function Landing() {
           </div>
           <div className="faq-list">
             {faqs.map((faq, i) => (
-              <div key={i} className={`faq-item reveal-up${visibleFaqs.has(i) ? ' visible' : ''}${openFaq === i ? ' open' : ''}`} data-delay={String(i * 80)} data-faq-index={String(i)} ref={(el) => { if (el) faqItemRefs.current[i] = el; }}>
+              <div key={i} className={`faq-item${visibleFaqs.has(i) ? ' faq-visible' : ' faq-hidden'}${openFaq === i ? ' open' : ''}`} data-delay={String(i * 80)} data-faq-index={String(i)} ref={(el) => { if (el) faqItemRefs.current[i] = el; }}>
                 <button className="faq-q" onClick={() => setOpenFaq(openFaq === i ? null : i)}>
                   <span>{faq.q}</span>
                   <span className="faq-icon">+</span>

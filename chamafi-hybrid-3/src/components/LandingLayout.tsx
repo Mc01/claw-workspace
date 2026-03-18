@@ -387,8 +387,10 @@ html { scroll-behavior: smooth; overflow-x: hidden; }
 
 /* What Section */
 .what-section { padding: 120px 0; background: var(--cream); }
-.what-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: start; }
-@media (max-width: 900px) { .what-inner { grid-template-columns: 1fr; gap: 48px; } }
+.what-inner { display: flex; flex-direction: column; gap: 60px; }
+.what-columns { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: start; }
+@media (max-width: 900px) { .what-columns { grid-template-columns: 1fr; gap: 48px; } }
+.what-comparison-full { width: 100%; }
 
 .what-lead { font-size: 20px; font-weight: 500; line-height: 1.6; margin-bottom: 20px; color: var(--soil); }
 .what-body { font-size: 16px; line-height: 1.7; color: var(--clay); margin-bottom: 32px; }
@@ -520,15 +522,19 @@ html { scroll-behavior: smooth; overflow-x: hidden; }
 .faq-item { border: 2px solid var(--border); margin-top: -2px; background: white; }
 .faq-item:first-child { margin-top: 0; }
 
+.faq-hidden { opacity: 0; transform: translateY(20px); }
+.faq-visible { opacity: 1; transform: translateY(0); transition: opacity 0.5s ease, transform 0.5s ease; }
+
 .faq-q { width: 100%; display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 24px 28px; background: white; border: none; cursor: pointer; font-family: var(--font-sans); font-size: 17px; font-weight: 600; color: var(--soil); text-align: left; transition: background 0.2s; }
 .faq-q:hover { background: var(--parchment); }
 .faq-item.open .faq-q { background: var(--mint); }
+.faq-q span:first-child { flex: 1; }
 
 .faq-icon { font-size: 24px; font-weight: 300; flex-shrink: 0; transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1); color: var(--clay); line-height: 1; }
 .faq-item.open .faq-icon { transform: rotate(45deg); }
 
 .faq-a { max-height: 0; overflow: hidden; transition: max-height 0.5s cubic-bezier(0.4, 0, 0.2, 1); background: white; }
-.faq-item.open .faq-a { max-height: 200px; }
+.faq-item.open .faq-a { max-height: 500px; }
 .faq-a p { padding: 0 28px 24px; font-size: 16px; line-height: 1.7; color: var(--clay); }
 
 /* Footer */
