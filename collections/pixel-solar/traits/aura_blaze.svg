@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" shape-rendering="crispEdges" width="256" height="256">
+  <!-- Trait: Blaze Aura - full body fire aura -->
+  <!-- Left side flames -->
+  <rect x="1" y="18" width="2" height="6" fill="#FF6600" opacity="0.8"/>
+  <rect x="2" y="15" width="2" height="6" fill="#FF9900" opacity="0.7"/>
+  <rect x="1" y="13" width="2" height="4" fill="#FFD07A" opacity="0.6"/>
+  <rect x="3" y="11" width="2" height="5" fill="#FF6600" opacity="0.8"/>
+  <!-- Right side flames -->
+  <rect x="29" y="18" width="2" height="6" fill="#FF6600" opacity="0.8"/>
+  <rect x="28" y="15" width="2" height="6" fill="#FF9900" opacity="0.7"/>
+  <rect x="29" y="13" width="2" height="4" fill="#FFD07A" opacity="0.6"/>
+  <rect x="27" y="11" width="2" height="5" fill="#FF6600" opacity="0.8"/>
+  <!-- Bottom flames -->
+  <rect x="8" y="28" width="3" height="3" fill="#FF4500" opacity="0.8"/>
+  <rect x="13" y="29" width="3" height="3" fill="#FF6600" opacity="0.7"/>
+  <rect x="18" y="28" width="3" height="3" fill="#FF4500" opacity="0.8"/>
+  <rect x="23" y="29" width="3" height="3" fill="#FF9900" opacity="0.6"/>
+  <!-- Top flames -->
+  <rect x="10" y="2" width="3" height="4" fill="#FFD07A" opacity="0.7"/>
+  <rect x="15" y="1" width="3" height="4" fill="#FFE066" opacity="0.6"/>
+  <rect x="20" y="2" width="3" height="4" fill="#FFD07A" opacity="0.7"/>
+  <!-- Ember particles -->
+  <rect x="4" y="10" width="1" height="1" fill="#FFE066"/>
+  <rect x="27" y="10" width="1" height="1" fill="#FFE066"/>
+  <rect x="7" y="4" width="1" height="1" fill="#FF9900"/>
+  <rect x="24" y="4" width="1" height="1" fill="#FF9900"/>
+</svg>

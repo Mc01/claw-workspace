@@ -1,0 +1,57 @@
+{
+  "name": "Solar Beasts",
+  "description": "A Pokemon-style pixel art NFT collection featuring sun-themed creatures rendered in 32x32 pixel art SVG format. 5 base beasts with 24 trait overlays in solar gold and orange palette.",
+  "style": "32x32 pixel art SVG, side profile, crispEdges rendering",
+  "palette": {
+    "sunGold": "#FFE066",
+    "solarOrange": "#F5A623",
+    "emberOrange": "#E8820C",
+    "deepAmber": "#C0390B",
+    "sunWhite": "#FFD07A"
+  },
+  "bases": [
+    { "id": "lion",    "name": "Solarius",  "type": "Solar Lion",    "file": "bases/lion.svg" },
+    { "id": "serpent", "name": "Pyravern",  "type": "Solar Serpent", "file": "bases/serpent.svg" },
+    { "id": "eagle",   "name": "Aurelion",  "type": "Solar Eagle",   "file": "bases/eagle.svg" },
+    { "id": "croc",    "name": "Solarex",   "type": "Solar Croc",    "file": "bases/croc.svg" },
+    { "id": "beetle",  "name": "Scarabus",  "type": "Solar Beetle",  "file": "bases/beetle.svg" }
+  ],
+  "traits": {
+    "eyes": [
+      { "id": "ember",   "name": "Ember Eyes",   "file": "traits/eyes_ember.svg" },
+      { "id": "solar",   "name": "Solar Eyes",   "file": "traits/eyes_solar.svg" },
+      { "id": "void",    "name": "Void Eyes",    "file": "traits/eyes_void.svg" },
+      { "id": "golden",  "name": "Golden Eyes",  "file": "traits/eyes_golden.svg" }
+    ],
+    "mouth": [
+      { "id": "fang",   "name": "Solar Fangs",   "file": "traits/mouth_fang.svg" },
+      { "id": "roar",   "name": "Solar Roar",    "file": "traits/mouth_roar.svg" },
+      { "id": "smirk",  "name": "Sunlit Smirk",  "file": "traits/mouth_smirk.svg" },
+      { "id": "beam",   "name": "Solar Beam",    "file": "traits/mouth_beam.svg" }
+    ],
+    "head": [
+      { "id": "crown",  "name": "Solar Crown",   "file": "traits/head_crown.svg" },
+      { "id": "halo",   "name": "Solar Halo",    "file": "traits/head_halo.svg" },
+      { "id": "horns",  "name": "Sun Horns",     "file": "traits/head_horns.svg" },
+      { "id": "mask",   "name": "Sun Mask",      "file": "traits/head_mask.svg" }
+    ],
+    "body": [
+      { "id": "armor",  "name": "Solar Armor",   "file": "traits/body_armor.svg" },
+      { "id": "scales", "name": "Radiant Scales","file": "traits/body_scales.svg" },
+      { "id": "mane",   "name": "Inferno Mane",  "file": "traits/body_mane.svg" },
+      { "id": "cloak",  "name": "Solar Cloak",   "file": "traits/body_cloak.svg" }
+    ],
+    "aura": [
+      { "id": "blaze",   "name": "Blaze Aura",   "file": "traits/aura_blaze.svg" },
+      { "id": "corona",  "name": "Corona Aura",  "file": "traits/aura_corona.svg" },
+      { "id": "eclipse", "name": "Eclipse Aura", "file": "traits/aura_eclipse.svg" },
+      { "id": "dawn",    "name": "Dawn Aura",    "file": "traits/aura_dawn.svg" }
+    ],
+    "special": [
+      { "id": "sunwheel","name": "Sun Wheel",    "file": "traits/special_sunwheel.svg" },
+      { "id": "wings",   "name": "Solar Wings",  "file": "traits/special_wings.svg" },
+      { "id": "gem",     "name": "Solar Gem",    "file": "traits/special_gem.svg" },
+      { "id": "marks",   "name": "Solar Marks",  "file": "traits/special_marks.svg" }
+    ]
+  }
+}

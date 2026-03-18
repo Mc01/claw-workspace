@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" shape-rendering="crispEdges" width="256" height="256">
+  <!-- Trait: Solar Armor - golden plate armor on body -->
+  <!-- Chest plate -->
+  <rect x="10" y="14" width="12" height="8" fill="#E8820C"/>
+  <rect x="11" y="15" width="10" height="6" fill="#FFD07A"/>
+  <!-- Armor segments -->
+  <rect x="11" y="18" width="10" height="1" fill="#E8820C"/>
+  <rect x="11" y="21" width="10" height="1" fill="#E8820C"/>
+  <!-- Center solar emblem -->
+  <rect x="14" y="15" width="4" height="4" fill="#F5A623"/>
+  <rect x="15" y="15" width="2" height="4" fill="#FFE066"/>
+  <rect x="14" y="16" width="4" height="2" fill="#FFE066"/>
+  <rect x="15" y="16" width="2" height="2" fill="#FFFFFF"/>
+  <!-- Shoulder guards -->
+  <rect x="8" y="14" width="3" height="5" fill="#F5A623"/>
+  <rect x="21" y="14" width="3" height="5" fill="#F5A623"/>
+  <!-- Rivets -->
+  <rect x="9" y="16" width="1" height="1" fill="#FFE066"/>
+  <rect x="22" y="16" width="1" height="1" fill="#FFE066"/>
+  <!-- Armor edge highlight -->
+  <rect x="11" y="14" width="10" height="1" fill="#FFE066"/>
+  <rect x="10" y="14" width="1" height="8" fill="#FFE066"/>
+</svg>

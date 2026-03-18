@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" shape-rendering="crispEdges" width="256" height="256">
+  <!-- Trait: Ember Eyes - glowing orange pupils with flame pupils -->
+  <rect x="10" y="13" width="4" height="4" fill="#FF6600"/>
+  <rect x="11" y="13" width="2" height="4" fill="#FF9900"/>
+  <rect x="11" y="14" width="2" height="2" fill="#FFE066"/>
+  <rect x="12" y="14" width="1" height="1" fill="#FFFFFF"/>
+  <!-- Flame pupil detail -->
+  <rect x="11" y="13" width="1" height="1" fill="#C0390B"/>
+  <rect x="12" y="13" width="1" height="1" fill="#C0390B"/>
+  <!-- Glow around eye -->
+  <rect x="9" y="13" width="1" height="4" fill="#FF6600" opacity="0.5"/>
+  <rect x="14" y="13" width="1" height="4" fill="#FF6600" opacity="0.5"/>
+  <rect x="10" y="12" width="4" height="1" fill="#FF6600" opacity="0.5"/>
+  <rect x="10" y="17" width="4" height="1" fill="#FF6600" opacity="0.5"/>
+</svg>

@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" shape-rendering="crispEdges" width="256" height="256">
+  <!-- Trait: Solar Gem - embedded chest/forehead gem radiating light -->
+  <!-- Gem body (diamond shape) -->
+  <rect x="13" y="8" width="6" height="2" fill="#FFE066"/>
+  <rect x="11" y="10" width="10" height="4" fill="#FFD700"/>
+  <rect x="12" y="14" width="8" height="3" fill="#FFE066"/>
+  <rect x="13" y="17" width="6" height="2" fill="#FFD07A"/>
+  <rect x="14" y="19" width="4" height="2" fill="#F5A623"/>
+  <rect x="15" y="21" width="2" height="2" fill="#E8820C"/>
+  <!-- Gem facets -->
+  <rect x="16" y="10" width="4" height="4" fill="#FFF0A0"/>
+  <rect x="13" y="11" width="3" height="3" fill="#FFD700"/>
+  <rect x="14" y="14" width="3" height="2" fill="#FFF0A0"/>
+  <!-- Gem inner sparkle -->
+  <rect x="16" y="11" width="2" height="2" fill="#FFFFFF"/>
+  <rect x="17" y="10" width="1" height="1" fill="#FFFFFF"/>
+  <!-- Light rays from gem -->
+  <rect x="15" y="5" width="2" height="3" fill="#FFE066" opacity="0.8"/>
+  <rect x="15" y="22" width="2" height="3" fill="#FFE066" opacity="0.8"/>
+  <rect x="8" y="13" width="3" height="2" fill="#FFE066" opacity="0.8"/>
+  <rect x="21" y="13" width="3" height="2" fill="#FFE066" opacity="0.8"/>
+  <!-- Diagonal rays -->
+  <rect x="9" y="7" width="2" height="2" fill="#FFD07A" opacity="0.6"/>
+  <rect x="21" y="7" width="2" height="2" fill="#FFD07A" opacity="0.6"/>
+  <rect x="9" y="21" width="2" height="2" fill="#FFD07A" opacity="0.6"/>
+  <rect x="21" y="21" width="2" height="2" fill="#FFD07A" opacity="0.6"/>
+</svg>

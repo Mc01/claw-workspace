@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" shape-rendering="crispEdges" width="256" height="256">
+  <!-- Trait: Sun Horns - curved solar horns -->
+  <!-- Left horn -->
+  <rect x="9" y="9" width="3" height="4" fill="#E8820C"/>
+  <rect x="8" y="7" width="3" height="4" fill="#F5A623"/>
+  <rect x="7" y="5" width="2" height="4" fill="#FFD07A"/>
+  <rect x="7" y="4" width="2" height="2" fill="#FFE066"/>
+  <!-- Right horn -->
+  <rect x="19" y="9" width="3" height="4" fill="#E8820C"/>
+  <rect x="20" y="7" width="3" height="4" fill="#F5A623"/>
+  <rect x="21" y="5" width="2" height="4" fill="#FFD07A"/>
+  <rect x="21" y="4" width="2" height="2" fill="#FFE066"/>
+  <!-- Horn tips glow -->
+  <rect x="7" y="3" width="2" height="1" fill="#FFFFFF"/>
+  <rect x="21" y="3" width="2" height="1" fill="#FFFFFF"/>
+  <!-- Horn base detail -->
+  <rect x="10" y="11" width="2" height="1" fill="#C0390B"/>
+  <rect x="19" y="11" width="2" height="1" fill="#C0390B"/>
+</svg>

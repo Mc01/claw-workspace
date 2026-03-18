@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" shape-rendering="crispEdges" width="256" height="256">
+  <!-- Trait: Eclipse Aura - dark with glowing corona edges -->
+  <!-- Dark shadow overlay on corners -->
+  <rect x="0" y="0" width="6" height="6" fill="#1A0A00" opacity="0.6"/>
+  <rect x="26" y="0" width="6" height="6" fill="#1A0A00" opacity="0.6"/>
+  <rect x="0" y="26" width="6" height="6" fill="#1A0A00" opacity="0.6"/>
+  <rect x="26" y="26" width="6" height="6" fill="#1A0A00" opacity="0.6"/>
+  <!-- Eclipse corona top -->
+  <rect x="10" y="0" width="12" height="2" fill="#FF6600" opacity="0.8"/>
+  <rect x="8" y="1" width="16" height="2" fill="#FF9900" opacity="0.5"/>
+  <!-- Eclipse corona bottom -->
+  <rect x="10" y="30" width="12" height="2" fill="#FF6600" opacity="0.8"/>
+  <rect x="8" y="29" width="16" height="2" fill="#FF9900" opacity="0.5"/>
+  <!-- Eclipse corona left -->
+  <rect x="0" y="10" width="2" height="12" fill="#FF6600" opacity="0.8"/>
+  <rect x="1" y="8" width="2" height="16" fill="#FF9900" opacity="0.5"/>
+  <!-- Eclipse corona right -->
+  <rect x="30" y="10" width="2" height="12" fill="#FF6600" opacity="0.8"/>
+  <rect x="29" y="8" width="2" height="16" fill="#FF9900" opacity="0.5"/>
+  <!-- Prominences (solar flares) -->
+  <rect x="14" y="0" width="4" height="3" fill="#FFD07A" opacity="0.9"/>
+  <rect x="0" y="14" width="3" height="4" fill="#FFD07A" opacity="0.9"/>
+  <rect x="29" y="14" width="3" height="4" fill="#FFD07A" opacity="0.9"/>
+</svg>

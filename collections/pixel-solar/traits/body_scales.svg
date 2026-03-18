@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" shape-rendering="crispEdges" width="256" height="256">
+  <!-- Trait: Radiant Scales - iridescent solar scale pattern -->
+  <!-- Scale row 1 -->
+  <rect x="10" y="14" width="3" height="3" fill="#F5A623"/>
+  <rect x="13" y="14" width="3" height="3" fill="#FFD07A"/>
+  <rect x="16" y="14" width="3" height="3" fill="#F5A623"/>
+  <rect x="19" y="14" width="3" height="3" fill="#FFD07A"/>
+  <!-- Scale row 2 (offset) -->
+  <rect x="11" y="17" width="3" height="3" fill="#FFD07A"/>
+  <rect x="14" y="17" width="3" height="3" fill="#E8820C"/>
+  <rect x="17" y="17" width="3" height="3" fill="#FFD07A"/>
+  <rect x="20" y="17" width="3" height="3" fill="#F5A623"/>
+  <!-- Scale row 3 -->
+  <rect x="10" y="20" width="3" height="3" fill="#F5A623"/>
+  <rect x="13" y="20" width="3" height="3" fill="#FFD07A"/>
+  <rect x="16" y="20" width="3" height="3" fill="#E8820C"/>
+  <rect x="19" y="20" width="3" height="3" fill="#F5A623"/>
+  <!-- Scale shimmer highlights -->
+  <rect x="10" y="14" width="1" height="1" fill="#FFE066"/>
+  <rect x="13" y="14" width="1" height="1" fill="#FFE066"/>
+  <rect x="16" y="14" width="1" height="1" fill="#FFE066"/>
+  <rect x="19" y="14" width="1" height="1" fill="#FFE066"/>
+  <rect x="14" y="17" width="1" height="1" fill="#FFE066"/>
+  <rect x="17" y="17" width="1" height="1" fill="#FFE066"/>
+</svg>

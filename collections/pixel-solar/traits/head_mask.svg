@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" shape-rendering="crispEdges" width="256" height="256">
+  <!-- Trait: Sun Mask - ceremonial solar mask overlay -->
+  <!-- Mask base -->
+  <rect x="9" y="10" width="14" height="10" fill="#E8820C"/>
+  <rect x="10" y="11" width="12" height="8" fill="#FFD07A"/>
+  <!-- Eye holes -->
+  <rect x="11" y="12" width="3" height="3" fill="#1A1A1A"/>
+  <rect x="18" y="12" width="3" height="3" fill="#1A1A1A"/>
+  <!-- Eye glow within holes -->
+  <rect x="12" y="13" width="1" height="1" fill="#FF6600"/>
+  <rect x="19" y="13" width="1" height="1" fill="#FF6600"/>
+  <!-- Mask solar rays decoration -->
+  <rect x="9" y="10" width="2" height="1" fill="#FFE066"/>
+  <rect x="21" y="10" width="2" height="1" fill="#FFE066"/>
+  <rect x="14" y="9" width="4" height="2" fill="#F5A623"/>
+  <rect x="15" y="8" width="2" height="2" fill="#FFE066"/>
+  <!-- Mouth slit -->
+  <rect x="13" y="17" width="6" height="2" fill="#C0390B"/>
+  <rect x="14" y="18" width="4" height="1" fill="#FF4500"/>
+  <!-- Mask edge detail -->
+  <rect x="9" y="15" width="1" height="3" fill="#C0390B"/>
+  <rect x="22" y="15" width="1" height="3" fill="#C0390B"/>
+</svg>

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" shape-rendering="crispEdges" width="256" height="256">
+  <!-- Trait: Void Eyes - dark eclipse eyes -->
+  <rect x="10" y="13" width="4" height="4" fill="#1A1A1A"/>
+  <rect x="11" y="14" width="2" height="2" fill="#000000"/>
+  <!-- Eclipse ring -->
+  <rect x="10" y="13" width="4" height="1" fill="#FF6600"/>
+  <rect x="10" y="16" width="4" height="1" fill="#FF6600"/>
+  <rect x="10" y="13" width="1" height="4" fill="#FF6600"/>
+  <rect x="13" y="13" width="1" height="4" fill="#FF6600"/>
+  <!-- Corona flicker -->
+  <rect x="9" y="14" width="1" height="2" fill="#FFE066" opacity="0.6"/>
+  <rect x="14" y="14" width="1" height="2" fill="#FFE066" opacity="0.6"/>
+</svg>

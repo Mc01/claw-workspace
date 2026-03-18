@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" shape-rendering="crispEdges" width="256" height="256">
+  <!-- Trait: Solar Crown - ornate sun crown -->
+  <!-- Crown base band -->
+  <rect x="9" y="8" width="14" height="3" fill="#E8820C"/>
+  <rect x="10" y="9" width="12" height="2" fill="#FFD07A"/>
+  <!-- Crown points -->
+  <rect x="10" y="5" width="2" height="4" fill="#F5A623"/>
+  <rect x="14" y="4" width="2" height="5" fill="#FFD07A"/>
+  <rect x="18" y="5" width="2" height="4" fill="#F5A623"/>
+  <!-- Crown gems -->
+  <rect x="14" y="3" width="2" height="1" fill="#FFE066"/>
+  <rect x="10" y="4" width="2" height="1" fill="#FFE066"/>
+  <rect x="18" y="4" width="2" height="1" fill="#FFE066"/>
+  <!-- Gem sparkles -->
+  <rect x="15" y="2" width="1" height="1" fill="#FFFFFF"/>
+  <!-- Crown base detail -->
+  <rect x="11" y="8" width="2" height="1" fill="#C0390B"/>
+  <rect x="15" y="8" width="2" height="1" fill="#C0390B"/>
+  <rect x="19" y="8" width="2" height="1" fill="#C0390B"/>
+</svg>

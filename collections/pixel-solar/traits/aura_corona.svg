@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" shape-rendering="crispEdges" width="256" height="256">
+  <!-- Trait: Corona Aura - sun corona rays emanating outward -->
+  <!-- Cardinal rays -->
+  <rect x="15" y="1" width="2" height="5" fill="#FFE066" opacity="0.9"/>
+  <rect x="15" y="26" width="2" height="5" fill="#FFE066" opacity="0.9"/>
+  <rect x="1" y="15" width="5" height="2" fill="#FFE066" opacity="0.9"/>
+  <rect x="26" y="15" width="5" height="2" fill="#FFE066" opacity="0.9"/>
+  <!-- Diagonal rays -->
+  <rect x="4" y="4" width="2" height="2" fill="#FFD07A" opacity="0.7"/>
+  <rect x="5" y="5" width="2" height="2" fill="#FFD07A" opacity="0.7"/>
+  <rect x="6" y="6" width="2" height="2" fill="#F5A623" opacity="0.6"/>
+  <rect x="26" y="4" width="2" height="2" fill="#FFD07A" opacity="0.7"/>
+  <rect x="25" y="5" width="2" height="2" fill="#FFD07A" opacity="0.7"/>
+  <rect x="24" y="6" width="2" height="2" fill="#F5A623" opacity="0.6"/>
+  <rect x="4" y="26" width="2" height="2" fill="#FFD07A" opacity="0.7"/>
+  <rect x="5" y="25" width="2" height="2" fill="#FFD07A" opacity="0.7"/>
+  <rect x="6" y="24" width="2" height="2" fill="#F5A623" opacity="0.6"/>
+  <rect x="26" y="26" width="2" height="2" fill="#FFD07A" opacity="0.7"/>
+  <rect x="25" y="25" width="2" height="2" fill="#FFD07A" opacity="0.7"/>
+  <rect x="24" y="24" width="2" height="2" fill="#F5A623" opacity="0.6"/>
+  <!-- Inner glow ring -->
+  <rect x="8" y="5" width="16" height="1" fill="#FFE066" opacity="0.3"/>
+  <rect x="8" y="26" width="16" height="1" fill="#FFE066" opacity="0.3"/>
+  <rect x="5" y="8" width="1" height="16" fill="#FFE066" opacity="0.3"/>
+  <rect x="26" y="8" width="1" height="16" fill="#FFE066" opacity="0.3"/>
+</svg>

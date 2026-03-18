@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" shape-rendering="crispEdges" width="256" height="256">
+  <!-- Trait: Solar Cloak - flowing golden cape/cloak -->
+  <!-- Cloak main body -->
+  <rect x="6" y="13" width="8" height="16" fill="#E8820C"/>
+  <rect x="7" y="14" width="6" height="14" fill="#F5A623"/>
+  <!-- Cloak fold detail -->
+  <rect x="8" y="14" width="2" height="14" fill="#FFD07A"/>
+  <rect x="11" y="15" width="2" height="12" fill="#E8820C"/>
+  <!-- Cloak hem -->
+  <rect x="6" y="27" width="8" height="2" fill="#FFD07A"/>
+  <rect x="6" y="28" width="8" height="1" fill="#FFE066"/>
+  <!-- Clasp at top -->
+  <rect x="13" y="13" width="3" height="3" fill="#FFD07A"/>
+  <rect x="14" y="13" width="2" height="2" fill="#FFE066"/>
+  <rect x="14" y="14" width="1" height="1" fill="#C0390B"/>
+  <!-- Cloak trailing edge -->
+  <rect x="5" y="18" width="2" height="8" fill="#F5A623"/>
+  <rect x="4" y="21" width="2" height="6" fill="#E8820C"/>
+  <rect x="4" y="25" width="2" height="2" fill="#FFD07A"/>
+  <!-- Inner lining -->
+  <rect x="7" y="14" width="1" height="13" fill="#FFE066" opacity="0.4"/>
+</svg>
