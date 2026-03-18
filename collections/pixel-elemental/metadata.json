@@ -1,0 +1,82 @@
+{
+  "name": "Pixel Elemental Beasts",
+  "symbol": "PEB",
+  "description": "A collection of 5 elemental beast archetypes in pixel art style, each with composable traits for generative NFT creation.",
+  "style": {
+    "aesthetic": "pixel-art",
+    "technique": "clean vectors, blocky shapes",
+    "view": "side-profile",
+    "canvas": "200x200",
+    "outlines": "bold",
+    "colors": "flat",
+    "shading": "minimal"
+  },
+  "archetypes": [
+    {
+      "id": 1,
+      "name": "Lion - Fire Mane",
+      "element": "fire",
+      "file": "base/lion-fire-mane.svg",
+      "colors": ["#E8A040", "#FF4500", "#FF6600", "#FFAA00", "#FFCC66"]
+    },
+    {
+      "id": 2,
+      "name": "Serpent - Lightning Coil",
+      "element": "lightning",
+      "file": "base/serpent-lightning-coil.svg",
+      "colors": ["#6B48C8", "#7B58D8", "#FFE566", "#FFD700", "#FF4466"]
+    },
+    {
+      "id": 3,
+      "name": "Eagle - Wind Talons",
+      "element": "wind",
+      "file": "base/eagle-wind-talons.svg",
+      "colors": ["#4A90D9", "#5BA0E9", "#6BB0F9", "#E8E8F0", "#FF8C00"]
+    },
+    {
+      "id": 4,
+      "name": "Croc - Ice Jaw",
+      "element": "ice",
+      "file": "base/croc-ice-jaw.svg",
+      "colors": ["#3AA0A0", "#2E8B8B", "#B8E8F0", "#C8F0F0", "#E8F8FF"]
+    },
+    {
+      "id": 5,
+      "name": "Beetle - Earth Shell",
+      "element": "earth",
+      "file": "base/beetle-earth-shell.svg",
+      "colors": ["#8B6914", "#6B4904", "#5A3A1A", "#A07828", "#CCFF66"]
+    }
+  ],
+  "traits": {
+    "elemental-effects": [
+      {"name": "Fire Aura", "file": "traits/elemental-effects/fire-aura.svg", "rarity": "common"},
+      {"name": "Lightning Crackle", "file": "traits/elemental-effects/lightning-crackle.svg", "rarity": "common"},
+      {"name": "Wind Vortex", "file": "traits/elemental-effects/wind-vortex.svg", "rarity": "common"},
+      {"name": "Ice Crystals", "file": "traits/elemental-effects/ice-crystals.svg", "rarity": "common"},
+      {"name": "Earth Quake", "file": "traits/elemental-effects/earth-quake.svg", "rarity": "common"}
+    ],
+    "markings": [
+      {"name": "Tribal Stripes", "file": "traits/markings/tribal-stripes.svg", "rarity": "uncommon"},
+      {"name": "Crystal Veins", "file": "traits/markings/crystal-veins.svg", "rarity": "rare"},
+      {"name": "Shadow Spots", "file": "traits/markings/shadow-spots.svg", "rarity": "uncommon"},
+      {"name": "Star Constellation", "file": "traits/markings/star-constellation.svg", "rarity": "rare"},
+      {"name": "Hex Pattern", "file": "traits/markings/hex-pattern.svg", "rarity": "uncommon"}
+    ],
+    "accessories": [
+      {"name": "Battle Crown", "file": "traits/accessories/battle-crown.svg", "rarity": "legendary"},
+      {"name": "Chest Armor", "file": "traits/accessories/chest-armor.svg", "rarity": "rare"},
+      {"name": "Mystic Collar", "file": "traits/accessories/mystic-collar.svg", "rarity": "rare"},
+      {"name": "War Paint Mask", "file": "traits/accessories/war-paint-mask.svg", "rarity": "uncommon"},
+      {"name": "Tail Ring", "file": "traits/accessories/tail-ring.svg", "rarity": "uncommon"}
+    ],
+    "special": [
+      {"name": "Glowing Eyes", "file": "traits/special/glowing-eyes.svg", "rarity": "rare"},
+      {"name": "Elemental Horns", "file": "traits/special/elemental-horns.svg", "rarity": "rare"},
+      {"name": "Spirit Wisps", "file": "traits/special/spirit-wisps.svg", "rarity": "legendary"},
+      {"name": "Runic Aura", "file": "traits/special/runic-aura.svg", "rarity": "legendary"},
+      {"name": "Scar Mark", "file": "traits/special/scar-mark.svg", "rarity": "common"}
+    ]
+  },
+  "total_combinations": "5 bases × 5 effects × 5 markings × 5 accessories × 5 special = 3,125 unique combos"
+}

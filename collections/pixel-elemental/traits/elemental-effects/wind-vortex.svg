@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <!-- Trait: Wind Vortex - Swirling air currents -->
+  <rect x="10" y="50" width="20" height="3" fill="#B0D8FF" opacity="0.7"/>
+  <rect x="14" y="56" width="16" height="3" fill="#C8E8FF" opacity="0.6"/>
+  <rect x="160" y="60" width="24" height="3" fill="#B0D8FF" opacity="0.7"/>
+  <rect x="164" y="66" width="18" height="3" fill="#C8E8FF" opacity="0.6"/>
+  <rect x="30" y="140" width="22" height="3" fill="#C8E8FF" opacity="0.5"/>
+  <rect x="140" y="145" width="20" height="3" fill="#B0D8FF" opacity="0.6"/>
+  <!-- Spiral lines -->
+  <rect x="70" y="10" width="14" height="3" fill="#B0D8FF" opacity="0.5"/>
+  <rect x="76" y="16" width="18" height="3" fill="#C8E8FF" opacity="0.4"/>
+  <rect x="120" y="12" width="16" height="3" fill="#B0D8FF" opacity="0.5"/>
+  <!-- Leaf/debris particles -->
+  <rect x="24" y="80" width="6" height="4" fill="#88CC88" opacity="0.6"/>
+  <rect x="170" y="110" width="6" height="4" fill="#88CC88" opacity="0.5"/>
+  <rect x="50" y="20" width="4" height="4" fill="#AADDAA" opacity="0.5"/>
+</svg>

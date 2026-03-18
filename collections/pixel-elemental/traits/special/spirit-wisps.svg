@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <!-- Trait: Spirit Wisps - Ghostly floating orbs -->
+  <!-- Wisp 1 -->
+  <rect x="20" y="30" width="10" height="10" rx="2" fill="#88FF88" opacity="0.7"/>
+  <rect x="22" y="32" width="4" height="4" fill="#CCFFCC" opacity="0.9"/>
+  <rect x="22" y="40" width="6" height="4" fill="#88FF88" opacity="0.4"/>
+  <rect x="24" y="44" width="4" height="4" fill="#88FF88" opacity="0.2"/>
+  <!-- Wisp 2 -->
+  <rect x="160" y="20" width="12" height="12" rx="2" fill="#88CCFF" opacity="0.7"/>
+  <rect x="163" y="23" width="4" height="4" fill="#CCDDFF" opacity="0.9"/>
+  <rect x="162" y="32" width="8" height="4" fill="#88CCFF" opacity="0.4"/>
+  <rect x="164" y="36" width="4" height="4" fill="#88CCFF" opacity="0.2"/>
+  <!-- Wisp 3 -->
+  <rect x="140" y="140" width="8" height="8" rx="2" fill="#FF88FF" opacity="0.6"/>
+  <rect x="142" y="142" width="4" height="4" fill="#FFCCFF" opacity="0.8"/>
+  <rect x="142" y="148" width="4" height="4" fill="#FF88FF" opacity="0.3"/>
+  <!-- Wisp 4 (small) -->
+  <rect x="40" y="150" width="6" height="6" rx="1" fill="#FFFF88" opacity="0.5"/>
+  <rect x="42" y="152" width="3" height="3" fill="#FFFFCC" opacity="0.7"/>
+</svg>

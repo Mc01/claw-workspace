@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <!-- Trait: Mystic Collar - Enchanted necklace/collar -->
+  <rect x="78" y="68" width="32" height="6" fill="#4B0082" stroke="#1a1a1a" stroke-width="2"/>
+  <!-- Chain links -->
+  <rect x="76" y="72" width="8" height="8" fill="#9966CC" stroke="#1a1a1a" stroke-width="1"/>
+  <rect x="86" y="74" width="8" height="8" fill="#9966CC" stroke="#1a1a1a" stroke-width="1"/>
+  <rect x="96" y="74" width="8" height="8" fill="#9966CC" stroke="#1a1a1a" stroke-width="1"/>
+  <rect x="106" y="72" width="8" height="8" fill="#9966CC" stroke="#1a1a1a" stroke-width="1"/>
+  <!-- Central gem -->
+  <rect x="90" y="80" width="10" height="10" fill="#FF66FF" stroke="#4B0082" stroke-width="2"/>
+  <rect x="93" y="83" width="4" height="4" fill="#FFAAFF"/>
+  <!-- Glow -->
+  <rect x="88" y="78" width="14" height="14" fill="#FF66FF" opacity="0.15"/>
+</svg>

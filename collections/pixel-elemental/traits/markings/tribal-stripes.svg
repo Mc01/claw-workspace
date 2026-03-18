@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <!-- Trait: Tribal Stripes - Bold war-paint style markings -->
+  <rect x="60" y="50" width="3" height="16" fill="#FF2200" opacity="0.9"/>
+  <rect x="66" y="48" width="3" height="20" fill="#FF2200" opacity="0.9"/>
+  <rect x="72" y="50" width="3" height="16" fill="#FF2200" opacity="0.9"/>
+  <rect x="50" y="90" width="40" height="3" fill="#FF2200" opacity="0.85"/>
+  <rect x="48" y="96" width="44" height="3" fill="#FF2200" opacity="0.85"/>
+  <rect x="50" y="102" width="40" height="3" fill="#FF2200" opacity="0.85"/>
+  <rect x="100" y="80" width="3" height="30" fill="#FF2200" opacity="0.8"/>
+  <rect x="106" y="84" width="3" height="22" fill="#FF2200" opacity="0.8"/>
+</svg>

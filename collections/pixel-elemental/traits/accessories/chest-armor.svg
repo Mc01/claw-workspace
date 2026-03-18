@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <!-- Trait: Chest Armor - Plate armor on torso -->
+  <rect x="80" y="76" width="32" height="36" fill="#808080" stroke="#1a1a1a" stroke-width="3"/>
+  <rect x="84" y="80" width="24" height="28" fill="#A0A0A0" stroke="#606060" stroke-width="1"/>
+  <!-- Emblem -->
+  <rect x="90" y="86" width="12" height="12" fill="#C0C0C0" stroke="#606060" stroke-width="2"/>
+  <rect x="93" y="89" width="6" height="6" fill="#DAA520"/>
+  <!-- Shoulder guard -->
+  <rect x="76" y="70" width="12" height="10" fill="#808080" stroke="#1a1a1a" stroke-width="2"/>
+  <rect x="104" y="70" width="12" height="10" fill="#808080" stroke="#1a1a1a" stroke-width="2"/>
+  <!-- Belt -->
+  <rect x="78" y="108" width="36" height="6" fill="#8B4513" stroke="#1a1a1a" stroke-width="2"/>
+  <rect x="92" y="106" width="8" height="10" fill="#DAA520" stroke="#1a1a1a" stroke-width="1"/>
+</svg>

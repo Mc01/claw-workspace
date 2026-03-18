@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <!-- Trait: Battle Crown - Spiked crown headpiece -->
+  <rect x="68" y="28" width="40" height="8" fill="#DAA520" stroke="#1a1a1a" stroke-width="2"/>
+  <rect x="72" y="18" width="8" height="12" fill="#DAA520" stroke="#1a1a1a" stroke-width="2"/>
+  <rect x="84" y="14" width="8" height="16" fill="#FFD700" stroke="#1a1a1a" stroke-width="2"/>
+  <rect x="96" y="18" width="8" height="12" fill="#DAA520" stroke="#1a1a1a" stroke-width="2"/>
+  <!-- Gems -->
+  <rect x="74" y="20" width="4" height="4" fill="#FF4444"/>
+  <rect x="86" y="16" width="4" height="4" fill="#FF4444"/>
+  <rect x="98" y="20" width="4" height="4" fill="#FF4444"/>
+  <!-- Crown base detail -->
+  <rect x="70" y="34" width="36" height="3" fill="#B8860B"/>
+</svg>

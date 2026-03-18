@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <!-- Pixel Elemental Beast: Serpent - Lightning Coil | Side profile -->
+  
+  <!-- Coiled body (bottom loop) -->
+  <rect x="50" y="140" width="16" height="16" fill="#6B48C8" stroke="#1a1a1a" stroke-width="3"/>
+  <rect x="66" y="148" width="16" height="16" fill="#7B58D8" stroke="#1a1a1a" stroke-width="3"/>
+  <rect x="82" y="152" width="16" height="16" fill="#6B48C8" stroke="#1a1a1a" stroke-width="3"/>
+  <rect x="98" y="148" width="16" height="16" fill="#7B58D8" stroke="#1a1a1a" stroke-width="3"/>
+  <rect x="114" y="140" width="16" height="16" fill="#6B48C8" stroke="#1a1a1a" stroke-width="3"/>
+  
+  <!-- Coiled body (middle loop) -->
+  <rect x="114" y="124" width="16" height="16" fill="#7B58D8" stroke="#1a1a1a" stroke-width="3"/>
+  <rect x="98" y="118" width="16" height="16" fill="#6B48C8" stroke="#1a1a1a" stroke-width="3"/>
+  <rect x="82" y="114" width="16" height="16" fill="#7B58D8" stroke="#1a1a1a" stroke-width="3"/>
+  <rect x="66" y="118" width="16" height="16" fill="#6B48C8" stroke="#1a1a1a" stroke-width="3"/>
+  <rect x="50" y="124" width="16" height="16" fill="#7B58D8" stroke="#1a1a1a" stroke-width="3"/>
+  
+  <!-- Belly scales (zigzag pattern on coils) -->
+  <rect x="56" y="152" width="8" height="4" fill="#FFE566"/>
+  <rect x="72" y="156" width="8" height="4" fill="#FFE566"/>
+  <rect x="88" y="158" width="8" height="4" fill="#FFE566"/>
+  <rect x="104" y="156" width="8" height="4" fill="#FFE566"/>
+  
+  <!-- Neck rising -->
+  <rect x="50" y="108" width="16" height="16" fill="#6B48C8" stroke="#1a1a1a" stroke-width="3"/>
+  <rect x="54" y="92" width="16" height="16" fill="#7B58D8" stroke="#1a1a1a" stroke-width="3"/>
+  <rect x="60" y="76" width="16" height="16" fill="#6B48C8" stroke="#1a1a1a" stroke-width="3"/>
+  
+  <!-- Head -->
+  <rect x="64" y="48" width="36" height="28" fill="#7B58D8" stroke="#1a1a1a" stroke-width="3"/>
+  
+  <!-- Eye -->
+  <rect x="84" y="54" width="10" height="10" fill="#FFE566" stroke="#1a1a1a" stroke-width="2"/>
+  <rect x="88" y="56" width="4" height="6" fill="#1a1a1a"/>
+  
+  <!-- Snout / Jaw -->
+  <rect x="100" y="56" width="24" height="12" fill="#6B48C8" stroke="#1a1a1a" stroke-width="2"/>
+  <rect x="100" y="68" width="20" height="8" fill="#5A38B8" stroke="#1a1a1a" stroke-width="2"/>
+  
+  <!-- Fangs -->
+  <rect x="114" y="68" width="4" height="8" fill="#FFFFFF" stroke="#1a1a1a" stroke-width="1"/>
+  <rect x="108" y="68" width="4" height="6" fill="#FFFFFF" stroke="#1a1a1a" stroke-width="1"/>
+  
+  <!-- Forked tongue -->
+  <rect x="124" y="60" width="12" height="3" fill="#FF4466" stroke="#1a1a1a" stroke-width="1"/>
+  <rect x="136" y="57" width="6" height="3" fill="#FF4466"/>
+  <rect x="136" y="63" width="6" height="3" fill="#FF4466"/>
+  
+  <!-- Hood / crest -->
+  <rect x="60" y="40" width="12" height="12" fill="#FFE566" stroke="#1a1a1a" stroke-width="2"/>
+  <rect x="72" y="36" width="12" height="12" fill="#FFD700" stroke="#1a1a1a" stroke-width="2"/>
+  <rect x="84" y="40" width="12" height="12" fill="#FFE566" stroke="#1a1a1a" stroke-width="2"/>
+  
+  <!-- Lightning bolt marks on body -->
+  <rect x="56" y="130" width="4" height="8" fill="#FFE566"/>
+  <rect x="52" y="136" width="4" height="4" fill="#FFE566"/>
+  <rect x="108" y="130" width="4" height="8" fill="#FFE566"/>
+  <rect x="112" y="136" width="4" height="4" fill="#FFE566"/>
+  
+  <!-- Tail rattle -->
+  <rect x="120" y="132" width="12" height="10" fill="#FFD700" stroke="#1a1a1a" stroke-width="2"/>
+  <rect x="132" y="130" width="8" height="14" fill="#FFE566" stroke="#1a1a1a" stroke-width="2"/>
+</svg>

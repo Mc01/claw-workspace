@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <!-- Pixel Elemental Beast: Croc - Ice Jaw | Side profile -->
+  
+  <!-- Tail -->
+  <rect x="4" y="100" width="16" height="14" fill="#2E8B8B" stroke="#1a1a1a" stroke-width="2"/>
+  <rect x="16" y="96" width="16" height="16" fill="#3AA0A0" stroke="#1a1a1a" stroke-width="2"/>
+  <rect x="8" y="108" width="12" height="8" fill="#1E7B7B"/>
+  
+  <!-- Tail spikes -->
+  <rect x="8" y="92" width="6" height="8" fill="#B8E8F0" stroke="#1a1a1a" stroke-width="1"/>
+  <rect x="20" y="88" width="6" height="8" fill="#B8E8F0" stroke="#1a1a1a" stroke-width="1"/>
+  
+  <!-- Body -->
+  <rect x="32" y="88" width="80" height="36" fill="#3AA0A0" stroke="#1a1a1a" stroke-width="3"/>
+  
+  <!-- Back ridge / armor plates -->
+  <rect x="36" y="80" width="10" height="10" fill="#B8E8F0" stroke="#1a1a1a" stroke-width="2"/>
+  <rect x="48" y="78" width="10" height="12" fill="#A0D8E8" stroke="#1a1a1a" stroke-width="2"/>
+  <rect x="60" y="76" width="10" height="14" fill="#B8E8F0" stroke="#1a1a1a" stroke-width="2"/>
+  <rect x="72" y="78" width="10" height="12" fill="#A0D8E8" stroke="#1a1a1a" stroke-width="2"/>
+  <rect x="84" y="80" width="10" height="10" fill="#B8E8F0" stroke="#1a1a1a" stroke-width="2"/>
+  
+  <!-- Belly -->
+  <rect x="44" y="116" width="56" height="8" fill="#C8F0F0" stroke="#1a1a1a" stroke-width="1"/>
+  
+  <!-- Belly scale lines -->
+  <rect x="52" y="118" width="1" height="4" fill="#3AA0A0"/>
+  <rect x="62" y="118" width="1" height="4" fill="#3AA0A0"/>
+  <rect x="72" y="118" width="1" height="4" fill="#3AA0A0"/>
+  <rect x="82" y="118" width="1" height="4" fill="#3AA0A0"/>
+  
+  <!-- Back legs -->
+  <rect x="40" y="124" width="14" height="20" fill="#2E8B8B" stroke="#1a1a1a" stroke-width="2"/>
+  <rect x="36" y="140" width="20" height="10" fill="#3AA0A0" stroke="#1a1a1a" stroke-width="2"/>
+  <rect x="34" y="148" width="8" height="6" fill="#2E8B8B" stroke="#1a1a1a" stroke-width="1"/>
+  <rect x="42" y="148" width="8" height="6" fill="#2E8B8B" stroke="#1a1a1a" stroke-width="1"/>
+  <rect x="50" y="148" width="8" height="6" fill="#2E8B8B" stroke="#1a1a1a" stroke-width="1"/>
+  
+  <!-- Front legs -->
+  <rect x="88" y="124" width="14" height="20" fill="#2E8B8B" stroke="#1a1a1a" stroke-width="2"/>
+  <rect x="84" y="140" width="20" height="10" fill="#3AA0A0" stroke="#1a1a1a" stroke-width="2"/>
+  <rect x="82" y="148" width="8" height="6" fill="#2E8B8B" stroke="#1a1a1a" stroke-width="1"/>
+  <rect x="90" y="148" width="8" height="6" fill="#2E8B8B" stroke="#1a1a1a" stroke-width="1"/>
+  <rect x="98" y="148" width="8" height="6" fill="#2E8B8B" stroke="#1a1a1a" stroke-width="1"/>
+  
+  <!-- Neck -->
+  <rect x="104" y="84" width="16" height="28" fill="#3AA0A0" stroke="#1a1a1a" stroke-width="2"/>
+  
+  <!-- Head (long jaw) -->
+  <rect x="112" y="72" width="28" height="24" fill="#3AA0A0" stroke="#1a1a1a" stroke-width="3"/>
+  
+  <!-- Upper jaw extension -->
+  <rect x="140" y="74" width="36" height="12" fill="#2E8B8B" stroke="#1a1a1a" stroke-width="2"/>
+  
+  <!-- Lower jaw -->
+  <rect x="140" y="86" width="32" height="10" fill="#3AA0A0" stroke="#1a1a1a" stroke-width="2"/>
+  
+  <!-- Teeth (upper) -->
+  <rect x="144" y="84" width="4" height="6" fill="#E8F8FF" stroke="#1a1a1a" stroke-width="1"/>
+  <rect x="152" y="84" width="4" height="6" fill="#E8F8FF" stroke="#1a1a1a" stroke-width="1"/>
+  <rect x="160" y="84" width="4" height="6" fill="#E8F8FF" stroke="#1a1a1a" stroke-width="1"/>
+  <rect x="168" y="82" width="4" height="6" fill="#E8F8FF" stroke="#1a1a1a" stroke-width="1"/>
+  
+  <!-- Teeth (lower) -->
+  <rect x="148" y="86" width="4" height="5" fill="#E8F8FF" stroke="#1a1a1a" stroke-width="1"/>
+  <rect x="156" y="86" width="4" height="5" fill="#E8F8FF" stroke="#1a1a1a" stroke-width="1"/>
+  <rect x="164" y="86" width="4" height="5" fill="#E8F8FF" stroke="#1a1a1a" stroke-width="1"/>
+  
+  <!-- Ice crystals on jaw -->
+  <rect x="172" y="70" width="6" height="10" fill="#C8E8FF" stroke="#88C8E8" stroke-width="1" opacity="0.9"/>
+  <rect x="178" y="66" width="4" height="8" fill="#E0F0FF" stroke="#88C8E8" stroke-width="1" opacity="0.8"/>
+  
+  <!-- Eye -->
+  <rect x="128" y="76" width="10" height="8" fill="#B8E8F0" stroke="#1a1a1a" stroke-width="2"/>
+  <rect x="132" y="77" width="5" height="6" fill="#1a1a1a"/>
+  
+  <!-- Nostril -->
+  <rect x="170" y="76" width="4" height="3" fill="#1a1a1a"/>
+  
+  <!-- Head bumps -->
+  <rect x="116" y="66" width="8" height="8" fill="#2E8B8B" stroke="#1a1a1a" stroke-width="2"/>
+  <rect x="126" y="64" width="8" height="8" fill="#2E8B8B" stroke="#1a1a1a" stroke-width="2"/>
+</svg>

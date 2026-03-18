@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <!-- Trait: War Paint Mask - Face mask/eye covering -->
+  <rect x="80" y="42" width="36" height="16" fill="#2C2C2C" stroke="#1a1a1a" stroke-width="2"/>
+  <!-- Eye holes -->
+  <rect x="84" y="46" width="10" height="8" fill="none" stroke="#FF4400" stroke-width="2"/>
+  <rect x="100" y="46" width="10" height="8" fill="none" stroke="#FF4400" stroke-width="2"/>
+  <!-- Mask horns -->
+  <rect x="78" y="38" width="6" height="8" fill="#2C2C2C" stroke="#1a1a1a" stroke-width="1"/>
+  <rect x="110" y="38" width="6" height="8" fill="#2C2C2C" stroke="#1a1a1a" stroke-width="1"/>
+  <!-- Decorative lines -->
+  <rect x="82" y="56" width="30" height="2" fill="#FF4400" opacity="0.8"/>
+  <rect x="92" y="40" width="10" height="2" fill="#FF4400" opacity="0.7"/>
+</svg>
