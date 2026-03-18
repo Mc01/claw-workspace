@@ -60,12 +60,14 @@ export function Landing() {
   const skyDayRef = useRef<HTMLDivElement>(null);
   const grassFieldRef = useRef<HTMLDivElement>(null);
   const stepsProgressRef = useRef<HTMLDivElement>(null);
+  const faqItemRefs = useRef<(HTMLDivElement | null)[]>([]);
 
   const [grassBlades, setGrassBlades] = useState<GrassBlade[]>([]);
   const [sunRays, setSunRays] = useState<SunRay[]>([]);
   const [treeAnimated, setTreeAnimated] = useState(false);
   const [smallTreesShown, setSmallTreesShown] = useState(false);
   const [openFaq, setOpenFaq] = useState<number | null>(null);
+  const [visibleFaqs, setVisibleFaqs] = useState<Set<number>>(new Set());
 
   const grassColors = ['#3A6B1E', '#4A8025', '#5A9B30', '#2D5016', '#6AAF32', '#7ABF42'];
 
@@ -271,13 +273,12 @@ export function Landing() {
         <div className="container">
           <div className="stats-grid">
             {[
-              { icon: '🌿', target: 2847, label: 'Active Members', width: 82 },
-              { icon: '🏦', target: 142, label: 'Chama Groups', width: 65 },
-              { icon: '💰', target: 890000, label: 'Total Saved (cUSD)', prefix: '$', width: 91 },
-              { icon: '📈', target: 18, label: 'Average APY Earned', suffix: '%', width: 72 },
+              { target: 2847, label: 'Active Members', width: 82, bg: '#C4E86A' },
+              { target: 142, label: 'Chama Groups', width: 65, bg: '#C4A47C' },
+              { target: 890000, label: 'Total Saved (cUSD)', prefix: '$', width: 91, bg: '#E8A598' },
+              { target: 18, label: 'Average APY Earned', suffix: '%', width: 72, bg: '#FFE58A' },
             ].map((s, i) => (
-              <div key={i} className="stat-card reveal-up" data-delay={i * 100}>
-                <div className="stat-icon">{s.icon}</div>
+              <div key={i} className="stat-card reveal-up" data-delay={i * 100} style={{ background: s.bg }}>
                 <div className="stat-num"><Counter target={s.target} prefix={s.prefix} suffix={s.suffix} /></div>
                 <div className="stat-label">{s.label}</div>
                 <div className="stat-bar"><div className="stat-bar-fill" style={{ width: `${s.width}%` }} /></div>
@@ -507,7 +508,7 @@ export function Landing() {
           </div>
           <div className="faq-list">
             {faqs.map((faq, i) => (
-              <div key={i} className={`faq-item reveal-up${openFaq === i ? ' open' : ''}`} data-delay={String(i * 80)}>
+              <div key={i} className={`faq-item reveal-up${visibleFaqs.has(i) ? ' visible' : ''}${openFaq === i ? ' open' : ''}`} data-delay={String(i * 80)} ref={(el) => { if (el) faqItemRefs.current[i] = el; }}>
                 <button className="faq-q" onClick={() => setOpenFaq(openFaq === i ? null : i)}>
                   <span>{faq.q}</span>
                   <span className="faq-icon">+</span>
