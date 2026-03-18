@@ -1,3 +1,4 @@
+import * as React from "react";
 import { useAccount } from 'wagmi';
 import { motion } from 'framer-motion';
 import { useChamaFactory, useUserChamas } from '../hooks/useChamaFactory';
