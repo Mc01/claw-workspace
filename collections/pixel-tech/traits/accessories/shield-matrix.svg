@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" shape-rendering="crispEdges">
+  <title>Accessory: Shield Matrix</title>
+  <!-- Hex shield outline -->
+  <rect x="2" y="6" width="6" height="1" fill="#00e5ff" opacity="0.6"/>
+  <rect x="1" y="7" width="1" height="4" fill="#00e5ff" opacity="0.6"/>
+  <rect x="8" y="7" width="1" height="4" fill="#00e5ff" opacity="0.6"/>
+  <rect x="2" y="11" width="6" height="1" fill="#00e5ff" opacity="0.6"/>
+  <rect x="1" y="11" width="1" height="3" fill="#00e5ff" opacity="0.4"/>
+  <rect x="8" y="11" width="1" height="3" fill="#00e5ff" opacity="0.4"/>
+  <rect x="2" y="14" width="6" height="1" fill="#00e5ff" opacity="0.4"/>
+  <!-- Shield interior -->
+  <rect x="2" y="7" width="6" height="4" fill="#00bcd4" opacity="0.15"/>
+  <rect x="2" y="11" width="6" height="3" fill="#00bcd4" opacity="0.1"/>
+  <!-- Matrix pattern inside -->
+  <rect x="3" y="8" width="1" height="1" fill="#00ffff" opacity="0.4"/>
+  <rect x="5" y="8" width="1" height="1" fill="#00ffff" opacity="0.4"/>
+  <rect x="7" y="8" width="1" height="1" fill="#00ffff" opacity="0.4"/>
+  <rect x="4" y="10" width="1" height="1" fill="#00ffff" opacity="0.4"/>
+  <rect x="6" y="10" width="1" height="1" fill="#00ffff" opacity="0.4"/>
+  <rect x="3" y="12" width="1" height="1" fill="#00ffff" opacity="0.3"/>
+  <rect x="5" y="12" width="1" height="1" fill="#00ffff" opacity="0.3"/>
+  <rect x="7" y="12" width="1" height="1" fill="#00ffff" opacity="0.3"/>
+</svg>

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" shape-rendering="crispEdges">
+  <title>Headgear: Neural Crown</title>
+  <!-- Crown band -->
+  <rect x="6" y="4" width="8" height="1" fill="#607d8b"/>
+  <rect x="6" y="5" width="8" height="1" fill="#546e7a"/>
+  <!-- Neural spikes -->
+  <rect x="7" y="2" width="1" height="2" fill="#00e5ff"/>
+  <rect x="9" y="1" width="1" height="3" fill="#00ffff"/>
+  <rect x="11" y="2" width="1" height="2" fill="#00e5ff"/>
+  <!-- Energy arcs between spikes -->
+  <rect x="8" y="2" width="1" height="1" fill="#00e5ff" opacity="0.4"/>
+  <rect x="10" y="1" width="1" height="1" fill="#00e5ff" opacity="0.4"/>
+  <!-- Connection nodes -->
+  <rect x="6" y="4" width="1" height="1" fill="#00ffff"/>
+  <rect x="10" y="4" width="1" height="1" fill="#00ffff"/>
+  <rect x="13" y="4" width="1" height="1" fill="#00ffff"/>
+</svg>

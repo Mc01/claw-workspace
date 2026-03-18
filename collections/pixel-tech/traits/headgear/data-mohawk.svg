@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" shape-rendering="crispEdges">
+  <title>Headgear: Data Mohawk</title>
+  <!-- Mohawk ridge of glowing data spikes -->
+  <rect x="8" y="1" width="1" height="3" fill="#00e5ff"/>
+  <rect x="9" y="0" width="1" height="4" fill="#00ffff"/>
+  <rect x="10" y="0" width="1" height="5" fill="#00e5ff"/>
+  <rect x="11" y="0" width="1" height="4" fill="#00ffff"/>
+  <rect x="12" y="1" width="1" height="3" fill="#00e5ff"/>
+  <!-- Glow base -->
+  <rect x="7" y="4" width="7" height="1" fill="#0097a7" opacity="0.5"/>
+  <!-- Data particles -->
+  <rect x="9" y="1" width="1" height="1" fill="#80ffff"/>
+  <rect x="11" y="0" width="1" height="1" fill="#80ffff"/>
+  <rect x="7" y="2" width="1" height="1" fill="#00bcd4" opacity="0.4"/>
+  <rect x="13" y="2" width="1" height="1" fill="#00bcd4" opacity="0.4"/>
+</svg>

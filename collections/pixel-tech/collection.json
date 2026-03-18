@@ -1,0 +1,68 @@
+{
+  "name": "Pixel Tech",
+  "description": "Cyber-enhanced pixel art creatures with neon blue/cyan aesthetics. Side-profile archetypes merging nature with technology.",
+  "style": "Pixel art, neon blue/cyan, side profile",
+  "canvas": "32x32",
+  "archetypes": [
+    {
+      "id": "lion",
+      "name": "Lion - Cyber Mane",
+      "base": "bases/lion-cyber-mane.svg",
+      "description": "A majestic lion with a flowing mane of neon cyan data streams"
+    },
+    {
+      "id": "serpent",
+      "name": "Serpent - Data Coil",
+      "base": "bases/serpent-data-coil.svg",
+      "description": "A coiled serpent with data streams flowing through its body"
+    },
+    {
+      "id": "eagle",
+      "name": "Eagle - Drone Talon",
+      "base": "bases/eagle-drone-talon.svg",
+      "description": "A mechanical eagle with drone-like wings and cyber talons"
+    },
+    {
+      "id": "croc",
+      "name": "Croc - Metal Jaw",
+      "base": "bases/croc-metal-jaw.svg",
+      "description": "An armored crocodile with a reinforced metal jaw and circuit plating"
+    },
+    {
+      "id": "beetle",
+      "name": "Beetle - Circuit Shell",
+      "base": "bases/beetle-circuit-shell.svg",
+      "description": "A beetle with a shell covered in glowing circuit board traces"
+    }
+  ],
+  "traits": {
+    "backgrounds": [
+      { "name": "Matrix Rain", "file": "traits/backgrounds/matrix-rain.svg", "rarity": "common" },
+      { "name": "Circuit Board", "file": "traits/backgrounds/circuit-board.svg", "rarity": "common" },
+      { "name": "Server Room", "file": "traits/backgrounds/server-room.svg", "rarity": "uncommon" },
+      { "name": "Neon Grid", "file": "traits/backgrounds/neon-grid.svg", "rarity": "uncommon" },
+      { "name": "Data Void", "file": "traits/backgrounds/data-void.svg", "rarity": "rare" }
+    ],
+    "headgear": [
+      { "name": "Holo Visor", "file": "traits/headgear/holo-visor.svg", "rarity": "common" },
+      { "name": "Neural Crown", "file": "traits/headgear/neural-crown.svg", "rarity": "uncommon" },
+      { "name": "Antenna Array", "file": "traits/headgear/antenna-array.svg", "rarity": "common" },
+      { "name": "Data Mohawk", "file": "traits/headgear/data-mohawk.svg", "rarity": "rare" },
+      { "name": "Firewall Helm", "file": "traits/headgear/firewall-helm.svg", "rarity": "uncommon" }
+    ],
+    "eyes": [
+      { "name": "Laser Scan", "file": "traits/eyes/laser-scan.svg", "rarity": "uncommon" },
+      { "name": "Binary Iris", "file": "traits/eyes/binary-iris.svg", "rarity": "common" },
+      { "name": "Glitch Eye", "file": "traits/eyes/glitch-eye.svg", "rarity": "rare" },
+      { "name": "Target Lock", "file": "traits/eyes/target-lock.svg", "rarity": "uncommon" },
+      { "name": "HUD Overlay", "file": "traits/eyes/hud-overlay.svg", "rarity": "common" }
+    ],
+    "accessories": [
+      { "name": "Plasma Blade", "file": "traits/accessories/plasma-blade.svg", "rarity": "rare" },
+      { "name": "Hover Drone", "file": "traits/accessories/hover-drone.svg", "rarity": "uncommon" },
+      { "name": "Cyber Collar", "file": "traits/accessories/cyber-collar.svg", "rarity": "common" },
+      { "name": "Data Wings", "file": "traits/accessories/data-wings.svg", "rarity": "uncommon" },
+      { "name": "Shield Matrix", "file": "traits/accessories/shield-matrix.svg", "rarity": "rare" }
+    ]
+  }
+}

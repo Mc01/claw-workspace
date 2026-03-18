@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" shape-rendering="crispEdges">
+  <title>Headgear: Antenna Array</title>
+  <!-- Base mount -->
+  <rect x="9" y="4" width="4" height="1" fill="#546e7a"/>
+  <!-- Main antenna -->
+  <rect x="10" y="0" width="1" height="4" fill="#607d8b"/>
+  <rect x="10" y="0" width="1" height="1" fill="#00e5ff"/>
+  <!-- Side antennas -->
+  <rect x="8" y="2" width="1" height="2" fill="#455a64"/>
+  <rect x="8" y="2" width="1" height="1" fill="#00bcd4"/>
+  <rect x="12" y="1" width="1" height="3" fill="#455a64"/>
+  <rect x="12" y="1" width="1" height="1" fill="#00bcd4"/>
+  <!-- Signal waves -->
+  <rect x="7" y="1" width="1" height="1" fill="#00e5ff" opacity="0.3"/>
+  <rect x="13" y="0" width="1" height="1" fill="#00e5ff" opacity="0.3"/>
+  <rect x="6" y="0" width="1" height="1" fill="#00e5ff" opacity="0.15"/>
+  <rect x="14" y="1" width="1" height="1" fill="#00e5ff" opacity="0.15"/>
+</svg>

@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" shape-rendering="crispEdges">
+  <title>Background: Server Room</title>
+  <rect width="32" height="32" fill="#070d1a"/>
+  <!-- Server rack left -->
+  <rect x="0" y="0" width="6" height="32" fill="#0d1520"/>
+  <rect x="1" y="2" width="4" height="2" fill="#1a2332"/>
+  <rect x="1" y="5" width="4" height="2" fill="#1a2332"/>
+  <rect x="1" y="8" width="4" height="2" fill="#1a2332"/>
+  <rect x="1" y="11" width="4" height="2" fill="#1a2332"/>
+  <rect x="1" y="14" width="4" height="2" fill="#1a2332"/>
+  <!-- LED indicators -->
+  <rect x="2" y="2" width="1" height="1" fill="#00e5ff"/>
+  <rect x="2" y="5" width="1" height="1" fill="#00ffff"/>
+  <rect x="2" y="8" width="1" height="1" fill="#00e5ff"/>
+  <rect x="2" y="11" width="1" height="1" fill="#0097a7"/>
+  <rect x="2" y="14" width="1" height="1" fill="#00e5ff"/>
+  <!-- Server rack right -->
+  <rect x="26" y="0" width="6" height="32" fill="#0d1520"/>
+  <rect x="27" y="2" width="4" height="2" fill="#1a2332"/>
+  <rect x="27" y="5" width="4" height="2" fill="#1a2332"/>
+  <rect x="27" y="8" width="4" height="2" fill="#1a2332"/>
+  <rect x="27" y="11" width="4" height="2" fill="#1a2332"/>
+  <rect x="29" y="2" width="1" height="1" fill="#00e5ff"/>
+  <rect x="29" y="5" width="1" height="1" fill="#00bcd4"/>
+  <rect x="29" y="8" width="1" height="1" fill="#00ffff"/>
+  <rect x="29" y="11" width="1" height="1" fill="#00e5ff"/>
+  <!-- Floor grid -->
+  <rect x="6" y="28" width="20" height="1" fill="#0097a7" opacity="0.2"/>
+  <rect x="6" y="30" width="20" height="1" fill="#0097a7" opacity="0.15"/>
+</svg>

@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" shape-rendering="crispEdges">
+  <title>Serpent - Data Coil</title>
+  <!-- Head facing left -->
+  <rect x="4" y="10" width="2" height="2" fill="#0d1b3e"/>
+  <rect x="6" y="10" width="2" height="2" fill="#1a237e"/>
+  <rect x="8" y="10" width="2" height="2" fill="#1a237e"/>
+  <rect x="4" y="12" width="2" height="2" fill="#1a237e"/>
+  <rect x="6" y="12" width="2" height="2" fill="#0d1b3e"/>
+  <rect x="8" y="12" width="2" height="2" fill="#1a237e"/>
+  <!-- Eye -->
+  <rect x="5" y="10" width="1" height="1" fill="#00ffff"/>
+  <rect x="5" y="11" width="1" height="1" fill="#80ffff"/>
+  <!-- Forked tongue -->
+  <rect x="2" y="12" width="2" height="1" fill="#00e5ff"/>
+  <rect x="1" y="11" width="1" height="1" fill="#00e5ff"/>
+  <rect x="1" y="13" width="1" height="1" fill="#00e5ff"/>
+  <!-- Fang -->
+  <rect x="4" y="13" width="1" height="1" fill="#b3e5fc"/>
+  <!-- Hood -->
+  <rect x="8" y="8" width="2" height="2" fill="#0097a7"/>
+  <rect x="10" y="8" width="2" height="2" fill="#00bcd4"/>
+  <rect x="6" y="8" width="2" height="2" fill="#1a237e"/>
+  <!-- Body coil 1 -->
+  <rect x="10" y="10" width="2" height="2" fill="#1a237e"/>
+  <rect x="12" y="10" width="2" height="2" fill="#0d1b3e"/>
+  <rect x="14" y="10" width="2" height="2" fill="#1a237e"/>
+  <rect x="14" y="12" width="2" height="2" fill="#0d1b3e"/>
+  <rect x="12" y="12" width="2" height="2" fill="#1a237e"/>
+  <rect x="10" y="12" width="2" height="2" fill="#0d1b3e"/>
+  <!-- Data stream -->
+  <rect x="11" y="11" width="1" height="1" fill="#00e5ff" opacity="0.7"/>
+  <rect x="13" y="11" width="1" height="1" fill="#00e5ff" opacity="0.7"/>
+  <rect x="15" y="11" width="1" height="1" fill="#00e5ff" opacity="0.7"/>
+  <!-- Body coil 2 -->
+  <rect x="10" y="14" width="2" height="2" fill="#1a237e"/>
+  <rect x="12" y="14" width="2" height="2" fill="#0d1b3e"/>
+  <rect x="14" y="14" width="2" height="2" fill="#1a237e"/>
+  <rect x="16" y="12" width="2" height="2" fill="#1a237e"/>
+  <rect x="16" y="14" width="2" height="2" fill="#0d1b3e"/>
+  <rect x="11" y="15" width="1" height="1" fill="#00ffff" opacity="0.5"/>
+  <rect x="13" y="15" width="1" height="1" fill="#00ffff" opacity="0.5"/>
+  <rect x="15" y="15" width="1" height="1" fill="#00ffff" opacity="0.5"/>
+  <!-- Body coil 3 -->
+  <rect x="14" y="16" width="2" height="2" fill="#1a237e"/>
+  <rect x="16" y="16" width="2" height="2" fill="#0d1b3e"/>
+  <rect x="18" y="14" width="2" height="2" fill="#1a237e"/>
+  <rect x="18" y="16" width="2" height="2" fill="#1a237e"/>
+  <rect x="20" y="16" width="2" height="2" fill="#0d1b3e"/>
+  <!-- Tail -->
+  <rect x="20" y="18" width="2" height="2" fill="#1a237e"/>
+  <rect x="22" y="18" width="2" height="2" fill="#0d1b3e"/>
+  <rect x="24" y="18" width="2" height="1" fill="#00bcd4"/>
+  <rect x="26" y="17" width="1" height="1" fill="#00e5ff"/>
+  <!-- Belly -->
+  <rect x="8" y="13" width="2" height="1" fill="#0097a7"/>
+  <rect x="10" y="13" width="1" height="1" fill="#00bcd4"/>
+</svg>
