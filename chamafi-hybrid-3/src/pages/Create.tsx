@@ -2,8 +2,9 @@ import { useState, useMemo } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useCreateChama } from '../hooks/useChamaFactory';
-import { TOKEN_OPTIONS, getTokenAddress, type TokenSymbol } from '../config/contracts';
-import { useChainId } from 'wagmi';
+import { TOKEN_OPTIONS, getTokenAddress, getTokenDecimals, type TokenSymbol } from '../config/contracts';
+import { useAccount, useBalance, useChainId } from 'wagmi';
+import { formatUnits } from 'viem';
 import { Calendar, DollarSign, Users, PlusCircle, Loader2, CheckCircle, AlertTriangle, Info } from 'lucide-react';
 import { FocusRing } from '../components/animations';
 import { useToast } from '../components/Toast';
@@ -20,6 +21,7 @@ export function Create() {
   const chainId = useChainId();
   const { createChama, isPending, isSuccess, isError, error } = useCreateChama();
   const { addToast } = useToast();
+  const { address } = useAccount();
 
   const [formData, setFormData] = useState({
     name: '',
@@ -254,6 +256,7 @@ export function Create() {
               </motion.button>
             ))}
           </div>
+          <TokenBalance address={address} chainId={chainId} token={formData.token} />
         </motion.div>
 
         {/* Target Amount */}
@@ -441,5 +444,44 @@ function FormField({
         </p>
       )}
     </div>
+  );
+}
+
+function TokenBalance({
+  address,
+  chainId,
+  token,
+}: {
+  address: `0x${string}` | undefined;
+  chainId: number;
+  token: TokenSymbol;
+}) {
+  const tokenAddress = getTokenAddress(chainId, token);
+  const decimals = getTokenDecimals(token);
+
+  const { data: balance, isLoading } = useBalance({
+    address,
+    token: tokenAddress !== '0x0000000000000000000000000000000000000000' ? tokenAddress : undefined,
+    query: { enabled: !!address },
+  });
+
+  if (!address) return null;
+
+  return (
+    <motion.p
+      key={token}
+      className="mt-2 text-xs text-sand/50 flex items-center gap-1"
+      initial={{ opacity: 0, y: -4 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.2 }}
+    >
+      {isLoading ? (
+        <span className="animate-pulse">Loading balance...</span>
+      ) : balance ? (
+        <>Balance: <span className="text-mint font-medium">{parseFloat(formatUnits(balance.value, balance.decimals)).toFixed(2)} {token}</span></>
+      ) : (
+        <span>Balance: — {token}</span>
+      )}
+    </motion.p>
   );
 }
