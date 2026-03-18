@@ -10,8 +10,7 @@ interface FormErrors {
   name?: string;
   targetAmount?: string;
   deadline?: string;
-  minContribution?: string;
-  maxMembers?: string;
+  minMembers?: string;
 }
 
 export function Create() {
@@ -25,12 +24,12 @@ export function Create() {
     token: 'cUSD' as TokenSymbol,
     targetAmount: '',
     deadline: '',
-    minContribution: '',
-    maxMembers: '50',
+    minMembers: '2',
   });
   const [touched, setTouched] = useState<Record<string, boolean>>({});
 
-  // Validation
+  // Validation — matches contract requirements:
+  //   name.length > 0, asset != address(0), minMembers >= 2, targetCapital >= 200e18
   const errors = useMemo((): FormErrors => {
     const errs: FormErrors = {};
 
@@ -44,50 +43,35 @@ export function Create() {
       const target = parseFloat(formData.targetAmount);
       if (!formData.targetAmount || isNaN(target)) {
         errs.targetAmount = 'Target amount is required';
-      } else if (target <= 0) {
-        errs.targetAmount = 'Must be greater than 0';
+      } else if (target < 200) {
+        errs.targetAmount = 'Minimum target is 200 (contract requirement)';
       }
     }
 
-    if (touched.deadline) {
-      if (!formData.deadline) {
-        errs.deadline = 'Deadline is required';
-      } else {
-        const deadlineDate = new Date(formData.deadline);
-        const now = new Date();
-        if (deadlineDate <= now) {
-          errs.deadline = 'Deadline must be in the future';
-        }
+    if (touched.deadline && formData.deadline) {
+      const deadlineDate = new Date(formData.deadline);
+      const now = new Date();
+      if (deadlineDate <= now) {
+        errs.deadline = 'Deadline must be in the future';
       }
     }
 
-    if (touched.minContribution && formData.minContribution) {
-      const min = parseFloat(formData.minContribution);
-      const target = parseFloat(formData.targetAmount);
-      if (min <= 0) {
-        errs.minContribution = 'Must be greater than 0';
-      } else if (!isNaN(target) && min > target) {
-        errs.minContribution = 'Cannot exceed target amount';
-      }
-    }
-
-    if (touched.maxMembers) {
-      const max = parseInt(formData.maxMembers);
-      if (isNaN(max) || max < 2) {
-        errs.maxMembers = 'At least 2 members required';
-      } else if (max > 1000) {
-        errs.maxMembers = 'Maximum 1000 members';
+    if (touched.minMembers) {
+      const min = parseInt(formData.minMembers);
+      if (isNaN(min) || min < 2) {
+        errs.minMembers = 'At least 2 members required (contract minimum)';
+      } else if (min > 100) {
+        errs.minMembers = 'Maximum 100 members per Chama';
       }
     }
 
     return errs;
   }, [formData, touched]);
 
-  const isValid = formData.name.trim().length >= 3 &&
-    parseFloat(formData.targetAmount) > 0 &&
-    formData.deadline &&
-    new Date(formData.deadline) > new Date() &&
-    parseInt(formData.maxMembers) >= 2 &&
+  const isValid =
+    formData.name.trim().length >= 3 &&
+    parseFloat(formData.targetAmount) >= 200 &&
+    parseInt(formData.minMembers) >= 2 &&
     Object.keys(errors).length === 0;
 
   const handleBlur = (field: string) => {
@@ -97,30 +81,31 @@ export function Create() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
-    // Mark all as touched
     setTouched({
       name: true,
       targetAmount: true,
       deadline: true,
-      minContribution: true,
-      maxMembers: true,
+      minMembers: true,
     });
 
     if (!isValid) return;
 
-    const toastId = addToast('Creating Chama... Confirm in your wallet', 'pending', 0);
+    addToast('Creating Chama... Confirm in your wallet', 'pending', 0);
 
     try {
       const tokenAddress = getTokenAddress(chainId, formData.token);
-      const deadlineTimestamp = Math.floor(new Date(formData.deadline).getTime() / 1000);
+      // deadline: 0 means no deadline, otherwise unix timestamp
+      const deadlineTimestamp = formData.deadline
+        ? Math.floor(new Date(formData.deadline).getTime() / 1000)
+        : 0;
 
       await createChama(
         formData.name,
         tokenAddress,
         formData.targetAmount,
+        formData.token,
+        parseInt(formData.minMembers),
         deadlineTimestamp,
-        formData.minContribution || '1',
-        parseInt(formData.maxMembers)
       );
 
       addToast('Chama created successfully!', 'success');
@@ -165,7 +150,7 @@ export function Create() {
           <label className="block text-sm font-medium text-white/60 mb-3">
             Savings Asset
           </label>
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+          <div className="grid grid-cols-3 gap-3">
             {TOKEN_OPTIONS.map((token) => (
               <button
                 key={token.symbol}
@@ -186,14 +171,15 @@ export function Create() {
 
         {/* Target Amount */}
         <FormField
-          label={`Target Amount (${formData.token})`}
+          label={`Target Capital (${formData.token})`}
           error={errors.targetAmount}
           icon={<DollarSign className="w-4 h-4" />}
+          hint="Minimum 200 (contract requirement)"
         >
           <input
             type="number"
             required
-            min="1"
+            min="200"
             step="0.01"
             value={formData.targetAmount}
             onChange={(e) => setFormData({ ...formData, targetAmount: e.target.value })}
@@ -203,21 +189,22 @@ export function Create() {
           />
         </FormField>
 
-        {/* Min Contribution */}
+        {/* Min Members */}
         <FormField
-          label={`Minimum Contribution (${formData.token})`}
-          error={errors.minContribution}
-          hint="Optional - leave empty to allow any amount"
+          label="Minimum Members"
+          error={errors.minMembers}
+          icon={<Users className="w-4 h-4" />}
+          hint="2–100 members. Chama activates when this many members join."
         >
           <input
             type="number"
-            min="0.01"
-            step="0.01"
-            value={formData.minContribution}
-            onChange={(e) => setFormData({ ...formData, minContribution: e.target.value })}
-            onBlur={() => handleBlur('minContribution')}
+            required
+            min="2"
+            max="100"
+            value={formData.minMembers}
+            onChange={(e) => setFormData({ ...formData, minMembers: e.target.value })}
+            onBlur={() => handleBlur('minMembers')}
             className="input-dark"
-            placeholder="e.g., 10"
           />
         </FormField>
 
@@ -226,32 +213,14 @@ export function Create() {
           label="Deadline"
           error={errors.deadline}
           icon={<Calendar className="w-4 h-4" />}
+          hint="Optional — leave empty for no deadline"
         >
           <input
             type="datetime-local"
-            required
             value={formData.deadline}
             onChange={(e) => setFormData({ ...formData, deadline: e.target.value })}
             onBlur={() => handleBlur('deadline')}
             className="input-dark [color-scheme:dark]"
-          />
-        </FormField>
-
-        {/* Max Members */}
-        <FormField
-          label="Maximum Members"
-          error={errors.maxMembers}
-          icon={<Users className="w-4 h-4" />}
-        >
-          <input
-            type="number"
-            required
-            min="2"
-            max="1000"
-            value={formData.maxMembers}
-            onChange={(e) => setFormData({ ...formData, maxMembers: e.target.value })}
-            onBlur={() => handleBlur('maxMembers')}
-            className="input-dark"
           />
         </FormField>
 

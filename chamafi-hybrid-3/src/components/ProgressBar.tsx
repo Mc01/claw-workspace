@@ -3,13 +3,15 @@ import { cn } from '../lib/utils';
 interface ProgressBarProps {
   current: bigint | undefined;
   target: bigint | undefined;
+  /** Percentage 0–100 as returned by ChamaIncubation.getProgress() */
   percentage: bigint | undefined;
   className?: string;
   compact?: boolean;
 }
 
 export function ProgressBar({ current, target, percentage, className, compact }: ProgressBarProps) {
-  const pct = Number(percentage || 0) / 100;
+  // getProgress returns percentage 0–100 (not basis points)
+  const pct = Number(percentage || 0);
   const isComplete = pct >= 100;
 
   return (

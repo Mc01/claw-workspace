@@ -1,23 +1,22 @@
 import { Link } from 'react-router-dom';
-import { Users, Clock, Target, ArrowUpRight } from 'lucide-react';
+import { Users, Clock, ArrowUpRight } from 'lucide-react';
 import { useChama } from '../hooks/useChama';
 import { ProgressBar } from './ProgressBar';
-import { formatDate, getDaysRemaining, isExpired, formatAddress, formatAmount } from '../lib/utils';
-import { cn } from '../lib/utils';
+import { getDaysRemaining, isExpired, formatAddress, formatAmount, cn } from '../lib/utils';
 
 interface ChamaCardProps {
   address: string;
 }
 
 export function ChamaCard({ address }: ChamaCardProps) {
-  const { params, progress, graduated, memberCount, isLoading } = useChama(address);
+  const { chamaName, deadline, progress, graduated, memberCount, isLoading } = useChama(address);
 
   if (isLoading) {
     return <ChamaCardSkeleton />;
   }
 
-  const expired = isExpired(params?.deadline);
-  const daysLeft = getDaysRemaining(params?.deadline);
+  const expired = isExpired(deadline);
+  const daysLeft = getDaysRemaining(deadline);
 
   return (
     <Link
@@ -29,7 +28,7 @@ export function ChamaCard({ address }: ChamaCardProps) {
         <div className="flex-1 min-w-0">
           <div className="flex items-center gap-2 mb-1">
             <h3 className="font-semibold text-lg text-white truncate">
-              Chama #{address.slice(-6)}
+              {chamaName || `Chama #${address.slice(-6)}`}
             </h3>
             <ArrowUpRight className="w-4 h-4 text-white/20 group-hover:text-primary-400 transition-colors shrink-0" />
           </div>
@@ -52,7 +51,7 @@ export function ChamaCard({ address }: ChamaCardProps) {
         </div>
         <div className="flex items-center gap-1.5">
           <Clock className="w-4 h-4" />
-          <span>{expired ? 'Ended' : `${daysLeft}d left`}</span>
+          <span>{expired ? 'Ended' : deadline ? `${daysLeft}d left` : 'No deadline'}</span>
         </div>
       </div>
 

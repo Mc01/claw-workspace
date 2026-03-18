@@ -1,5 +1,5 @@
 import { useParams, Link } from 'react-router-dom';
-import { useAccount } from 'wagmi';
+import { useAccount, useChainId } from 'wagmi';
 import {
   ArrowLeft, Users, Clock, User, ExternalLink,
   Target, TrendingUp, Loader2, AlertTriangle, CheckCircle,
@@ -8,17 +8,24 @@ import {
 import { useChama, useJoinChama, useContribute, useRefund } from '../hooks/useChama';
 import { ProgressBar } from '../components/ProgressBar';
 import { formatAddress, formatAmount, formatDateTime, isExpired, getDaysRemaining, cn } from '../lib/utils';
+import { getExplorerUrl } from '../config/contracts';
 import { useState } from 'react';
 import { useToast } from '../components/Toast';
 
 export function ChamaDetail() {
   const { address } = useParams<{ address: string }>();
   const { address: userAddress } = useAccount();
+  const chainId = useChainId();
   const [contributionAmount, setContributionAmount] = useState('');
   const { addToast } = useToast();
 
   const {
-    params,
+    chamaName,
+    asset,
+    targetCapital,
+    minMembers,
+    deadline,
+    chamaToken,
     progress,
     graduated,
     memberCount,
@@ -33,14 +40,15 @@ export function ChamaDetail() {
   const { contribute, isPending: isContributing } = useContribute(address || null);
   const { refund, isPending: isRefunding } = useRefund(address || null);
 
-  const expired = isExpired(params?.deadline);
-  const daysLeft = getDaysRemaining(params?.deadline);
+  const expired = isExpired(deadline);
+  const daysLeft = getDaysRemaining(deadline);
   const hasContributed = userContribution !== undefined && userContribution > BigInt(0);
-  const pct = Number(progress?.percentage || 0) / 100;
+  // getProgress returns percentage 0–100
+  const pct = Number(progress?.percentage || 0);
 
   const handleContribute = async () => {
     if (!contributionAmount) return;
-    const toastId = addToast('Submitting contribution... Confirm in wallet', 'pending', 0);
+    addToast('Submitting contribution... Confirm in wallet', 'pending', 0);
     try {
       await contribute(contributionAmount, 18);
       addToast('Contribution successful!', 'success');
@@ -74,14 +82,14 @@ export function ChamaDetail() {
     return <DetailSkeleton />;
   }
 
-  if (!address || !params) {
+  if (!address) {
     return (
       <div className="glass-card p-12 text-center animate-fade-in">
         <div className="w-16 h-16 rounded-2xl bg-red-500/10 flex items-center justify-center mx-auto mb-4">
           <AlertTriangle className="w-8 h-8 text-red-400/60" />
         </div>
         <h2 className="text-xl font-semibold text-white mb-2">Chama Not Found</h2>
-        <p className="text-white/40 mb-6">This Chama doesn't exist or couldn't be loaded.</p>
+        <p className="text-white/40 mb-6">This Chama doesn&apos;t exist or couldn&apos;t be loaded.</p>
         <Link to="/app/discover" className="btn-primary inline-flex items-center gap-2">
           <ArrowLeft className="w-4 h-4" />
           Back to Discover
@@ -106,7 +114,7 @@ export function ChamaDetail() {
         <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4 mb-6">
           <div>
             <h1 className="text-2xl md:text-3xl font-bold text-white mb-2">
-              Chama #{address.slice(-6)}
+              {chamaName || `Chama #${address.slice(-6)}`}
             </h1>
             <p className="text-sm text-white/30 font-mono">
               {formatAddress(address)}
@@ -145,25 +153,21 @@ export function ChamaDetail() {
           icon={<Users className="w-5 h-5 text-blue-400" />}
           label="Members"
           value={memberCount ? memberCount.toString() : '0'}
-          accent="blue"
         />
         <StatCard
           icon={<Clock className="w-5 h-5 text-amber-400" />}
-          label={expired ? 'Status' : 'Time Left'}
-          value={expired ? 'Ended' : `${daysLeft} days`}
-          accent="amber"
+          label={expired ? 'Status' : deadline ? 'Time Left' : 'Deadline'}
+          value={expired ? 'Ended' : deadline ? `${daysLeft} days` : 'No deadline'}
         />
         <StatCard
           icon={<Target className="w-5 h-5 text-primary-400" />}
           label="Target"
-          value={formatAmount(progress?.target, 18)}
-          accent="green"
+          value={formatAmount(targetCapital, 18)}
         />
         <StatCard
           icon={<TrendingUp className="w-5 h-5 text-emerald-400" />}
           label="Raised"
           value={formatAmount(progress?.current, 18)}
-          accent="emerald"
         />
       </div>
 
@@ -277,9 +281,16 @@ export function ChamaDetail() {
             <h3 className="font-semibold text-white mb-4">Chama Details</h3>
             <div className="space-y-0">
               <DetailRow label="Creator" value={formatAddress(creator)} mono />
-              <DetailRow label="Min Contribution" value={formatAmount(params.minContribution, 18)} />
-              <DetailRow label="Token" value={formatAddress(params.tokenAddress)} mono />
-              <DetailRow label="Deadline" value={formatDateTime(params.deadline)} last />
+              <DetailRow label="Asset" value={formatAddress(asset)} mono />
+              <DetailRow label="Min Members" value={minMembers?.toString() || '—'} />
+              {chamaToken && (
+                <DetailRow label="Chama Token" value={formatAddress(chamaToken)} mono />
+              )}
+              <DetailRow
+                label="Deadline"
+                value={deadline && deadline > BigInt(0) ? formatDateTime(deadline) : 'No deadline'}
+                last
+              />
             </div>
           </div>
 
@@ -319,7 +330,7 @@ export function ChamaDetail() {
 
           {/* View on Explorer */}
           <a
-            href={`https://celoscan.io/address/${address}`}
+            href={getExplorerUrl(chainId, 'address', address)}
             target="_blank"
             rel="noopener noreferrer"
             className="btn-secondary w-full flex items-center justify-center gap-2 py-3 text-sm"
@@ -333,11 +344,10 @@ export function ChamaDetail() {
   );
 }
 
-function StatCard({ icon, label, value, accent }: {
+function StatCard({ icon, label, value }: {
   icon: React.ReactNode;
   label: string;
   value: string;
-  accent: string;
 }) {
   return (
     <div className="glass-card p-4">

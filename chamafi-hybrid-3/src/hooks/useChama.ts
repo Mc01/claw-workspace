@@ -1,108 +1,155 @@
 import { useReadContract, useWriteContract, useAccount } from 'wagmi';
 import { ChamaIncubationABI } from '../abi';
 import { parseUnits } from 'viem';
+import type { Address } from 'viem';
+
+const ZERO_ADDRESS: Address = '0x0000000000000000000000000000000000000000';
 
 export function useChama(chamaAddress: string | null) {
   const { address: userAddress } = useAccount();
-  const enabled = !!chamaAddress && chamaAddress !== '0x0000000000000000000000000000000000000000';
+  const enabled = !!chamaAddress && chamaAddress !== ZERO_ADDRESS;
+  const addr = chamaAddress as Address;
 
-  // Get chama params
-  const { data: params, isLoading: isLoadingParams } = useReadContract({
-    address: chamaAddress as `0x${string}`,
+  // Individual field getters matching the deployed ChamaIncubation contract
+  const { data: chamaName, isLoading: isLoadingName } = useReadContract({
+    address: addr,
     abi: ChamaIncubationABI,
-    functionName: 'params',
+    functionName: 'name',
     query: { enabled },
   });
 
-  // Get progress
+  const { data: asset, isLoading: isLoadingAsset } = useReadContract({
+    address: addr,
+    abi: ChamaIncubationABI,
+    functionName: 'asset',
+    query: { enabled },
+  });
+
+  const { data: targetCapital, isLoading: isLoadingTarget } = useReadContract({
+    address: addr,
+    abi: ChamaIncubationABI,
+    functionName: 'targetCapital',
+    query: { enabled },
+  });
+
+  const { data: minMembers } = useReadContract({
+    address: addr,
+    abi: ChamaIncubationABI,
+    functionName: 'minMembers',
+    query: { enabled },
+  });
+
+  const { data: deadline, isLoading: isLoadingDeadline } = useReadContract({
+    address: addr,
+    abi: ChamaIncubationABI,
+    functionName: 'deadline',
+    query: { enabled },
+  });
+
+  const { data: chamaToken } = useReadContract({
+    address: addr,
+    abi: ChamaIncubationABI,
+    functionName: 'chamaToken',
+    query: { enabled },
+  });
+
+  // Progress: returns (current, target, percentage 0-100)
   const { data: progress, isLoading: isLoadingProgress } = useReadContract({
-    address: chamaAddress as `0x${string}`,
+    address: addr,
     abi: ChamaIncubationABI,
     functionName: 'getProgress',
     query: { enabled },
   });
 
-  // Get graduated status
   const { data: graduated, isLoading: isLoadingGraduated } = useReadContract({
-    address: chamaAddress as `0x${string}`,
+    address: addr,
     abi: ChamaIncubationABI,
     functionName: 'graduated',
     query: { enabled },
   });
 
-  // Get member count
   const { data: memberCount, isLoading: isLoadingMemberCount } = useReadContract({
-    address: chamaAddress as `0x${string}`,
+    address: addr,
     abi: ChamaIncubationABI,
     functionName: 'getMemberCount',
     query: { enabled },
   });
 
-  // Get members
   const { data: members, isLoading: isLoadingMembers } = useReadContract({
-    address: chamaAddress as `0x${string}`,
+    address: addr,
     abi: ChamaIncubationABI,
     functionName: 'getMembers',
     query: { enabled },
   });
 
-  // Check if user is member
   const { data: isMember, isLoading: isLoadingIsMember } = useReadContract({
-    address: chamaAddress as `0x${string}`,
+    address: addr,
     abi: ChamaIncubationABI,
     functionName: 'isMember',
     args: userAddress ? [userAddress] : undefined,
     query: { enabled: enabled && !!userAddress },
   });
 
-  // Get user contribution
   const { data: userContribution, isLoading: isLoadingContribution } = useReadContract({
-    address: chamaAddress as `0x${string}`,
+    address: addr,
     abi: ChamaIncubationABI,
     functionName: 'getMemberContribution',
     args: userAddress ? [userAddress] : undefined,
     query: { enabled: enabled && !!userAddress },
   });
 
-  // Get creator
   const { data: creator, isLoading: isLoadingCreator } = useReadContract({
-    address: chamaAddress as `0x${string}`,
+    address: addr,
     abi: ChamaIncubationABI,
     functionName: 'creator',
     query: { enabled },
   });
 
   return {
-    params: params ? {
-      targetAmount: params[0],
-      deadline: params[1],
-      minContribution: params[2],
-      tokenAddress: params[3],
-      feeCurrency: params[4],
-    } : undefined,
-    progress: progress ? {
-      current: progress[0],
-      target: progress[1],
-      percentage: progress[2],
-    } : undefined,
-    graduated,
-    memberCount,
-    members,
-    isMember,
-    userContribution,
-    creator,
-    isLoading: isLoadingParams || isLoadingProgress || isLoadingGraduated || isLoadingMemberCount || isLoadingMembers || isLoadingIsMember || isLoadingContribution || isLoadingCreator,
+    // Individual fields from the contract
+    chamaName: chamaName as string | undefined,
+    asset: asset as Address | undefined,
+    targetCapital: targetCapital as bigint | undefined,
+    minMembers: minMembers as number | undefined,
+    deadline: deadline as bigint | undefined,
+    chamaToken: chamaToken as Address | undefined,
+    // Progress: { current, target, percentage(0-100) }
+    progress: progress
+      ? {
+          current: (progress as readonly [bigint, bigint, bigint])[0],
+          target: (progress as readonly [bigint, bigint, bigint])[1],
+          percentage: (progress as readonly [bigint, bigint, bigint])[2],
+        }
+      : undefined,
+    graduated: graduated as boolean | undefined,
+    memberCount: memberCount as bigint | undefined,
+    members: members as Address[] | undefined,
+    isMember: isMember as boolean | undefined,
+    userContribution: userContribution as bigint | undefined,
+    creator: creator as Address | undefined,
+    isLoading:
+      isLoadingName ||
+      isLoadingAsset ||
+      isLoadingTarget ||
+      isLoadingDeadline ||
+      isLoadingProgress ||
+      isLoadingGraduated ||
+      isLoadingMemberCount ||
+      isLoadingMembers ||
+      isLoadingIsMember ||
+      isLoadingContribution ||
+      isLoadingCreator,
   };
 }
 
 export function useJoinChama(chamaAddress: string | null) {
-  const enabled = !!chamaAddress && chamaAddress !== '0x0000000000000000000000000000000000000000';
+  const enabled = !!chamaAddress && chamaAddress !== ZERO_ADDRESS;
   const { writeContract, isPending, isSuccess, isError, error } = useWriteContract();
 
   const join = async () => {
     if (!enabled) return;
     await writeContract({
-      address: chamaAddress as `0x${string}`,
+      address: chamaAddress as Address,
       abi: ChamaIncubationABI,
       functionName: 'join',
     });
@@ -112,13 +159,13 @@ export function useJoinChama(chamaAddress: string | null) {
 }
 
 export function useContribute(chamaAddress: string | null) {
-  const enabled = !!chamaAddress && chamaAddress !== '0x0000000000000000000000000000000000000000';
+  const enabled = !!chamaAddress && chamaAddress !== ZERO_ADDRESS;
   const { writeContract, isPending, isSuccess, isError, error } = useWriteContract();
 
   const contribute = async (amount: string, decimals: number = 18) => {
     if (!enabled) return;
     await writeContract({
-      address: chamaAddress as `0x${string}`,
+      address: chamaAddress as Address,
       abi: ChamaIncubationABI,
       functionName: 'contribute',
       args: [parseUnits(amount, decimals)],
@@ -129,13 +176,13 @@ export function useContribute(chamaAddress: string | null) {
 }
 
 export function useRefund(chamaAddress: string | null) {
-  const enabled = !!chamaAddress && chamaAddress !== '0x0000000000000000000000000000000000000000';
+  const enabled = !!chamaAddress && chamaAddress !== ZERO_ADDRESS;
   const { writeContract, isPending, isSuccess, isError, error } = useWriteContract();
 
   const refund = async () => {
     if (!enabled) return;
     await writeContract({
-      address: chamaAddress as `0x${string}`,
+      address: chamaAddress as Address,
       abi: ChamaIncubationABI,
       functionName: 'refund',
     });
@@ -145,13 +192,13 @@ export function useRefund(chamaAddress: string | null) {
 }
 
 export function useGraduate(chamaAddress: string | null) {
-  const enabled = !!chamaAddress && chamaAddress !== '0x0000000000000000000000000000000000000000';
+  const enabled = !!chamaAddress && chamaAddress !== ZERO_ADDRESS;
   const { writeContract, isPending, isSuccess, isError, error } = useWriteContract();
 
   const graduate = async () => {
     if (!enabled) return;
     await writeContract({
-      address: chamaAddress as `0x${string}`,
+      address: chamaAddress as Address,
       abi: ChamaIncubationABI,
       functionName: 'graduate',
     });

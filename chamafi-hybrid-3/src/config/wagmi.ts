@@ -1,9 +1,9 @@
 import { getDefaultConfig } from '@rainbow-me/rainbowkit';
 import { http } from 'wagmi';
-import { celo, celoAlfajores, hardhat } from 'wagmi/chains';
+import { celo, celoSepolia, hardhat } from 'wagmi/chains';
 
-// Supported chains - Celo only
-export const supportedChains = [celo, celoAlfajores, hardhat] as const;
+// Supported chains — Celo mainnet + Sepolia testnet
+export const supportedChains = [celo, celoSepolia, hardhat] as const;
 
 // Wagmi config with RainbowKit
 export const config = getDefaultConfig({
@@ -12,7 +12,7 @@ export const config = getDefaultConfig({
   chains: supportedChains,
   transports: {
     [celo.id]: http('https://forno.celo.org'),
-    [celoAlfajores.id]: http('https://alfajores-forno.celo-testnet.org'),
+    [celoSepolia.id]: http('https://forno.celo-sepolia.celo-testnet.org'),
     [hardhat.id]: http('http://127.0.0.1:8545'),
   },
 });
@@ -20,5 +20,5 @@ export const config = getDefaultConfig({
 // Check if MiniPay
 export function isMiniPay(): boolean {
   if (typeof window === 'undefined') return false;
-  return (window as any).ethereum?.isMiniPay === true;
+  return (window as unknown as { ethereum?: { isMiniPay?: boolean } }).ethereum?.isMiniPay === true;
 }
