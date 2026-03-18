@@ -1,0 +1,84 @@
+{
+  "name": "Pixel Shadow Hunters",
+  "symbol": "PXSHD",
+  "description": "Five ancient predators reborn from shadow and darkness. Pixel art creatures with dark/purple/black aesthetics, each archetype a deadly hunter of the night.",
+  "style": {
+    "aesthetic": "pixel-art",
+    "view": "side-profile",
+    "palette": ["#0d0a14", "#1a0a2e", "#2d1b4e", "#3b1f5e", "#4a2068", "#bf00ff", "#0d0015"],
+    "canvas": "200x200",
+    "format": "svg",
+    "outline": "bold",
+    "coloring": "flat"
+  },
+  "bases": [
+    {
+      "id": "lion",
+      "name": "Night Stalker",
+      "archetype": "Lion",
+      "file": "bases/lion-night-stalker.svg",
+      "description": "A shadow-maned lion with piercing purple eyes. Silent apex predator of the dark plains."
+    },
+    {
+      "id": "serpent",
+      "name": "Venom Strike",
+      "archetype": "Serpent",
+      "file": "bases/serpent-venom-strike.svg",
+      "description": "A hooded serpent coiled in darkness, dripping phosphorescent venom. Strikes from the void."
+    },
+    {
+      "id": "eagle",
+      "name": "Dark Talon",
+      "archetype": "Eagle",
+      "file": "bases/eagle-dark-talon.svg",
+      "description": "A raptor of obsidian feathers with blazing red eyes. Commands the night skies with razor talons."
+    },
+    {
+      "id": "croc",
+      "name": "Swamp Horror",
+      "archetype": "Crocodile",
+      "file": "bases/croc-swamp-horror.svg",
+      "description": "An ancient crocodilian beast lurking in toxic swamps. Rows of jagged teeth emerge from murky depths."
+    },
+    {
+      "id": "beetle",
+      "name": "Shadow Carapace",
+      "archetype": "Beetle",
+      "file": "bases/beetle-shadow-carapace.svg",
+      "description": "A massive horned beetle with an impenetrable dark carapace. Its shell absorbs all light."
+    }
+  ],
+  "traits": {
+    "shadow-effects": [
+      {"id": "shadow-aura", "name": "Shadow Aura", "file": "traits/shadow-effects/shadow-aura.svg", "rarity": "common", "description": "Pulsing dark energy radiates from the creature's body"},
+      {"id": "void-tendrils", "name": "Void Tendrils", "file": "traits/shadow-effects/void-tendrils.svg", "rarity": "uncommon", "description": "Dark tendrils of void energy extend from the creature"},
+      {"id": "eclipse-halo", "name": "Eclipse Halo", "file": "traits/shadow-effects/eclipse-halo.svg", "rarity": "rare", "description": "A dark eclipse ring hovers above the creature's head"},
+      {"id": "phantom-trail", "name": "Phantom Trail", "file": "traits/shadow-effects/phantom-trail.svg", "rarity": "uncommon", "description": "A ghostly afterimage trails behind the creature"},
+      {"id": "dark-mist", "name": "Dark Mist", "file": "traits/shadow-effects/dark-mist.svg", "rarity": "common", "description": "Swirling dark mist rises from the ground around the creature"}
+    ],
+    "dark-markings": [
+      {"id": "cursed-runes", "name": "Cursed Runes", "file": "traits/dark-markings/cursed-runes.svg", "rarity": "rare", "description": "Glowing purple rune symbols etched into the creature's body"},
+      {"id": "vein-lines", "name": "Vein Lines", "file": "traits/dark-markings/vein-lines.svg", "rarity": "common", "description": "Dark purple veins visible through the creature's skin"},
+      {"id": "skull-mark", "name": "Skull Mark", "file": "traits/dark-markings/skull-mark.svg", "rarity": "uncommon", "description": "A pixel skull marking branded on the creature's body"},
+      {"id": "shadow-stripes", "name": "Shadow Stripes", "file": "traits/dark-markings/shadow-stripes.svg", "rarity": "common", "description": "Diagonal dark stripes pattern across the body"},
+      {"id": "hex-spots", "name": "Hex Spots", "file": "traits/dark-markings/hex-spots.svg", "rarity": "uncommon", "description": "Hexagonal dark spots with subtle inner glow"}
+    ],
+    "hunter-gear": [
+      {"id": "shadow-blade", "name": "Shadow Blade", "file": "traits/hunter-gear/shadow-blade.svg", "rarity": "rare", "description": "A dark-energy infused blade strapped to the creature's back"},
+      {"id": "bone-collar", "name": "Bone Collar", "file": "traits/hunter-gear/bone-collar.svg", "rarity": "uncommon", "description": "Bone necklace with fang pendant and dark gem centerpiece"},
+      {"id": "spiked-armor", "name": "Spiked Armor", "file": "traits/hunter-gear/spiked-armor.svg", "rarity": "rare", "description": "Dark metal shoulder plates with deadly spikes"},
+      {"id": "night-goggles", "name": "Night Goggles", "file": "traits/hunter-gear/night-goggles.svg", "rarity": "uncommon", "description": "Green-lensed tactical goggles for night hunting"},
+      {"id": "chain-wrap", "name": "Chain Wrap", "file": "traits/hunter-gear/chain-wrap.svg", "rarity": "common", "description": "Dark chains wrapped around body with glowing jewel weight"}
+    ],
+    "special": [
+      {"id": "purple-flame-eyes", "name": "Purple Flame Eyes", "file": "traits/special/purple-flame-eyes.svg", "rarity": "legendary", "description": "Eyes erupt with purple spectral flame and floating embers"},
+      {"id": "spectral-wings", "name": "Spectral Wings", "file": "traits/special/spectral-wings.svg", "rarity": "legendary", "description": "Translucent ghostly wings made of shadow energy"},
+      {"id": "toxic-drool", "name": "Toxic Drool", "file": "traits/special/toxic-drool.svg", "rarity": "rare", "description": "Glowing toxic substance dripping from the creature's jaws"},
+      {"id": "night-crown", "name": "Night Crown", "file": "traits/special/night-crown.svg", "rarity": "legendary", "description": "A dark metal crown with purple gems, mark of the shadow king"},
+      {"id": "soul-orbs", "name": "Soul Orbs", "file": "traits/special/soul-orbs.svg", "rarity": "legendary", "description": "Floating purple soul orbs orbit the creature with energy connections"}
+    ]
+  },
+  "total_bases": 5,
+  "total_traits": 20,
+  "max_combinations": 3125
+}

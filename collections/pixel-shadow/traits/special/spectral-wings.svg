@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <rect width="200" height="200" fill="none"/>
+  <!-- Left spectral wing -->
+  <rect x="25" y="50" width="10" height="10" fill="#3b1f5e" opacity="0.3"/>
+  <rect x="15" y="55" width="10" height="10" fill="#2d1b4e" opacity="0.25"/>
+  <rect x="5" y="60" width="10" height="10" fill="#1a0a2e" opacity="0.2"/>
+  <rect x="30" y="60" width="10" height="10" fill="#4a2068" opacity="0.35"/>
+  <rect x="20" y="65" width="10" height="10" fill="#3b1f5e" opacity="0.3"/>
+  <rect x="10" y="70" width="10" height="10" fill="#2d1b4e" opacity="0.25"/>
+  <rect x="35" y="70" width="10" height="10" fill="#3b1f5e" opacity="0.3"/>
+  <rect x="25" y="75" width="10" height="10" fill="#2d1b4e" opacity="0.25"/>
+  <rect x="40" y="80" width="10" height="10" fill="#4a2068" opacity="0.3"/>
+  <!-- Right spectral wing -->
+  <rect x="165" y="50" width="10" height="10" fill="#3b1f5e" opacity="0.3"/>
+  <rect x="175" y="55" width="10" height="10" fill="#2d1b4e" opacity="0.25"/>
+  <rect x="185" y="60" width="10" height="10" fill="#1a0a2e" opacity="0.2"/>
+  <rect x="160" y="60" width="10" height="10" fill="#4a2068" opacity="0.35"/>
+  <rect x="170" y="65" width="10" height="10" fill="#3b1f5e" opacity="0.3"/>
+  <rect x="180" y="70" width="10" height="10" fill="#2d1b4e" opacity="0.25"/>
+  <rect x="155" y="70" width="10" height="10" fill="#3b1f5e" opacity="0.3"/>
+  <rect x="165" y="75" width="10" height="10" fill="#2d1b4e" opacity="0.25"/>
+  <rect x="150" y="80" width="10" height="10" fill="#4a2068" opacity="0.3"/>
+  <!-- Wing bones -->
+  <rect x="30" y="55" width="3" height="30" fill="#bf00ff" opacity="0.15"/>
+  <rect x="167" y="55" width="3" height="30" fill="#bf00ff" opacity="0.15"/>
+</svg>

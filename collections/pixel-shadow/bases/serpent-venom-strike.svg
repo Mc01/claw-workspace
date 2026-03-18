@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <rect width="200" height="200" fill="#0d0a1a"/>
+  <!-- Coiled body -->
+  <rect x="90" y="30" width="10" height="10" fill="#1a3020"/>
+  <rect x="100" y="30" width="10" height="10" fill="#1a3020"/>
+  <rect x="110" y="35" width="10" height="10" fill="#1e3828"/>
+  <rect x="120" y="40" width="10" height="10" fill="#1a3020"/>
+  <rect x="130" y="50" width="10" height="10" fill="#1e3828"/>
+  <rect x="130" y="60" width="10" height="10" fill="#1a3020"/>
+  <rect x="130" y="70" width="10" height="10" fill="#1e3828"/>
+  <rect x="120" y="80" width="10" height="10" fill="#1a3020"/>
+  <rect x="110" y="85" width="10" height="10" fill="#1e3828"/>
+  <rect x="100" y="90" width="10" height="10" fill="#1a3020"/>
+  <rect x="90" y="95" width="10" height="10" fill="#1e3828"/>
+  <rect x="80" y="100" width="10" height="10" fill="#1a3020"/>
+  <rect x="70" y="105" width="10" height="10" fill="#1e3828"/>
+  <rect x="60" y="110" width="10" height="10" fill="#1a3020"/>
+  <rect x="50" y="115" width="10" height="10" fill="#1e3828"/>
+  <rect x="50" y="125" width="10" height="10" fill="#1a3020"/>
+  <rect x="60" y="130" width="10" height="10" fill="#1e3828"/>
+  <rect x="70" y="135" width="10" height="10" fill="#1a3020"/>
+  <rect x="80" y="140" width="10" height="10" fill="#1e3828"/>
+  <rect x="90" y="140" width="10" height="10" fill="#1a3020"/>
+  <rect x="100" y="140" width="10" height="10" fill="#1e3828"/>
+  <rect x="110" y="135" width="10" height="10" fill="#1a3020"/>
+  <rect x="120" y="130" width="10" height="10" fill="#1e3828"/>
+  <rect x="120" y="120" width="10" height="10" fill="#1a3020"/>
+  <rect x="110" y="115" width="10" height="10" fill="#1e3828"/>
+  <rect x="100" y="110" width="10" height="10" fill="#1a3020"/>
+  <rect x="90" y="115" width="10" height="10" fill="#1e3828"/>
+  <rect x="80" y="120" width="10" height="10" fill="#1a3020"/>
+  <!-- Head -->
+  <rect x="70" y="25" width="20" height="10" fill="#1a3020"/>
+  <rect x="65" y="30" width="25" height="12" fill="#1e3828"/>
+  <rect x="60" y="35" width="30" height="10" fill="#1a3020"/>
+  <!-- Hood/flare -->
+  <rect x="55" y="40" width="10" height="10" fill="#2d1b4e"/>
+  <rect x="95" y="40" width="10" height="10" fill="#2d1b4e"/>
+  <rect x="50" y="45" width="10" height="10" fill="#3b1f5e"/>
+  <rect x="100" y="45" width="10" height="10" fill="#3b1f5e"/>
+  <!-- Eyes -->
+  <rect x="68" y="30" width="6" height="6" fill="#00ff66"/>
+  <rect x="82" y="30" width="6" height="6" fill="#00ff66"/>
+  <rect x="70" y="31" width="3" height="4" fill="#003318"/>
+  <rect x="84" y="31" width="3" height="4" fill="#003318"/>
+  <!-- Tongue -->
+  <rect x="73" y="45" width="4" height="6" fill="#8b0040"/>
+  <rect x="70" y="51" width="4" height="4" fill="#8b0040"/>
+  <rect x="77" y="51" width="4" height="4" fill="#8b0040"/>
+  <!-- Venom drip -->
+  <rect x="71" y="55" width="3" height="4" fill="#66ff66"/>
+  <rect x="78" y="55" width="3" height="4" fill="#66ff66"/>
+  <!-- Belly scales pattern -->
+  <rect x="95" y="90" width="5" height="5" fill="#0d1f14"/>
+  <rect x="75" y="100" width="5" height="5" fill="#0d1f14"/>
+  <rect x="55" y="115" width="5" height="5" fill="#0d1f14"/>
+  <rect x="115" y="125" width="5" height="5" fill="#0d1f14"/>
+  <!-- Tail rattle -->
+  <rect x="80" y="148" width="8" height="6" fill="#3b1f5e"/>
+  <rect x="82" y="154" width="6" height="4" fill="#4a2068"/>
+  <rect x="84" y="158" width="4" height="4" fill="#2d1b4e"/>
+</svg>

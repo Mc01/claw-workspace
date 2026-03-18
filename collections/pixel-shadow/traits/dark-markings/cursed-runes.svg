@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <rect width="200" height="200" fill="none"/>
+  <!-- Rune symbols on body area -->
+  <!-- Rune 1: X-cross -->
+  <rect x="70" y="90" width="4" height="4" fill="#9900cc"/>
+  <rect x="74" y="94" width="4" height="4" fill="#9900cc"/>
+  <rect x="78" y="98" width="4" height="4" fill="#9900cc"/>
+  <rect x="78" y="90" width="4" height="4" fill="#9900cc"/>
+  <rect x="74" y="94" width="4" height="4" fill="#bf00ff"/>
+  <rect x="70" y="98" width="4" height="4" fill="#9900cc"/>
+  <!-- Rune 2: Arrow -->
+  <rect x="100" y="88" width="4" height="4" fill="#9900cc"/>
+  <rect x="100" y="92" width="4" height="4" fill="#bf00ff"/>
+  <rect x="100" y="96" width="4" height="4" fill="#9900cc"/>
+  <rect x="100" y="100" width="4" height="4" fill="#9900cc"/>
+  <rect x="96" y="92" width="4" height="4" fill="#9900cc"/>
+  <rect x="104" y="92" width="4" height="4" fill="#9900cc"/>
+  <!-- Rune 3: Diamond -->
+  <rect x="122" y="90" width="4" height="4" fill="#9900cc"/>
+  <rect x="118" y="94" width="4" height="4" fill="#9900cc"/>
+  <rect x="126" y="94" width="4" height="4" fill="#9900cc"/>
+  <rect x="122" y="98" width="4" height="4" fill="#bf00ff"/>
+  <!-- Glow effect -->
+  <rect x="68" y="88" width="16" height="16" fill="#bf00ff" opacity="0.08"/>
+  <rect x="96" y="86" width="12" height="20" fill="#bf00ff" opacity="0.08"/>
+  <rect x="116" y="88" width="16" height="14" fill="#bf00ff" opacity="0.08"/>
+</svg>

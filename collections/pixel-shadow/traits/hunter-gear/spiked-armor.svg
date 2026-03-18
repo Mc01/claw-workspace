@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <rect width="200" height="200" fill="none"/>
+  <!-- Shoulder armor plates -->
+  <rect x="48" y="78" width="18" height="8" fill="#2a2a40"/>
+  <rect x="50" y="74" width="14" height="6" fill="#3a3a55"/>
+  <!-- Spikes on shoulder -->
+  <rect x="50" y="68" width="4" height="8" fill="#3a3a55"/>
+  <rect x="51" y="62" width="3" height="8" fill="#2a2a40"/>
+  <rect x="58" y="66" width="4" height="10" fill="#3a3a55"/>
+  <rect x="59" y="60" width="3" height="8" fill="#2a2a40"/>
+  <!-- Right shoulder -->
+  <rect x="124" y="78" width="18" height="8" fill="#2a2a40"/>
+  <rect x="126" y="74" width="14" height="6" fill="#3a3a55"/>
+  <rect x="128" y="68" width="4" height="8" fill="#3a3a55"/>
+  <rect x="129" y="62" width="3" height="8" fill="#2a2a40"/>
+  <rect x="136" y="66" width="4" height="10" fill="#3a3a55"/>
+  <rect x="137" y="60" width="3" height="8" fill="#2a2a40"/>
+  <!-- Spine ridge armor -->
+  <rect x="90" y="80" width="10" height="4" fill="#3a3a55"/>
+  <rect x="92" y="76" width="6" height="6" fill="#2a2a40"/>
+  <rect x="93" y="72" width="4" height="6" fill="#3a3a55"/>
+  <!-- Dark metal sheen -->
+  <rect x="50" y="76" width="8" height="2" fill="#4a4a65" opacity="0.6"/>
+  <rect x="128" y="76" width="8" height="2" fill="#4a4a65" opacity="0.6"/>
+</svg>

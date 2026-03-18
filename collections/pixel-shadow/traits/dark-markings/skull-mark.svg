@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <rect width="200" height="200" fill="none"/>
+  <!-- Pixel skull marking on shoulder/chest area -->
+  <rect x="82" y="78" width="6" height="4" fill="#3b1f5e"/>
+  <rect x="88" y="78" width="6" height="4" fill="#3b1f5e"/>
+  <rect x="94" y="78" width="6" height="4" fill="#3b1f5e"/>
+  <rect x="100" y="78" width="6" height="4" fill="#3b1f5e"/>
+  <rect x="106" y="78" width="6" height="4" fill="#3b1f5e"/>
+  <rect x="78" y="82" width="6" height="4" fill="#3b1f5e"/>
+  <rect x="84" y="82" width="24" height="4" fill="#4a2068"/>
+  <rect x="108" y="82" width="6" height="4" fill="#3b1f5e"/>
+  <!-- Eyes of skull -->
+  <rect x="84" y="86" width="8" height="6" fill="#0d0015"/>
+  <rect x="100" y="86" width="8" height="6" fill="#0d0015"/>
+  <rect x="86" y="87" width="4" height="4" fill="#bf00ff" opacity="0.6"/>
+  <rect x="102" y="87" width="4" height="4" fill="#bf00ff" opacity="0.6"/>
+  <!-- Nose -->
+  <rect x="94" y="90" width="4" height="4" fill="#2d1b4e"/>
+  <!-- Jaw -->
+  <rect x="84" y="94" width="24" height="4" fill="#3b1f5e"/>
+  <rect x="86" y="98" width="4" height="3" fill="#3b1f5e"/>
+  <rect x="92" y="98" width="4" height="3" fill="#3b1f5e"/>
+  <rect x="100" y="98" width="4" height="3" fill="#3b1f5e"/>
+</svg>

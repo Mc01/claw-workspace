@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <rect width="200" height="200" fill="none"/>
+  <!-- Left eye flame -->
+  <rect x="75" y="44" width="14" height="10" fill="#bf00ff" opacity="0.8"/>
+  <rect x="73" y="40" width="6" height="8" fill="#9900cc" opacity="0.6"/>
+  <rect x="85" y="38" width="6" height="10" fill="#9900cc" opacity="0.6"/>
+  <rect x="71" y="34" width="4" height="8" fill="#6600aa" opacity="0.4"/>
+  <rect x="87" y="32" width="4" height="10" fill="#6600aa" opacity="0.4"/>
+  <rect x="77" y="36" width="4" height="6" fill="#ff66ff" opacity="0.5"/>
+  <!-- Right eye flame -->
+  <rect x="105" y="44" width="14" height="10" fill="#bf00ff" opacity="0.8"/>
+  <rect x="103" y="40" width="6" height="8" fill="#9900cc" opacity="0.6"/>
+  <rect x="115" y="38" width="6" height="10" fill="#9900cc" opacity="0.6"/>
+  <rect x="101" y="34" width="4" height="8" fill="#6600aa" opacity="0.4"/>
+  <rect x="117" y="32" width="4" height="10" fill="#6600aa" opacity="0.4"/>
+  <rect x="107" y="36" width="4" height="6" fill="#ff66ff" opacity="0.5"/>
+  <!-- Ember particles -->
+  <rect x="69" y="28" width="3" height="3" fill="#bf00ff" opacity="0.3"/>
+  <rect x="90" y="26" width="3" height="3" fill="#bf00ff" opacity="0.25"/>
+  <rect x="99" y="28" width="3" height="3" fill="#bf00ff" opacity="0.3"/>
+  <rect x="120" y="26" width="3" height="3" fill="#bf00ff" opacity="0.25"/>
+</svg>

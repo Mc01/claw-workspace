@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <rect width="200" height="200" fill="none"/>
+  <!-- Dripping toxic substance from mouth -->
+  <rect x="82" y="80" width="4" height="6" fill="#00cc44"/>
+  <rect x="82" y="86" width="4" height="6" fill="#00aa33"/>
+  <rect x="82" y="92" width="4" height="4" fill="#008822"/>
+  <rect x="83" y="96" width="3" height="3" fill="#00cc44" opacity="0.7"/>
+  <rect x="104" y="80" width="4" height="6" fill="#00cc44"/>
+  <rect x="104" y="86" width="4" height="8" fill="#00aa33"/>
+  <rect x="104" y="94" width="4" height="4" fill="#008822"/>
+  <rect x="105" y="98" width="3" height="4" fill="#00cc44" opacity="0.6"/>
+  <rect x="105" y="102" width="2" height="3" fill="#00aa33" opacity="0.4"/>
+  <!-- Splatter drops -->
+  <rect x="78" y="100" width="3" height="3" fill="#00cc44" opacity="0.5"/>
+  <rect x="110" y="104" width="3" height="3" fill="#00cc44" opacity="0.5"/>
+  <rect x="86" y="105" width="2" height="2" fill="#00aa33" opacity="0.4"/>
+  <!-- Glow around drips -->
+  <rect x="80" y="82" width="8" height="12" fill="#00ff44" opacity="0.08"/>
+  <rect x="102" y="82" width="8" height="16" fill="#00ff44" opacity="0.08"/>
+</svg>
