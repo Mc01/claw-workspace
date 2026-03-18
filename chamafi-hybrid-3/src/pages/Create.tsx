@@ -122,12 +122,12 @@ export function Create() {
   return (
     <div className="max-w-2xl mx-auto animate-fade-in">
       <div className="flex items-center gap-3 mb-8">
-        <div className="w-10 h-10 rounded-xl bg-primary-500/15 flex items-center justify-center">
-          <PlusCircle className="w-5 h-5 text-primary-400" />
+        <div className="w-10 h-10 rounded-xl bg-lime/15 flex items-center justify-center border border-mint/20">
+          <PlusCircle className="w-5 h-5 text-lime" />
         </div>
         <div>
-          <h1 className="text-2xl font-bold text-white">Create New Chama</h1>
-          <p className="text-white/40 text-sm">Set up a community savings circle</p>
+          <h1 className="text-2xl font-bold text-cream">Create New Chama</h1>
+          <p className="text-sand/50 text-sm">Set up a community savings circle</p>
         </div>
       </div>
 
@@ -147,7 +147,7 @@ export function Create() {
 
         {/* Token Selection */}
         <div>
-          <label className="block text-sm font-medium text-white/60 mb-3">
+          <label className="block text-sm font-medium text-sand/70 mb-3">
             Savings Asset
           </label>
           <div className="grid grid-cols-3 gap-3">
@@ -158,8 +158,8 @@ export function Create() {
                 onClick={() => setFormData({ ...formData, token: token.symbol })}
                 className={`p-3 rounded-xl border text-center transition-all duration-200 ${
                   formData.token === token.symbol
-                    ? 'border-primary-500/50 bg-primary-500/10 text-primary-400 shadow-sm shadow-primary-500/10'
-                    : 'border-white/[0.08] bg-white/[0.02] text-white/60 hover:border-white/[0.15] hover:bg-white/[0.04]'
+                    ? 'bg-lime/15 text-mint border-mint/40 shadow-[0_0_20px_rgba(196,232,106,0.15)]'
+                    : 'bg-white/[0.03] text-sand/70 border-sand/10 hover:border-sand/20 hover:bg-white/[0.05]'
                 }`}
               >
                 <div className="font-semibold text-sm">{token.symbol}</div>
@@ -173,7 +173,7 @@ export function Create() {
         <FormField
           label={`Target Capital (${formData.token})`}
           error={errors.targetAmount}
-          icon={<DollarSign className="w-4 h-4" />}
+          icon={<DollarSign className="w-4 h-4 text-sand/50" />}
           hint="Minimum 200 (contract requirement)"
         >
           <input
@@ -193,7 +193,7 @@ export function Create() {
         <FormField
           label="Minimum Members"
           error={errors.minMembers}
-          icon={<Users className="w-4 h-4" />}
+          icon={<Users className="w-4 h-4 text-sand/50" />}
           hint="2–100 members. Chama activates when this many members join."
         >
           <input
@@ -212,7 +212,7 @@ export function Create() {
         <FormField
           label="Deadline"
           error={errors.deadline}
-          icon={<Calendar className="w-4 h-4" />}
+          icon={<Calendar className="w-4 h-4 text-sand/50" />}
           hint="Optional — leave empty for no deadline"
         >
           <input
@@ -238,9 +238,9 @@ export function Create() {
 
         {/* Success Message */}
         {isSuccess && (
-          <div className="flex items-center gap-3 p-4 rounded-xl bg-primary-500/10 border border-primary-500/20">
-            <CheckCircle className="w-5 h-5 text-primary-400 shrink-0" />
-            <p className="text-sm text-primary-400">
+          <div className="flex items-center gap-3 p-4 rounded-xl bg-lime/10 border border-lime/30">
+            <CheckCircle className="w-5 h-5 text-lime shrink-0" />
+            <p className="text-sm text-lime">
               Chama created successfully! Redirecting to discover...
             </p>
           </div>
@@ -286,7 +286,7 @@ function FormField({
 }) {
   return (
     <div>
-      <label className="flex items-center gap-2 text-sm font-medium text-white/60 mb-2">
+      <label className="flex items-center gap-2 text-sm font-medium text-sand/70 mb-2">
         {icon}
         {label}
       </label>
@@ -298,7 +298,7 @@ function FormField({
         </p>
       )}
       {hint && !error && (
-        <p className="mt-1.5 text-xs text-white/30 flex items-center gap-1">
+        <p className="mt-1.5 text-xs text-sand/40 flex items-center gap-1">
           <Info className="w-3 h-3" />
           {hint}
         </p>

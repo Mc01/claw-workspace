@@ -7,6 +7,10 @@ export default {
   darkMode: 'class',
   theme: {
     extend: {
+      fontFamily: {
+        sans: ['Space Grotesk', 'system-ui', 'sans-serif'],
+        mono: ['Space Mono', 'ui-monospace', 'monospace'],
+      },
       colors: {
         border: "hsl(var(--border))",
         background: "hsl(var(--background))",
@@ -33,7 +37,19 @@ export default {
         destructive: { DEFAULT: "hsl(var(--destructive))", foreground: "hsl(var(--destructive-foreground))" },
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
-        // Earth tones
+        // Earth tones - Landing page palette
+        soil: '#3D2B1F',
+        clay: '#6B3A2A',
+        sand: '#C4A47C',
+        forest: '#2D5016',
+        leaf: '#4A8025',
+        lime: '#7ABF42',
+        mint: '#C4E86A',
+        'sun-gold': '#F5A623',
+        ochre: '#D4821A',
+        cream: '#F5ECD7',
+        parchment: '#EFE4CC',
+        // Earth tone range
         earth: {
           50: '#fdf8f0',
           100: '#f5ead6',
@@ -48,7 +64,7 @@ export default {
         },
         // Dark theme surface colors
         surface: {
-          DEFAULT: '#0a0f0d',
+          DEFAULT: '#050c08',
           50: '#1a2520',
           100: '#152019',
           200: '#0f1a14',
@@ -88,6 +104,11 @@ export default {
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+        'gradient-forest-lime': 'linear-gradient(90deg, #2D5016 0%, #4A8025 50%, #7ABF42 100%)',
+      },
+      boxShadow: {
+        'brutalist': '4px 4px 0px #1A1A1A',
+        'brutalist-sm': '2px 2px 0px #1A1A1A',
       },
     },
   },

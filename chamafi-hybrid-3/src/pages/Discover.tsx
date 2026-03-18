@@ -1,4 +1,4 @@
-import { useState, useEffect, useMemo } from 'react';
+import { useState, useMemo } from 'react';
 import { Link } from 'react-router-dom';
 import { Search, Filter, PlusCircle, Compass } from 'lucide-react';
 import { useChamaFactory } from '../hooks/useChamaFactory';
@@ -66,16 +66,16 @@ export function Discover() {
       {/* Page Header */}
       <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
         <div>
-          <h1 className="text-2xl md:text-3xl font-bold text-white flex items-center gap-3">
-            <Compass className="w-8 h-8 text-primary-400" />
+          <h1 className="text-2xl md:text-3xl font-bold text-cream flex items-center gap-3 font-sans">
+            <Compass className="w-8 h-8 text-mint" />
             Discover Chamas
           </h1>
-          <p className="text-white/40 mt-1">Find and join community savings groups</p>
+          <p className="text-sand mt-1">Find and join community savings groups</p>
         </div>
 
         <Link
           to="/app/create"
-          className="btn-primary inline-flex items-center gap-2 text-sm self-start"
+          className="inline-flex items-center gap-2 px-6 py-3 bg-leaf text-white font-semibold border-2 border-cream/20 shadow-[4px_4px_0px_rgba(245,236,215,0.2)] hover:translate-x-[-2px] hover:translate-y-[-2px] hover:shadow-[6px_6px_0px_rgba(245,236,215,0.25)] active:translate-x-[0px] active:translate-y-[0px] active:shadow-none transition-all duration-150 self-start rounded-lg"
         >
           <PlusCircle className="w-4 h-4" />
           Create Chama
@@ -85,26 +85,26 @@ export function Discover() {
       {/* Search and Filters */}
       <div className="flex flex-col sm:flex-row gap-3">
         <div className="relative flex-1">
-          <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 text-white/30" />
+          <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 text-sand/50" />
           <input
             type="text"
             placeholder="Search by name or address..."
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
-            className="input-dark pl-11"
+            className="w-full pl-11 pr-4 py-3 bg-white/[0.04] backdrop-blur-xl border border-white/[0.1] rounded-xl text-cream placeholder-sand/40 focus:outline-none focus:ring-2 focus:ring-mint/50 focus:border-mint/50 transition-all duration-200"
           />
         </div>
 
-        <div className="flex items-center gap-1 glass-card p-1">
-          <Filter className="w-4 h-4 text-white/30 ml-3 mr-1" />
+        <div className="flex items-center gap-1 bg-white/[0.04] backdrop-blur-xl border border-white/[0.1] rounded-xl p-1">
+          <Filter className="w-4 h-4 text-sand/50 ml-3 mr-1" />
           {(['all', 'open', 'graduated'] as FilterType[]).map((f) => (
             <button
               key={f}
               onClick={() => setFilter(f)}
               className={`px-4 py-2 rounded-lg text-sm font-medium transition-all duration-200 ${
                 filter === f
-                  ? 'bg-primary-500/20 text-primary-400'
-                  : 'text-white/40 hover:text-white/60 hover:bg-white/[0.04]'
+                  ? 'bg-mint/20 text-mint border border-mint/30'
+                  : 'text-sand/60 hover:text-cream hover:bg-white/[0.06]'
               }`}
             >
               {f.charAt(0).toUpperCase() + f.slice(1)}
@@ -135,20 +135,23 @@ export function Discover() {
 
 function EmptyState({ searchTerm }: { searchTerm: string }) {
   return (
-    <div className="glass-card p-12 text-center">
-      <div className="w-16 h-16 rounded-2xl bg-primary-500/10 flex items-center justify-center mx-auto mb-4">
-        <Compass className="w-8 h-8 text-primary-400/60" />
+    <div className="bg-white/[0.04] backdrop-blur-xl border border-white/[0.1] rounded-2xl p-12 text-center shadow-[0_4px_24px_rgba(0,0,0,0.2)]">
+      <div className="w-16 h-16 rounded-2xl bg-mint/10 border border-mint/20 flex items-center justify-center mx-auto mb-4">
+        <Compass className="w-8 h-8 text-mint/60" />
       </div>
-      <h3 className="text-lg font-semibold text-white mb-2">
+      <h3 className="text-lg font-semibold text-cream mb-2 font-sans">
         {searchTerm ? 'No Chamas Found' : 'No Chamas Yet'}
       </h3>
-      <p className="text-white/40 mb-6 max-w-sm mx-auto">
+      <p className="text-sand/60 mb-6 max-w-sm mx-auto">
         {searchTerm
           ? 'No Chamas match your search. Try a different name or address.'
           : 'Be the first to create a savings circle for your community.'}
       </p>
       {!searchTerm && (
-        <Link to="/app/create" className="btn-primary inline-flex items-center gap-2">
+        <Link 
+          to="/app/create" 
+          className="inline-flex items-center gap-2 px-6 py-3 bg-leaf text-white font-semibold border-2 border-cream/20 shadow-[4px_4px_0px_rgba(245,236,215,0.2)] hover:translate-x-[-2px] hover:translate-y-[-2px] hover:shadow-[6px_6px_0px_rgba(245,236,215,0.25)] active:translate-x-[0px] active:translate-y-[0px] active:shadow-none transition-all duration-150 rounded-lg"
+        >
           <PlusCircle className="w-4 h-4" />
           Create First Chama
         </Link>
