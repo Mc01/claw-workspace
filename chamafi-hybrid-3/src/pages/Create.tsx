@@ -2,7 +2,7 @@ import { useState, useMemo } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useCreateChama } from '../hooks/useChamaFactory';
-import { TOKEN_OPTIONS, getTokenAddress, getTokenDecimals, type TokenSymbol } from '../config/contracts';
+import { TOKEN_OPTIONS, getTokenAddress, type TokenSymbol } from '../config/contracts';
 import { useAccount, useBalance, useChainId } from 'wagmi';
 import { formatUnits } from 'viem';
 import { Calendar, DollarSign, Users, PlusCircle, Loader2, CheckCircle, AlertTriangle, Info } from 'lucide-react';
@@ -457,7 +457,6 @@ function TokenBalance({
   token: TokenSymbol;
 }) {
   const tokenAddress = getTokenAddress(chainId, token);
-  const decimals = getTokenDecimals(token);
 
   const { data: balance, isLoading } = useBalance({
     address,
