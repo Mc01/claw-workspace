@@ -314,24 +314,6 @@ export function Landing() {
                   </div>
                 ))}
               </div>
-              <div className="what-comparison reveal-up" data-delay="350">
-                <table className="comparison-table">
-                  <thead>
-                    <tr><th>Feature</th><th>Traditional Chama</th><th className="ct-highlight">ChamaFi</th></tr>
-                  </thead>
-                  <tbody>
-                    {[
-                      ['Yield on idle capital', '0%', '8%+ APY'],
-                      ['Exit flexibility', 'Wait for rotation', 'Instant, any time'],
-                      ['Lockup period', 'Months to years', 'No lockup'],
-                      ['Transparency', 'Cash / trust-based', 'On-chain'],
-                      ['Auto-refund on failure', 'Manual, disputed', 'Guaranteed by contract'],
-                    ].map(([feat, bad, good], i) => (
-                      <tr key={i}><td>{feat}</td><td className="ct-bad">{bad}</td><td className="ct-good">{good}</td></tr>
-                    ))}
-                  </tbody>
-                </table>
-              </div>
             </div>
 
             <div className="what-visual reveal-up" data-delay="150">
@@ -361,6 +343,24 @@ export function Landing() {
                 <div className="wsr-item"><span className="wsr-num">300M+</span><span className="wsr-label">Chama Participants</span></div>
                 <div className="wsr-divider" />
                 <div className="wsr-item"><span className="wsr-num">$180B</span><span className="wsr-label">Annual Savings Volume</span></div>
+              </div>
+              <div className="what-comparison reveal-up" data-delay="400">
+                <table className="comparison-table">
+                  <thead>
+                    <tr><th>Feature</th><th>Traditional Chama</th><th className="ct-highlight">ChamaFi</th></tr>
+                  </thead>
+                  <tbody>
+                    {[
+                      ['Yield on idle capital', '0%', '8%+ APY'],
+                      ['Exit flexibility', 'Wait for rotation', 'Instant, any time'],
+                      ['Lockup period', 'Months to years', 'No lockup'],
+                      ['Transparency', 'Cash / trust-based', 'On-chain'],
+                      ['Auto-refund on failure', 'Manual, disputed', 'Guaranteed by contract'],
+                    ].map(([feat, bad, good], i) => (
+                      <tr key={i}><td>{feat}</td><td className="ct-bad">{bad}</td><td className="ct-good">{good}</td></tr>
+                    ))}
+                  </tbody>
+                </table>
               </div>
             </div>
           </div>
