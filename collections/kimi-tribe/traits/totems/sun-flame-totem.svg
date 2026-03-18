@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 400" width="120" height="400">
+  <defs>
+    <linearGradient id="flameTop" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#E85D04"/>
+      <stop offset="60%" stop-color="#F48C06"/>
+      <stop offset="100%" stop-color="#FAE200" stop-opacity="0.8"/>
+    </linearGradient>
+    <filter id="ftg"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="120" height="400" fill="none"/>
+  <!-- Shaft -->
+  <rect x="44" y="80" width="32" height="290" rx="5" fill="#5C2A08" stroke="#E85D04" stroke-width="1"/>
+  <!-- Base -->
+  <rect x="28" y="362" width="64" height="20" rx="4" fill="#3D1A05" stroke="#E85D04" stroke-width="1.5"/>
+  <!-- Flame top -->
+  <path d="M60,18 Q52,38 56,52 Q48,38 50,25 Q42,40 46,58 Q55,75 60,80 Q65,75 74,58 Q78,40 70,25 Q72,38 64,52 Q68,38 60,18 Z" fill="url(#flameTop)" filter="url(#ftg)"/>
+  <!-- Flame inner -->
+  <path d="M60,32 Q57,44 58,54 Q56,44 58,36 Q55,46 57,56 Q60,68 60,70 Q63,68 63,56 Q65,46 62,36 Q64,44 62,54 Q63,44 60,32 Z" fill="#FAE200" opacity="0.8"/>
+  <!-- Sun disc below flame -->
+  <circle cx="60" cy="88" r="22" fill="#C17F24" stroke="#F5A623" stroke-width="2"/>
+  <circle cx="60" cy="88" r="14" fill="#E8A020"/>
+  <circle cx="60" cy="88" r="8" fill="#FAE200" filter="url(#ftg)"/>
+  <!-- Sun rays -->
+  <g stroke="#F5A623" stroke-width="2" stroke-linecap="round">
+    <line x1="60" y1="60" x2="60" y2="66"/>
+    <line x1="60" y1="110" x2="60" y2="116"/>
+    <line x1="32" y1="88" x2="38" y2="88"/>
+    <line x1="82" y1="88" x2="88" y2="88"/>
+    <line x1="41" y1="69" x2="45" y2="73"/>
+    <line x1="79" y1="107" x2="75" y2="103"/>
+    <line x1="79" y1="69" x2="75" y2="73"/>
+    <line x1="41" y1="107" x2="45" y2="103"/>
+  </g>
+  <!-- Totem fire bands -->
+  <rect x="44" y="165" width="32" height="6" rx="2" fill="#E85D04" opacity="0.8"/>
+  <rect x="44" y="245" width="32" height="6" rx="2" fill="#E85D04" opacity="0.8"/>
+  <rect x="44" y="325" width="32" height="6" rx="2" fill="#E85D04" opacity="0.8"/>
+  <!-- Section patterns -->
+  <g fill="#F48C06" opacity="0.6">
+    <polygon points="60,185 54,200 60,215 66,200"/>
+    <polygon points="60,265 54,280 60,295 66,280"/>
+  </g>
+  <g fill="#C17F24" opacity="0.5">
+    <polygon points="52,192 47,200 52,208 57,200"/>
+    <polygon points="68,192 63,200 68,208 73,200"/>
+    <polygon points="52,272 47,280 52,288 57,280"/>
+    <polygon points="68,272 63,280 68,288 73,280"/>
+  </g>
+</svg>

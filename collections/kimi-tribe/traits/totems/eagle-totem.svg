@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 400" width="120" height="400">
+  <defs>
+    <filter id="etg"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="120" height="400" fill="none"/>
+  <!-- Totem pole shaft -->
+  <rect x="42" y="60" width="36" height="320" rx="6" fill="#5C2A08" stroke="#C17F24" stroke-width="1"/>
+  <!-- Base platform -->
+  <rect x="28" y="362" width="64" height="20" rx="4" fill="#3D1A05" stroke="#C17F24" stroke-width="1.5"/>
+  <!-- Eagle head -->
+  <ellipse cx="60" cy="55" rx="35" ry="30" fill="#8B5E1A"/>
+  <!-- Eagle beak -->
+  <path d="M52,60 Q60,75 68,60" fill="#C17F24"/>
+  <path d="M52,60 Q60,70 68,60 Q60,65 52,60" fill="#E8A020"/>
+  <!-- Eyes -->
+  <circle cx="44" cy="48" r="8" fill="#0A0500"/>
+  <circle cx="76" cy="48" r="8" fill="#0A0500"/>
+  <circle cx="44" cy="48" r="5" fill="#F5A623" filter="url(#etg)"/>
+  <circle cx="76" cy="48" r="5" fill="#F5A623" filter="url(#etg)"/>
+  <circle cx="43" cy="47" r="2" fill="#FFF8E7"/>
+  <circle cx="75" cy="47" r="2" fill="#FFF8E7"/>
+  <!-- Crown feathers -->
+  <g fill="#C17F24">
+    <polygon points="60,15 55,32 65,32"/>
+    <polygon points="46,20 43,35 51,35"/>
+    <polygon points="74,20 69,35 77,35"/>
+    <polygon points="35,30 33,44 40,44"/>
+    <polygon points="85,30 80,44 87,44"/>
+  </g>
+  <!-- Eagle wings on totem -->
+  <path d="M42,120 Q20,110 8,95 Q18,105 32,118" fill="#5C2A08" stroke="#C17F24" stroke-width="1"/>
+  <path d="M78,120 Q100,110 112,95 Q102,105 88,118" fill="#5C2A08" stroke="#C17F24" stroke-width="1"/>
+  <!-- Tribal band sections -->
+  <g fill="#C17F24" opacity="0.8">
+    <rect x="42" y="155" width="36" height="6" rx="2"/>
+    <rect x="42" y="230" width="36" height="6" rx="2"/>
+    <rect x="42" y="305" width="36" height="6" rx="2"/>
+  </g>
+  <!-- Section 1 pattern — diamonds -->
+  <g fill="#F5A623" opacity="0.6">
+    <polygon points="60,175 55,185 60,195 65,185"/>
+    <polygon points="52,180 47,188 52,196 57,188"/>
+    <polygon points="68,180 63,188 68,196 73,188"/>
+  </g>
+  <!-- Section 2 pattern — zigzag -->
+  <g fill="none" stroke="#C17F24" stroke-width="1.5" opacity="0.7">
+    <polyline points="44,248 52,240 60,248 68,240 76,248"/>
+    <polyline points="44,260 52,252 60,260 68,252 76,260"/>
+    <polyline points="44,272 52,264 60,272 68,264 76,272"/>
+  </g>
+  <!-- Section 3 — circles -->
+  <g fill="none" stroke="#C17F24" stroke-width="1.5" opacity="0.7">
+    <circle cx="60" cy="328" r="10"/>
+    <circle cx="60" cy="328" r="5"/>
+    <circle cx="60" cy="328" r="2" fill="#F5A623"/>
+  </g>
+</svg>

@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <radialGradient id="bgGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#2C1810"/>
+      <stop offset="100%" stop-color="#0D0A05"/>
+    </radialGradient>
+    <radialGradient id="spiritGlow" cx="50%" cy="40%" r="45%">
+      <stop offset="0%" stop-color="#C17F24" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#C17F24" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="400" height="400" fill="url(#bgGrad)"/>
+  <ellipse cx="200" cy="160" rx="130" ry="150" fill="url(#spiritGlow)"/>
+  <rect x="8" y="8" width="384" height="384" fill="none" stroke="#C17F24" stroke-width="2"/>
+  <rect x="14" y="14" width="372" height="372" fill="none" stroke="#8B5E1A" stroke-width="1"/>
+  <g fill="#C17F24" opacity="0.7">
+    <path d="M20,20 L35,20 L35,25 L25,25 L25,35 L20,35 Z"/>
+    <path d="M380,20 L365,20 L365,25 L375,25 L375,35 L380,35 Z"/>
+    <path d="M20,380 L35,380 L35,375 L25,375 L25,365 L20,365 Z"/>
+    <path d="M380,380 L365,380 L365,375 L375,375 L375,365 L380,365 Z"/>
+  </g>
+  <ellipse cx="200" cy="310" rx="70" ry="60" fill="#1B1464" opacity="0.9"/>
+  <rect x="140" y="250" width="120" height="80" rx="8" fill="#1B1464"/>
+  <rect x="140" y="265" width="120" height="4" fill="#C17F24" opacity="0.6"/>
+  <rect x="140" y="278" width="120" height="2" fill="#F5A623" opacity="0.4"/>
+  <rect x="140" y="295" width="120" height="4" fill="#C17F24" opacity="0.6"/>
+  <rect x="140" y="308" width="120" height="2" fill="#F5A623" opacity="0.4"/>
+  <g fill="none" stroke="#C17F24" stroke-width="1.5" opacity="0.5">
+    <polyline points="155,255 170,270 185,255"/>
+    <polyline points="175,255 190,270 205,255"/>
+    <polyline points="195,255 210,270 225,255"/>
+    <polyline points="215,255 230,270 245,255"/>
+  </g>
+  <rect x="188" y="228" width="24" height="28" rx="4" fill="#8B4513"/>
+  <ellipse cx="200" cy="200" rx="42" ry="48" fill="#7B3A0E"/>
+  <g stroke="#C17F24" stroke-width="1.5" fill="none" opacity="0.8">
+    <line x1="185" y1="178" x2="200" y2="172"/>
+    <line x1="200" y1="172" x2="215" y2="178"/>
+    <circle cx="200" cy="169" r="3" fill="#C17F24"/>
+  </g>
+  <g stroke="#F5A623" stroke-width="2" opacity="0.9">
+    <line x1="163" y1="196" x2="175" y2="199"/>
+    <line x1="162" y1="203" x2="174" y2="204"/>
+    <line x1="163" y1="210" x2="175" y2="209"/>
+    <line x1="237" y1="196" x2="225" y2="199"/>
+    <line x1="238" y1="203" x2="226" y2="204"/>
+    <line x1="237" y1="210" x2="225" y2="209"/>
+  </g>
+  <ellipse cx="185" cy="195" rx="9" ry="7" fill="#0D0A05"/>
+  <ellipse cx="215" cy="195" rx="9" ry="7" fill="#0D0A05"/>
+  <ellipse cx="185" cy="195" rx="5" ry="4" fill="#F5A623" filter="url(#glow)"/>
+  <ellipse cx="215" cy="195" rx="5" ry="4" fill="#F5A623" filter="url(#glow)"/>
+  <circle cx="184" cy="194" r="1.5" fill="#FFF8E7"/>
+  <circle cx="214" cy="194" r="1.5" fill="#FFF8E7"/>
+  <ellipse cx="200" cy="210" rx="6" ry="4" fill="#5C2A08"/>
+  <path d="M190,222 Q200,228 210,222" fill="none" stroke="#5C2A08" stroke-width="2"/>
+  <path d="M158,185 Q168,145 200,138 Q232,145 242,185" fill="none" stroke="#C17F24" stroke-width="3"/>
+  <g fill="#C17F24">
+    <polygon points="200,115 194,138 206,138"/>
+    <polygon points="180,122 176,142 184,142"/>
+    <polygon points="220,122 216,142 224,142"/>
+    <polygon points="164,135 161,150 167,150"/>
+    <polygon points="236,135 233,150 239,150"/>
+  </g>
+  <circle cx="200" cy="138" r="4" fill="#F5A623" filter="url(#glow)"/>
+  <circle cx="182" cy="142" r="3" fill="#8B5CF6"/>
+  <circle cx="218" cy="142" r="3" fill="#8B5CF6"/>
+  <g fill="#C17F24">
+    <circle cx="178" cy="238" r="3"/>
+    <circle cx="186" cy="234" r="3"/>
+    <circle cx="194" cy="232" r="3"/>
+    <circle cx="202" cy="232" r="3"/>
+    <circle cx="210" cy="234" r="3"/>
+    <circle cx="218" cy="238" r="3"/>
+    <circle cx="224" cy="244" r="3"/>
+    <circle cx="176" cy="244" r="3"/>
+  </g>
+  <polygon points="200,242 196,250 200,254 204,250" fill="#F5A623"/>
+  <line x1="248" y1="210" x2="260" y2="350" stroke="#5C2A08" stroke-width="5" stroke-linecap="round"/>
+  <circle cx="248" cy="204" r="8" fill="none" stroke="#C17F24" stroke-width="2"/>
+  <circle cx="248" cy="204" r="4" fill="#C17F24"/>
+  <line x1="240" y1="196" x2="256" y2="212" stroke="#C17F24" stroke-width="1.5"/>
+  <line x1="256" y1="196" x2="240" y2="212" stroke="#C17F24" stroke-width="1.5"/>
+  <g fill="#C17F24" filter="url(#glow)" opacity="0.6">
+    <circle cx="130" cy="150" r="2"/>
+    <circle cx="118" cy="170" r="1.5"/>
+    <circle cx="270" cy="145" r="2"/>
+    <circle cx="282" cy="168" r="1.5"/>
+    <circle cx="200" cy="80" r="2"/>
+  </g>
+  <text x="200" y="392" text-anchor="middle" font-family="serif" font-size="11" fill="#C17F24" letter-spacing="3">ANCESTOR ELDER</text>
+</svg>

@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <radialGradient id="bg2" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#0A1F0A"/>
+      <stop offset="100%" stop-color="#050D05"/>
+    </radialGradient>
+    <radialGradient id="greenGlow" cx="50%" cy="45%" r="50%">
+      <stop offset="0%" stop-color="#2D6A2D" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#2D6A2D" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="glow2">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="400" height="400" fill="url(#bg2)"/>
+  <ellipse cx="200" cy="180" rx="140" ry="160" fill="url(#greenGlow)"/>
+  <!-- Tribal border -->
+  <rect x="8" y="8" width="384" height="384" fill="none" stroke="#4A7C2F" stroke-width="2"/>
+  <g fill="none" stroke="#4A7C2F" stroke-width="1" opacity="0.5">
+    <line x1="8" y1="30" x2="22" y2="30"/> <line x1="8" y1="52" x2="22" y2="52"/>
+    <line x1="8" y1="74" x2="22" y2="74"/> <line x1="378" y1="30" x2="392" y2="30"/>
+    <line x1="378" y1="52" x2="392" y2="52"/> <line x1="378" y1="74" x2="392" y2="74"/>
+  </g>
+  <!-- Tree roots / body base -->
+  <g fill="#2D4A1A" stroke="#4A7C2F" stroke-width="1">
+    <ellipse cx="200" cy="350" rx="80" ry="30"/>
+    <path d="M150,340 Q120,360 100,370" stroke-width="6" fill="none" stroke-linecap="round"/>
+    <path d="M250,340 Q280,360 300,370" stroke-width="6" fill="none" stroke-linecap="round"/>
+    <path d="M175,345 Q165,375 155,385" stroke-width="4" fill="none" stroke-linecap="round"/>
+    <path d="M225,345 Q235,375 245,385" stroke-width="4" fill="none" stroke-linecap="round"/>
+  </g>
+  <!-- Body trunk -->
+  <rect x="160" y="240" width="80" height="120" rx="15" fill="#3D5C22"/>
+  <!-- Bark texture lines -->
+  <g stroke="#2D4A1A" stroke-width="1.5" fill="none">
+    <path d="M168,250 Q175,265 168,280 Q175,295 168,310"/>
+    <path d="M180,248 Q187,263 180,278 Q187,293 180,308"/>
+    <path d="M220,248 Q213,263 220,278 Q213,293 220,308"/>
+    <path d="M232,250 Q225,265 232,280 Q225,295 232,310"/>
+  </g>
+  <!-- Tribal pattern on torso -->
+  <g fill="#C17F24" opacity="0.7">
+    <polygon points="200,260 193,270 200,280 207,270"/>
+    <polygon points="185,265 180,272 185,279 190,272"/>
+    <polygon points="215,265 210,272 215,279 220,272"/>
+  </g>
+  <!-- Arms as branches -->
+  <path d="M160,270 Q100,240 70,220" stroke="#3D5C22" stroke-width="14" fill="none" stroke-linecap="round"/>
+  <path d="M240,270 Q300,240 330,220" stroke="#3D5C22" stroke-width="14" fill="none" stroke-linecap="round"/>
+  <!-- Branch leaves -->
+  <g fill="#4A7C2F" filter="url(#glow2)" opacity="0.8">
+    <ellipse cx="70" cy="218" rx="18" ry="10" transform="rotate(-20,70,218)"/>
+    <ellipse cx="55" cy="230" rx="14" ry="8" transform="rotate(10,55,230)"/>
+    <ellipse cx="82" cy="205" rx="12" ry="7" transform="rotate(-35,82,205)"/>
+    <ellipse cx="330" cy="218" rx="18" ry="10" transform="rotate(20,330,218)"/>
+    <ellipse cx="345" cy="230" rx="14" ry="8" transform="rotate(-10,345,230)"/>
+    <ellipse cx="318" cy="205" rx="12" ry="7" transform="rotate(35,318,205)"/>
+  </g>
+  <!-- Neck -->
+  <rect x="185" y="222" width="30" height="25" rx="5" fill="#3D5C22"/>
+  <!-- Head -->
+  <ellipse cx="200" cy="195" rx="50" ry="55" fill="#3D5C22"/>
+  <!-- Leaf crown -->
+  <g fill="#4A7C2F">
+    <ellipse cx="200" cy="145" rx="22" ry="12" transform="rotate(0,200,145)"/>
+    <ellipse cx="178" cy="152" rx="18" ry="10" transform="rotate(-30,178,152)"/>
+    <ellipse cx="222" cy="152" rx="18" ry="10" transform="rotate(30,222,152)"/>
+    <ellipse cx="162" cy="165" rx="15" ry="8" transform="rotate(-50,162,165)"/>
+    <ellipse cx="238" cy="165" rx="15" ry="8" transform="rotate(50,238,165)"/>
+    <ellipse cx="155" cy="182" rx="12" ry="7" transform="rotate(-70,155,182)"/>
+    <ellipse cx="245" cy="182" rx="12" ry="7" transform="rotate(70,245,182)"/>
+  </g>
+  <!-- Eyes — glowing nature green -->
+  <ellipse cx="185" cy="192" rx="10" ry="8" fill="#0A1A0A"/>
+  <ellipse cx="215" cy="192" rx="10" ry="8" fill="#0A1A0A"/>
+  <ellipse cx="185" cy="192" rx="6" ry="5" fill="#7FD44C" filter="url(#glow2)"/>
+  <ellipse cx="215" cy="192" rx="6" ry="5" fill="#7FD44C" filter="url(#glow2)"/>
+  <circle cx="184" cy="191" r="2" fill="#E8FFD0"/>
+  <circle cx="214" cy="191" r="2" fill="#E8FFD0"/>
+  <!-- Nose -->
+  <path d="M196,205 Q200,210 204,205" fill="none" stroke="#2D4A1A" stroke-width="2"/>
+  <!-- Tribal face marks — vertical lines forehead -->
+  <g stroke="#C17F24" stroke-width="2" opacity="0.8">
+    <line x1="193" y1="170" x2="193" y2="182"/>
+    <line x1="200" y1="168" x2="200" y2="180"/>
+    <line x1="207" y1="170" x2="207" y2="182"/>
+  </g>
+  <!-- Cheek spirals -->
+  <g fill="none" stroke="#C17F24" stroke-width="1.5" opacity="0.7">
+    <path d="M167,200 Q163,195 167,190 Q171,185 175,190"/>
+    <path d="M233,200 Q237,195 233,190 Q229,185 225,190"/>
+  </g>
+  <!-- Mouth -->
+  <path d="M188,215 Q200,222 212,215" fill="none" stroke="#2D4A1A" stroke-width="2.5"/>
+  <!-- Fireflies around figure -->
+  <g fill="#7FD44C" opacity="0.5" filter="url(#glow2)">
+    <circle cx="120" cy="160" r="2.5"/>
+    <circle cx="108" cy="185" r="1.5"/>
+    <circle cx="135" cy="140" r="1.5"/>
+    <circle cx="280" cy="155" r="2.5"/>
+    <circle cx="292" cy="180" r="1.5"/>
+    <circle cx="268" cy="135" r="1.5"/>
+    <circle cx="170" cy="100" r="2"/>
+    <circle cx="230" cy="100" r="2"/>
+  </g>
+  <text x="200" y="392" text-anchor="middle" font-family="serif" font-size="11" fill="#4A7C2F" letter-spacing="3">FOREST GUARDIAN</text>
+</svg>

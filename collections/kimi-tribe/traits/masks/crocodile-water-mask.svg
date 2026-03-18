@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <filter id="cwg"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="400" height="400" fill="none"/>
+  <!-- Mask base — dark green -->
+  <path d="M200,55 Q275,58 305,118 Q328,168 325,235 Q318,295 290,330 Q258,358 200,360 Q142,358 110,330 Q82,295 75,235 Q72,168 95,118 Q125,58 200,55 Z" fill="#1A3D1A" stroke="#4A7C2F" stroke-width="2"/>
+  <!-- Scales pattern — crocodile -->
+  <g fill="#2D5A2D" stroke="#4A7C2F" stroke-width="0.5" opacity="0.8">
+    <ellipse cx="140" cy="130" rx="18" ry="12" transform="rotate(-10,140,130)"/>
+    <ellipse cx="170" cy="118" rx="18" ry="12" transform="rotate(-5,170,118)"/>
+    <ellipse cx="200" cy="112" rx="18" ry="12"/>
+    <ellipse cx="230" cy="118" rx="18" ry="12" transform="rotate(5,230,118)"/>
+    <ellipse cx="260" cy="130" rx="18" ry="12" transform="rotate(10,260,130)"/>
+    <ellipse cx="125" cy="160" rx="16" ry="11"/>
+    <ellipse cx="155" cy="148" rx="16" ry="11"/>
+    <ellipse cx="185" cy="142" rx="16" ry="11"/>
+    <ellipse cx="215" cy="142" rx="16" ry="11"/>
+    <ellipse cx="245" cy="148" rx="16" ry="11"/>
+    <ellipse cx="275" cy="160" rx="16" ry="11"/>
+    <ellipse cx="110" cy="230" rx="15" ry="10"/>
+    <ellipse cx="140" cy="218" rx="15" ry="10"/>
+    <ellipse cx="170" cy="212" rx="15" ry="10"/>
+    <ellipse cx="200" cy="210" rx="15" ry="10"/>
+    <ellipse cx="230" cy="212" rx="15" ry="10"/>
+    <ellipse cx="260" cy="218" rx="15" ry="10"/>
+    <ellipse cx="290" cy="230" rx="15" ry="10"/>
+  </g>
+  <!-- Eye holes — protruding -->
+  <circle cx="152" cy="172" rx="25" cy="172" r="22" fill="#0A1A0A"/>
+  <circle cx="248" cy="172" r="22" fill="#0A1A0A"/>
+  <circle cx="152" cy="172" r="14" fill="#1A3D1A" stroke="#4A7C2F" stroke-width="2"/>
+  <circle cx="248" cy="172" r="14" fill="#1A3D1A" stroke="#4A7C2F" stroke-width="2"/>
+  <!-- Vertical slit pupils -->
+  <ellipse cx="152" cy="172" rx="5" ry="10" fill="#0A0A05"/>
+  <ellipse cx="248" cy="172" rx="5" ry="10" fill="#0A0A05"/>
+  <!-- Green eye glow -->
+  <circle cx="152" cy="172" r="8" fill="#7FD44C" filter="url(#cwg)" opacity="0.6"/>
+  <circle cx="248" cy="172" r="8" fill="#7FD44C" filter="url(#cwg)" opacity="0.6"/>
+  <!-- Snout extension -->
+  <path d="M155,265 Q180,255 200,258 Q220,255 245,265 Q240,300 200,315 Q160,300 155,265" fill="#1A3D1A" stroke="#4A7C2F" stroke-width="1.5"/>
+  <!-- Teeth -->
+  <g fill="#E8E8D0" opacity="0.8">
+    <polygon points="168,268 175,268 172,285"/>
+    <polygon points="182,265 189,265 186,282"/>
+    <polygon points="196,264 203,264 200,281"/>
+    <polygon points="210,265 217,265 214,282"/>
+    <polygon points="224,268 231,268 228,285"/>
+  </g>
+  <!-- Forehead ridge lines -->
+  <g stroke="#4A7C2F" stroke-width="2" fill="none">
+    <path d="M160,80 Q180,70 200,68 Q220,70 240,80"/>
+    <path d="M155,95 Q178,82 200,80 Q222,82 245,95"/>
+  </g>
+  <!-- Tribal gold marks -->
+  <g fill="#C17F24" opacity="0.7">
+    <polygon points="200,90 194,105 206,105"/>
+    <circle cx="200" cy="92" r="3"/>
+  </g>
+</svg>

@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <radialGradient id="bg4" cx="50%" cy="30%" r="60%">
+      <stop offset="0%" stop-color="#1A0A2E"/>
+      <stop offset="100%" stop-color="#050208"/>
+    </radialGradient>
+    <radialGradient id="skyAura" cx="50%" cy="35%" r="50%">
+      <stop offset="0%" stop-color="#6B35C7" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#6B35C7" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="starGlow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="400" height="400" fill="url(#bg4)"/>
+  <ellipse cx="200" cy="150" rx="150" ry="160" fill="url(#skyAura)"/>
+  <!-- Star field background -->
+  <g fill="#E8D5FF" opacity="0.4">
+    <circle cx="45" cy="35" r="1"/><circle cx="78" cy="68" r="0.5"/>
+    <circle cx="112" cy="28" r="1"/><circle cx="155" cy="55" r="0.5"/>
+    <circle cx="245" cy="40" r="1"/><circle cx="288" cy="65" r="0.5"/>
+    <circle cx="322" cy="30" r="1"/><circle cx="358" cy="52" r="0.5"/>
+    <circle cx="60" cy="100" r="0.5"/><circle cx="340" cy="95" r="0.5"/>
+    <circle cx="95" cy="320" r="0.5"/><circle cx="310" cy="315" r="0.5"/>
+  </g>
+  <!-- Border -->
+  <rect x="8" y="8" width="384" height="384" fill="none" stroke="#8B5CF6" stroke-width="2"/>
+  <g fill="#8B5CF6" opacity="0.5">
+    <polygon points="20,20 27,14 34,20 27,26"/>
+    <polygon points="380,20 373,14 366,20 373,26"/>
+    <polygon points="20,380 27,374 34,380 27,386"/>
+    <polygon points="380,380 373,374 366,380 373,386"/>
+  </g>
+  <!-- Wings spread wide -->
+  <g fill="#2D1458" stroke="#8B5CF6" stroke-width="1.5">
+    <path d="M155,235 Q110,210 70,190 Q40,175 25,155 Q50,158 75,168 Q100,178 125,200 Q140,215 155,235"/>
+    <path d="M245,235 Q290,210 330,190 Q360,175 375,155 Q350,158 325,168 Q300,178 275,200 Q260,215 245,235"/>
+  </g>
+  <!-- Wing feather details -->
+  <g fill="none" stroke="#C17F24" stroke-width="1" opacity="0.6">
+    <path d="M75,168 Q95,182 115,195"/>
+    <path d="M65,178 Q87,190 108,202"/>
+    <path d="M325,168 Q305,182 285,195"/>
+    <path d="M335,178 Q313,190 292,202"/>
+  </g>
+  <!-- Wing gold trim -->
+  <path d="M155,235 Q110,210 70,190 Q40,175 25,155" fill="none" stroke="#F5A623" stroke-width="1.5" opacity="0.5"/>
+  <path d="M245,235 Q290,210 330,190 Q360,175 375,155" fill="none" stroke="#F5A623" stroke-width="1.5" opacity="0.5"/>
+  <!-- Body / robe -->
+  <path d="M155,235 Q165,290 170,360 Q185,375 200,375 Q215,375 230,360 Q235,290 245,235 Z" fill="#2D1458"/>
+  <!-- Star constellation robe pattern -->
+  <g fill="#8B5CF6" filter="url(#starGlow)" opacity="0.7">
+    <circle cx="188" cy="265" r="2"/>
+    <circle cx="200" cy="255" r="2"/>
+    <circle cx="212" cy="265" r="2"/>
+    <circle cx="205" cy="278" r="2"/>
+    <circle cx="195" cy="278" r="2"/>
+    <line x1="188" y1="265" x2="200" y2="255" stroke="#8B5CF6" stroke-width="0.5"/>
+    <line x1="200" y1="255" x2="212" y2="265" stroke="#8B5CF6" stroke-width="0.5"/>
+    <line x1="212" y1="265" x2="205" y2="278" stroke="#8B5CF6" stroke-width="0.5"/>
+    <line x1="205" y1="278" x2="195" y2="278" stroke="#8B5CF6" stroke-width="0.5"/>
+    <line x1="195" y1="278" x2="188" y2="265" stroke="#8B5CF6" stroke-width="0.5"/>
+  </g>
+  <!-- Shoulders -->
+  <ellipse cx="163" cy="238" rx="18" ry="12" fill="#2D1458" stroke="#8B5CF6" stroke-width="1"/>
+  <ellipse cx="237" cy="238" rx="18" ry="12" fill="#2D1458" stroke="#8B5CF6" stroke-width="1"/>
+  <!-- Neck -->
+  <rect x="188" y="222" width="24" height="22" rx="4" fill="#4A2580"/>
+  <!-- Head -->
+  <ellipse cx="200" cy="195" rx="46" ry="52" fill="#4A2580"/>
+  <!-- Oracle third eye -->
+  <ellipse cx="200" cy="178" rx="8" ry="6" fill="#1A0A2E"/>
+  <ellipse cx="200" cy="178" rx="5" ry="4" fill="#C17F24" filter="url(#starGlow)"/>
+  <circle cx="200" cy="177" r="2" fill="#FFF0C0"/>
+  <!-- Eyes -->
+  <ellipse cx="183" cy="198" rx="10" ry="8" fill="#1A0A2E"/>
+  <ellipse cx="217" cy="198" rx="10" ry="8" fill="#1A0A2E"/>
+  <ellipse cx="183" cy="198" rx="6" ry="5" fill="#C084FC" filter="url(#starGlow)"/>
+  <ellipse cx="217" cy="198" rx="6" ry="5" fill="#C084FC" filter="url(#starGlow)"/>
+  <circle cx="182" cy="197" r="2" fill="#EDE9FE"/>
+  <circle cx="216" cy="197" r="2" fill="#EDE9FE"/>
+  <!-- Nose -->
+  <path d="M195,212 Q200,218 205,212" fill="none" stroke="#2D1458" stroke-width="2"/>
+  <!-- Mouth -->
+  <path d="M188,226 Q200,232 212,226" fill="none" stroke="#2D1458" stroke-width="2"/>
+  <!-- Face crescent marks -->
+  <g fill="none" stroke="#C17F24" stroke-width="1.5" opacity="0.9">
+    <path d="M163,198 Q160,194 163,190"/>
+    <path d="M161,200 Q157,196 161,192"/>
+    <path d="M237,198 Q240,194 237,190"/>
+    <path d="M239,200 Q243,196 239,192"/>
+  </g>
+  <!-- Oracle headdress with moon crescent -->
+  <path d="M160,188 Q165,155 200,148 Q235,155 240,188" fill="none" stroke="#8B5CF6" stroke-width="2.5"/>
+  <!-- Moon crescent -->
+  <path d="M188,138 Q195,125 208,138 Q200,130 188,138" fill="#C17F24"/>
+  <!-- Stars on headdress -->
+  <g fill="#F5A623" filter="url(#starGlow)">
+    <polygon points="200,128 197,135 190,135 196,139 193,146 200,142 207,146 204,139 210,135 203,135"/>
+    <circle cx="178" cy="152" r="3"/>
+    <circle cx="222" cy="152" r="3"/>
+  </g>
+  <!-- Floating star particles -->
+  <g fill="#C084FC" filter="url(#starGlow)" opacity="0.6">
+    <circle cx="125" cy="145" r="2"/>
+    <circle cx="110" cy="168" r="1.5"/>
+    <circle cx="275" cy="142" r="2"/>
+    <circle cx="290" cy="165" r="1.5"/>
+    <circle cx="165" cy="88" r="2"/>
+    <circle cx="235" cy="88" r="2"/>
+  </g>
+  <text x="200" y="392" text-anchor="middle" font-family="serif" font-size="11" fill="#8B5CF6" letter-spacing="3">SKY ORACLE</text>
+</svg>

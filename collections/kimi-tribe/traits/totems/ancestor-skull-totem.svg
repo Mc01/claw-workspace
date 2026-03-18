@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 400" width="120" height="400">
+  <defs>
+    <filter id="asg"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="120" height="400" fill="none"/>
+  <!-- Shaft -->
+  <rect x="46" y="95" width="28" height="280" rx="5" fill="#2C1810" stroke="#C17F24" stroke-width="1"/>
+  <!-- Base -->
+  <rect x="28" y="366" width="64" height="18" rx="4" fill="#1A0D08" stroke="#C17F24" stroke-width="1.5"/>
+  <!-- Ancestor skull -->
+  <ellipse cx="60" cy="65" rx="32" ry="36" fill="#D4B896"/>
+  <!-- Skull forehead marks -->
+  <g fill="none" stroke="#8B5E1A" stroke-width="1.5">
+    <path d="M44,48 Q52,40 60,38 Q68,40 76,48"/>
+    <path d="M48,55 Q54,48 60,46 Q66,48 72,55"/>
+  </g>
+  <!-- Eye sockets -->
+  <ellipse cx="44" cy="65" rx="12" ry="10" fill="#2C1810"/>
+  <ellipse cx="76" cy="65" rx="12" ry="10" fill="#2C1810"/>
+  <!-- Glowing spirit eyes -->
+  <ellipse cx="44" cy="65" rx="7" ry="6" fill="#C17F24" filter="url(#asg)" opacity="0.8"/>
+  <ellipse cx="76" cy="65" rx="7" ry="6" fill="#C17F24" filter="url(#asg)" opacity="0.8"/>
+  <!-- Nose cavity -->
+  <path d="M56,78 Q60,85 64,78 Q62,82 60,83 Q58,82 56,78" fill="#2C1810"/>
+  <!-- Teeth -->
+  <g fill="#FFF8E7" opacity="0.9">
+    <rect x="46" y="87" width="6" height="9" rx="1"/>
+    <rect x="54" y="86" width="6" height="10" rx="1"/>
+    <rect x="62" y="86" width="6" height="10" rx="1"/>
+    <rect x="70" y="87" width="6" height="9" rx="1"/>
+  </g>
+  <line x1="44" y1="86" x2="78" y2="86" stroke="#2C1810" stroke-width="2"/>
+  <!-- Totem tribal bands -->
+  <rect x="46" y="168" width="28" height="5" rx="1" fill="#C17F24" opacity="0.8"/>
+  <rect x="46" y="248" width="28" height="5" rx="1" fill="#C17F24" opacity="0.8"/>
+  <rect x="46" y="328" width="28" height="5" rx="1" fill="#C17F24" opacity="0.8"/>
+  <!-- Skull section carving pattern -->
+  <g fill="none" stroke="#C17F24" stroke-width="1.2" opacity="0.6">
+    <!-- Section 1 — diamond chain -->
+    <path d="M50,180 L60,172 L70,180 L60,188 Z"/>
+    <path d="M50,200 L60,192 L70,200 L60,208 Z"/>
+    <path d="M50,220 L60,212 L70,220 L60,228 Z"/>
+    <!-- Section 2 — cross marks -->
+    <line x1="60" y1="262" x2="60" y2="280"/>
+    <line x1="52" y1="271" x2="68" y2="271"/>
+    <circle cx="60" cy="271" r="5"/>
+    <line x1="60" y1="298" x2="60" y2="316"/>
+    <line x1="52" y1="307" x2="68" y2="307"/>
+    <circle cx="60" cy="307" r="5"/>
+  </g>
+</svg>

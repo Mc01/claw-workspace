@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <rect width="200" height="200" fill="none"/>
+  <!-- Ritual dot pattern — ochre dots in triangle formation -->
+  <g fill="#C17F24" opacity="0.9">
+    <!-- Left cheek triangle constellation -->
+    <circle cx="28" cy="88" r="4"/>
+    <circle cx="40" cy="80" r="4"/>
+    <circle cx="40" cy="96" r="4"/>
+    <circle cx="22" cy="100" r="3"/>
+    <circle cx="34" cy="108" r="3"/>
+    <!-- Right cheek mirror -->
+    <circle cx="172" cy="88" r="4"/>
+    <circle cx="160" cy="80" r="4"/>
+    <circle cx="160" cy="96" r="4"/>
+    <circle cx="178" cy="100" r="3"/>
+    <circle cx="166" cy="108" r="3"/>
+    <!-- Forehead center dot -->
+    <circle cx="100" cy="28" r="5"/>
+    <!-- Sub dots -->
+    <circle cx="88" cy="38" r="3"/>
+    <circle cx="100" cy="42" r="3"/>
+    <circle cx="112" cy="38" r="3"/>
+    <!-- Chin single dot -->
+    <circle cx="100" cy="178" r="5"/>
+    <circle cx="92" cy="168" r="3"/>
+    <circle cx="108" cy="168" r="3"/>
+  </g>
+</svg>

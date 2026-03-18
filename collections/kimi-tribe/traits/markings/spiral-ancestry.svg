@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <rect width="200" height="200" fill="none"/>
+  <!-- Spiral ancestry marks — cheeks -->
+  <g fill="none" stroke="#C17F24" stroke-width="2" opacity="0.85">
+    <!-- Left cheek double spiral -->
+    <path d="M35,90 Q28,82 32,75 Q36,68 43,72 Q50,76 47,83 Q44,90 38,88"/>
+    <path d="M35,110 Q28,102 32,95 Q36,88 43,92 Q50,96 47,103 Q44,110 38,108"/>
+    <!-- Right cheek double spiral -->
+    <path d="M165,90 Q172,82 168,75 Q164,68 157,72 Q150,76 153,83 Q156,90 162,88"/>
+    <path d="M165,110 Q172,102 168,95 Q164,88 157,92 Q150,96 153,103 Q156,110 162,108"/>
+  </g>
+  <!-- Forehead tribal band -->
+  <g fill="none" stroke="#F5A623" stroke-width="2">
+    <path d="M72,35 Q80,28 90,32 Q100,36 110,32 Q120,28 128,35"/>
+    <path d="M76,45 Q84,38 94,42 Q100,46 106,42 Q116,38 124,45"/>
+  </g>
+</svg>

@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <radialGradient id="bg5" cx="50%" cy="60%" r="60%">
+      <stop offset="0%" stop-color="#200800"/>
+      <stop offset="100%" stop-color="#080200"/>
+    </radialGradient>
+    <radialGradient id="fireAura" cx="50%" cy="55%" r="50%">
+      <stop offset="0%" stop-color="#E85D04" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#E85D04" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="fireGlow">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <linearGradient id="flameGrad" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#E85D04"/>
+      <stop offset="50%" stop-color="#F48C06"/>
+      <stop offset="100%" stop-color="#FAE200" stop-opacity="0.8"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="400" fill="url(#bg5)"/>
+  <ellipse cx="200" cy="220" rx="150" ry="160" fill="url(#fireAura)"/>
+  <!-- Ember particles background -->
+  <g fill="#F48C06" opacity="0.3">
+    <circle cx="60" cy="300" r="1.5"/><circle cx="80" cy="270" r="1"/>
+    <circle cx="50" cy="240" r="1"/><circle cx="95" cy="310" r="1.5"/>
+    <circle cx="340" cy="295" r="1.5"/><circle cx="320" cy="265" r="1"/>
+    <circle cx="350" cy="235" r="1"/><circle cx="305" cy="308" r="1.5"/>
+  </g>
+  <!-- Border -->
+  <rect x="8" y="8" width="384" height="384" fill="none" stroke="#E85D04" stroke-width="2"/>
+  <!-- Fire diamond corner marks -->
+  <g fill="#E85D04">
+    <polygon points="20,8 28,16 20,24 12,16"/>
+    <polygon points="380,8 388,16 380,24 372,16"/>
+    <polygon points="20,392 28,384 20,376 12,384"/>
+    <polygon points="380,392 388,384 380,376 372,384"/>
+  </g>
+  <!-- Legs -->
+  <rect x="175" y="310" width="22" height="60" rx="6" fill="#5C2A08"/>
+  <rect x="203" y="310" width="22" height="60" rx="6" fill="#5C2A08"/>
+  <!-- Feet -->
+  <ellipse cx="186" cy="372" rx="14" ry="6" fill="#3D1A05"/>
+  <ellipse cx="214" cy="372" rx="14" ry="6" fill="#3D1A05"/>
+  <!-- Body — shamanic robe -->
+  <path d="M148,315 Q155,260 165,240 Q178,230 200,228 Q222,230 235,240 Q245,260 252,315 Z" fill="#5C2A08"/>
+  <!-- Robe fire pattern -->
+  <g fill="none" stroke="#E85D04" stroke-width="1.5" opacity="0.7">
+    <path d="M168,260 Q172,248 176,255 Q180,242 184,250 Q188,238 192,248"/>
+    <path d="M208,248 Q212,238 216,250 Q220,242 224,255 Q228,248 232,260"/>
+  </g>
+  <!-- Robe gold band -->
+  <rect x="152" y="250" width="96" height="5" rx="2" fill="#C17F24" opacity="0.8"/>
+  <rect x="152" y="275" width="96" height="3" rx="1" fill="#C17F24" opacity="0.5"/>
+  <rect x="152" y="295" width="96" height="3" rx="1" fill="#C17F24" opacity="0.5"/>
+  <!-- Chest fire emblem -->
+  <g fill="url(#flameGrad)" filter="url(#fireGlow)">
+    <path d="M200,245 Q195,235 198,228 Q202,238 205,230 Q207,240 203,248 Z"/>
+  </g>
+  <!-- Arms outstretched with fire -->
+  <line x1="162" y1="255" x2="110" y2="240" stroke="#5C2A08" stroke-width="10" stroke-linecap="round"/>
+  <line x1="238" y1="255" x2="290" y2="240" stroke="#5C2A08" stroke-width="10" stroke-linecap="round"/>
+  <!-- Flames in hands -->
+  <g fill="url(#flameGrad)" filter="url(#fireGlow)">
+    <path d="M110,240 Q104,228 108,220 Q113,230 116,222 Q118,232 114,240 Z"/>
+    <path d="M290,240 Q296,228 292,220 Q287,230 284,222 Q282,232 286,240 Z"/>
+  </g>
+  <!-- Neck -->
+  <rect x="188" y="218" width="24" height="18" rx="4" fill="#5C2A08"/>
+  <!-- Head -->
+  <ellipse cx="200" cy="190" rx="44" ry="50" fill="#7B3A0E"/>
+  <!-- Shamanic war paint — bold angular marks -->
+  <g fill="#E85D04" opacity="0.9">
+    <polygon points="162,190 170,184 172,190 170,196"/>
+    <polygon points="238,190 230,184 228,190 230,196"/>
+    <polygon points="192,168 196,162 200,170 204,162 208,168 204,175 200,180 196,175"/>
+  </g>
+  <!-- Chin mark -->
+  <path d="M195,218 L200,225 L205,218" fill="#E85D04" opacity="0.7"/>
+  <!-- Eyes — fire orange -->
+  <ellipse cx="183" cy="190" rx="10" ry="8" fill="#200800"/>
+  <ellipse cx="217" cy="190" rx="10" ry="8" fill="#200800"/>
+  <ellipse cx="183" cy="190" rx="6" ry="5" fill="#F48C06" filter="url(#fireGlow)"/>
+  <ellipse cx="217" cy="190" rx="6" ry="5" fill="#F48C06" filter="url(#fireGlow)"/>
+  <circle cx="182" cy="189" r="2" fill="#FFF3CD"/>
+  <circle cx="216" cy="189" r="2" fill="#FFF3CD"/>
+  <!-- Nose -->
+  <path d="M194,205 Q200,212 206,205" fill="none" stroke="#5C2A08" stroke-width="2"/>
+  <!-- Mouth — fierce -->
+  <path d="M186,218 L190,215 L200,218 L210,215 L214,218" fill="none" stroke="#5C2A08" stroke-width="2"/>
+  <!-- Shamanic headdress — tall fire crown -->
+  <g fill="url(#flameGrad)" filter="url(#fireGlow)">
+    <path d="M200,145 Q193,118 197,100 Q201,115 200,95 Q203,112 207,98 Q205,118 212,108 Q208,122 215,115 Q209,130 200,145 Z"/>
+  </g>
+  <!-- Headdress base band -->
+  <rect x="162" y="156" width="76" height="10" rx="4" fill="#C17F24"/>
+  <g fill="#E85D04">
+    <circle cx="172" cy="161" r="3"/>
+    <circle cx="184" cy="161" r="3"/>
+    <circle cx="196" cy="161" r="3"/>
+    <circle cx="208" cy="161" r="3"/>
+    <circle cx="220" cy="161" r="3"/>
+    <circle cx="228" cy="161" r="3"/>
+  </g>
+  <!-- Floating embers -->
+  <g fill="#F48C06" filter="url(#fireGlow)" opacity="0.7">
+    <circle cx="140" cy="145" r="2.5"/>
+    <circle cx="125" cy="165" r="2"/>
+    <circle cx="155" cy="125" r="1.5"/>
+    <circle cx="260" cy="140" r="2.5"/>
+    <circle cx="275" cy="162" r="2"/>
+    <circle cx="248" cy="122" r="1.5"/>
+    <circle cx="172" cy="88" r="2"/>
+    <circle cx="228" cy="85" r="2"/>
+    <circle cx="200" cy="75" r="2.5"/>
+  </g>
+  <text x="200" y="392" text-anchor="middle" font-family="serif" font-size="11" fill="#E85D04" letter-spacing="3">FIRE SHAMAN</text>
+</svg>

@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <rect width="200" height="200" fill="none"/>
+  <!-- Geometric forehead band — repeating triangles -->
+  <g fill="#1B1464" stroke="#C17F24" stroke-width="1">
+    <rect x="50" y="28" width="100" height="22" rx="2"/>
+  </g>
+  <g fill="#C17F24" opacity="0.9">
+    <polygon points="52,50 60,50 56,28"/>
+    <polygon points="68,50 76,50 72,28"/>
+    <polygon points="84,50 92,50 88,28"/>
+    <polygon points="100,50 108,50 104,28"/>
+    <polygon points="116,50 124,50 120,28"/>
+    <polygon points="132,50 140,50 136,28"/>
+    <polygon points="148,50 148,50 148,28"/>
+  </g>
+  <!-- Cheek accent lines with dots -->
+  <g stroke="#C17F24" stroke-width="2" opacity="0.8">
+    <line x1="18" y1="90" x2="42" y2="90"/>
+    <line x1="158" y1="90" x2="182" y2="90"/>
+  </g>
+  <g fill="#F5A623">
+    <circle cx="18" cy="90" r="3"/>
+    <circle cx="30" cy="90" r="2"/>
+    <circle cx="42" cy="90" r="3"/>
+    <circle cx="158" cy="90" r="3"/>
+    <circle cx="170" cy="90" r="2"/>
+    <circle cx="182" cy="90" r="3"/>
+  </g>
+  <!-- Chin band -->
+  <g fill="#C17F24" opacity="0.7">
+    <path d="M72,175 Q100,165 128,175 Q100,185 72,175"/>
+  </g>
+</svg>

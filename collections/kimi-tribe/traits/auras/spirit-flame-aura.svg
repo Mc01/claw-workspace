@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <radialGradient id="flameAura" cx="50%" cy="60%" r="50%">
+      <stop offset="0%" stop-color="#E85D04" stop-opacity="0.7"/>
+      <stop offset="40%" stop-color="#F48C06" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#E85D04" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="fg"><feGaussianBlur stdDeviation="5"/></filter>
+  </defs>
+  <rect width="400" height="400" fill="none"/>
+  <ellipse cx="200" cy="210" rx="170" ry="180" fill="url(#flameAura)" filter="url(#fg)"/>
+  <!-- Flame tongues around perimeter -->
+  <g fill="#E85D04" opacity="0.5">
+    <path d="M200,30 Q194,55 200,65 Q206,55 200,30"/>
+    <path d="M200,370 Q194,345 200,335 Q206,345 200,370"/>
+    <path d="M30,200 Q55,194 65,200 Q55,206 30,200"/>
+    <path d="M370,200 Q345,194 335,200 Q345,206 370,200"/>
+    <path d="M88,88 Q105,108 115,112 Q108,98 88,88"/>
+    <path d="M312,88 Q295,108 285,112 Q292,98 312,88"/>
+    <path d="M88,312 Q108,295 112,285 Q98,292 88,312"/>
+    <path d="M312,312 Q292,295 288,285 Q302,298 312,312"/>
+  </g>
+  <!-- Ember rings -->
+  <circle cx="200" cy="200" r="155" fill="none" stroke="#F48C06" stroke-width="1" opacity="0.4" stroke-dasharray="8,6"/>
+  <circle cx="200" cy="200" r="130" fill="none" stroke="#E85D04" stroke-width="1.5" opacity="0.5" stroke-dasharray="5,5"/>
+  <circle cx="200" cy="200" r="105" fill="none" stroke="#FAE200" stroke-width="1" opacity="0.3" stroke-dasharray="4,4"/>
+</svg>

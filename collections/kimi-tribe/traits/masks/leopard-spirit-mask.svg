@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <filter id="lg"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="400" height="400" fill="none"/>
+  <!-- Mask base — ochre/tawny -->
+  <path d="M200,55 Q278,58 308,110 Q335,160 330,220 Q322,278 295,315 Q265,345 200,350 Q135,345 105,315 Q78,278 70,220 Q65,160 92,110 Q122,58 200,55 Z" fill="#C17F24" stroke="#8B5E1A" stroke-width="2"/>
+  <!-- Dark eye surround -->
+  <ellipse cx="155" cy="172" rx="38" ry="28" fill="#3D1A00" opacity="0.8"/>
+  <ellipse cx="245" cy="172" rx="38" ry="28" fill="#3D1A00" opacity="0.8"/>
+  <!-- Eye holes -->
+  <ellipse cx="155" cy="172" rx="26" ry="16" fill="#0A0500"/>
+  <ellipse cx="245" cy="172" rx="26" ry="16" fill="#0A0500"/>
+  <!-- Amber eye glow -->
+  <ellipse cx="155" cy="172" rx="12" ry="8" fill="#E8A020" filter="url(#lg)"/>
+  <ellipse cx="245" cy="172" rx="12" ry="8" fill="#E8A020" filter="url(#lg)"/>
+  <!-- Leopard spots pattern -->
+  <g fill="#5C2A00" opacity="0.7">
+    <circle cx="120" cy="130" r="8"/>
+    <circle cx="145" cy="118" r="6"/>
+    <circle cx="135" cy="148" r="7"/>
+    <circle cx="280" cy="130" r="8"/>
+    <circle cx="255" cy="118" r="6"/>
+    <circle cx="265" cy="148" r="7"/>
+    <circle cx="110" cy="230" r="8"/>
+    <circle cx="130" cy="245" r="6"/>
+    <circle cx="290" cy="230" r="8"/>
+    <circle cx="270" cy="245" r="6"/>
+    <circle cx="185" cy="105" r="6"/>
+    <circle cx="215" cy="105" r="6"/>
+    <circle cx="200" cy="118" r="5"/>
+  </g>
+  <!-- Spot ring outlines -->
+  <g fill="none" stroke="#8B5E1A" stroke-width="1.5" opacity="0.6">
+    <circle cx="120" cy="130" r="12"/>
+    <circle cx="280" cy="130" r="12"/>
+    <circle cx="110" cy="230" r="12"/>
+    <circle cx="290" cy="230" r="12"/>
+  </g>
+  <!-- Snout / muzzle area -->
+  <ellipse cx="200" cy="255" rx="40" ry="30" fill="#E8A020" opacity="0.6"/>
+  <!-- Nostrils -->
+  <ellipse cx="190" cy="252" rx="6" ry="4" fill="#5C2A00"/>
+  <ellipse cx="210" cy="252" rx="6" ry="4" fill="#5C2A00"/>
+  <!-- Whisker lines -->
+  <g stroke="#FFF8E7" stroke-width="1.5" opacity="0.8" stroke-linecap="round">
+    <line x1="145" y1="258" x2="92" y2="248"/>
+    <line x1="148" y1="265" x2="92" y2="265"/>
+    <line x1="147" y1="272" x2="92" y2="282"/>
+    <line x1="255" y1="258" x2="308" y2="248"/>
+    <line x1="252" y1="265" x2="308" y2="265"/>
+    <line x1="253" y1="272" x2="308" y2="282"/>
+  </g>
+  <!-- Mouth snarl -->
+  <path d="M170,282 Q185,295 200,290 Q215,295 230,282" fill="none" stroke="#5C2A00" stroke-width="2.5"/>
+  <!-- Forehead adinkra mark -->
+  <g fill="none" stroke="#8B5E1A" stroke-width="2">
+    <path d="M182,75 Q191,65 200,62 Q209,65 218,75"/>
+    <path d="M186,88 Q193,80 200,78 Q207,80 214,88"/>
+  </g>
+  <!-- Ears -->
+  <path d="M155,62 Q142,30 125,18 Q138,40 142,58" stroke="#8B5E1A" stroke-width="4" fill="#C17F24" stroke-linecap="round"/>
+  <path d="M245,62 Q258,30 275,18 Q262,40 258,58" stroke="#8B5E1A" stroke-width="4" fill="#C17F24" stroke-linecap="round"/>
+  <path d="M145,54 Q138,36 130,26 Q142,42 145,54" fill="#E85D04" opacity="0.5"/>
+  <path d="M255,54 Q262,36 270,26 Q258,42 255,54" fill="#E85D04" opacity="0.5"/>
+</svg>

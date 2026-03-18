@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 400" width="120" height="400">
+  <defs>
+    <filter id="mog"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="120" height="400" fill="none"/>
+  <!-- Shaft -->
+  <rect x="44" y="100" width="32" height="275" rx="5" fill="#1B1464" stroke="#8B5CF6" stroke-width="1"/>
+  <!-- Base -->
+  <rect x="28" y="366" width="64" height="18" rx="4" fill="#0D0A2E" stroke="#8B5CF6" stroke-width="1.5"/>
+  <!-- Owl body -->
+  <ellipse cx="60" cy="80" rx="30" ry="35" fill="#2D2191"/>
+  <!-- Wing shoulders -->
+  <path d="M30,75 Q18,65 14,50 Q22,60 30,68" fill="#2D2191" stroke="#8B5CF6" stroke-width="1"/>
+  <path d="M90,75 Q102,65 106,50 Q98,60 90,68" fill="#2D2191" stroke="#8B5CF6" stroke-width="1"/>
+  <!-- Feather pattern on body -->
+  <g fill="#1B1464" stroke="#8B5CF6" stroke-width="0.5" opacity="0.7">
+    <ellipse cx="50" cy="68" rx="8" ry="5"/>
+    <ellipse cx="60" cy="64" rx="8" ry="5"/>
+    <ellipse cx="70" cy="68" rx="8" ry="5"/>
+    <ellipse cx="46" cy="80" rx="7" ry="4"/>
+    <ellipse cx="56" cy="76" rx="7" ry="4"/>
+    <ellipse cx="66" cy="76" rx="7" ry="4"/>
+    <ellipse cx="74" cy="80" rx="7" ry="4"/>
+    <ellipse cx="50" cy="90" rx="7" ry="4"/>
+    <ellipse cx="60" cy="88" rx="7" ry="4"/>
+    <ellipse cx="70" cy="90" rx="7" ry="4"/>
+  </g>
+  <!-- Crescent moon halo -->
+  <path d="M35,48 Q45,28 65,30 Q50,32 48,48 Q42,30 35,48" fill="#C17F24" opacity="0.9"/>
+  <!-- Owl face disc -->
+  <ellipse cx="60" cy="60" rx="22" ry="20" fill="#4A3A00" opacity="0.4"/>
+  <!-- Huge eyes -->
+  <circle cx="48" cy="56" r="11" fill="#0A0520"/>
+  <circle cx="72" cy="56" r="11" fill="#0A0520"/>
+  <!-- Iris -->
+  <circle cx="48" cy="56" r="7" fill="#1B1464" stroke="#8B5CF6" stroke-width="1"/>
+  <circle cx="72" cy="56" r="7" fill="#1B1464" stroke="#8B5CF6" stroke-width="1"/>
+  <!-- Pupil glow -->
+  <circle cx="48" cy="56" r="4" fill="#C084FC" filter="url(#mog)"/>
+  <circle cx="72" cy="56" r="4" fill="#C084FC" filter="url(#mog)"/>
+  <circle cx="47" cy="55" r="1.5" fill="#EDE9FE"/>
+  <circle cx="71" cy="55" r="1.5" fill="#EDE9FE"/>
+  <!-- Beak -->
+  <polygon points="60,62 55,70 65,70" fill="#C17F24"/>
+  <!-- Ear tufts -->
+  <polygon points="42,35 38,20 46,28" fill="#2D2191"/>
+  <polygon points="78,35 82,20 74,28" fill="#2D2191"/>
+  <!-- Totem star bands -->
+  <rect x="44" y="172" width="32" height="5" rx="1" fill="#8B5CF6" opacity="0.8"/>
+  <rect x="44" y="252" width="32" height="5" rx="1" fill="#8B5CF6" opacity="0.8"/>
+  <rect x="44" y="332" width="32" height="5" rx="1" fill="#8B5CF6" opacity="0.8"/>
+  <!-- Star patterns on shaft -->
+  <g fill="#C17F24" filter="url(#mog)" opacity="0.7">
+    <polygon points="60,195 57,203 49,203 55,208 53,216 60,211 67,216 65,208 71,203 63,203"/>
+    <polygon points="60,275 57,283 49,283 55,288 53,296 60,291 67,296 65,288 71,283 63,283"/>
+  </g>
+</svg>

@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <filter id="hg"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="400" height="400" fill="none"/>
+  <!-- Mask base — warm earth terracotta -->
+  <path d="M200,52 Q272,55 302,112 Q326,162 322,228 Q315,290 286,325 Q256,352 200,355 Q144,352 114,325 Q85,290 78,228 Q74,162 98,112 Q128,55 200,52 Z" fill="#A0522D" stroke="#C17F24" stroke-width="2.5"/>
+  <!-- Harvest grain pattern — stylized wheat stalks -->
+  <g fill="#C17F24" opacity="0.6">
+    <line x1="115" y1="130" x2="108" y2="90" stroke="#C17F24" stroke-width="2"/>
+    <ellipse cx="108" cy="86" rx="5" ry="8"/>
+    <ellipse cx="103" cy="96" rx="4" ry="6" transform="rotate(-20,103,96)"/>
+    <ellipse cx="113" cy="96" rx="4" ry="6" transform="rotate(20,113,96)"/>
+    <line x1="285" y1="130" x2="292" y2="90" stroke="#C17F24" stroke-width="2"/>
+    <ellipse cx="292" cy="86" rx="5" ry="8"/>
+    <ellipse cx="287" cy="96" rx="4" ry="6" transform="rotate(-20,287,96)"/>
+    <ellipse cx="297" cy="96" rx="4" ry="6" transform="rotate(20,297,96)"/>
+  </g>
+  <!-- Kente-style brow band — zigzag -->
+  <path d="M105,145 L120,135 L135,145 L150,135 L165,145 L180,135 L195,145 L210,135 L225,145 L240,135 L255,145 L270,135 L285,145 L295,138" fill="none" stroke="#F5A623" stroke-width="3" stroke-linejoin="round"/>
+  <!-- Eye holes -->
+  <ellipse cx="158" cy="185" rx="30" ry="20" fill="#3D1500"/>
+  <ellipse cx="242" cy="185" rx="30" ry="20" fill="#3D1500"/>
+  <ellipse cx="158" cy="185" rx="20" ry="13" fill="#0A0500"/>
+  <ellipse cx="242" cy="185" rx="20" ry="13" fill="#0A0500"/>
+  <!-- Warm amber eye glow -->
+  <ellipse cx="158" cy="185" rx="10" ry="7" fill="#E8A020" filter="url(#hg)"/>
+  <ellipse cx="242" cy="185" rx="10" ry="7" fill="#E8A020" filter="url(#hg)"/>
+  <!-- Nose — broad, flat carved -->
+  <path d="M182,228 Q200,242 218,228 Q210,255 200,258 Q190,255 182,228" fill="#6B3210" stroke="#C17F24" stroke-width="1.5"/>
+  <!-- Mouth — generous open harvest smile -->
+  <path d="M152,288 Q178,275 200,278 Q222,275 248,288 Q232,315 200,320 Q168,315 152,288" fill="#3D1500" stroke="#C17F24" stroke-width="1.5"/>
+  <!-- Teeth -->
+  <g fill="#FFF8E7" opacity="0.7">
+    <rect x="173" y="290" width="10" height="12" rx="2"/>
+    <rect x="190" y="288" width="10" height="14" rx="2"/>
+    <rect x="207" y="290" width="10" height="12" rx="2"/>
+    <rect x="222" y="293" width="8" height="10" rx="2"/>
+  </g>
+  <!-- Cheek raised diamond inlays -->
+  <g fill="#8B4513" stroke="#F5A623" stroke-width="1.5">
+    <polygon points="105,220 120,210 135,220 120,230"/>
+    <polygon points="265,220 280,210 295,220 280,230"/>
+  </g>
+  <!-- Forehead sun radial marks -->
+  <g stroke="#F5A623" stroke-width="1.5" opacity="0.7">
+    <line x1="200" y1="62" x2="200" y2="88"/>
+    <line x1="200" y1="62" x2="200" y2="88" transform="rotate(30,200,75)"/>
+    <line x1="200" y1="62" x2="200" y2="88" transform="rotate(60,200,75)"/>
+    <line x1="200" y1="62" x2="200" y2="88" transform="rotate(-30,200,75)"/>
+    <line x1="200" y1="62" x2="200" y2="88" transform="rotate(-60,200,75)"/>
+  </g>
+  <circle cx="200" cy="75" r="6" fill="#F5A623" filter="url(#hg)"/>
+</svg>

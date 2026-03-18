@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 400" width="120" height="400">
+  <defs>
+    <filter id="rtg"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="120" height="400" fill="none"/>
+  <!-- Serpent body wraps around shaft -->
+  <path d="M44,360 Q10,330 20,290 Q30,250 80,240 Q100,200 80,160 Q60,120 40,100 Q60,90 80,110 Q100,130 95,170 Q90,210 55,225 Q25,238 20,275 Q15,310 44,340" fill="none" stroke="#1A3D1A" stroke-width="16" stroke-linecap="round"/>
+  <!-- Shaft -->
+  <rect x="44" y="60" width="32" height="300" rx="5" fill="#2D1A08" stroke="#4A7C2F" stroke-width="1"/>
+  <!-- Base -->
+  <rect x="28" y="352" width="64" height="20" rx="4" fill="#1A0D04" stroke="#4A7C2F" stroke-width="1.5"/>
+  <!-- Serpent head at top -->
+  <ellipse cx="60" cy="55" rx="28" ry="22" fill="#2D6A2D"/>
+  <!-- Scale pattern on head -->
+  <g fill="#4A7C2F" opacity="0.7">
+    <ellipse cx="48" cy="48" rx="8" ry="5"/>
+    <ellipse cx="60" cy="44" rx="8" ry="5"/>
+    <ellipse cx="72" cy="48" rx="8" ry="5"/>
+    <ellipse cx="50" cy="58" rx="7" ry="4"/>
+    <ellipse cx="70" cy="58" rx="7" ry="4"/>
+  </g>
+  <!-- Eyes -->
+  <ellipse cx="46" cy="52" rx="7" ry="6" fill="#0A1A0A"/>
+  <ellipse cx="74" cy="52" rx="7" ry="6" fill="#0A1A0A"/>
+  <ellipse cx="46" cy="52" rx="4" ry="3" fill="#7FD44C" filter="url(#rtg)"/>
+  <ellipse cx="74" cy="52" rx="4" ry="3" fill="#7FD44C" filter="url(#rtg)"/>
+  <!-- Slit pupils -->
+  <ellipse cx="46" cy="52" rx="1.5" ry="4" fill="#050D05"/>
+  <ellipse cx="74" cy="52" rx="1.5" ry="4" fill="#050D05"/>
+  <!-- Forked tongue -->
+  <path d="M60,72 L60,85 L54,92 M60,85 L66,92" stroke="#E85D04" stroke-width="2" fill="none"/>
+  <!-- Totem tribal bands -->
+  <rect x="44" y="150" width="32" height="5" rx="1" fill="#C17F24" opacity="0.8"/>
+  <rect x="44" y="220" width="32" height="5" rx="1" fill="#C17F24" opacity="0.8"/>
+  <rect x="44" y="290" width="32" height="5" rx="1" fill="#C17F24" opacity="0.8"/>
+  <!-- Water wave pattern on shaft -->
+  <g fill="none" stroke="#4A7C2F" stroke-width="1.2" opacity="0.6">
+    <path d="M46,170 Q54,163 62,170 Q70,177 76,170"/>
+    <path d="M46,182 Q54,175 62,182 Q70,189 76,182"/>
+    <path d="M46,240 Q54,233 62,240 Q70,247 76,240"/>
+    <path d="M46,252 Q54,245 62,252 Q70,259 76,252"/>
+    <path d="M46,310 Q54,303 62,310 Q70,317 76,310"/>
+    <path d="M46,322 Q54,315 62,322 Q70,329 76,322"/>
+  </g>
+</svg>
