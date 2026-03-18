@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 60" width="120" height="60">
+  <!-- Elephant Tusks (pair, curved) -->
+  <!-- Left tusk -->
+  <path d="M35 5 Q18 20 15 40 Q13 52 22 56" fill="none" stroke="#F5ECD0" stroke-width="16" stroke-linecap="round"/>
+  <path d="M35 5 Q18 20 15 40 Q13 52 22 56" fill="none" stroke="#C8B87A" stroke-width="2" stroke-linecap="round"/>
+  <!-- Right tusk -->
+  <path d="M85 5 Q102 20 105 40 Q107 52 98 56" fill="none" stroke="#F5ECD0" stroke-width="16" stroke-linecap="round"/>
+  <path d="M85 5 Q102 20 105 40 Q107 52 98 56" fill="none" stroke="#C8B87A" stroke-width="2" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <!-- Classic Lion Mane - centered at (100,100) -->
+  <!-- Outer mane ring (spiky) -->
+  <circle cx="100" cy="100" r="90" fill="#7A4010" stroke="#4A2000" stroke-width="2"/>
+  <!-- Mane spike details -->
+  <path d="M100 10 L108 28 L92 28 Z" fill="#5A2800"/>
+  <path d="M145 25 L148 45 L132 38 Z" fill="#5A2800"/>
+  <path d="M180 60 L175 78 L162 68 Z" fill="#5A2800"/>
+  <path d="M192 108 L175 112 L178 96 Z" fill="#5A2800"/>
+  <path d="M178 152 L162 148 L172 135 Z" fill="#5A2800"/>
+  <path d="M55 25 L52 45 L68 38 Z" fill="#5A2800"/>
+  <path d="M20 60 L25 78 L38 68 Z" fill="#5A2800"/>
+  <path d="M8 108 L25 112 L22 96 Z" fill="#5A2800"/>
+  <path d="M22 152 L38 148 L28 135 Z" fill="#5A2800"/>
+  <!-- Middle mane -->
+  <circle cx="100" cy="100" r="74" fill="#9A5818"/>
+  <!-- Inner mane -->
+  <circle cx="100" cy="100" r="58" fill="#C87830"/>
+  <!-- Face cutout (transparent, face renders on top) -->
+  <circle cx="100" cy="100" r="46" fill="none"/>
+</svg>

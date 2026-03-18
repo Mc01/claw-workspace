@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 170" width="220" height="170">
+  <!-- Tribal Triangle Pattern -->
+  <defs>
+    <pattern id="tribal" x="0" y="0" width="36" height="36" patternUnits="userSpaceOnUse">
+      <polygon points="18,2 34,34 2,34" fill="#6A3010" opacity="0.55"/>
+      <polygon points="18,8 28,30 8,30" fill="none" stroke="#C87030" stroke-width="1.5" opacity="0.6"/>
+      <circle cx="18" cy="22" r="3" fill="#C87030" opacity="0.5"/>
+    </pattern>
+  </defs>
+  <rect x="0" y="0" width="220" height="170" fill="url(#tribal)"/>
+</svg>

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" width="80" height="80">
+  <!-- Double Rhino Horns -->
+  <!-- Primary (front) horn -->
+  <polygon points="28,4 14,68 42,68" fill="#6A5840" stroke="#3A2810" stroke-width="2" stroke-linejoin="round"/>
+  <polygon points="28,4 21,44 35,44" fill="#8A7858" opacity="0.5"/>
+  <!-- Secondary (rear) horn -->
+  <polygon points="52,18 42,68 62,68" fill="#5A4830" stroke="#3A2810" stroke-width="2" stroke-linejoin="round"/>
+  <polygon points="52,18 46,52 58,52" fill="#7A6848" opacity="0.5"/>
+</svg>

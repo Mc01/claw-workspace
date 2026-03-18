@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <!-- Zebra Base Body - African Safari Collection v1 -->
+  <defs>
+    <style>
+      .body { fill: #F0EDE0; stroke: #2A2A2A; stroke-width: 2.5; stroke-linejoin: round; }
+      .stripe { fill: #1A1A1A; opacity: 0.88; }
+      .belly { fill: #FAFAF5; stroke: #C0BDAA; stroke-width: 1.5; }
+      .face { fill: #EDEADE; stroke: #2A2A2A; stroke-width: 2.5; }
+      .hoof { fill: #2A2A2A; }
+      .muzzle { fill: #D8D2C0; stroke: #9A9688; stroke-width: 1.5; }
+      .nose { fill: #6A6258; }
+    </style>
+  </defs>
+
+  <!-- Tail -->
+  <path d="M308 252 Q340 235 350 210" fill="none" stroke="#F0EDE0" stroke-width="12" stroke-linecap="round"/>
+  <path d="M350 210 Q355 198 350 188" fill="none" stroke="#1A1A1A" stroke-width="10" stroke-linecap="round"/>
+  <!-- Tail stripes -->
+  <path d="M308 252 Q340 235 350 210" fill="none" stroke="#1A1A1A" stroke-width="3" stroke-dasharray="8,6" stroke-linecap="round"/>
+
+  <!-- Back legs -->
+  <rect x="108" y="300" width="30" height="70" rx="13" class="body"/>
+  <rect x="262" y="300" width="30" height="70" rx="13" class="body"/>
+  <!-- Back leg stripes -->
+  <rect x="108" y="308" width="30" height="8" rx="4" class="stripe"/>
+  <rect x="108" y="326" width="30" height="7" rx="3" class="stripe"/>
+  <rect x="108" y="343" width="30" height="7" rx="3" class="stripe"/>
+  <rect x="262" y="308" width="30" height="8" rx="4" class="stripe"/>
+  <rect x="262" y="326" width="30" height="7" rx="3" class="stripe"/>
+  <rect x="262" y="343" width="30" height="7" rx="3" class="stripe"/>
+  <!-- Hooves back -->
+  <rect x="106" y="368" width="34" height="16" rx="7" class="hoof"/>
+  <rect x="260" y="368" width="34" height="16" rx="7" class="hoof"/>
+
+  <!-- Body -->
+  <ellipse cx="200" cy="258" rx="112" ry="85" class="body"/>
+  <!-- Body stripes (diagonal, African zebra style) -->
+  <path d="M130 220 Q145 210 165 215 Q155 230 140 232 Z" class="stripe"/>
+  <path d="M155 208 Q172 198 188 205 Q180 222 163 224 Z" class="stripe"/>
+  <path d="M185 203 Q202 195 215 200 Q210 218 193 220 Z" class="stripe"/>
+  <path d="M212 205 Q228 198 242 204 Q238 222 222 224 Z" class="stripe"/>
+  <path d="M238 212 Q253 205 267 212 Q262 230 247 232 Z" class="stripe"/>
+  <path d="M125 248 Q140 238 155 244 Q148 262 133 264 Z" class="stripe"/>
+  <path d="M250 248 Q265 240 278 248 Q272 265 257 266 Z" class="stripe"/>
+  <path d="M142 275 Q155 268 168 274 Q162 290 148 291 Z" class="stripe"/>
+  <path d="M230 275 Q244 268 256 275 Q250 290 236 291 Z" class="stripe"/>
+
+  <!-- Belly (lighter, no stripes) -->
+  <ellipse cx="200" cy="272" rx="66" ry="54" class="belly"/>
+
+  <!-- Front legs -->
+  <rect x="130" y="310" width="30" height="68" rx="13" class="body"/>
+  <rect x="240" y="310" width="30" height="68" rx="13" class="body"/>
+  <!-- Front leg stripes -->
+  <rect x="130" y="318" width="30" height="8" rx="4" class="stripe"/>
+  <rect x="130" y="336" width="30" height="7" rx="3" class="stripe"/>
+  <rect x="130" y="353" width="30" height="7" rx="3" class="stripe"/>
+  <rect x="240" y="318" width="30" height="8" rx="4" class="stripe"/>
+  <rect x="240" y="336" width="30" height="7" rx="3" class="stripe"/>
+  <rect x="240" y="353" width="30" height="7" rx="3" class="stripe"/>
+  <!-- Hooves front -->
+  <rect x="128" y="376" width="34" height="16" rx="7" class="hoof"/>
+  <rect x="238" y="376" width="34" height="16" rx="7" class="hoof"/>
+
+  <!-- Neck -->
+  <rect x="170" y="178" width="60" height="72" rx="24" class="body"/>
+  <!-- Neck stripes -->
+  <path d="M173 188 L225 182 L228 194 L176 200 Z" class="stripe"/>
+  <path d="M172 210 L226 204 L228 216 L173 222 Z" class="stripe"/>
+  <path d="M172 232 L226 226 L228 238 L173 244 Z" class="stripe"/>
+
+  <!-- Head -->
+  <ellipse cx="200" cy="150" rx="62" ry="56" class="face"/>
+  <!-- Head stripes -->
+  <path d="M155 138 Q168 125 180 128 Q174 145 162 147 Z" class="stripe"/>
+  <path d="M180 125 Q195 114 208 118 Q203 135 188 138 Z" class="stripe"/>
+  <path d="M208 126 Q222 116 233 120 Q228 137 215 140 Z" class="stripe"/>
+  <path d="M235 138 Q246 126 254 132 Q248 148 237 150 Z" class="stripe"/>
+
+  <!-- Muzzle -->
+  <ellipse cx="200" cy="170" rx="26" ry="20" class="muzzle"/>
+  <!-- Nostrils -->
+  <ellipse cx="193" cy="168" rx="5" ry="4" class="nose"/>
+  <ellipse cx="207" cy="168" rx="5" ry="4" class="nose"/>
+
+  <!-- TRAIT SLOTS -->
+  <!-- eyes: left cx=178 cy=142, right cx=222 cy=142 -->
+  <!-- ears: left cx=158 cy=106, right cx=242 cy=106 -->
+  <!-- mane: along neck top -->
+  <!-- accessories: cx=200 cy=110 -->
+</svg>

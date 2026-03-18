@@ -1,0 +1,51 @@
+{
+  "token_id": 4,
+  "name": "Safari #00004",
+  "description": "A giraffe from the Claude Safari Collection #1",
+  "image": "creature-00004-giraffe.svg",
+  "seed": 1340,
+  "rarity_score": 24.3,
+  "attributes": [
+    {
+      "trait_type": "Base",
+      "value": "giraffe"
+    },
+    {
+      "trait_type": "Eyes",
+      "value": "alert-amber"
+    },
+    {
+      "trait_type": "Ears",
+      "value": "pointed-alert"
+    },
+    {
+      "trait_type": "Horns",
+      "value": "none"
+    },
+    {
+      "trait_type": "Mane",
+      "value": "fluffy-ruff"
+    },
+    {
+      "trait_type": "Tail",
+      "value": "lion-tuft"
+    },
+    {
+      "trait_type": "Pattern",
+      "value": "mudcloth-zigzag"
+    },
+    {
+      "trait_type": "Accessory",
+      "value": "cool-shades"
+    },
+    {
+      "trait_type": "Palette",
+      "value": "termite-mound"
+    },
+    {
+      "trait_type": "Rarity Score",
+      "value": 24.3,
+      "display_type": "number"
+    }
+  ]
+}

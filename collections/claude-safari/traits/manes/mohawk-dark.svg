@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 120" width="200" height="120">
+  <!-- Mohawk Ridge Mane (runs along top/back of head) -->
+  <path d="M40 110 Q60 55 80 30 Q100 8 120 30 Q140 55 160 110" fill="#3A1A00" stroke="#2A0A00" stroke-width="2"/>
+  <!-- Individual spikes -->
+  <path d="M75 65 Q80 20 85 65" fill="#5A2800"/>
+  <path d="M88 50 Q95 5 102 50" fill="#5A2800"/>
+  <path d="M102 50 Q108 6 115 50" fill="#5A2800"/>
+  <path d="M115 65 Q120 20 125 65" fill="#5A2800"/>
+</svg>

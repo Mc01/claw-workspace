@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 80" width="60" height="80">
+  <!-- Single Rhino Horn -->
+  <polygon points="30,4 14,72 46,72" fill="#6A5840" stroke="#3A2810" stroke-width="2" stroke-linejoin="round"/>
+  <polygon points="30,4 22,50 38,50" fill="#8A7858" opacity="0.5"/>
+  <!-- Texture lines -->
+  <path d="M26 20 Q30 18 34 20" fill="none" stroke="#4A3820" stroke-width="1.5"/>
+  <path d="M23 35 Q30 33 37 35" fill="none" stroke="#4A3820" stroke-width="1.5"/>
+  <path d="M21 50 Q30 48 39 50" fill="none" stroke="#4A3820" stroke-width="1.5"/>
+</svg>

@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 70 120" width="70" height="120">
+  <!-- Maasai-style Shield -->
+  <!-- Shield outer shape -->
+  <path d="M35 5 Q62 28 62 60 Q62 92 35 112 Q8 92 8 60 Q8 28 35 5" fill="#E8D0A0" stroke="#5A3010" stroke-width="3"/>
+  <!-- Red center band -->
+  <path d="M12 45 Q35 40 58 45 Q58 75 35 80 Q12 75 12 45" fill="#CC2200"/>
+  <!-- Black top section -->
+  <path d="M35 5 Q62 28 58 45 Q35 40 12 45 Q8 28 35 5" fill="#1A1A1A"/>
+  <!-- White dots pattern -->
+  <circle cx="35" cy="18" r="4" fill="white"/>
+  <circle cx="25" cy="28" r="3" fill="white"/>
+  <circle cx="45" cy="28" r="3" fill="white"/>
+  <circle cx="35" cy="38" r="3" fill="white"/>
+  <!-- Center oval decoration -->
+  <ellipse cx="35" cy="60" rx="10" ry="16" fill="#E8D0A0" stroke="#5A3010" stroke-width="2"/>
+  <!-- Bottom black band -->
+  <path d="M12 75 Q35 80 58 75 Q55 95 35 112 Q15 95 12 75" fill="#1A1A1A"/>
+  <circle cx="35" cy="95" r="4" fill="white"/>
+  <circle cx="25" cy="104" r="3" fill="white"/>
+  <circle cx="45" cy="104" r="3" fill="white"/>
+  <!-- Spear handle -->
+  <rect x="32" y="112" width="6" height="25" rx="3" fill="#8A5020" stroke="#5A3010" stroke-width="1.5"/>
+</svg>

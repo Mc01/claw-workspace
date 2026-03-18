@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 60" width="120" height="60">
+  <!-- Small Rhino-Style Ears -->
+  <!-- Left ear -->
+  <ellipse cx="22" cy="32" rx="18" ry="16" fill="#8A7868" stroke="#5A4A3A" stroke-width="2.5"/>
+  <ellipse cx="22" cy="34" rx="10" ry="9" fill="#A89888"/>
+  <!-- Right ear -->
+  <ellipse cx="98" cy="32" rx="18" ry="16" fill="#8A7868" stroke="#5A4A3A" stroke-width="2.5"/>
+  <ellipse cx="98" cy="34" rx="10" ry="9" fill="#A89888"/>
+</svg>

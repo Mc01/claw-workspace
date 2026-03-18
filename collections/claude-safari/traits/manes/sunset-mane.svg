@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <!-- Sunset Colored Mane -->
+  <defs>
+    <radialGradient id="sunsetG" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FF6820"/>
+      <stop offset="40%" stop-color="#D44010"/>
+      <stop offset="100%" stop-color="#8A1800"/>
+    </radialGradient>
+  </defs>
+  <!-- Outer ring -->
+  <circle cx="100" cy="100" r="88" fill="url(#sunsetG)" stroke="#5A1000" stroke-width="2"/>
+  <!-- Flame-like spikes -->
+  <path d="M100 12 Q112 35 100 55 Q88 35 100 12" fill="#FF9840"/>
+  <path d="M148 28 Q158 52 142 68 Q132 48 148 28" fill="#FF9840"/>
+  <path d="M185 72 Q188 98 172 108 Q165 85 185 72" fill="#FF9840"/>
+  <path d="M52 28 Q42 52 58 68 Q68 48 52 28" fill="#FF9840"/>
+  <path d="M15 72 Q12 98 28 108 Q35 85 15 72" fill="#FF9840"/>
+  <!-- Middle ring -->
+  <circle cx="100" cy="100" r="68" fill="#C83808"/>
+  <!-- Inner ring -->
+  <circle cx="100" cy="100" r="50" fill="#E85020"/>
+</svg>

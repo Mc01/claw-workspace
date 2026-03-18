@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 80" width="60" height="80">
+  <!-- Elephant's Tiny Tail with brush tip -->
+  <!-- Short tail body -->
+  <path d="M20 20 Q28 40 26 58" fill="none" stroke="#7A8C8C" stroke-width="10" stroke-linecap="round"/>
+  <path d="M20 20 Q28 40 26 58" fill="none" stroke="#4A5C5C" stroke-width="1.5" stroke-linecap="round"/>
+  <!-- Brush/tuft at tip -->
+  <path d="M20 58 Q26 58 32 58" fill="none" stroke="#4A5C5C" stroke-width="3" stroke-linecap="round"/>
+  <path d="M18 60 Q26 65 34 60" fill="none" stroke="#4A5C5C" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M20 64 Q26 70 32 64" fill="none" stroke="#4A5C5C" stroke-width="2" stroke-linecap="round"/>
+  <path d="M22 68 Q26 73 30 68" fill="none" stroke="#4A5C5C" stroke-width="1.5" stroke-linecap="round"/>
+</svg>

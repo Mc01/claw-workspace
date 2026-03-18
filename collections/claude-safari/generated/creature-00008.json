@@ -1,0 +1,51 @@
+{
+  "token_id": 8,
+  "name": "Safari #00008",
+  "description": "A zebra from the Claude Safari Collection #1",
+  "image": "creature-00008-zebra.svg",
+  "seed": 44,
+  "rarity_score": 39.2,
+  "attributes": [
+    {
+      "trait_type": "Base",
+      "value": "zebra"
+    },
+    {
+      "trait_type": "Eyes",
+      "value": "sleepy-halfclosed"
+    },
+    {
+      "trait_type": "Ears",
+      "value": "small-rhino"
+    },
+    {
+      "trait_type": "Horns",
+      "value": "none"
+    },
+    {
+      "trait_type": "Mane",
+      "value": "none"
+    },
+    {
+      "trait_type": "Tail",
+      "value": "zebra-fluffy"
+    },
+    {
+      "trait_type": "Pattern",
+      "value": "none"
+    },
+    {
+      "trait_type": "Accessory",
+      "value": "safari-hat"
+    },
+    {
+      "trait_type": "Palette",
+      "value": "dusk-earth"
+    },
+    {
+      "trait_type": "Rarity Score",
+      "value": 39.2,
+      "display_type": "number"
+    }
+  ]
+}

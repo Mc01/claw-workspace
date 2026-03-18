@@ -1,0 +1,51 @@
+{
+  "token_id": 2,
+  "name": "Safari #00002",
+  "description": "A giraffe from the Claude Safari Collection #1",
+  "image": "creature-00002-giraffe.svg",
+  "seed": 1338,
+  "rarity_score": 23.6,
+  "attributes": [
+    {
+      "trait_type": "Base",
+      "value": "giraffe"
+    },
+    {
+      "trait_type": "Eyes",
+      "value": "alert-amber"
+    },
+    {
+      "trait_type": "Ears",
+      "value": "pointed-alert"
+    },
+    {
+      "trait_type": "Horns",
+      "value": "ossicones"
+    },
+    {
+      "trait_type": "Mane",
+      "value": "none"
+    },
+    {
+      "trait_type": "Tail",
+      "value": "lion-tuft"
+    },
+    {
+      "trait_type": "Pattern",
+      "value": "savanna-spots"
+    },
+    {
+      "trait_type": "Accessory",
+      "value": "maasai-shield"
+    },
+    {
+      "trait_type": "Palette",
+      "value": "red-ocher"
+    },
+    {
+      "trait_type": "Rarity Score",
+      "value": 23.6,
+      "display_type": "number"
+    }
+  ]
+}

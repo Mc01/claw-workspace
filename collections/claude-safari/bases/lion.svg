@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <!-- Lion Base Body - African Safari Collection v1 -->
+  <defs>
+    <style>
+      .body { fill: #C8943A; stroke: #7A5C2A; stroke-width: 2.5; stroke-linejoin: round; }
+      .belly { fill: #E8B86D; stroke: #C8943A; stroke-width: 1.5; }
+      .face { fill: #D4A04A; stroke: #7A5C2A; stroke-width: 2.5; }
+      .snout { fill: #E8C87A; stroke: #9A7040; stroke-width: 1.5; }
+      .nose { fill: #5C2D0A; }
+      .detail { fill: #A87830; stroke: #7A5C2A; stroke-width: 2; }
+      .outline { fill: none; stroke: #7A5C2A; stroke-width: 2.5; stroke-linecap: round; }
+    </style>
+  </defs>
+
+  <!-- Tail -->
+  <path d="M308 255 Q345 225 358 195 Q368 170 348 155" fill="none" stroke="#C8943A" stroke-width="16" stroke-linecap="round"/>
+  <path d="M308 255 Q345 225 358 195 Q368 170 348 155" fill="none" stroke="#7A5C2A" stroke-width="2" stroke-linecap="round"/>
+  <!-- Tail tuft slot -->
+  <circle cx="348" cy="152" r="5" fill="#7A4010" id="tail-tuft-base"/>
+
+  <!-- Back legs -->
+  <ellipse cx="118" cy="330" rx="20" ry="40" class="detail"/>
+  <ellipse cx="282" cy="330" rx="20" ry="40" class="detail"/>
+  <!-- Back paws -->
+  <ellipse cx="118" cy="372" rx="24" ry="11" class="detail"/>
+  <ellipse cx="282" cy="372" rx="24" ry="11" class="detail"/>
+
+  <!-- Body -->
+  <ellipse cx="200" cy="258" rx="112" ry="88" class="body"/>
+  <!-- Belly -->
+  <ellipse cx="200" cy="272" rx="68" ry="58" class="belly"/>
+
+  <!-- Front legs -->
+  <rect x="128" y="312" width="36" height="62" rx="16" class="body"/>
+  <rect x="236" y="312" width="36" height="62" rx="16" class="body"/>
+  <!-- Front paws -->
+  <ellipse cx="146" cy="376" rx="24" ry="12" class="body"/>
+  <ellipse cx="254" cy="376" rx="24" ry="12" class="body"/>
+
+  <!-- Neck -->
+  <ellipse cx="200" cy="200" rx="50" ry="42" class="body"/>
+
+  <!-- Head -->
+  <ellipse cx="200" cy="148" rx="70" ry="64" class="face" id="head"/>
+
+  <!-- Snout -->
+  <ellipse cx="200" cy="166" rx="32" ry="24" class="snout"/>
+  <!-- Nose -->
+  <ellipse cx="200" cy="155" rx="13" ry="9" class="nose"/>
+  <circle cx="195" cy="157" r="3.5" fill="#3A1A05"/>
+  <circle cx="205" cy="157" r="3.5" fill="#3A1A05"/>
+
+  <!-- Mouth -->
+  <path d="M200 164 Q191 174 184 171" class="outline" stroke-width="2"/>
+  <path d="M200 164 Q209 174 216 171" class="outline" stroke-width="2"/>
+
+  <!-- Whisker dots -->
+  <circle cx="170" cy="160" r="3" fill="#9A7040" opacity="0.7"/>
+  <circle cx="177" cy="166" r="2.5" fill="#9A7040" opacity="0.7"/>
+  <circle cx="230" cy="160" r="3" fill="#9A7040" opacity="0.7"/>
+  <circle cx="223" cy="166" r="2.5" fill="#9A7040" opacity="0.7"/>
+
+  <!-- TRAIT SLOTS (invisible markers for compositor) -->
+  <!-- eyes: cx=200 cy=138 -->
+  <!-- ears: left cx=148 cy=100, right cx=252 cy=100 -->
+  <!-- mane: cx=200 cy=148 r=82 -->
+  <!-- pattern: body ellipse cx=200 cy=258 -->
+  <!-- tail-tip: cx=348 cy=152 -->
+  <!-- accessory: cx=200 cy=115 -->
+</svg>

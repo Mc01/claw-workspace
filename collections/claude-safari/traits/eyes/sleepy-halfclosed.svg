@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 40" width="80" height="40">
+  <!-- Sleepy Half-Closed Eyes -->
+  <!-- Left eye -->
+  <ellipse cx="18" cy="22" rx="14" ry="10" fill="#E8D090" stroke="#2A1800" stroke-width="2"/>
+  <ellipse cx="18" cy="24" rx="9" ry="6" fill="#7A5820"/>
+  <ellipse cx="18" cy="25" rx="4" ry="3" fill="#0A0800"/>
+  <path d="M4 18 Q18 12 32 18" fill="#6A4A20" stroke="#2A1800" stroke-width="2.5"/>
+  <!-- Right eye -->
+  <ellipse cx="62" cy="22" rx="14" ry="10" fill="#E8D090" stroke="#2A1800" stroke-width="2"/>
+  <ellipse cx="62" cy="24" rx="9" ry="6" fill="#7A5820"/>
+  <ellipse cx="62" cy="25" rx="4" ry="3" fill="#0A0800"/>
+  <path d="M48 18 Q62 12 76 18" fill="#6A4A20" stroke="#2A1800" stroke-width="2.5"/>
+</svg>

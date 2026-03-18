@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <!-- Rhino Base Body - African Safari Collection v1 -->
+  <defs>
+    <style>
+      .body { fill: #8A7868; stroke: #5A4A3A; stroke-width: 3; stroke-linejoin: round; }
+      .belly { fill: #A89888; stroke: #7A6858; stroke-width: 1.5; }
+      .face { fill: #7A6858; stroke: #5A4A3A; stroke-width: 3; }
+      .armor { fill: #6A5A4A; stroke: #4A3A2A; stroke-width: 1.5; }
+      .horn-base { fill: #4A3828; stroke: #2A1810; stroke-width: 2; }
+      .hoof { fill: #3A2818; }
+      .crease { fill: none; stroke: #5A4A3A; stroke-width: 2; stroke-linecap: round; }
+    </style>
+  </defs>
+
+  <!-- Tail -->
+  <path d="M308 250 Q330 240 342 222 Q348 208 342 198" fill="none" stroke="#8A7868" stroke-width="10" stroke-linecap="round"/>
+  <ellipse cx="341" cy="196" rx="10" ry="6" class="body"/>
+
+  <!-- Back legs (thick, sturdy) -->
+  <ellipse cx="115" cy="325" rx="30" ry="52" class="body"/>
+  <ellipse cx="285" cy="325" rx="30" ry="52" class="body"/>
+  <!-- Armor creases on legs -->
+  <path d="M95 305 Q115 300 135 305" class="crease"/>
+  <path d="M95 322 Q115 317 135 322" class="crease"/>
+  <path d="M265 305 Q285 300 305 305" class="crease"/>
+  <path d="M265 322 Q285 317 305 322" class="crease"/>
+  <!-- Hooves -->
+  <rect x="98" y="370" width="38" height="18" rx="8" class="hoof"/>
+  <rect x="264" y="370" width="38" height="18" rx="8" class="hoof"/>
+
+  <!-- Body (very wide, barrel-shaped) -->
+  <ellipse cx="200" cy="258" rx="130" ry="95" class="body"/>
+  <!-- Armor plates on body -->
+  <path d="M135 220 Q165 210 200 212 Q235 210 265 220" class="crease"/>
+  <path d="M120 248 Q158 238 200 240 Q242 238 280 248" class="crease"/>
+  <path d="M125 278 Q160 270 200 272 Q240 270 275 278" class="crease"/>
+  <!-- Shoulder hump -->
+  <ellipse cx="165" cy="232" rx="42" ry="28" class="armor"/>
+  <ellipse cx="235" cy="232" rx="38" ry="26" class="armor"/>
+
+  <!-- Belly (lighter) -->
+  <ellipse cx="200" cy="280" rx="72" ry="52" class="belly"/>
+
+  <!-- Front legs (very thick) -->
+  <rect x="126" y="315" width="42" height="62" rx="18" class="body"/>
+  <rect x="232" y="315" width="42" height="62" rx="18" class="body"/>
+  <!-- Armor creases front legs -->
+  <path d="M128 330 Q147 325 168 330" class="crease"/>
+  <path d="M128 348 Q147 343 168 348" class="crease"/>
+  <path d="M234 330 Q253 325 272 330" class="crease"/>
+  <path d="M234 348 Q253 343 272 348" class="crease"/>
+  <!-- Front hooves -->
+  <rect x="124" y="371" width="46" height="18" rx="8" class="hoof"/>
+  <rect x="230" y="371" width="46" height="18" rx="8" class="hoof"/>
+
+  <!-- Neck (short, thick) -->
+  <ellipse cx="200" cy="205" rx="62" ry="46" class="body"/>
+  <path d="M148 192 Q175 183 200 185 Q225 183 252 192" class="crease"/>
+
+  <!-- Head (wide, low) -->
+  <ellipse cx="198" cy="155" rx="82" ry="62" class="face"/>
+  <!-- Head armor -->
+  <path d="M140 140 Q168 130 198 132 Q228 130 256 140" class="crease"/>
+  <path d="M135 158 Q165 150 198 152 Q231 150 261 158" class="crease"/>
+
+  <!-- Lip/jaw area -->
+  <ellipse cx="198" cy="185" rx="52" ry="22" fill="#6A5848" stroke="#5A4A3A" stroke-width="2"/>
+
+  <!-- Nostrils -->
+  <ellipse cx="185" cy="182" rx="7" ry="5" fill="#3A2818"/>
+  <ellipse cx="211" cy="182" rx="7" ry="5" fill="#3A2818"/>
+
+  <!-- Horn slot (front of snout) -->
+  <!-- Primary horn base plate -->
+  <ellipse cx="185" cy="148" rx="16" ry="10" class="horn-base"/>
+
+  <!-- TRAIT SLOTS -->
+  <!-- eyes: left cx=163 cy=148, right cx=233 cy=148 -->
+  <!-- ears: left cx=135 cy=112, right cx=260 cy=112 -->
+  <!-- horns: cx=185 cy=138 (primary), cx=205 cy=148 (secondary) -->
+  <!-- pattern/armor: body creases -->
+  <!-- accessories: cx=198 cy=110 -->
+</svg>

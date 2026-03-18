@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 120" width="80" height="120">
+  <!-- Lion Tail with Dark Tuft -->
+  <!-- Tail body -->
+  <path d="M20 110 Q35 85 45 60 Q52 38 40 18" fill="none" stroke="#C8943A" stroke-width="18" stroke-linecap="round"/>
+  <path d="M20 110 Q35 85 45 60 Q52 38 40 18" fill="none" stroke="#A87830" stroke-width="2" stroke-linecap="round"/>
+  <!-- Tuft at tip -->
+  <ellipse cx="40" cy="14" rx="16" ry="18" fill="#5A2800" stroke="#3A1000" stroke-width="2"/>
+  <!-- Tuft texture -->
+  <path d="M30 8 Q40 2 50 8" fill="none" stroke="#3A1000" stroke-width="2" stroke-linecap="round"/>
+  <path d="M28 16 Q40 10 52 16" fill="none" stroke="#3A1000" stroke-width="2" stroke-linecap="round"/>
+  <path d="M30 24 Q40 18 50 24" fill="none" stroke="#3A1000" stroke-width="2" stroke-linecap="round"/>
+</svg>

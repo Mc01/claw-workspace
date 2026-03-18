@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 110" width="160" height="110">
+  <!-- Large Elephant Fan Ears -->
+  <!-- Left ear -->
+  <ellipse cx="30" cy="58" rx="28" ry="48" fill="#7A8C8C" stroke="#4A5C5C" stroke-width="2.5"/>
+  <ellipse cx="32" cy="60" rx="18" ry="34" fill="#9AACAA" opacity="0.7"/>
+  <!-- Vein lines on left ear -->
+  <path d="M22 30 Q28 55 24 82" fill="none" stroke="#5A6C6A" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M32 25 Q38 52 34 80" fill="none" stroke="#5A6C6A" stroke-width="1.5" stroke-linecap="round"/>
+  <!-- Right ear -->
+  <ellipse cx="130" cy="58" rx="28" ry="48" fill="#7A8C8C" stroke="#4A5C5C" stroke-width="2.5"/>
+  <ellipse cx="128" cy="60" rx="18" ry="34" fill="#9AACAA" opacity="0.7"/>
+  <path d="M122 30 Q128 55 124 82" fill="none" stroke="#5A6C6A" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M132 25 Q138 52 134 80" fill="none" stroke="#5A6C6A" stroke-width="1.5" stroke-linecap="round"/>
+</svg>

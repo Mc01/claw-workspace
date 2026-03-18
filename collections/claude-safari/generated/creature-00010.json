@@ -1,0 +1,51 @@
+{
+  "token_id": 10,
+  "name": "Safari #00010",
+  "description": "A lion from the Claude Safari Collection #1",
+  "image": "creature-00010-lion.svg",
+  "seed": 46,
+  "rarity_score": 32.5,
+  "attributes": [
+    {
+      "trait_type": "Base",
+      "value": "lion"
+    },
+    {
+      "trait_type": "Eyes",
+      "value": "sleepy-halfclosed"
+    },
+    {
+      "trait_type": "Ears",
+      "value": "elephant-fan"
+    },
+    {
+      "trait_type": "Horns",
+      "value": "elephant-tusks"
+    },
+    {
+      "trait_type": "Mane",
+      "value": "none"
+    },
+    {
+      "trait_type": "Tail",
+      "value": "giraffe-whip"
+    },
+    {
+      "trait_type": "Pattern",
+      "value": "kente-stripes"
+    },
+    {
+      "trait_type": "Accessory",
+      "value": "cool-shades"
+    },
+    {
+      "trait_type": "Palette",
+      "value": "golden-savanna"
+    },
+    {
+      "trait_type": "Rarity Score",
+      "value": 32.5,
+      "display_type": "number"
+    }
+  ]
+}

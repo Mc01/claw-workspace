@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 80" width="180" height="80">
+  <!-- Fluffy Neck Ruff -->
+  <path d="M10 40 Q30 5 90 8 Q150 5 170 40 Q158 72 90 75 Q22 72 10 40" fill="#C87830" stroke="#7A4010" stroke-width="2.5"/>
+  <!-- Fluff texture -->
+  <path d="M30 18 Q40 10 50 18" fill="none" stroke="#8A5020" stroke-width="2" stroke-linecap="round"/>
+  <path d="M55 12 Q70 5 85 12" fill="none" stroke="#8A5020" stroke-width="2" stroke-linecap="round"/>
+  <path d="M95 12 Q110 5 125 12" fill="none" stroke="#8A5020" stroke-width="2" stroke-linecap="round"/>
+  <path d="M130 18 Q142 10 152 18" fill="none" stroke="#8A5020" stroke-width="2" stroke-linecap="round"/>
+  <path d="M18 35 Q26 25 34 35" fill="none" stroke="#8A5020" stroke-width="2" stroke-linecap="round"/>
+  <path d="M148 35 Q156 25 164 35" fill="none" stroke="#8A5020" stroke-width="2" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 80" width="120" height="80">
+  <!-- Rounded Tawny Ears (pair) -->
+  <!-- Left ear -->
+  <ellipse cx="22" cy="38" rx="20" ry="22" fill="#C8943A" stroke="#7A5C2A" stroke-width="2.5"/>
+  <ellipse cx="22" cy="42" rx="12" ry="14" fill="#E8B0A0"/>
+  <!-- Right ear -->
+  <ellipse cx="98" cy="38" rx="20" ry="22" fill="#C8943A" stroke="#7A5C2A" stroke-width="2.5"/>
+  <ellipse cx="98" cy="42" rx="12" ry="14" fill="#E8B0A0"/>
+</svg>

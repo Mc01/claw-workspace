@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 100" width="160" height="100">
+  <!-- Safari/Pith Helmet -->
+  <!-- Hat brim -->
+  <ellipse cx="80" cy="72" rx="70" ry="16" fill="#D4B870" stroke="#9A8040" stroke-width="2.5"/>
+  <!-- Hat dome -->
+  <path d="M18 72 Q20 30 80 20 Q140 30 142 72" fill="#C8A858" stroke="#9A8040" stroke-width="2.5"/>
+  <!-- Hat band -->
+  <rect x="18" y="62" width="124" height="10" rx="5" fill="#8A6020" stroke="#6A4010" stroke-width="1.5"/>
+  <!-- Ventilation holes -->
+  <circle cx="55" cy="45" r="5" fill="#B09040" stroke="#9A8040" stroke-width="1"/>
+  <circle cx="80" cy="38" r="5" fill="#B09040" stroke="#9A8040" stroke-width="1"/>
+  <circle cx="105" cy="45" r="5" fill="#B09040" stroke="#9A8040" stroke-width="1"/>
+  <!-- Center pin/badge -->
+  <circle cx="80" cy="62" r="7" fill="#D4A020" stroke="#9A7010" stroke-width="1.5"/>
+  <polygon points="80,56 82,62 80,68 78,62" fill="#C84000" stroke="none"/>
+  <polygon points="74,62 80,60 86,62 80,64" fill="#C84000" stroke="none"/>
+</svg>

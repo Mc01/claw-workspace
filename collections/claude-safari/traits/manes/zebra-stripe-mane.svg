@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 100" width="200" height="100">
+  <!-- Zebra-Striped Mane (standing mohawk) -->
+  <!-- Base mane shape -->
+  <path d="M30 95 Q55 30 100 10 Q145 30 170 95" fill="#F0EDE0" stroke="#2A2A2A" stroke-width="2"/>
+  <!-- Alternating stripes -->
+  <path d="M70 60 Q80 25 90 18 Q88 30 85 65 Z" fill="#1A1A1A"/>
+  <path d="M85 65 Q88 30 90 18 Q100 10 110 18 Q108 30 105 65 Z" fill="#F0EDE0"/>
+  <path d="M105 65 Q108 30 110 18 Q112 30 115 65 Z" fill="#1A1A1A"/>
+  <path d="M115 65 Q112 30 114 20 Q122 32 128 68 Z" fill="#F0EDE0"/>
+  <path d="M55 75 Q62 40 70 60 L65 78 Z" fill="#1A1A1A"/>
+  <path d="M128 68 Q135 45 140 75 L135 80 Z" fill="#1A1A1A"/>
+</svg>

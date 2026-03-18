@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 80" width="120" height="80">
+  <!-- Pointed Alert Ears -->
+  <!-- Left ear -->
+  <polygon points="22,70 6,8 38,8" fill="#C8943A" stroke="#7A5C2A" stroke-width="2.5" stroke-linejoin="round"/>
+  <polygon points="22,65 13,18 32,18" fill="#E8B0A0"/>
+  <!-- Right ear -->
+  <polygon points="98,70 82,8 114,8" fill="#C8943A" stroke="#7A5C2A" stroke-width="2.5" stroke-linejoin="round"/>
+  <polygon points="98,65 89,18 108,18" fill="#E8B0A0"/>
+</svg>

@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <!-- Elephant Base Body - African Safari Collection v1 -->
+  <defs>
+    <style>
+      .body { fill: #7A8C8C; stroke: #4A5C5C; stroke-width: 2.5; stroke-linejoin: round; }
+      .belly { fill: #9AACAA; stroke: #7A8C8C; stroke-width: 1.5; }
+      .face { fill: #8A9C9A; stroke: #4A5C5C; stroke-width: 2.5; }
+      .trunk { fill: #7A8C8C; stroke: #4A5C5C; stroke-width: 2; stroke-linecap: round; }
+      .tusk { fill: #F5ECD0; stroke: #C8B87A; stroke-width: 1.5; }
+      .eye-area { fill: #5A6C6A; }
+      .wrinkle { fill: none; stroke: #5A6C6A; stroke-width: 1.5; stroke-linecap: round; }
+    </style>
+  </defs>
+
+  <!-- Back legs (behind body) -->
+  <ellipse cx="120" cy="330" rx="26" ry="50" class="body"/>
+  <ellipse cx="280" cy="330" rx="26" ry="50" class="body"/>
+  <!-- Back feet -->
+  <ellipse cx="120" cy="378" rx="30" ry="13" class="body"/>
+  <ellipse cx="280" cy="378" rx="30" ry="13" class="body"/>
+  <!-- Toenail lines -->
+  <path d="M103 378 L137 378" fill="none" stroke="#4A5C5C" stroke-width="1.5"/>
+  <path d="M108 374 L108 382" fill="none" stroke="#4A5C5C" stroke-width="1.5"/>
+  <path d="M120 374 L120 382" fill="none" stroke="#4A5C5C" stroke-width="1.5"/>
+  <path d="M132 374 L132 382" fill="none" stroke="#4A5C5C" stroke-width="1.5"/>
+
+  <!-- Body -->
+  <ellipse cx="200" cy="262" rx="125" ry="100" class="body"/>
+  <!-- Belly -->
+  <ellipse cx="200" cy="278" rx="78" ry="65" class="belly"/>
+
+  <!-- Wrinkle details on body -->
+  <path d="M150 230 Q170 225 185 232" class="wrinkle"/>
+  <path d="M215 228 Q230 223 250 230" class="wrinkle"/>
+
+  <!-- Front legs -->
+  <rect x="124" y="318" width="40" height="58" rx="18" class="body"/>
+  <rect x="236" y="318" width="40" height="58" rx="18" class="body"/>
+  <!-- Front feet -->
+  <ellipse cx="144" cy="378" rx="28" ry="12" class="body"/>
+  <ellipse cx="256" cy="378" rx="28" ry="12" class="body"/>
+  <!-- Toenail lines front -->
+  <path d="M128 378 L160 378" fill="none" stroke="#4A5C5C" stroke-width="1.5"/>
+  <path d="M133 374 L133 382" fill="none" stroke="#4A5C5C" stroke-width="1.5"/>
+  <path d="M144 374 L144 382" fill="none" stroke="#4A5C5C" stroke-width="1.5"/>
+  <path d="M155 374 L155 382" fill="none" stroke="#4A5C5C" stroke-width="1.5"/>
+
+  <!-- Neck -->
+  <ellipse cx="200" cy="200" rx="55" ry="48" class="body"/>
+
+  <!-- Head -->
+  <ellipse cx="200" cy="145" rx="80" ry="72" class="face"/>
+
+  <!-- Trunk -->
+  <path d="M185 185 Q170 210 165 235 Q162 255 170 265 Q178 272 185 262 Q190 252 192 238 Q196 215 198 195" fill="none" stroke="#7A8C8C" stroke-width="28" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M185 185 Q170 210 165 235 Q162 255 170 265 Q178 272 185 262 Q190 252 192 238 Q196 215 198 195" fill="none" stroke="#5A6C6A" stroke-width="2" stroke-linecap="round"/>
+  <!-- Trunk tip -->
+  <ellipse cx="177" cy="267" rx="14" ry="8" class="body"/>
+
+  <!-- Tusks slot -->
+  <path d="M178 178 Q155 195 148 215 Q145 228 155 232" class="tusk"/>
+  <path d="M222 178 Q245 195 252 215 Q255 228 245 232" class="tusk"/>
+
+  <!-- Wrinkles on head -->
+  <path d="M162 130 Q180 120 200 122 Q220 120 238 130" class="wrinkle"/>
+  <path d="M155 145 Q175 138 200 140 Q225 138 245 145" class="wrinkle"/>
+
+  <!-- TRAIT SLOTS -->
+  <!-- eyes: left cx=168 cy=145, right cx=232 cy=145 -->
+  <!-- ears: left cx=132 cy=148, right cx=268 cy=148 (large ear flaps) -->
+  <!-- horns/tusks: left cx=162 cy=192, right cx=238 cy=192 -->
+  <!-- pattern: body ellipse -->
+  <!-- accessories: cx=200 cy=108 -->
+</svg>

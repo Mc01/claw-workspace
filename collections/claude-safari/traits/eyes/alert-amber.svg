@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 40" width="80" height="40">
+  <!-- Alert Amber Eyes - pair, centered -->
+  <!-- Left eye -->
+  <ellipse cx="18" cy="20" rx="14" ry="14" fill="#F5E0A0" stroke="#2A1800" stroke-width="2"/>
+  <ellipse cx="18" cy="20" rx="9" ry="9" fill="#C87820"/>
+  <ellipse cx="18" cy="20" rx="5" ry="5" fill="#0A0800"/>
+  <circle cx="15" cy="17" r="2" fill="white" opacity="0.85"/>
+  <circle cx="21" cy="22" r="1" fill="white" opacity="0.6"/>
+  <!-- Right eye -->
+  <ellipse cx="62" cy="20" rx="14" ry="14" fill="#F5E0A0" stroke="#2A1800" stroke-width="2"/>
+  <ellipse cx="62" cy="20" rx="9" ry="9" fill="#C87820"/>
+  <ellipse cx="62" cy="20" rx="5" ry="5" fill="#0A0800"/>
+  <circle cx="59" cy="17" r="2" fill="white" opacity="0.85"/>
+  <circle cx="65" cy="22" r="1" fill="white" opacity="0.6"/>
+</svg>
