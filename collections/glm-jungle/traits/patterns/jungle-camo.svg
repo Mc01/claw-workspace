@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <title>Trait: Jungle Camouflage Pattern</title>
+  <defs>
+    <style>
+      .camo-dark { fill: #1a3a10; opacity: 0.68; }
+      .camo-mid { fill: #2d5a1b; opacity: 0.6; }
+      .camo-light { fill: #4a7a28; opacity: 0.55; }
+      .camo-tan { fill: #8B7355; opacity: 0.5; }
+    </style>
+  </defs>
+  <!-- Irregular camouflage blotches -->
+  <path d="M140 178 Q155 165 175 172 Q188 182 180 198 Q165 205 148 198 Q136 188 140 178Z" class="camo-dark"/>
+  <path d="M178 165 Q196 155 215 165 Q228 178 220 195 Q205 202 188 195 Q175 182 178 165Z" class="camo-mid"/>
+  <path d="M218 172 Q235 162 255 170 Q268 183 260 200 Q245 207 228 200 Q215 187 218 172Z" class="camo-light"/>
+
+  <path d="M142 208 Q160 196 180 205 Q192 218 185 235 Q168 242 150 235 Q138 222 142 208Z" class="camo-light"/>
+  <path d="M182 200 Q202 190 222 200 Q234 215 226 232 Q210 240 192 232 Q178 218 182 200Z" class="camo-tan"/>
+  <path d="M224 208 Q244 198 262 208 Q274 222 266 238 Q250 246 232 238 Q220 225 224 208Z" class="camo-dark"/>
+
+  <path d="M148 242 Q166 230 186 240 Q198 254 190 270 Q173 278 155 270 Q142 256 148 242Z" class="camo-mid"/>
+  <path d="M188 236 Q210 226 230 238 Q242 252 234 268 Q218 276 198 268 Q184 254 188 236Z" class="camo-dark"/>
+  <path d="M230 243 Q250 233 268 244 Q278 258 270 272 Q254 280 236 272 Q224 258 230 243Z" class="camo-light"/>
+
+  <path d="M152 278 Q168 268 185 278 Q194 290 188 305 Q172 312 158 305 Q148 292 152 278Z" class="camo-tan"/>
+  <path d="M188 275 Q208 265 225 276 Q234 290 228 305 Q212 312 196 305 Q184 291 188 275Z" class="camo-mid"/>
+  <path d="M226 280 Q244 270 260 280 Q268 293 262 308 Q246 315 230 308 Q220 294 226 280Z" class="camo-dark"/>
+
+  <!-- Smaller detail patches -->
+  <ellipse cx="155" cy="188" rx="8" ry="6" class="camo-tan"/>
+  <ellipse cx="245" cy="255" rx="9" ry="7" class="camo-mid"/>
+  <ellipse cx="170" cy="258" rx="7" ry="5" class="camo-light"/>
+  <ellipse cx="235" cy="185" rx="8" ry="6" class="camo-dark"/>
+
+  <!-- Label -->
+  <rect x="8" y="372" width="132" height="22" rx="5" fill="#2d5a1b" opacity="0.88"/>
+  <text x="74" y="387" text-anchor="middle" font-family="monospace" font-size="10" fill="white">JUNGLE CAMO</text>
+</svg>

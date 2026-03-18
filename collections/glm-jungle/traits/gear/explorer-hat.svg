@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <title>Trait: Explorer Hat Gear</title>
+  <defs>
+    <style>
+      .hat { fill: #92400e; stroke: #78350f; stroke-width: 2.5; stroke-linejoin: round; }
+      .hat-brim { fill: #a16207; stroke: #78350f; stroke-width: 2; }
+      .hat-band { fill: #1a3a10; stroke: #14532d; stroke-width: 1.5; }
+      .feather { fill: #e8c840; stroke: #b8980a; stroke-width: 1.5; }
+      .sweat-stain { fill: #7a3608; opacity: 0.4; }
+      .netting { fill: none; stroke: #654321; stroke-width: 1; opacity: 0.5; }
+    </style>
+  </defs>
+
+  <!-- Wide-brim explorer / pith helmet -->
+  <!-- Brim shadow -->
+  <ellipse cx="200" cy="108" rx="90" ry="16" fill="#5a3008" opacity="0.3"/>
+
+  <!-- Main brim -->
+  <path d="M110 100 Q200 118 290 100 Q290 112 200 130 Q110 112 110 100Z" class="hat-brim"/>
+  <!-- Brim underside detail -->
+  <path d="M120 103 Q200 120 280 103 Q280 112 200 126 Q120 112 120 103Z" fill="#855810" opacity="0.5"/>
+
+  <!-- Hat dome/crown -->
+  <path d="M145 100 Q148 70 200 62 Q252 70 255 100Z" class="hat"/>
+  <!-- Crown highlight -->
+  <path d="M168 82 Q200 72 232 82 Q220 68 200 64 Q180 64 168 82Z" fill="#a05010" opacity="0.6"/>
+
+  <!-- Hat band -->
+  <rect x="145" y="94" width="110" height="12" rx="3" class="hat-band"/>
+  <!-- Band detail stitching -->
+  <path d="M148 100 Q200 100 252 100" stroke="#0d2008" stroke-width="1" fill="none" stroke-dasharray="4 3" opacity="0.7"/>
+
+  <!-- Feather in band -->
+  <path d="M235 94 Q248 82 255 68 Q258 58 252 55 Q246 52 238 62 Q230 72 230 84 Q228 90 235 94Z" class="feather"/>
+  <!-- Feather quill -->
+  <path d="M238 94 Q250 78 254 60" stroke="#d4a820" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+  <!-- Feather barbs -->
+  <path d="M246 74 Q252 70 256 66" stroke="#e8d060" stroke-width="1" fill="none" stroke-linecap="round"/>
+  <path d="M244 80 Q250 76 254 72" stroke="#e8d060" stroke-width="1" fill="none" stroke-linecap="round"/>
+  <path d="M242 86 Q247 82 250 78" stroke="#e8d060" stroke-width="1" fill="none" stroke-linecap="round"/>
+
+  <!-- Sweat stain on band -->
+  <ellipse cx="185" cy="100" rx="18" ry="4" class="sweat-stain"/>
+
+  <!-- Chin strap -->
+  <path d="M148 100 Q140 120 148 145" stroke="#78350f" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M252 100 Q260 120 252 145" stroke="#78350f" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <!-- Strap buckle -->
+  <rect x="196" y="142" width="8" height="8" rx="2" fill="#a16207" stroke="#78350f" stroke-width="1.5"/>
+  <line x1="200" y1="142" x2="200" y2="150" stroke="#78350f" stroke-width="1.5"/>
+
+  <!-- Mesh ventilation holes on crown -->
+  <path d="M172 75 L188 75 M172 81 L188 81 M178 70 L178 86 M184 70 L184 86" class="netting"/>
+  <path d="M212 75 L228 75 M212 81 L228 81 M218 70 L218 86 M224 70 L224 86" class="netting"/>
+
+  <!-- Label -->
+  <rect x="8" y="372" width="128" height="22" rx="5" fill="#78350f" opacity="0.88"/>
+  <text x="72" y="387" text-anchor="middle" font-family="monospace" font-size="10" fill="white">EXPLORER HAT</text>
+</svg>

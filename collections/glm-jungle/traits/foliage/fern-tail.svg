@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <title>Trait: Fern Tail Foliage</title>
+  <defs>
+    <style>
+      .frond { fill: none; stroke: #4a7c20; stroke-width: 3; stroke-linecap: round; }
+      .leaflet { fill: #22c55e; stroke: #15803d; stroke-width: 1; }
+      .leaflet-dark { fill: #16a34a; stroke: #166534; stroke-width: 1; }
+    </style>
+  </defs>
+
+  <!-- Fern frond replacing/extending tail -->
+  <!-- Main rachis (stem) -->
+  <path d="M285 238 Q330 218 345 195 Q355 175 340 158" class="frond" stroke-width="5"/>
+
+  <!-- Pinnae (leaflet pairs) along rachis -->
+  <!-- Near base -->
+  <path d="M295 232 Q285 218 278 208" class="frond" stroke-width="2"/>
+  <ellipse cx="276" cy="206" rx="10" ry="6" class="leaflet" transform="rotate(-40 276 206)"/>
+  <path d="M297 228 Q310 218 318 210" class="frond" stroke-width="2"/>
+  <ellipse cx="320" cy="208" rx="10" ry="6" class="leaflet-dark" transform="rotate(30 320 208)"/>
+
+  <!-- Middle section -->
+  <path d="M310 220 Q300 206 293 195" class="frond" stroke-width="2"/>
+  <ellipse cx="292" cy="193" rx="11" ry="6" class="leaflet" transform="rotate(-45 292 193)"/>
+  <path d="M313 215 Q326 205 334 196" class="frond" stroke-width="2"/>
+  <ellipse cx="336" cy="194" rx="11" ry="6" class="leaflet-dark" transform="rotate(35 336 194)"/>
+
+  <!-- Upper section -->
+  <path d="M322 205 Q312 190 305 178" class="frond" stroke-width="2"/>
+  <ellipse cx="304" cy="176" rx="10" ry="5.5" class="leaflet" transform="rotate(-50 304 176)"/>
+  <path d="M325 200 Q338 190 344 180" class="frond" stroke-width="2"/>
+  <ellipse cx="346" cy="178" rx="10" ry="5.5" class="leaflet-dark" transform="rotate(40 346 178)"/>
+
+  <!-- Tip fronds -->
+  <path d="M335 188 Q326 175 322 163" class="frond" stroke-width="2"/>
+  <ellipse cx="320" cy="161" rx="9" ry="5" class="leaflet" transform="rotate(-50 320 161)"/>
+  <path d="M337 184 Q348 175 348 163" class="frond" stroke-width="2"/>
+  <ellipse cx="348" cy="161" rx="9" ry="5" class="leaflet-dark" transform="rotate(45 348 161)"/>
+
+  <!-- Fiddlehead tip (curled) -->
+  <path d="M342 160 Q352 150 348 140 Q344 132 338 136 Q334 140 338 146" stroke="#4a7c20" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <circle cx="338" cy="148" r="5" fill="#22c55e" stroke="#15803d" stroke-width="1.5"/>
+
+  <!-- Extra delicate leaflets for fullness -->
+  <ellipse cx="288" cy="218" rx="7" ry="4" fill="#4ade80" stroke="#22c55e" stroke-width="1" transform="rotate(-35 288 218)" opacity="0.8"/>
+  <ellipse cx="315" cy="222" rx="7" ry="4" fill="#4ade80" stroke="#22c55e" stroke-width="1" transform="rotate(25 315 222)" opacity="0.8"/>
+  <ellipse cx="300" cy="196" rx="8" ry="4.5" fill="#4ade80" stroke="#22c55e" stroke-width="1" transform="rotate(-42 300 196)" opacity="0.8"/>
+  <ellipse cx="330" cy="198" rx="8" ry="4.5" fill="#4ade80" stroke="#22c55e" stroke-width="1" transform="rotate(32 330 198)" opacity="0.8"/>
+
+  <!-- Label -->
+  <rect x="8" y="372" width="108" height="22" rx="5" fill="#166534" opacity="0.88"/>
+  <text x="62" y="387" text-anchor="middle" font-family="monospace" font-size="10" fill="white">FERN TAIL</text>
+</svg>

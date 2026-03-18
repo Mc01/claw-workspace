@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <title>Trait: Banana Leaf Cape Foliage</title>
+  <defs>
+    <style>
+      .leaf-main { fill: #16a34a; stroke: #166534; stroke-width: 2; }
+      .leaf-light { fill: #22c55e; stroke: #15803d; stroke-width: 1.5; }
+      .midrib { fill: none; stroke: #166534; stroke-width: 3; stroke-linecap: round; }
+      .vein { fill: none; stroke: #166534; stroke-width: 1.2; opacity: 0.7; }
+    </style>
+  </defs>
+
+  <!-- Large banana leaves draped as a cape/cloak -->
+
+  <!-- Center large leaf (draping down the back) -->
+  <path d="M200 120 Q165 148 150 205 Q142 248 155 290 Q165 305 178 300 Q190 280 198 255 Q204 230 200 200 Q198 168 200 148" fill="#16a34a" stroke="#166534" stroke-width="2"/>
+  <path d="M200 120 Q235 148 250 205 Q258 248 245 290 Q235 305 222 300 Q210 280 202 255 Q196 230 200 200 Q202 168 200 148" fill="#22c55e" stroke="#15803d" stroke-width="2"/>
+  <!-- Center midrib -->
+  <path d="M200 120 Q200 200 200 295" class="midrib"/>
+  <!-- Banana leaf veins -->
+  <path d="M200 155 Q185 162 172 160" class="vein"/>
+  <path d="M200 170 Q183 178 168 176" class="vein"/>
+  <path d="M200 185 Q182 194 165 192" class="vein"/>
+  <path d="M200 200 Q181 210 162 208" class="vein"/>
+  <path d="M200 215 Q181 225 164 224" class="vein"/>
+  <path d="M200 230 Q182 240 166 240" class="vein"/>
+  <path d="M200 245 Q182 254 168 255" class="vein"/>
+  <path d="M200 155 Q215 162 228 160" class="vein"/>
+  <path d="M200 170 Q217 178 232 176" class="vein"/>
+  <path d="M200 185 Q218 194 235 192" class="vein"/>
+  <path d="M200 200 Q219 210 238 208" class="vein"/>
+  <path d="M200 215 Q219 225 236 224" class="vein"/>
+  <path d="M200 230 Q218 240 234 240" class="vein"/>
+  <path d="M200 245 Q218 254 232 255" class="vein"/>
+
+  <!-- Left shoulder leaf -->
+  <path d="M165 142 Q130 155 112 198 Q102 228 112 262 Q122 275 132 270 Q142 255 148 230 Q154 205 155 178 Q156 158 162 145" fill="#15803d" stroke="#166534" stroke-width="2" opacity="0.9"/>
+  <!-- Left leaf midrib -->
+  <path d="M163 143 Q135 185 118 260" class="midrib" opacity="0.7"/>
+
+  <!-- Right shoulder leaf -->
+  <path d="M235 142 Q270 155 288 198 Q298 228 288 262 Q278 275 268 270 Q258 255 252 230 Q246 205 245 178 Q244 158 238 145" fill="#15803d" stroke="#166534" stroke-width="2" opacity="0.9"/>
+  <!-- Right leaf midrib -->
+  <path d="M237 143 Q265 185 282 260" class="midrib" opacity="0.7"/>
+
+  <!-- Small decorative leaves at shoulders -->
+  <ellipse cx="152" cy="142" rx="22" ry="12" fill="#4ade80" stroke="#22c55e" stroke-width="1.5" transform="rotate(-45 152 142)"/>
+  <ellipse cx="248" cy="142" rx="22" ry="12" fill="#4ade80" stroke="#22c55e" stroke-width="1.5" transform="rotate(45 248 142)"/>
+
+  <!-- Torn/natural edges on leaves -->
+  <path d="M150 205 Q145 215 152 220 Q148 230 155 235" fill="none" stroke="#0f5a22" stroke-width="1.5" opacity="0.5"/>
+  <path d="M250 205 Q255 215 248 220 Q252 230 245 235" fill="none" stroke="#0f5a22" stroke-width="1.5" opacity="0.5"/>
+
+  <!-- Label -->
+  <rect x="8" y="372" width="158" height="22" rx="5" fill="#166534" opacity="0.88"/>
+  <text x="87" y="387" text-anchor="middle" font-family="monospace" font-size="10" fill="white">BANANA LEAF CAPE</text>
+</svg>

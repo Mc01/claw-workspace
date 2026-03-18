@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <title>Trait: Leopard Spots Pattern</title>
+  <!-- Transparent overlay with leopard rosette spots -->
+  <defs>
+    <style>
+      .rosette { fill: none; stroke: #2a1400; stroke-width: 3.5; }
+      .rosette-inner { fill: #8B4513; opacity: 0.55; }
+    </style>
+  </defs>
+  <!-- Rosette spots scattered across body area -->
+  <!-- Row 1 -->
+  <circle cx="140" cy="190" r="12" class="rosette-inner"/>
+  <path d="M128 182 Q140 172 152 182 M152 182 Q160 192 152 202 Q140 208 128 202 Q120 192 128 182" class="rosette"/>
+  
+  <circle cx="200" cy="175" r="13" class="rosette-inner"/>
+  <path d="M187 165 Q200 154 213 165 M213 165 Q222 176 213 186 Q200 193 187 186 Q178 176 187 165" class="rosette"/>
+
+  <circle cx="260" cy="190" r="12" class="rosette-inner"/>
+  <path d="M248 182 Q260 172 272 182 M272 182 Q280 192 272 202 Q260 208 248 202 Q240 192 248 182" class="rosette"/>
+
+  <!-- Row 2 -->
+  <circle cx="158" cy="235" r="11" class="rosette-inner"/>
+  <path d="M147 228 Q158 218 169 228 M169 228 Q176 237 169 246 Q158 252 147 246 Q140 237 147 228" class="rosette"/>
+
+  <circle cx="215" cy="248" r="13" class="rosette-inner"/>
+  <path d="M202 238 Q215 227 228 238 M228 238 Q237 249 228 259 Q215 266 202 259 Q193 249 202 238" class="rosette"/>
+
+  <circle cx="268" cy="235" r="11" class="rosette-inner"/>
+  <path d="M257 228 Q268 218 279 228 M279 228 Q286 237 279 246 Q268 252 257 246 Q250 237 257 228" class="rosette"/>
+
+  <!-- Row 3 -->
+  <circle cx="175" cy="282" r="10" class="rosette-inner"/>
+  <path d="M165 275 Q175 266 185 275 M185 275 Q192 283 185 291 Q175 297 165 291 Q158 283 165 275" class="rosette"/>
+
+  <circle cx="230" cy="292" r="11" class="rosette-inner"/>
+  <path d="M219 284 Q230 274 241 284 M241 284 Q248 293 241 302 Q230 308 219 302 Q212 293 219 284" class="rosette"/>
+
+  <!-- Smaller scattered spots -->
+  <circle cx="145" cy="265" r="6" fill="#2a1400" opacity="0.4"/>
+  <circle cx="252" cy="270" r="6" fill="#2a1400" opacity="0.4"/>
+  <circle cx="190" cy="210" r="5" fill="#2a1400" opacity="0.35"/>
+  <circle cx="248" cy="215" r="5" fill="#2a1400" opacity="0.35"/>
+
+  <!-- Label -->
+  <rect x="8" y="372" width="140" height="22" rx="5" fill="#92400e" opacity="0.85"/>
+  <text x="78" y="387" text-anchor="middle" font-family="monospace" font-size="10" fill="white">LEOPARD SPOTS</text>
+</svg>

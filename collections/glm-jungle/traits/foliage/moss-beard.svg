@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <title>Trait: Moss Beard Foliage</title>
+  <defs>
+    <style>
+      .moss { fill: #4d7c0f; opacity: 0.88; }
+      .moss-light { fill: #65a30d; opacity: 0.8; }
+      .moss-dark { fill: #365314; opacity: 0.85; }
+      .lichen { fill: #a3e635; opacity: 0.6; }
+    </style>
+  </defs>
+
+  <!-- Thick moss "beard" hanging from chin area -->
+  <!-- Main moss mass -->
+  <path d="M172 168 Q175 175 170 185 Q165 196 168 208 Q172 220 168 232 Q165 242 170 252" 
+        stroke="#4d7c0f" stroke-width="12" fill="none" stroke-linecap="round" opacity="0.88"/>
+  <path d="M185 172 Q187 182 183 192 Q178 204 182 216 Q186 228 182 240 Q178 252 182 262" 
+        stroke="#4d7c0f" stroke-width="11" fill="none" stroke-linecap="round" opacity="0.88"/>
+  <path d="M200 174 Q200 185 198 196 Q195 208 198 220 Q201 232 198 244 Q196 256 198 268" 
+        stroke="#4d7c0f" stroke-width="12" fill="none" stroke-linecap="round" opacity="0.88"/>
+  <path d="M215 172 Q213 182 217 192 Q222 204 218 216 Q214 228 218 240 Q222 252 218 262" 
+        stroke="#65a30d" stroke-width="11" fill="none" stroke-linecap="round" opacity="0.82"/>
+  <path d="M228 168 Q225 178 230 188 Q235 200 232 212 Q228 224 232 236 Q236 246 232 256" 
+        stroke="#4d7c0f" stroke-width="12" fill="none" stroke-linecap="round" opacity="0.88"/>
+
+  <!-- Shorter side strands -->
+  <path d="M162 172 Q158 182 162 192 Q166 200 162 210" 
+        stroke="#365314" stroke-width="8" fill="none" stroke-linecap="round" opacity="0.8"/>
+  <path d="M238 172 Q242 182 238 192 Q234 200 238 210" 
+        stroke="#365314" stroke-width="8" fill="none" stroke-linecap="round" opacity="0.8"/>
+
+  <!-- Moss texture blobs at tips -->
+  <ellipse cx="170" cy="252" rx="8" ry="6" class="moss"/>
+  <ellipse cx="183" cy="264" rx="7" ry="5" class="moss-light"/>
+  <ellipse cx="198" cy="270" rx="9" ry="6" class="moss"/>
+  <ellipse cx="218" cy="264" rx="7" ry="5" class="moss-light"/>
+  <ellipse cx="232" cy="258" rx="8" ry="6" class="moss-dark"/>
+
+  <!-- Small lichen patches on beard strands -->
+  <ellipse cx="175" cy="200" rx="6" ry="4" class="lichen"/>
+  <ellipse cx="200" cy="210" rx="7" ry="4" class="lichen"/>
+  <ellipse cx="222" cy="204" rx="5" ry="3" class="lichen"/>
+  <ellipse cx="185" cy="228" rx="5" ry="3" class="lichen"/>
+  <ellipse cx="213" cy="232" rx="5" ry="3" class="lichen"/>
+
+  <!-- Top moss base (where beard meets chin) -->
+  <ellipse cx="200" cy="170" rx="45" ry="10" class="moss" opacity="0.6"/>
+  <ellipse cx="200" cy="168" rx="35" ry="7" class="moss-light" opacity="0.5"/>
+
+  <!-- Tiny hanging droplets (morning dew) -->
+  <ellipse cx="170" cy="258" rx="3" ry="4" fill="#bae6fd" opacity="0.7"/>
+  <ellipse cx="198" cy="274" rx="3" ry="5" fill="#bae6fd" opacity="0.7"/>
+  <ellipse cx="232" cy="262" rx="3" ry="4" fill="#bae6fd" opacity="0.7"/>
+
+  <!-- Label -->
+  <rect x="8" y="372" width="118" height="22" rx="5" fill="#365314" opacity="0.88"/>
+  <text x="67" y="387" text-anchor="middle" font-family="monospace" font-size="10" fill="white">MOSS BEARD</text>
+</svg>

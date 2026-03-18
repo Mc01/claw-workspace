@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <title>Trait: Tribal Markings Pattern</title>
+  <defs>
+    <style>
+      .mark { fill: none; stroke: #e8c840; stroke-width: 3.5; stroke-linecap: round; stroke-linejoin: round; opacity: 0.85; }
+      .mark-fill { fill: #e8c840; opacity: 0.75; }
+      .mark-red { fill: none; stroke: #cc3322; stroke-width: 3; stroke-linecap: round; opacity: 0.8; }
+      .mark-white { fill: none; stroke: #f0f0e0; stroke-width: 2.5; stroke-linecap: round; opacity: 0.7; }
+    </style>
+  </defs>
+
+  <!-- Tribal / ritual markings - geometric patterns -->
+
+  <!-- Face markings -->
+  <!-- Forehead chevron -->
+  <path d="M185 112 L200 102 L215 112" class="mark"/>
+  <path d="M188 120 L200 112 L212 120" class="mark"/>
+  <!-- Cheek lines -->
+  <path d="M165 138 L178 135 L172 148" class="mark"/>
+  <path d="M228 138 L240 141 L228 148" class="mark-red"/>
+
+  <!-- Body geometric patterns -->
+  <!-- Chest diamond -->
+  <path d="M200 178 L222 198 L200 218 L178 198 Z" class="mark"/>
+  <path d="M200 188 L212 198 L200 208 L188 198 Z" class="mark-fill"/>
+
+  <!-- Shoulder spirals -->
+  <path d="M148 190 Q138 180 145 170 Q152 160 162 168 Q168 175 162 182" class="mark"/>
+  <path d="M252 190 Q262 180 255 170 Q248 160 238 168 Q232 175 238 182" class="mark"/>
+
+  <!-- Belly stripe pattern -->
+  <path d="M180 228 L200 222 L220 228" class="mark"/>
+  <path d="M175 240 L200 232 L225 240" class="mark"/>
+  <path d="M178 252 L200 244 L222 252" class="mark"/>
+
+  <!-- Side zigzag -->
+  <path d="M138 230 L148 240 L138 250 L148 260 L138 270" class="mark-white"/>
+  <path d="M262 230 L252 240 L262 250 L252 260 L262 270" class="mark-white"/>
+
+  <!-- Lower body dots -->
+  <circle cx="185" cy="275" r="5" class="mark-fill"/>
+  <circle cx="200" cy="270" r="6" class="mark-fill"/>
+  <circle cx="215" cy="275" r="5" class="mark-fill"/>
+  <circle cx="192" cy="288" r="4" class="mark-fill"/>
+  <circle cx="208" cy="288" r="4" class="mark-fill"/>
+
+  <!-- Arm bands -->
+  <path d="M130 238 Q118 242 112 252" class="mark-red"/>
+  <path d="M128 248 Q116 252 110 262" class="mark-red"/>
+  <path d="M270 238 Q282 242 288 252" class="mark-red"/>
+  <path d="M272 248 Q284 252 290 262" class="mark-red"/>
+
+  <!-- Label -->
+  <rect x="8" y="372" width="148" height="22" rx="5" fill="#854d0e" opacity="0.88"/>
+  <text x="82" y="387" text-anchor="middle" font-family="monospace" font-size="10" fill="white">TRIBAL MARKINGS</text>
+</svg>

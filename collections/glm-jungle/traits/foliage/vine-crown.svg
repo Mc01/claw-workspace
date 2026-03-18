@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <title>Trait: Vine Crown Foliage</title>
+  <defs>
+    <style>
+      .vine { fill: none; stroke: #4a7c20; stroke-width: 5; stroke-linecap: round; stroke-linejoin: round; }
+      .vine-thin { fill: none; stroke: #3a6015; stroke-width: 3; stroke-linecap: round; }
+      .leaf { fill: #22c55e; stroke: #15803d; stroke-width: 1.5; }
+      .leaf-dark { fill: #16a34a; stroke: #166534; stroke-width: 1.5; }
+      .flower { fill: #f97316; stroke: #ea580c; stroke-width: 1.5; }
+      .flower-center { fill: #fbbf24; }
+    </style>
+  </defs>
+
+  <!-- Main vine wrapping head as crown -->
+  <path d="M148 102 Q165 88 200 82 Q235 76 258 90 Q272 102 268 115" class="vine"/>
+  <path d="M148 102 Q140 112 145 122" class="vine"/>
+  <path d="M268 115 Q275 125 270 135" class="vine"/>
+
+  <!-- Connecting vine across crown -->
+  <path d="M155 96 Q180 80 200 78 Q220 80 245 92" class="vine-thin"/>
+
+  <!-- Leaves on left side -->
+  <ellipse cx="155" cy="88" rx="18" ry="10" fill="#22c55e" stroke="#15803d" stroke-width="1.5" transform="rotate(-30 155 88)"/>
+  <line x1="155" y1="88" x2="163" y2="82" stroke="#15803d" stroke-width="1"/>
+  <ellipse cx="172" cy="78" rx="16" ry="9" fill="#16a34a" stroke="#166534" stroke-width="1.5" transform="rotate(-15 172 78)"/>
+  <line x1="172" y1="78" x2="178" y2="72" stroke="#166534" stroke-width="1"/>
+
+  <!-- Leaves on top -->
+  <ellipse cx="200" cy="72" rx="20" ry="11" fill="#22c55e" stroke="#15803d" stroke-width="1.5"/>
+  <line x1="200" y1="72" x2="200" y2="62" stroke="#15803d" stroke-width="1"/>
+  <ellipse cx="188" cy="68" rx="14" ry="8" fill="#4ade80" stroke="#22c55e" stroke-width="1.5" transform="rotate(-20 188 68)"/>
+  <ellipse cx="212" cy="68" rx="14" ry="8" fill="#4ade80" stroke="#22c55e" stroke-width="1.5" transform="rotate(20 212 68)"/>
+
+  <!-- Leaves on right side -->
+  <ellipse cx="230" cy="76" rx="16" ry="9" fill="#16a34a" stroke="#166534" stroke-width="1.5" transform="rotate(15 230 76)"/>
+  <line x1="230" y1="76" x2="225" y2="70" stroke="#166534" stroke-width="1"/>
+  <ellipse cx="248" cy="86" rx="18" ry="10" fill="#22c55e" stroke="#15803d" stroke-width="1.5" transform="rotate(30 248 86)"/>
+  <line x1="248" y1="86" x2="240" y2="80" stroke="#15803d" stroke-width="1"/>
+
+  <!-- Small orange flowers on vine -->
+  <circle cx="168" cy="84" r="7" class="flower"/>
+  <circle cx="168" cy="84" r="3" class="flower-center"/>
+  <circle cx="232" cy="82" r="6" class="flower"/>
+  <circle cx="232" cy="82" r="2.5" class="flower-center"/>
+  <circle cx="200" cy="76" r="5" fill="#ec4899" stroke="#db2777" stroke-width="1.5"/>
+  <circle cx="200" cy="76" r="2" fill="#fbbf24"/>
+
+  <!-- Hanging tendrils -->
+  <path d="M152 108 Q145 118 148 130" class="vine-thin"/>
+  <path d="M248 108 Q255 118 252 130" class="vine-thin"/>
+  <path d="M175 86 Q170 96 174 106" class="vine-thin"/>
+  <path d="M225 84 Q230 94 226 104" class="vine-thin"/>
+
+  <!-- Label -->
+  <rect x="8" y="372" width="120" height="22" rx="5" fill="#166534" opacity="0.88"/>
+  <text x="68" y="387" text-anchor="middle" font-family="monospace" font-size="10" fill="white">VINE CROWN</text>
+</svg>

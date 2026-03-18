@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <title>Trait: Tarantula Shoulder Insect</title>
+  <defs>
+    <style>
+      .abdomen { fill: #2a1a0a; stroke: #1a0e04; stroke-width: 2; }
+      .cephalothorax { fill: #3a2a10; stroke: #2a1a08; stroke-width: 2; }
+      .leg { fill: none; stroke: #2a1a08; stroke-width: 5; stroke-linecap: round; }
+      .leg-stripe { fill: none; stroke: #5a3a18; stroke-width: 3; stroke-linecap: round; }
+      .eye { fill: #cc8800; stroke: #884400; stroke-width: 1; }
+      .hair { fill: none; stroke: #6a4a28; stroke-width: 1; stroke-linecap: round; opacity: 0.7; }
+      .fang { fill: #1a0e04; stroke: #0a0804; stroke-width: 1; }
+    </style>
+  </defs>
+
+  <!-- Goliath birdeater tarantula on shoulder -->
+
+  <!-- 8 legs (4 pairs) -->
+  <!-- Left legs (extending left) -->
+  <path d="M112 195 Q95 185 80 170" class="leg"/>
+  <path d="M80 170 Q72 160 68 148" class="leg" stroke-width="4"/>
+  <path d="M112 202 Q92 198 75 195" class="leg"/>
+  <path d="M75 195 Q65 193 58 188" class="leg" stroke-width="4"/>
+  <path d="M112 210 Q93 212 76 218" class="leg"/>
+  <path d="M76 218 Q66 222 60 228" class="leg" stroke-width="4"/>
+  <path d="M112 218 Q95 228 80 242" class="leg"/>
+  <path d="M80 242 Q72 252 68 262" class="leg" stroke-width="4"/>
+
+  <!-- Right legs (extending right) -->
+  <path d="M158 195 Q175 185 190 170" class="leg"/>
+  <path d="M190 170 Q198 160 202 148" class="leg" stroke-width="4"/>
+  <path d="M158 202 Q178 198 195 195" class="leg"/>
+  <path d="M195 195 Q205 193 212 188" class="leg" stroke-width="4"/>
+  <path d="M158 210 Q177 212 194 218" class="leg"/>
+  <path d="M194 218 Q204 222 210 228" class="leg" stroke-width="4"/>
+  <path d="M158 218 Q175 228 190 242" class="leg"/>
+  <path d="M190 242 Q198 252 202 262" class="leg" stroke-width="4"/>
+
+  <!-- Leg orange/brown stripe markings -->
+  <path d="M112 195 Q98 188 86 176" class="leg-stripe"/>
+  <path d="M112 202 Q96 200 82 197" class="leg-stripe"/>
+  <path d="M158 195 Q172 188 184 176" class="leg-stripe"/>
+  <path d="M158 202 Q174 200 188 197" class="leg-stripe"/>
+
+  <!-- Abdomen (large, hairy) -->
+  <ellipse cx="135" cy="225" rx="30" ry="36" class="abdomen"/>
+  <!-- Abdomen hair texture -->
+  <path d="M115 215 Q118 210 122 214" class="hair"/>
+  <path d="M110 225 Q113 220 117 224" class="hair"/>
+  <path d="M108 235 Q111 230 115 234" class="hair"/>
+  <path d="M112 245 Q115 240 119 244" class="hair"/>
+  <path d="M155 215 Q152 210 148 214" class="hair"/>
+  <path d="M160 225 Q157 220 153 224" class="hair"/>
+  <path d="M162 235 Q159 230 155 234" class="hair"/>
+  <path d="M158 245 Q155 240 151 244" class="hair"/>
+  <path d="M130 198 Q135 193 140 197" class="hair"/>
+  <path d="M128 252 Q133 257 138 252" class="hair"/>
+
+  <!-- Abdomen pattern -->
+  <path d="M118 218 Q135 212 152 218 Q150 225 135 227 Q120 225 118 218Z" fill="#5a3a18" opacity="0.4"/>
+  <path d="M115 235 Q135 228 155 235 Q153 243 135 245 Q117 243 115 235Z" fill="#5a3a18" opacity="0.35"/>
+
+  <!-- Cephalothorax (head+thorax) -->
+  <ellipse cx="135" cy="195" rx="26" ry="20" class="cephalothorax"/>
+  <!-- Cephalothorax hair -->
+  <path d="M118 190 Q122 185 126 189" class="hair"/>
+  <path d="M152 190 Q148 185 144 189" class="hair"/>
+  <path d="M135 178 Q138 173 141 177" class="hair"/>
+
+  <!-- 8 eyes (arranged in rows on head) -->
+  <circle cx="126" cy="188" r="3" class="eye"/>
+  <circle cx="126" cy="188" r="1.5" fill="#441a00"/>
+  <circle cx="132" cy="186" r="3.5" class="eye"/>
+  <circle cx="132" cy="186" r="2" fill="#441a00"/>
+  <circle cx="138" cy="186" r="3.5" class="eye"/>
+  <circle cx="138" cy="186" r="2" fill="#441a00"/>
+  <circle cx="144" cy="188" r="3" class="eye"/>
+  <circle cx="144" cy="188" r="1.5" fill="#441a00"/>
+  <circle cx="128" cy="193" r="2.5" class="eye"/>
+  <circle cx="135" cy="192" r="2.5" class="eye"/>
+  <circle cx="142" cy="193" r="2.5" class="eye"/>
+
+  <!-- Chelicerae / fangs -->
+  <path d="M128 200 Q124 208 122 215" class="fang" stroke-width="4" fill="none"/>
+  <path d="M142 200 Q146 208 148 215" class="fang" stroke-width="4" fill="none"/>
+  <!-- Fang tips -->
+  <ellipse cx="121" cy="216" rx="4" ry="3" fill="#1a0e04"/>
+  <ellipse cx="149" cy="216" rx="4" ry="3" fill="#1a0e04"/>
+
+  <!-- Pedipalps (small arm-like) -->
+  <path d="M124 198 Q116 195 112 190" stroke="#3a2a10" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M146 198 Q154 195 158 190" stroke="#3a2a10" stroke-width="3" fill="none" stroke-linecap="round"/>
+
+  <!-- Label -->
+  <rect x="8" y="372" width="158" height="22" rx="5" fill="#1a0e04" opacity="0.88"/>
+  <text x="87" y="387" text-anchor="middle" font-family="monospace" font-size="10" fill="#cc8800">TARANTULA SHOULDER</text>
+</svg>

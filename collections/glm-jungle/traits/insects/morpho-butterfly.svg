@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <title>Trait: Blue Morpho Butterfly Insect</title>
+  <defs>
+    <style>
+      .wing-upper { fill: #1d6eb8; stroke: #0e3a6e; stroke-width: 1.5; }
+      .wing-lower { fill: #2580cc; stroke: #0e3a6e; stroke-width: 1.5; }
+      .wing-edge { fill: #0e3a6e; }
+      .wing-sheen { fill: #38bdf8; opacity: 0.55; }
+      .eye-spot { fill: #000a; }
+      .body { fill: #1a1a3a; stroke: #0a0a20; stroke-width: 1.5; }
+      .antenna { fill: none; stroke: #1a1a3a; stroke-width: 2; stroke-linecap: round; }
+    </style>
+  </defs>
+
+  <!-- Blue morpho butterfly on head/shoulder area -->
+
+  <!-- LEFT wings -->
+  <!-- Upper left wing -->
+  <path d="M200 148 Q175 128 148 118 Q118 108 108 125 Q98 142 112 162 Q128 178 155 178 Q180 175 200 165Z" class="wing-upper"/>
+  <!-- Upper left wing sheen -->
+  <path d="M200 148 Q178 132 155 124 Q132 118 120 130 Q112 142 122 156 Q138 168 162 168 Q182 165 200 155Z" class="wing-sheen"/>
+  <!-- Lower left wing -->
+  <path d="M200 165 Q175 178 152 185 Q128 190 118 208 Q110 225 122 238 Q138 248 162 238 Q182 225 200 208Z" class="wing-lower"/>
+
+  <!-- RIGHT wings -->
+  <!-- Upper right wing -->
+  <path d="M200 148 Q225 128 252 118 Q282 108 292 125 Q302 142 288 162 Q272 178 245 178 Q220 175 200 165Z" class="wing-upper"/>
+  <!-- Upper right wing sheen -->
+  <path d="M200 148 Q222 132 245 124 Q268 118 280 130 Q288 142 278 156 Q262 168 238 168 Q218 165 200 155Z" class="wing-sheen"/>
+  <!-- Lower right wing -->
+  <path d="M200 165 Q225 178 248 185 Q272 190 282 208 Q290 225 278 238 Q262 248 238 238 Q218 225 200 208Z" class="wing-lower"/>
+
+  <!-- Wing border pattern (dark edge with white spots) -->
+  <!-- Left upper edge spots -->
+  <circle cx="122" cy="125" r="5" fill="white" opacity="0.6"/>
+  <circle cx="134" cy="118" r="4" fill="white" opacity="0.55"/>
+  <circle cx="148" cy="113" r="4" fill="white" opacity="0.55"/>
+  <circle cx="162" cy="112" r="4" fill="white" opacity="0.5"/>
+  <!-- Right upper edge spots -->
+  <circle cx="278" cy="125" r="5" fill="white" opacity="0.6"/>
+  <circle cx="266" cy="118" r="4" fill="white" opacity="0.55"/>
+  <circle cx="252" cy="113" r="4" fill="white" opacity="0.55"/>
+  <circle cx="238" cy="112" r="4" fill="white" opacity="0.5"/>
+
+  <!-- Lower wing eye spots -->
+  <!-- Left lower -->
+  <circle cx="140" cy="218" r="10" fill="#0a0a0a" opacity="0.7"/>
+  <circle cx="140" cy="218" r="6" fill="#c8a820" opacity="0.8"/>
+  <circle cx="140" cy="218" r="3" fill="#0a0a0a" opacity="0.9"/>
+  <circle cx="138" cy="216" r="1.5" fill="white" opacity="0.6"/>
+  <!-- Right lower -->
+  <circle cx="260" cy="218" r="10" fill="#0a0a0a" opacity="0.7"/>
+  <circle cx="260" cy="218" r="6" fill="#c8a820" opacity="0.8"/>
+  <circle cx="260" cy="218" r="3" fill="#0a0a0a" opacity="0.9"/>
+  <circle cx="258" cy="216" r="1.5" fill="white" opacity="0.6"/>
+
+  <!-- Wing veins -->
+  <path d="M200 155 Q182 148 162 145 Q142 142 125 148" stroke="#0e3a6e" stroke-width="1" fill="none" opacity="0.6"/>
+  <path d="M200 158 Q182 162 165 168 Q148 172 135 180" stroke="#0e3a6e" stroke-width="1" fill="none" opacity="0.6"/>
+  <path d="M200 155 Q218 148 238 145 Q258 142 275 148" stroke="#0e3a6e" stroke-width="1" fill="none" opacity="0.6"/>
+  <path d="M200 158 Q218 162 235 168 Q252 172 265 180" stroke="#0e3a6e" stroke-width="1" fill="none" opacity="0.6"/>
+
+  <!-- Body -->
+  <rect x="197" y="148" width="6" height="68" rx="3" class="body"/>
+  <!-- Body segments -->
+  <line x1="197" y1="160" x2="203" y2="160" stroke="#2a2a4a" stroke-width="1"/>
+  <line x1="197" y1="170" x2="203" y2="170" stroke="#2a2a4a" stroke-width="1"/>
+  <line x1="197" y1="180" x2="203" y2="180" stroke="#2a2a4a" stroke-width="1"/>
+  <line x1="197" y1="190" x2="203" y2="190" stroke="#2a2a4a" stroke-width="1"/>
+
+  <!-- Head -->
+  <circle cx="200" cy="146" r="6" class="body"/>
+
+  <!-- Antennae -->
+  <path d="M197 142 Q185 128 175 118" class="antenna"/>
+  <circle cx="173" cy="116" r="4" fill="#1a1a3a" stroke="#0a0a20" stroke-width="1.5"/>
+  <path d="M203 142 Q215 128 225 118" class="antenna"/>
+  <circle cx="227" cy="116" r="4" fill="#1a1a3a" stroke="#0a0a20" stroke-width="1.5"/>
+
+  <!-- Label -->
+  <rect x="8" y="372" width="148" height="22" rx="5" fill="#1d6eb8" opacity="0.88"/>
+  <text x="82" y="387" text-anchor="middle" font-family="monospace" font-size="10" fill="white">MORPHO BUTTERFLY</text>
+</svg>

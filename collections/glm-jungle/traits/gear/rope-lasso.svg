@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <title>Trait: Rope Lasso Gear</title>
+  <defs>
+    <style>
+      .rope { fill: none; stroke: #c8a850; stroke-width: 6; stroke-linecap: round; stroke-linejoin: round; }
+      .rope-thin { fill: none; stroke: #c8a850; stroke-width: 4; stroke-linecap: round; }
+      .rope-coil { fill: none; stroke: #b89840; stroke-width: 5; stroke-linecap: round; }
+      .knot { fill: #a88830; stroke: #7a6020; stroke-width: 2; }
+    </style>
+  </defs>
+
+  <!-- Lasso/rope coiled at hip, with loop out -->
+
+  <!-- Main coil at left hip -->
+  <circle cx="130" cy="288" r="32" class="rope-coil"/>
+  <circle cx="130" cy="288" r="22" class="rope-coil"/>
+  <circle cx="130" cy="288" r="12" class="rope-coil"/>
+
+  <!-- Rope going up to hand/shoulder -->
+  <path d="M130 256 Q132 235 138 215 Q144 195 148 180" class="rope"/>
+
+  <!-- Lasso loop (thrown or hanging) -->
+  <path d="M148 180 Q160 162 180 155 Q205 148 225 158 Q245 168 248 188 Q250 210 238 225 Q224 238 205 240 Q185 240 170 228 Q155 215 152 196 Q150 185 155 176" class="rope"/>
+
+  <!-- Loop knot (honda) -->
+  <circle cx="148" cy="178" r="8" class="knot"/>
+  <circle cx="148" cy="178" r="4" fill="#7a6020"/>
+
+  <!-- Rope texture (twisted look) -->
+  <path d="M130 270 Q135 268 130 264 Q125 262 130 258" stroke="#a88830" stroke-width="2" fill="none" opacity="0.6"/>
+  <path d="M132 282 Q137 280 132 276 Q127 274 132 270" stroke="#a88830" stroke-width="2" fill="none" opacity="0.6"/>
+  <path d="M148 215 Q153 212 148 208 Q143 205 148 200" stroke="#a88830" stroke-width="2" fill="none" opacity="0.5"/>
+  <path d="M148 195 Q153 192 148 188 Q143 185 148 180" stroke="#a88830" stroke-width="2" fill="none" opacity="0.5"/>
+
+  <!-- Hip strap/clip holding coil -->
+  <rect x="115" y="305" width="30" height="10" rx="5" fill="#5a3a10" stroke="#3a2408" stroke-width="1.5"/>
+  <rect x="125" y="302" width="10" height="6" rx="3" fill="#888" stroke="#666" stroke-width="1"/>
+
+  <!-- Label -->
+  <rect x="8" y="372" width="118" height="22" rx="5" fill="#7a6020" opacity="0.88"/>
+  <text x="67" y="387" text-anchor="middle" font-family="monospace" font-size="10" fill="white">ROPE LASSO</text>
+</svg>

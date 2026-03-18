@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <title>GLM Jungle - Pangolin</title>
+  <defs>
+    <style>
+      .scale { fill: #8B6A30; stroke: #5a4018; stroke-width: 1.5; }
+      .scale-dark { fill: #6b5020; stroke: #4a3210; stroke-width: 1.5; }
+      .scale-light { fill: #b08a40; stroke: #7a5820; stroke-width: 1.5; }
+      .belly { fill: #d4b060; }
+      .claw { fill: #c8a828; stroke: #8a7010; stroke-width: 1; }
+      .eye { fill: #1a1000; }
+      .eye-shine { fill: white; opacity: 0.9; }
+      .nose { fill: #cc8830; }
+    </style>
+  </defs>
+
+  <!-- Background: forest floor -->
+  <rect width="400" height="400" fill="#0e1a08"/>
+  <ellipse cx="200" cy="450" rx="300" ry="180" fill="#1a2e10" opacity="0.8"/>
+  <rect x="0" y="300" width="400" height="100" fill="#1a1208" opacity="0.7"/>
+
+  <!-- Long prehensile tail (curling) -->
+  <path d="M290 268 Q340 258 360 290 Q375 315 355 335 Q335 352 315 340 Q298 328 305 312" stroke="#8B6A30" stroke-width="22" fill="none" stroke-linecap="round"/>
+  <path d="M290 268 Q340 258 360 290 Q375 315 355 335 Q335 352 315 340 Q298 328 305 312" stroke="#5a4018" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <!-- Tail scales -->
+  <path d="M305 275 Q320 270 335 278" stroke="#6b5020" stroke-width="4" fill="none"/>
+  <path d="M320 280 Q335 275 348 285" stroke="#6b5020" stroke-width="4" fill="none"/>
+  <path d="M335 292 Q348 288 355 298" stroke="#6b5020" stroke-width="4" fill="none"/>
+  <path d="M348 308 Q355 308 355 320" stroke="#6b5020" stroke-width="4" fill="none"/>
+  <path d="M340 326 Q330 332 322 328" stroke="#6b5020" stroke-width="4" fill="none"/>
+
+  <!-- Body - heavily scaled -->
+  <!-- Back legs -->
+  <ellipse cx="148" cy="330" rx="20" ry="36" class="scale-dark"/>
+  <ellipse cx="252" cy="330" rx="20" ry="36" class="scale-dark"/>
+
+  <!-- Main body shape -->
+  <ellipse cx="200" cy="258" rx="100" ry="72" class="scale"/>
+  <!-- Belly (unscaled) -->
+  <ellipse cx="200" cy="270" rx="60" ry="50" class="belly"/>
+
+  <!-- Front legs / big clawed forelimbs -->
+  <ellipse cx="148" cy="295" rx="18" ry="32" class="scale-dark"/>
+  <ellipse cx="252" cy="295" rx="18" ry="32" class="scale-dark"/>
+
+  <!-- Body scales - rows of overlapping keratin scales -->
+  <!-- Row 1 (top) -->
+  <ellipse cx="160" cy="215" rx="22" ry="14" class="scale-dark"/>
+  <ellipse cx="200" cy="208" rx="24" ry="15" class="scale-dark"/>
+  <ellipse cx="240" cy="215" rx="22" ry="14" class="scale-dark"/>
+  <!-- Row 2 -->
+  <ellipse cx="145" cy="238" rx="22" ry="14" class="scale"/>
+  <ellipse cx="182" cy="228" rx="23" ry="14" class="scale"/>
+  <ellipse cx="218" cy="228" rx="23" ry="14" class="scale"/>
+  <ellipse cx="255" cy="238" rx="22" ry="14" class="scale"/>
+  <!-- Row 3 -->
+  <ellipse cx="152" cy="258" rx="21" ry="13" class="scale-light"/>
+  <ellipse cx="188" cy="248" rx="22" ry="13" class="scale-light"/>
+  <ellipse cx="212" cy="248" rx="22" ry="13" class="scale-light"/>
+  <ellipse cx="248" cy="258" rx="21" ry="13" class="scale-light"/>
+  <!-- Row 4 -->
+  <ellipse cx="162" cy="275" rx="20" ry="12" class="scale"/>
+  <ellipse cx="196" cy="268" rx="21" ry="12" class="scale"/>
+  <ellipse cx="204" cy="268" rx="21" ry="12" class="scale"/>
+  <ellipse cx="238" cy="275" rx="20" ry="12" class="scale"/>
+
+  <!-- Neck -->
+  <ellipse cx="200" cy="188" rx="38" ry="30" class="scale-dark"/>
+  <!-- Neck scales -->
+  <ellipse cx="185" cy="175" rx="16" ry="10" class="scale"/>
+  <ellipse cx="200" cy="170" rx="17" ry="10" class="scale"/>
+  <ellipse cx="215" cy="175" rx="16" ry="10" class="scale"/>
+
+  <!-- Head (long conical snout) -->
+  <ellipse cx="200" cy="158" rx="35" ry="28" class="scale-dark"/>
+  <!-- Snout -->
+  <ellipse cx="215" cy="162" rx="28" ry="14" fill="#7a5820" stroke="#5a4018" stroke-width="1.5"/>
+  <!-- Snout tip / nostril -->
+  <ellipse cx="238" cy="162" rx="7" ry="6" class="nose"/>
+  <!-- Long sticky tongue hint -->
+  <path d="M241 164 Q265 158 275 152" stroke="#cc6620" stroke-width="3" fill="none" stroke-linecap="round"/>
+
+  <!-- Head scales -->
+  <ellipse cx="182" cy="148" rx="14" ry="9" class="scale"/>
+  <ellipse cx="198" cy="143" rx="14" ry="9" class="scale"/>
+
+  <!-- Eye (small, protected by scales) -->
+  <circle cx="186" cy="153" r="7" fill="#2a2000"/>
+  <circle cx="186" cy="153" r="5" class="eye"/>
+  <circle cx="188" cy="151" r="1.8" class="eye-shine"/>
+
+  <!-- Ear opening (tiny) -->
+  <ellipse cx="172" cy="150" rx="5" ry="7" fill="#4a3010" stroke="#3a2008" stroke-width="1"/>
+
+  <!-- Front claws (large digging claws) -->
+  <!-- Left hand claws -->
+  <path d="M132 318 Q118 328 115 340" stroke="#c8a828" stroke-width="6" fill="none" stroke-linecap="round"/>
+  <path d="M138 322 Q126 335 125 348" stroke="#c8a828" stroke-width="6" fill="none" stroke-linecap="round"/>
+  <path d="M145 325 Q136 340 136 354" stroke="#c8a828" stroke-width="6" fill="none" stroke-linecap="round"/>
+  <!-- Right hand claws -->
+  <path d="M268 318 Q282 328 285 340" stroke="#c8a828" stroke-width="6" fill="none" stroke-linecap="round"/>
+  <path d="M262 322 Q274 335 275 348" stroke="#c8a828" stroke-width="6" fill="none" stroke-linecap="round"/>
+  <path d="M255 325 Q264 340 264 354" stroke="#c8a828" stroke-width="6" fill="none" stroke-linecap="round"/>
+
+  <!-- GLM tag -->
+  <rect x="8" y="8" width="104" height="26" rx="7" fill="#16a34a" opacity="0.92"/>
+  <text x="60" y="25.5" text-anchor="middle" font-family="monospace" font-size="12" font-weight="bold" fill="white">GLM PANGOLIN</text>
+</svg>

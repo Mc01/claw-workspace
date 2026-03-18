@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <title>Trait: Poison Dart Frog Pattern</title>
+  <!-- Vibrant warning coloration overlay - blue/yellow/black like poison dart frogs -->
+  <defs>
+    <style>
+      .warn-blue { fill: #1d4ed8; opacity: 0.8; }
+      .warn-yellow { fill: #fbbf24; opacity: 0.8; }
+      .warn-black { fill: #0a0a0a; opacity: 0.75; }
+    </style>
+  </defs>
+
+  <!-- Bold aposematic pattern on body -->
+  <!-- Back/dorsal blue bands -->
+  <path d="M150 175 Q200 165 250 175 Q255 185 250 195 Q200 185 150 195 Q145 185 150 175Z" class="warn-blue"/>
+  <path d="M148 220 Q200 210 252 220 Q257 232 252 242 Q200 232 148 242 Q143 232 148 220Z" class="warn-blue"/>
+  <path d="M150 265 Q200 256 250 265 Q254 276 250 284 Q200 274 150 284 Q146 276 150 265Z" class="warn-blue"/>
+
+  <!-- Yellow spots on blue bands -->
+  <circle cx="168" cy="185" r="8" class="warn-yellow"/>
+  <circle cx="200" cy="180" r="9" class="warn-yellow"/>
+  <circle cx="232" cy="185" r="8" class="warn-yellow"/>
+  <circle cx="162" cy="232" r="7" class="warn-yellow"/>
+  <circle cx="190" cy="226" r="8" class="warn-yellow"/>
+  <circle cx="210" cy="226" r="8" class="warn-yellow"/>
+  <circle cx="238" cy="232" r="7" class="warn-yellow"/>
+  <circle cx="170" cy="274" r="7" class="warn-yellow"/>
+  <circle cx="200" cy="270" r="8" class="warn-yellow"/>
+  <circle cx="230" cy="274" r="7" class="warn-yellow"/>
+
+  <!-- Black separating outlines/bands -->
+  <path d="M148 194 Q200 185 252 194 L252 200 Q200 192 148 200Z" class="warn-black"/>
+  <path d="M148 240 Q200 232 252 240 L252 246 Q200 238 148 246Z" class="warn-black"/>
+  <path d="M148 282 Q200 274 252 282 L252 288 Q200 280 148 288Z" class="warn-black"/>
+
+  <!-- Limb warning bands -->
+  <rect x="145" y="298" width="30" height="10" rx="3" class="warn-blue"/>
+  <rect x="145" y="315" width="30" height="8" rx="3" class="warn-yellow"/>
+  <rect x="175" y="298" width="30" height="10" rx="3" class="warn-blue"/>
+  <rect x="175" y="315" width="30" height="8" rx="3" class="warn-yellow"/>
+  <rect x="218" y="298" width="30" height="10" rx="3" class="warn-blue"/>
+  <rect x="218" y="315" width="30" height="8" rx="3" class="warn-yellow"/>
+  <rect x="248" y="298" width="30" height="10" rx="3" class="warn-blue"/>
+  <rect x="248" y="315" width="30" height="8" rx="3" class="warn-yellow"/>
+
+  <!-- Label -->
+  <rect x="8" y="372" width="138" height="22" rx="5" fill="#1d4ed8" opacity="0.85"/>
+  <text x="77" y="387" text-anchor="middle" font-family="monospace" font-size="10" fill="white">POISON DART</text>
+</svg>

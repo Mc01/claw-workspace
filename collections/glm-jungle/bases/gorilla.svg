@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <title>GLM Jungle - Gorilla</title>
+  <defs>
+    <style>
+      .fur { fill: #1e1812; stroke: #0e0c08; stroke-width: 2; stroke-linejoin: round; }
+      .fur-silver { fill: #6a6258; stroke: #4a4440; stroke-width: 2; }
+      .skin { fill: #1a1510; stroke: #0a0808; stroke-width: 1.5; }
+      .face-skin { fill: #2a2218; }
+      .belly { fill: #2e2820; }
+      .eye { fill: #0a0808; }
+      .eye-iris { fill: #3a2a10; }
+      .eye-shine { fill: white; opacity: 0.85; }
+      .nostril { fill: #0e0c08; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="400" fill="#080e06"/>
+  <ellipse cx="200" cy="440" rx="280" ry="200" fill="#101e0c" opacity="0.8"/>
+  <rect x="0" y="0" width="60" height="400" fill="#0a1208" opacity="0.5"/>
+  <rect x="340" y="0" width="60" height="400" fill="#0a1208" opacity="0.5"/>
+
+  <!-- Massive body - silverback -->
+  <!-- Legs (short, thick) -->
+  <ellipse cx="155" cy="348" rx="30" ry="46" class="fur"/>
+  <ellipse cx="245" cy="348" rx="30" ry="46" class="fur"/>
+  <!-- Feet -->
+  <ellipse cx="148" cy="390" rx="32" ry="14" class="skin"/>
+  <ellipse cx="252" cy="390" rx="32" ry="14" class="skin"/>
+
+  <!-- Main body torso (very wide) -->
+  <ellipse cx="200" cy="255" rx="115" ry="95" class="fur"/>
+  <!-- Silverback saddle -->
+  <ellipse cx="200" cy="220" rx="95" ry="50" class="fur-silver"/>
+  <!-- Belly -->
+  <ellipse cx="200" cy="280" rx="72" ry="65" class="belly"/>
+  <!-- Chest muscles -->
+  <ellipse cx="175" cy="248" rx="35" ry="28" fill="#2a2418" opacity="0.7"/>
+  <ellipse cx="225" cy="248" rx="35" ry="28" fill="#2a2418" opacity="0.7"/>
+
+  <!-- Massive arms (knuckle-walking) -->
+  <!-- Left arm -->
+  <path d="M95 220 Q55 270 62 325" stroke="#1e1812" stroke-width="44" fill="none" stroke-linecap="round"/>
+  <path d="M95 220 Q55 270 62 325" stroke="#0e0c08" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <!-- Left hand / knuckle -->
+  <ellipse cx="60" cy="328" rx="26" ry="18" class="skin"/>
+  <path d="M42 324 Q46 316 52 322" stroke="#0e0c08" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M52 322 Q56 314 62 320" stroke="#0e0c08" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M62 320 Q66 312 72 318" stroke="#0e0c08" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M72 318 Q76 312 80 316" stroke="#0e0c08" stroke-width="3" fill="none" stroke-linecap="round"/>
+
+  <!-- Right arm -->
+  <path d="M305 220 Q345 270 338 325" stroke="#1e1812" stroke-width="44" fill="none" stroke-linecap="round"/>
+  <path d="M305 220 Q345 270 338 325" stroke="#0e0c08" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <!-- Right hand -->
+  <ellipse cx="340" cy="328" rx="26" ry="18" class="skin"/>
+  <path d="M322 324 Q326 316 332 322" stroke="#0e0c08" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M332 322 Q336 314 342 320" stroke="#0e0c08" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M342 320 Q346 312 352 318" stroke="#0e0c08" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M352 318 Q356 312 360 316" stroke="#0e0c08" stroke-width="3" fill="none" stroke-linecap="round"/>
+
+  <!-- Neck (barely visible) -->
+  <rect x="175" y="152" width="50" height="45" rx="15" class="fur"/>
+
+  <!-- Head (large sagittal crest) -->
+  <ellipse cx="200" cy="148" rx="62" ry="58" class="fur"/>
+  <!-- Sagittal crest (ridge on top) -->
+  <ellipse cx="200" cy="100" rx="28" ry="22" class="fur"/>
+
+  <!-- Face -->
+  <ellipse cx="200" cy="158" rx="48" ry="46" class="face-skin"/>
+  <!-- Brow ridge (very prominent) -->
+  <path d="M158 128 Q200 115 242 128" stroke="#1e1812" stroke-width="14" fill="none" stroke-linecap="round"/>
+  <path d="M158 128 Q200 115 242 128" stroke="#0e0c08" stroke-width="2" fill="none" stroke-linecap="round"/>
+
+  <!-- Flat wide nose -->
+  <ellipse cx="200" cy="162" rx="22" ry="16" fill="#1a1208"/>
+  <!-- Nostrils -->
+  <ellipse cx="191" cy="165" rx="7" ry="6" class="nostril"/>
+  <ellipse cx="209" cy="165" rx="7" ry="6" class="nostril"/>
+  <!-- Nose bridge -->
+  <rect x="196" y="156" width="8" height="10" fill="#1a1208"/>
+
+  <!-- Mouth area - protruding muzzle -->
+  <ellipse cx="200" cy="180" rx="28" ry="16" fill="#252018"/>
+  <!-- Lips -->
+  <path d="M178 180 Q200 188 222 180" stroke="#1a1408" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <!-- Subtle smile lines -->
+  <path d="M176 175 Q172 182 178 188" stroke="#151008" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <path d="M224 175 Q228 182 222 188" stroke="#151008" stroke-width="2" fill="none" stroke-linecap="round"/>
+
+  <!-- Eyes (deep-set) -->
+  <circle cx="180" cy="142" r="11" fill="#0e0c08"/>
+  <circle cx="180" cy="142" r="8" class="eye"/>
+  <circle cx="180" cy="142" r="5" class="eye-iris"/>
+  <circle cx="182" cy="140" r="2" class="eye-shine"/>
+  <circle cx="220" cy="142" r="11" fill="#0e0c08"/>
+  <circle cx="220" cy="142" r="8" class="eye"/>
+  <circle cx="220" cy="142" r="5" class="eye-iris"/>
+  <circle cx="222" cy="140" r="2" class="eye-shine"/>
+
+  <!-- Ears (small, on sides) -->
+  <ellipse cx="142" cy="148" rx="14" ry="16" class="fur"/>
+  <ellipse cx="142" cy="148" rx="8" ry="9" fill="#2a2218" opacity="0.7"/>
+  <ellipse cx="258" cy="148" rx="14" ry="16" class="fur"/>
+  <ellipse cx="258" cy="148" rx="8" ry="9" fill="#2a2218" opacity="0.7"/>
+
+  <!-- GLM tag -->
+  <rect x="8" y="8" width="104" height="26" rx="7" fill="#16a34a" opacity="0.92"/>
+  <text x="60" y="25.5" text-anchor="middle" font-family="monospace" font-size="12" font-weight="bold" fill="white">GLM GORILLA</text>
+</svg>

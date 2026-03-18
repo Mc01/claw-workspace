@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <title>Trait: Tiger Stripes Pattern</title>
+  <defs>
+    <style>
+      .stripe { fill: #1a0a00; opacity: 0.72; }
+    </style>
+  </defs>
+  <!-- Tiger stripe overlays - diagonal bold stripes -->
+  <!-- Torso stripes -->
+  <path d="M148 185 Q165 178 178 195 Q162 202 148 185Z" class="stripe"/>
+  <path d="M170 198 Q188 188 200 208 Q183 215 170 198Z" class="stripe"/>
+  <path d="M195 185 Q215 178 225 198 Q208 204 195 185Z" class="stripe"/>
+  <path d="M220 200 Q240 192 250 212 Q232 218 220 200Z" class="stripe"/>
+  <path d="M244 186 Q262 180 270 200 Q253 206 244 186Z" class="stripe"/>
+
+  <!-- Mid body stripes -->
+  <path d="M142 228 Q162 218 174 240 Q155 248 142 228Z" class="stripe"/>
+  <path d="M168 242 Q190 230 200 255 Q180 262 168 242Z" class="stripe"/>
+  <path d="M195 228 Q218 218 228 242 Q208 250 195 228Z" class="stripe"/>
+  <path d="M225 244 Q248 232 256 258 Q236 265 225 244Z" class="stripe"/>
+  <path d="M252 228 Q272 220 280 242 Q262 250 252 228Z" class="stripe"/>
+
+  <!-- Lower body stripes -->
+  <path d="M150 272 Q170 262 182 284 Q164 292 150 272Z" class="stripe"/>
+  <path d="M180 285 Q202 274 212 298 Q192 306 180 285Z" class="stripe"/>
+  <path d="M210 272 Q232 262 240 286 Q222 294 210 272Z" class="stripe"/>
+  <path d="M238 286 Q258 276 266 300 Q248 308 238 286Z" class="stripe"/>
+
+  <!-- Leg stripes -->
+  <rect x="148" y="310" width="14" height="8" rx="3" class="stripe"/>
+  <rect x="148" y="328" width="14" height="8" rx="3" class="stripe"/>
+  <rect x="148" y="346" width="14" height="8" rx="3" class="stripe"/>
+  <rect x="178" y="312" width="14" height="8" rx="3" class="stripe"/>
+  <rect x="178" y="330" width="14" height="8" rx="3" class="stripe"/>
+  <rect x="220" y="310" width="14" height="8" rx="3" class="stripe"/>
+  <rect x="220" y="328" width="14" height="8" rx="3" class="stripe"/>
+  <rect x="220" y="346" width="14" height="8" rx="3" class="stripe"/>
+  <rect x="250" y="312" width="14" height="8" rx="3" class="stripe"/>
+  <rect x="250" y="330" width="14" height="8" rx="3" class="stripe"/>
+
+  <!-- Face stripes -->
+  <path d="M175 118 Q185 112 192 126 Q183 130 175 118Z" class="stripe"/>
+  <path d="M215 118 Q225 112 230 126 Q222 130 215 118Z" class="stripe"/>
+  <path d="M182 140 Q190 135 196 148 Q188 152 182 140Z" class="stripe"/>
+
+  <!-- Label -->
+  <rect x="8" y="372" width="138" height="22" rx="5" fill="#92400e" opacity="0.85"/>
+  <text x="77" y="387" text-anchor="middle" font-family="monospace" font-size="10" fill="white">TIGER STRIPES</text>
+</svg>

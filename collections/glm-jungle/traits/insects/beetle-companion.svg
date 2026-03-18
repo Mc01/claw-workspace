@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <title>Trait: Beetle Companion Insect</title>
+  <defs>
+    <style>
+      .shell { fill: #1a5a10; stroke: #0e3808; stroke-width: 2; }
+      .shell-sheen { fill: #2a8a20; opacity: 0.6; }
+      .belly { fill: #2a2a10; stroke: #1a1a08; stroke-width: 1.5; }
+      .leg { fill: none; stroke: #1a1a08; stroke-width: 3; stroke-linecap: round; }
+      .antenna { fill: none; stroke: #2a2a10; stroke-width: 2; stroke-linecap: round; }
+      .eye { fill: #cc8800; stroke: #884400; stroke-width: 1.5; }
+      .horn { fill: #1a1a08; stroke: #0a0a04; stroke-width: 1.5; }
+    </style>
+  </defs>
+
+  <!-- Rhinoceros beetle sitting on shoulder area -->
+
+  <!-- Beetle legs -->
+  <path d="M118 188 Q108 182 102 176" class="leg"/>
+  <path d="M118 196 Q106 192 99 188" class="leg"/>
+  <path d="M118 204 Q108 202 103 200" class="leg"/>
+  <path d="M148 188 Q158 182 164 176" class="leg"/>
+  <path d="M148 196 Q160 192 167 188" class="leg"/>
+  <path d="M148 204 Q158 202 163 200" class="leg"/>
+
+  <!-- Claw tips -->
+  <path d="M102 176 Q98 172 96 168" class="leg" stroke-width="2"/>
+  <path d="M99 188 Q94 185 92 181" class="leg" stroke-width="2"/>
+  <path d="M103 200 Q98 198 95 195" class="leg" stroke-width="2"/>
+  <path d="M164 176 Q168 172 170 168" class="leg" stroke-width="2"/>
+  <path d="M167 188 Q172 185 174 181" class="leg" stroke-width="2"/>
+  <path d="M163 200 Q168 198 171 195" class="leg" stroke-width="2"/>
+
+  <!-- Abdomen / elytra (wing covers) -->
+  <ellipse cx="133" cy="208" rx="22" ry="26" class="shell"/>
+  <!-- Elytra shine -->
+  <ellipse cx="127" cy="200" rx="8" ry="14" class="shell-sheen"/>
+  <!-- Elytra midline -->
+  <line x1="133" y1="183" x2="133" y2="233" stroke="#0e3808" stroke-width="2" opacity="0.7"/>
+  <!-- Elytra texture lines -->
+  <path d="M116 195 Q128 192 133 183" stroke="#0e3808" stroke-width="1" fill="none" opacity="0.5"/>
+  <path d="M115 202 Q128 199 133 190" stroke="#0e3808" stroke-width="1" fill="none" opacity="0.5"/>
+  <path d="M116 210 Q128 207 133 198" stroke="#0e3808" stroke-width="1" fill="none" opacity="0.5"/>
+
+  <!-- Thorax -->
+  <ellipse cx="133" cy="182" rx="16" ry="12" class="shell"/>
+  <!-- Thorax highlight -->
+  <ellipse cx="130" cy="178" rx="6" ry="5" class="shell-sheen"/>
+
+  <!-- Head -->
+  <ellipse cx="133" cy="168" rx="12" ry="10" class="shell"/>
+
+  <!-- Rhinoceros horn (large curved) -->
+  <path d="M133 158 Q130 142 126 132 Q122 122 125 116" class="horn" stroke-width="5" fill="none"/>
+  <!-- Horn texture -->
+  <path d="M130 148 Q128 140 128 134" stroke="#2a2a10" stroke-width="2" fill="none" opacity="0.6"/>
+
+  <!-- Smaller secondary horn -->
+  <path d="M140 162 Q145 152 148 145" class="horn" stroke-width="3" fill="none"/>
+
+  <!-- Eyes -->
+  <circle cx="127" cy="166" r="4" class="eye"/>
+  <circle cx="127" cy="166" r="2" fill="#441a00"/>
+  <circle cx="139" cy="166" r="4" class="eye"/>
+  <circle cx="139" cy="166" r="2" fill="#441a00"/>
+
+  <!-- Antennae -->
+  <path d="M130 160 Q122 148 115 140" class="antenna"/>
+  <circle cx="113" cy="138" r="4" fill="#2a2a10" stroke="#1a1a08" stroke-width="1.5"/>
+  <path d="M136 160 Q144 148 151 140" class="antenna"/>
+  <circle cx="153" cy="138" r="4" fill="#2a2a10" stroke="#1a1a08" stroke-width="1.5"/>
+
+  <!-- Iridescent sheen highlights on shell -->
+  <ellipse cx="140" cy="204" rx="5" ry="10" fill="#22c55e" opacity="0.3" transform="rotate(10 140 204)"/>
+  <ellipse cx="144" cy="218" rx="4" ry="8" fill="#4ade80" opacity="0.25" transform="rotate(15 144 218)"/>
+
+  <!-- Label -->
+  <rect x="8" y="372" width="158" height="22" rx="5" fill="#0e3808" opacity="0.88"/>
+  <text x="87" y="387" text-anchor="middle" font-family="monospace" font-size="10" fill="white">BEETLE COMPANION</text>
+</svg>

@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <title>Trait: Firefly Swarm Insect</title>
+  <defs>
+    <radialGradient id="glow1" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#aaff44" stop-opacity="0.9"/>
+      <stop offset="60%" stop-color="#88ee22" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#44aa00" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffee44" stop-opacity="0.85"/>
+      <stop offset="60%" stop-color="#cccc00" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#888800" stop-opacity="0"/>
+    </radialGradient>
+    <style>
+      .fly-body { fill: #2a2a10; stroke: #1a1a08; stroke-width: 1; }
+      .fly-wing { fill: #88cc88; opacity: 0.45; stroke: #448844; stroke-width: 0.5; }
+      .glow-green { fill: url(#glow1); }
+      .glow-yellow { fill: url(#glow2); }
+    </style>
+  </defs>
+
+  <!-- Firefly swarm surrounding the creature -->
+  <!-- Each firefly: body + wings + glow halo -->
+
+  <!-- Firefly 1 -->
+  <circle cx="112" cy="148" r="18" class="glow-green"/>
+  <ellipse cx="112" cy="148" rx="5" ry="3" class="fly-body"/>
+  <ellipse cx="108" cy="146" rx="6" ry="3" class="fly-wing" transform="rotate(-20 108 146)"/>
+  <ellipse cx="116" cy="146" rx="6" ry="3" class="fly-wing" transform="rotate(20 116 146)"/>
+  <ellipse cx="112" cy="150" rx="3" ry="2" fill="#aaff44" opacity="0.9"/>
+
+  <!-- Firefly 2 -->
+  <circle cx="145" cy="108" r="15" class="glow-yellow"/>
+  <ellipse cx="145" cy="108" rx="5" ry="3" class="fly-body"/>
+  <ellipse cx="141" cy="106" rx="5" ry="2.5" class="fly-wing" transform="rotate(-20 141 106)"/>
+  <ellipse cx="149" cy="106" rx="5" ry="2.5" class="fly-wing" transform="rotate(20 149 106)"/>
+  <ellipse cx="145" cy="110" rx="2.5" ry="2" fill="#ffee44" opacity="0.9"/>
+
+  <!-- Firefly 3 -->
+  <circle cx="280" cy="118" r="20" class="glow-green"/>
+  <ellipse cx="280" cy="118" rx="5" ry="3" class="fly-body"/>
+  <ellipse cx="276" cy="116" rx="6" ry="3" class="fly-wing" transform="rotate(-25 276 116)"/>
+  <ellipse cx="284" cy="116" rx="6" ry="3" class="fly-wing" transform="rotate(25 284 116)"/>
+  <ellipse cx="280" cy="120" rx="3" ry="2" fill="#aaff44" opacity="0.9"/>
+
+  <!-- Firefly 4 -->
+  <circle cx="318" cy="158" r="16" class="glow-yellow"/>
+  <ellipse cx="318" cy="158" rx="5" ry="3" class="fly-body"/>
+  <ellipse cx="314" cy="156" rx="5" ry="2.5" class="fly-wing" transform="rotate(-20 314 156)"/>
+  <ellipse cx="322" cy="156" rx="5" ry="2.5" class="fly-wing" transform="rotate(20 322 156)"/>
+  <ellipse cx="318" cy="160" rx="2.5" ry="2" fill="#ffee44" opacity="0.9"/>
+
+  <!-- Firefly 5 (larger, close) -->
+  <circle cx="92" cy="208" r="22" class="glow-green"/>
+  <ellipse cx="92" cy="208" rx="6" ry="3.5" class="fly-body"/>
+  <ellipse cx="87" cy="206" rx="7" ry="3.5" class="fly-wing" transform="rotate(-20 87 206)"/>
+  <ellipse cx="97" cy="206" rx="7" ry="3.5" class="fly-wing" transform="rotate(20 97 206)"/>
+  <ellipse cx="92" cy="210" rx="3.5" ry="2.5" fill="#aaff44" opacity="0.95"/>
+
+  <!-- Firefly 6 -->
+  <circle cx="310" cy="218" r="18" class="glow-yellow"/>
+  <ellipse cx="310" cy="218" rx="5" ry="3" class="fly-body"/>
+  <ellipse cx="306" cy="216" rx="6" ry="3" class="fly-wing" transform="rotate(-20 306 216)"/>
+  <ellipse cx="314" cy="216" rx="6" ry="3" class="fly-wing" transform="rotate(20 314 216)"/>
+  <ellipse cx="310" cy="220" rx="3" ry="2" fill="#ffee44" opacity="0.9"/>
+
+  <!-- Firefly 7 (dim, far) -->
+  <circle cx="130" cy="320" r="13" class="glow-green" opacity="0.6"/>
+  <ellipse cx="130" cy="320" rx="4" ry="2.5" class="fly-body"/>
+  <ellipse cx="130" cy="322" rx="2" ry="1.5" fill="#aaff44" opacity="0.7"/>
+
+  <!-- Firefly 8 (dim, far) -->
+  <circle cx="272" cy="332" r="14" class="glow-yellow" opacity="0.6"/>
+  <ellipse cx="272" cy="332" rx="4" ry="2.5" class="fly-body"/>
+  <ellipse cx="272" cy="334" rx="2" ry="1.5" fill="#ffee44" opacity="0.7"/>
+
+  <!-- Firefly 9 (tiny, distant) -->
+  <circle cx="360" cy="280" r="10" class="glow-green" opacity="0.5"/>
+  <ellipse cx="360" cy="280" rx="3" ry="2" class="fly-body"/>
+  <ellipse cx="360" cy="282" rx="1.5" ry="1" fill="#aaff44" opacity="0.65"/>
+
+  <!-- Firefly 10 (tiny) -->
+  <circle cx="38" cy="260" r="11" class="glow-yellow" opacity="0.5"/>
+  <ellipse cx="38" cy="260" rx="3" ry="2" class="fly-body"/>
+  <ellipse cx="38" cy="262" rx="1.5" ry="1" fill="#ffee44" opacity="0.65"/>
+
+  <!-- Light trail hints -->
+  <path d="M112 148 Q125 138 140 130" stroke="#aaff44" stroke-width="1" fill="none" opacity="0.25" stroke-dasharray="3 4"/>
+  <path d="M280 118 Q295 128 308 148" stroke="#aaff44" stroke-width="1" fill="none" opacity="0.25" stroke-dasharray="3 4"/>
+  <path d="M92 208 Q102 228 108 248" stroke="#ffee44" stroke-width="1" fill="none" opacity="0.25" stroke-dasharray="3 4"/>
+
+  <!-- Label -->
+  <rect x="8" y="372" width="128" height="22" rx="5" fill="#2a4a10" opacity="0.88"/>
+  <text x="72" y="387" text-anchor="middle" font-family="monospace" font-size="10" fill="#aaff44">FIREFLY SWARM</text>
+</svg>

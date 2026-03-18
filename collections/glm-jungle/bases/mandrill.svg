@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <title>GLM Jungle - Mandrill</title>
+  <defs>
+    <style>
+      .fur { fill: #3d2b0a; stroke: #2a1c04; stroke-width: 2; stroke-linejoin: round; }
+      .chest { fill: #5a3d0e; stroke: none; }
+      .face-skin { fill: #4a3510; }
+      .ridge-blue { fill: #1a52a8; }
+      .ridge-red { fill: #cc1a1a; }
+      .nose-red { fill: #dd2020; }
+      .bright-yellow { fill: #f0c020; }
+      .eye-dark { fill: #0a0500; }
+      .eye-shine { fill: white; opacity: 0.9; }
+    </style>
+  </defs>
+
+  <!-- Background: jungle undergrowth -->
+  <rect width="400" height="400" fill="#0a1e08"/>
+  <ellipse cx="200" cy="430" rx="260" ry="180" fill="#162e10" opacity="0.7"/>
+  <rect x="0" y="0" width="70" height="400" fill="#0e2208" opacity="0.6"/>
+  <rect x="330" y="0" width="70" height="400" fill="#0e2208" opacity="0.6"/>
+
+  <!-- Tail (mandrills have short tails) -->
+  <path d="M255 278 Q285 265 278 285" stroke="#3d2b0a" stroke-width="8" fill="none" stroke-linecap="round"/>
+
+  <!-- Lower body / haunches -->
+  <ellipse cx="200" cy="295" rx="88" ry="65" class="fur"/>
+  <!-- Colorful rump (ischial callosities) -->
+  <ellipse cx="200" cy="305" rx="55" ry="38" fill="#cc3388" opacity="0.7"/>
+  <ellipse cx="200" cy="310" rx="35" ry="22" fill="#aa2266" opacity="0.5"/>
+
+  <!-- Legs -->
+  <ellipse cx="155" cy="345" rx="24" ry="42" class="fur"/>
+  <ellipse cx="245" cy="345" rx="24" ry="42" class="fur"/>
+  <!-- Feet -->
+  <ellipse cx="148" cy="384" rx="22" ry="11" fill="#2a1c04"/>
+  <ellipse cx="252" cy="384" rx="22" ry="11" fill="#2a1c04"/>
+
+  <!-- Body torso -->
+  <ellipse cx="200" cy="230" rx="82" ry="78" class="fur"/>
+  <!-- Chest / belly lighter -->
+  <ellipse cx="200" cy="245" rx="50" ry="55" class="chest"/>
+  <!-- Lighter belly center -->
+  <ellipse cx="200" cy="258" rx="28" ry="38" fill="#7a5518" opacity="0.5"/>
+
+  <!-- Arms -->
+  <path d="M122 205 Q80 240 92 285" stroke="#3d2b0a" stroke-width="28" fill="none" stroke-linecap="round"/>
+  <path d="M278 205 Q320 240 308 285" stroke="#3d2b0a" stroke-width="28" fill="none" stroke-linecap="round"/>
+  <!-- Hands -->
+  <ellipse cx="90" cy="288" rx="18" ry="14" fill="#2a1c04"/>
+  <ellipse cx="310" cy="288" rx="18" ry="14" fill="#2a1c04"/>
+
+  <!-- Neck -->
+  <rect x="178" y="148" width="44" height="52" rx="18" class="fur"/>
+
+  <!-- Head -->
+  <ellipse cx="200" cy="136" rx="55" ry="52" class="fur"/>
+
+  <!-- Cheek pouches / beard - yellow -->
+  <ellipse cx="162" cy="158" rx="22" ry="18" class="bright-yellow"/>
+  <ellipse cx="238" cy="158" rx="22" ry="18" class="bright-yellow"/>
+  <!-- Cheek detail -->
+  <ellipse cx="162" cy="158" rx="14" ry="11" fill="#e8b010" opacity="0.6"/>
+  <ellipse cx="238" cy="158" rx="14" ry="11" fill="#e8b010" opacity="0.6"/>
+
+  <!-- Face center - mandrill's colorful snout area -->
+  <ellipse cx="200" cy="148" rx="30" ry="34" class="face-skin"/>
+
+  <!-- Blue facial ridges (left and right of nose) -->
+  <path d="M176 130 Q180 142 176 158 Q178 165 185 162" stroke="#1a52a8" stroke-width="9" fill="none" stroke-linecap="round"/>
+  <path d="M224 130 Q220 142 224 158 Q222 165 215 162" stroke="#1a52a8" stroke-width="9" fill="none" stroke-linecap="round"/>
+  <!-- Ridge grooves -->
+  <path d="M178 133 Q181 145 178 158" stroke="#1240a0" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M182 132 Q185 144 182 157" stroke="#1240a0" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <path d="M222 133 Q219 145 222 158" stroke="#1240a0" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M218 132 Q215 144 218 157" stroke="#1240a0" stroke-width="2" fill="none" stroke-linecap="round"/>
+
+  <!-- Red nose -->
+  <ellipse cx="200" cy="148" rx="10" ry="13" class="nose-red"/>
+  <!-- Nose highlight -->
+  <ellipse cx="198" cy="143" rx="4" ry="3" fill="#ff4444" opacity="0.7"/>
+
+  <!-- Red lip / mouth area -->
+  <ellipse cx="200" cy="164" rx="18" ry="10" class="ridge-red" opacity="0.8"/>
+  <path d="M188 165 Q200 172 212 165" stroke="#aa1010" stroke-width="2" fill="none" stroke-linecap="round"/>
+
+  <!-- Eyes -->
+  <circle cx="182" cy="124" r="10" fill="#1a1008"/>
+  <circle cx="182" cy="124" r="7" class="eye-dark"/>
+  <circle cx="184" cy="122" r="2.5" class="eye-shine"/>
+  <circle cx="218" cy="124" r="10" fill="#1a1008"/>
+  <circle cx="218" cy="124" r="7" class="eye-dark"/>
+  <circle cx="220" cy="122" r="2.5" class="eye-shine"/>
+
+  <!-- Brow ridge -->
+  <path d="M174 115 Q182 110 190 114" stroke="#2a1c04" stroke-width="5" fill="none" stroke-linecap="round"/>
+  <path d="M210 114 Q218 110 226 115" stroke="#2a1c04" stroke-width="5" fill="none" stroke-linecap="round"/>
+
+  <!-- Ears -->
+  <ellipse cx="148" cy="126" rx="13" ry="16" class="fur"/>
+  <ellipse cx="148" cy="126" rx="7" ry="10" fill="#c87060" opacity="0.6"/>
+  <ellipse cx="252" cy="126" rx="13" ry="16" class="fur"/>
+  <ellipse cx="252" cy="126" rx="7" ry="10" fill="#c87060" opacity="0.6"/>
+
+  <!-- GLM tag -->
+  <rect x="8" y="8" width="100" height="26" rx="7" fill="#16a34a" opacity="0.92"/>
+  <text x="58" y="25.5" text-anchor="middle" font-family="monospace" font-size="12" font-weight="bold" fill="white">GLM MANDRILL</text>
+</svg>

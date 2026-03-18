@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <title>Trait: Machete Gear</title>
+  <defs>
+    <style>
+      .blade { fill: #c0c8d0; stroke: #888; stroke-width: 1.5; }
+      .blade-edge { fill: #e8eef4; }
+      .blade-spine { fill: #9aa8b0; }
+      .guard { fill: #2a1a08; stroke: #1a0e04; stroke-width: 1.5; }
+      .handle { fill: #4a2a08; stroke: #2a1404; stroke-width: 1.5; }
+      .handle-wrap { fill: none; stroke: #8B4513; stroke-width: 4; stroke-linecap: round; }
+      .rivet { fill: #888; stroke: #666; stroke-width: 1; }
+      .sheath { fill: #3a2208; stroke: #2a1604; stroke-width: 2; }
+    </style>
+  </defs>
+
+  <!-- Machete held/strapped to side -->
+
+  <!-- Sheath/scabbard -->
+  <path d="M282 175 Q296 178 305 220 Q310 255 302 295 Q296 308 286 308 Q276 306 274 295 Q270 255 272 220 Q274 183 282 175Z" class="sheath"/>
+  <!-- Sheath stitching -->
+  <path d="M284 188 Q292 190 298 220 Q302 250 296 286" stroke="#5a3410" stroke-width="1.5" fill="none" stroke-dasharray="5 3"/>
+  <!-- Sheath tip -->
+  <ellipse cx="288" cy="305" rx="10" ry="6" class="sheath"/>
+
+  <!-- Machete blade (slightly drawn/visible) -->
+  <!-- Full blade shape -->
+  <path d="M288 175 Q310 172 325 180 Q340 188 342 210 Q344 238 330 258 Q318 272 302 275 Q295 270 295 258 Q302 242 308 225 Q314 205 310 190 Q304 180 294 178 L288 175Z" class="blade"/>
+  <!-- Blade edge (sharp side) -->
+  <path d="M325 180 Q340 188 342 210 Q344 238 330 258 Q320 265 310 260" fill="none" stroke="#d8e8f0" stroke-width="3" stroke-linecap="round"/>
+  <!-- Blade spine -->
+  <path d="M288 175 Q295 178 302 195 Q307 218 304 245 Q302 260 300 272" stroke="#9aa8b0" stroke-width="5" fill="none" stroke-linecap="round"/>
+  <!-- Blood groove -->
+  <path d="M296 182 Q304 200 305 230 Q305 248 300 262" stroke="#aab8c0" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.7"/>
+  <!-- Blade tip -->
+  <path d="M302 275 Q310 275 330 258 Q320 268 310 272 L302 275Z" class="blade-edge"/>
+
+  <!-- Guard -->
+  <rect x="282" y="172" width="20" height="10" rx="4" class="guard"/>
+
+  <!-- Handle -->
+  <path d="M265 160 Q278 165 288 172 Q285 180 280 182 Q270 176 262 170 Q260 164 265 160Z" class="handle"/>
+  <!-- Handle wrapping -->
+  <path d="M267 163 Q278 168 285 175" class="handle-wrap"/>
+  <path d="M268 168 Q279 173 286 179" class="handle-wrap"/>
+  <path d="M269 173 Q278 177 284 182" class="handle-wrap"/>
+  <!-- Handle rivets -->
+  <circle cx="270" cy="166" r="3" class="rivet"/>
+  <circle cx="276" cy="170" r="3" class="rivet"/>
+  <circle cx="282" cy="174" r="3" class="rivet"/>
+
+  <!-- Strapping to body -->
+  <path d="M270 170 Q260 185 262 210" stroke="#3a2208" stroke-width="8" fill="none" stroke-linecap="round" opacity="0.7"/>
+  <path d="M280 185 Q275 200 278 225" stroke="#3a2208" stroke-width="5" fill="none" stroke-linecap="round" opacity="0.7"/>
+  <!-- Strap buckle -->
+  <rect x="260" y="205" width="10" height="8" rx="2" fill="#888" stroke="#666" stroke-width="1"/>
+  <line x1="265" y1="205" x2="265" y2="213" stroke="#666" stroke-width="1.5"/>
+
+  <!-- Label -->
+  <rect x="8" y="372" width="108" height="22" rx="5" fill="#3a2208" opacity="0.88"/>
+  <text x="62" y="387" text-anchor="middle" font-family="monospace" font-size="10" fill="white">MACHETE</text>
+</svg>

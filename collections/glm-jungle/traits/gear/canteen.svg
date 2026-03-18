@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <title>Trait: Canteen Gear</title>
+  <defs>
+    <style>
+      .canteen { fill: #4a6628; stroke: #2d4018; stroke-width: 2; }
+      .cap { fill: #8B4513; stroke: #5a2c0a; stroke-width: 2; }
+      .strap { fill: none; stroke: #5a3a10; stroke-width: 7; stroke-linecap: round; }
+      .highlight { fill: #6a8838; opacity: 0.5; }
+      .metal { fill: #888; stroke: #666; stroke-width: 1.5; }
+      .cover { fill: #3a5020; stroke: #2a3815; stroke-width: 1.5; }
+    </style>
+  </defs>
+
+  <!-- Canteen hanging at hip -->
+  <!-- Shoulder strap -->
+  <path d="M185 158 Q175 200 172 248" class="strap"/>
+
+  <!-- Canteen body (military-style rounded rectangle) -->
+  <path d="M148 248 Q148 235 162 232 Q176 230 186 232 Q196 234 196 248 L196 298 Q196 312 183 314 Q170 316 158 314 Q148 310 148 298 Z" class="canteen"/>
+  <!-- Canvas cover texture -->
+  <path d="M150 248 Q150 237 163 235 Q176 233 187 235 Q194 237 194 248 L194 296 Q194 308 182 311 Q170 313 160 311 Q152 308 152 296 Z" class="cover"/>
+  <!-- Canvas stitching -->
+  <path d="M155 248 L155 296" stroke="#2a3815" stroke-width="1" fill="none" stroke-dasharray="5 3" opacity="0.7"/>
+  <path d="M172 234 L172 312" stroke="#2a3815" stroke-width="1" fill="none" stroke-dasharray="5 3" opacity="0.7"/>
+  <path d="M189 248 L189 296" stroke="#2a3815" stroke-width="1" fill="none" stroke-dasharray="5 3" opacity="0.7"/>
+  <path d="M155 265 L189 265" stroke="#2a3815" stroke-width="1" fill="none" stroke-dasharray="4 3" opacity="0.6"/>
+  <path d="M155 282 L189 282" stroke="#2a3815" stroke-width="1" fill="none" stroke-dasharray="4 3" opacity="0.6"/>
+
+  <!-- Canteen neck -->
+  <rect x="166" y="225" width="20" height="12" rx="5" class="canteen"/>
+  <ellipse cx="176" cy="225" rx="10" ry="5" class="canteen"/>
+
+  <!-- Metal ring/cap -->
+  <rect x="162" y="218" width="28" height="12" rx="6" class="metal"/>
+  <!-- Cap -->
+  <ellipse cx="176" cy="218" rx="12" ry="8" class="cap"/>
+  <!-- Cap ridges -->
+  <path d="M166 218 Q176 212 186 218" stroke="#7a3808" stroke-width="2" fill="none" opacity="0.6"/>
+  <path d="M164 221 Q176 215 188 221" stroke="#7a3808" stroke-width="1.5" fill="none" opacity="0.5"/>
+
+  <!-- Chain connecting cap to body -->
+  <path d="M183 220 Q190 225 188 232" stroke="#aaa" stroke-width="2" fill="none" stroke-dasharray="3 2" opacity="0.8"/>
+
+  <!-- Body highlight -->
+  <ellipse cx="165" cy="270" rx="6" ry="25" class="highlight"/>
+
+  <!-- Unit/ownership marking -->
+  <text x="172" y="278" text-anchor="middle" font-family="monospace" font-size="9" fill="#6a8838" opacity="0.8">GLM</text>
+
+  <!-- Strap at bottom (securing to belt) -->
+  <path d="M152 310 Q172 318 192 310" stroke="#5a3a10" stroke-width="5" fill="none" stroke-linecap="round"/>
+
+  <!-- Label -->
+  <rect x="8" y="372" width="100" height="22" rx="5" fill="#2d4018" opacity="0.88"/>
+  <text x="58" y="387" text-anchor="middle" font-family="monospace" font-size="10" fill="white">CANTEEN</text>
+</svg>
