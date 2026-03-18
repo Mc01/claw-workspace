@@ -31,12 +31,12 @@ export const CONTRACT_ADDRESSES: Record<number, ChainContracts> = {
   },
   // Celo Sepolia Testnet (11142220) — deployed contracts
   11142220: {
-    factory: '0x4c13C8F963a5326Eb4b170634f3b088e18ADD12e' as Address,
+    factory: '0xF5fF68ab2Bc0217C2135fc4EC25577AFE54C60ad' as Address,
     chamaPoolManager: '0x4e9f2C22f1d6d702735cf875E0583c2Bc71c2A44' as Address,
     featherYieldAdapter: '0x9D33A537645D62351d57510238ccF251A61b2cC2' as Address,
     // Mock tokens on Sepolia
     cUSD: '0x367cB784BF701587CA03bE93Ec29b76ffd430091' as Address,
-    USDT: '0x4c13C8F963a5326Eb4b170634f3b088e18ADD12e' as Address,
+    USDT: '0xF5fF68ab2Bc0217C2135fc4EC25577AFE54C60ad' as Address,
     CELO: '0x826BF3D7254AB8fE2ab080FB92e47f575993B861' as Address,
   },
   // Hardhat local
