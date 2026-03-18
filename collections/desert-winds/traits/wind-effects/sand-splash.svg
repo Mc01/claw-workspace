@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <!-- Sand Splash Impact Effect Trait -->
+  <defs>
+    <radialGradient id="splashCore" cx="50%" cy="80%" r="50%">
+      <stop offset="0%" stop-color="#D4A840" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#C89030" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <!-- Impact point glow -->
+  <ellipse cx="200" cy="320" rx="80" ry="25" fill="url(#splashCore)"/>
+
+  <!-- Radiating sand arcs -->
+  <path d="M200,320 Q140,280 100,240 Q80,215 90,200" fill="none" stroke="#D4A840" stroke-width="4" opacity="0.4" stroke-linecap="round"/>
+  <path d="M200,320 Q120,295 75,270 Q50,255 45,235" fill="none" stroke="#C89030" stroke-width="3" opacity="0.35" stroke-linecap="round"/>
+  <path d="M200,320 Q155,288 130,260 Q115,240 118,220" fill="none" stroke="#E0B050" stroke-width="2" opacity="0.4" stroke-linecap="round"/>
+  <path d="M200,320 Q260,280 300,240 Q320,215 310,200" fill="none" stroke="#D4A840" stroke-width="4" opacity="0.4" stroke-linecap="round"/>
+  <path d="M200,320 Q280,295 325,270 Q350,255 355,235" fill="none" stroke="#C89030" stroke-width="3" opacity="0.35" stroke-linecap="round"/>
+  <path d="M200,320 Q245,288 270,260 Q285,240 282,220" fill="none" stroke="#E0B050" stroke-width="2" opacity="0.4" stroke-linecap="round"/>
+  <!-- Upward sand throw -->
+  <path d="M200,320 Q185,260 178,210 Q175,185 188,170" fill="none" stroke="#D4A840" stroke-width="3" opacity="0.4" stroke-linecap="round"/>
+  <path d="M200,320 Q215,260 222,210 Q225,185 212,170" fill="none" stroke="#D4A840" stroke-width="3" opacity="0.4" stroke-linecap="round"/>
+  <path d="M200,320 Q200,258 200,205 Q200,180 200,165" fill="none" stroke="#E0B050" stroke-width="4" opacity="0.35" stroke-linecap="round"/>
+
+  <!-- Sand grain particles -->
+  <circle cx="95" cy="202" r="4" fill="#D4A840" opacity="0.5"/>
+  <circle cx="78" cy="248" r="3" fill="#C89030" opacity="0.45"/>
+  <circle cx="305" cy="205" r="4" fill="#D4A840" opacity="0.5"/>
+  <circle cx="352" cy="238" r="3" fill="#C89030" opacity="0.45"/>
+  <circle cx="186" cy="168" r="4" fill="#D4A840" opacity="0.5"/>
+  <circle cx="214" cy="168" r="4" fill="#D4A840" opacity="0.5"/>
+  <circle cx="200" cy="155" r="5" fill="#E0B050" opacity="0.5"/>
+  <circle cx="136" cy="238" r="3" fill="#C89030" opacity="0.4"/>
+  <circle cx="264" cy="242" r="3" fill="#C89030" opacity="0.4"/>
+  <!-- Micro particles -->
+  <circle cx="160" cy="215" r="2" fill="#D4A840" opacity="0.4"/>
+  <circle cx="240" cy="220" r="2" fill="#D4A840" opacity="0.4"/>
+  <circle cx="108" cy="226" r="2" fill="#C89030" opacity="0.4"/>
+  <circle cx="290" cy="228" r="2" fill="#C89030" opacity="0.4"/>
+  <circle cx="175" cy="188" r="2" fill="#E0B050" opacity="0.4"/>
+  <circle cx="225" cy="192" r="2" fill="#E0B050" opacity="0.4"/>
+</svg>

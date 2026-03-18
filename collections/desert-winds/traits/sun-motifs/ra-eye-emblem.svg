@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <!-- Eye of Ra / Horus Emblem Trait -->
+  <defs>
+    <linearGradient id="eyeGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F0D060"/>
+      <stop offset="100%" stop-color="#C89020"/>
+    </linearGradient>
+  </defs>
+  <!-- Outer eye shape -->
+  <path d="M80,200 Q140,145 200,142 Q260,145 320,200 Q260,255 200,258 Q140,255 80,200 Z"
+        fill="none" stroke="url(#eyeGold)" stroke-width="4"/>
+  <!-- Eye white -->
+  <path d="M90,200 Q148,152 200,150 Q252,152 310,200 Q252,248 200,250 Q148,248 90,200 Z"
+        fill="#F8F0D0" opacity="0.2"/>
+  <!-- Iris -->
+  <circle cx="200" cy="200" r="38" fill="#8B4A08"/>
+  <circle cx="200" cy="200" r="30" fill="#C87020"/>
+  <!-- Pupil -->
+  <circle cx="200" cy="200" r="18" fill="#1A1008"/>
+  <circle cx="192" cy="192" r="6" fill="white" opacity="0.5"/>
+  <!-- Kohl lines (Egyptian style) -->
+  <!-- Left tail -->
+  <path d="M88,200 Q60,205 40,215 Q50,208 40,200 Q50,192 60,195 Q70,198 88,200" fill="#2C1808"/>
+  <!-- Right tail -->
+  <path d="M312,200 Q340,195 360,185 Q350,192 360,200 Q350,208 340,205 Q330,202 312,200" fill="#2C1808"/>
+  <!-- Lower lash / teardrop -->
+  <path d="M200,238 Q188,252 182,272 Q192,262 200,268 Q208,262 218,272 Q212,252 200,238" fill="#2C1808"/>
+
+  <!-- Decorative hieroglyph lines above -->
+  <line x1="170" y1="165" x2="170" y2="145" stroke="#D4A030" stroke-width="2" opacity="0.6"/>
+  <line x1="185" y1="160" x2="185" y2="140" stroke="#D4A030" stroke-width="2" opacity="0.6"/>
+  <line x1="200" y1="158" x2="200" y2="135" stroke="#D4A030" stroke-width="2.5" opacity="0.7"/>
+  <line x1="215" y1="160" x2="215" y2="140" stroke="#D4A030" stroke-width="2" opacity="0.6"/>
+  <line x1="230" y1="165" x2="230" y2="145" stroke="#D4A030" stroke-width="2" opacity="0.6"/>
+  <!-- Top feather -->
+  <path d="M200,135 Q190,120 200,108 Q210,120 200,135" fill="#D4A030" opacity="0.7"/>
+</svg>

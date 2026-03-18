@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <!-- Dune Shadows Pattern Trait -->
+  <defs>
+    <linearGradient id="duneGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E0B060" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#8B5818" stop-opacity="0.6"/>
+    </linearGradient>
+    <linearGradient id="duneGrad2" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#D4A040" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#A07020" stop-opacity="0.5"/>
+    </linearGradient>
+  </defs>
+  <!-- Large dune shapes -->
+  <path d="M-20,400 Q80,240 200,280 Q320,320 420,180 L420,400 Z" fill="url(#duneGrad1)"/>
+  <path d="M-20,400 Q60,300 180,320 Q300,340 420,250 L420,400 Z" fill="#C89030" opacity="0.2"/>
+  <path d="M-20,400 Q120,350 250,340 Q350,335 420,310 L420,400 Z" fill="#D4A040" opacity="0.15"/>
+  <!-- Sharp dune ridge lines -->
+  <path d="M0,380 Q100,295 200,310 Q300,325 400,240" fill="none" stroke="#A07020" stroke-width="2" opacity="0.4"/>
+  <path d="M0,350 Q80,280 200,300 Q320,318 400,220" fill="none" stroke="#8B6018" stroke-width="1.5" opacity="0.35"/>
+  <!-- Wind-carved shadows -->
+  <path d="M50,200 Q120,230 180,210 Q240,190 310,225" fill="none" stroke="#7A5010" stroke-width="8" opacity="0.12" stroke-linecap="round"/>
+  <path d="M30,280 Q110,310 200,290 Q290,270 370,300" fill="none" stroke="#7A5010" stroke-width="8" opacity="0.12" stroke-linecap="round"/>
+</svg>

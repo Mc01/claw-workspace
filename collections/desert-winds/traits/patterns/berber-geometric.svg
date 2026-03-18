@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <!-- Berber Geometric Pattern Trait -->
+  <defs>
+    <pattern id="berber" x="0" y="0" width="50" height="50" patternUnits="userSpaceOnUse">
+      <!-- Diamond -->
+      <path d="M25,5 L45,25 L25,45 L5,25 Z" fill="none" stroke="#C85820" stroke-width="1.5" opacity="0.6"/>
+      <!-- Inner diamond -->
+      <path d="M25,15 L35,25 L25,35 L15,25 Z" fill="#E07830" opacity="0.2"/>
+      <!-- Corner dots -->
+      <circle cx="25" cy="5" r="2" fill="#C85820" opacity="0.5"/>
+      <circle cx="45" cy="25" r="2" fill="#C85820" opacity="0.5"/>
+      <circle cx="25" cy="45" r="2" fill="#C85820" opacity="0.5"/>
+      <circle cx="5" cy="25" r="2" fill="#C85820" opacity="0.5"/>
+      <!-- Cross lines -->
+      <line x1="0" y1="25" x2="50" y2="25" stroke="#A04810" stroke-width="0.5" opacity="0.3"/>
+      <line x1="25" y1="0" x2="25" y2="50" stroke="#A04810" stroke-width="0.5" opacity="0.3"/>
+    </pattern>
+  </defs>
+  <rect width="400" height="400" fill="url(#berber)"/>
+</svg>

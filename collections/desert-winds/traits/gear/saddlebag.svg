@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <!-- Nomad Saddlebag Trait -->
+  <defs>
+    <linearGradient id="bagGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8B4A18"/>
+      <stop offset="100%" stop-color="#5A2E08"/>
+    </linearGradient>
+  </defs>
+  <!-- Left saddlebag -->
+  <rect x="45" y="230" width="90" height="110" rx="12" fill="url(#bagGrad)" stroke="#3A1E05" stroke-width="2"/>
+  <!-- Left bag flap -->
+  <path d="M45,230 Q90,215 135,230 L135,265 Q90,250 45,265 Z" fill="#A05A20" stroke="#3A1E05" stroke-width="1.5"/>
+  <!-- Left bag buckle -->
+  <rect x="78" y="252" width="24" height="14" rx="3" fill="#D4A030" stroke="#8B6010" stroke-width="1.5"/>
+  <rect x="83" y="255" width="14" height="8" rx="2" fill="none" stroke="#8B6010" stroke-width="1"/>
+  <!-- Left bag stitching -->
+  <path d="M55,270 Q90,262 125,270" fill="none" stroke="#6B3A10" stroke-width="1" stroke-dasharray="4,3" opacity="0.5"/>
+  <path d="M55,290 Q90,282 125,290" fill="none" stroke="#6B3A10" stroke-width="1" stroke-dasharray="4,3" opacity="0.5"/>
+  <path d="M55,310 Q90,302 125,310" fill="none" stroke="#6B3A10" stroke-width="1" stroke-dasharray="4,3" opacity="0.5"/>
+  <!-- Berber pattern on left bag -->
+  <path d="M68,278 L90,268 L112,278 L90,288 Z" fill="none" stroke="#D4A030" stroke-width="1.5" opacity="0.6"/>
+
+  <!-- Right saddlebag -->
+  <rect x="265" y="230" width="90" height="110" rx="12" fill="url(#bagGrad)" stroke="#3A1E05" stroke-width="2"/>
+  <!-- Right bag flap -->
+  <path d="M265,230 Q310,215 355,230 L355,265 Q310,250 265,265 Z" fill="#A05A20" stroke="#3A1E05" stroke-width="1.5"/>
+  <!-- Right bag buckle -->
+  <rect x="298" y="252" width="24" height="14" rx="3" fill="#D4A030" stroke="#8B6010" stroke-width="1.5"/>
+  <rect x="303" y="255" width="14" height="8" rx="2" fill="none" stroke="#8B6010" stroke-width="1"/>
+  <!-- Right bag stitching -->
+  <path d="M275,270 Q310,262 345,270" fill="none" stroke="#6B3A10" stroke-width="1" stroke-dasharray="4,3" opacity="0.5"/>
+  <path d="M275,290 Q310,282 345,290" fill="none" stroke="#6B3A10" stroke-width="1" stroke-dasharray="4,3" opacity="0.5"/>
+  <path d="M275,310 Q310,302 345,310" fill="none" stroke="#6B3A10" stroke-width="1" stroke-dasharray="4,3" opacity="0.5"/>
+  <!-- Berber pattern on right bag -->
+  <path d="M288,278 L310,268 L332,278 L310,288 Z" fill="none" stroke="#D4A030" stroke-width="1.5" opacity="0.6"/>
+
+  <!-- Connecting strap -->
+  <rect x="135" y="240" width="130" height="16" rx="6" fill="#7A3A10" stroke="#3A1E05" stroke-width="1.5"/>
+</svg>

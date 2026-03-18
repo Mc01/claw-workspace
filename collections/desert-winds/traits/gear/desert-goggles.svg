@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <!-- Desert Goggles / Sand Goggles Trait -->
+  <defs>
+    <radialGradient id="lensLeft" cx="40%" cy="40%" r="55%">
+      <stop offset="0%" stop-color="#C8A840" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#8B5818" stop-opacity="0.9"/>
+    </radialGradient>
+    <radialGradient id="lensRight" cx="40%" cy="40%" r="55%">
+      <stop offset="0%" stop-color="#C8A840" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#8B5818" stop-opacity="0.9"/>
+    </radialGradient>
+  </defs>
+  <!-- Goggle strap -->
+  <path d="M70,178 Q200,165 330,178" fill="none" stroke="#4A2808" stroke-width="12" stroke-linecap="round"/>
+  <path d="M70,178 Q200,165 330,178" fill="none" stroke="#6B3A10" stroke-width="7" stroke-linecap="round"/>
+
+  <!-- Left lens frame -->
+  <ellipse cx="158" cy="192" rx="52" ry="44" fill="#5A3808" stroke="#3A2008" stroke-width="3"/>
+  <ellipse cx="158" cy="192" rx="46" ry="38" fill="url(#lensLeft)"/>
+  <!-- Left lens shine -->
+  <ellipse cx="142" cy="178" rx="14" ry="10" fill="white" opacity="0.25" transform="rotate(-20,142,178)"/>
+  <!-- Left lens cross reflection -->
+  <line x1="145" y1="175" x2="152" y2="168" stroke="white" stroke-width="1.5" opacity="0.3"/>
+
+  <!-- Bridge -->
+  <rect x="200" y="186" width="40" height="12" rx="5" fill="#5A3808" stroke="#3A2008" stroke-width="1.5"/>
+
+  <!-- Right lens frame -->
+  <ellipse cx="242" cy="192" rx="52" ry="44" fill="#5A3808" stroke="#3A2008" stroke-width="3"/>
+  <ellipse cx="242" cy="192" rx="46" ry="38" fill="url(#lensRight)"/>
+  <!-- Right lens shine -->
+  <ellipse cx="226" cy="178" rx="14" ry="10" fill="white" opacity="0.25" transform="rotate(-20,226,178)"/>
+
+  <!-- Rubber gasket around lenses -->
+  <ellipse cx="158" cy="192" rx="52" ry="44" fill="none" stroke="#2C1808" stroke-width="5" opacity="0.5"/>
+  <ellipse cx="242" cy="192" rx="52" ry="44" fill="none" stroke="#2C1808" stroke-width="5" opacity="0.5"/>
+
+  <!-- Strap side clips -->
+  <rect x="62" y="172" width="16" height="12" rx="3" fill="#6B3A10" stroke="#3A2008" stroke-width="1.5"/>
+  <rect x="322" y="172" width="16" height="12" rx="3" fill="#6B3A10" stroke="#3A2008" stroke-width="1.5"/>
+
+  <!-- Vent slots on frame -->
+  <rect x="108" y="198" width="6" height="12" rx="2" fill="#2C1808" opacity="0.6"/>
+  <rect x="120" y="198" width="6" height="12" rx="2" fill="#2C1808" opacity="0.6"/>
+  <rect x="274" y="198" width="6" height="12" rx="2" fill="#2C1808" opacity="0.6"/>
+  <rect x="286" y="198" width="6" height="12" rx="2" fill="#2C1808" opacity="0.6"/>
+</svg>

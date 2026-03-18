@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <!-- Water Gourd / Desert Canteen Trait -->
+  <defs>
+    <radialGradient id="gourdGrad" cx="35%" cy="30%" r="65%">
+      <stop offset="0%" stop-color="#C8D860"/>
+      <stop offset="100%" stop-color="#6B8018"/>
+    </radialGradient>
+    <linearGradient id="waterShine" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#88CCFF" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#2288CC" stop-opacity="0.2"/>
+    </linearGradient>
+  </defs>
+  <!-- Shoulder strap -->
+  <path d="M165,120 Q140,160 145,220 Q148,260 160,290" fill="none" stroke="#8B4A18" stroke-width="6" stroke-linecap="round"/>
+
+  <!-- Gourd body -->
+  <ellipse cx="155" cy="295" rx="45" ry="55" fill="url(#gourdGrad)" stroke="#4A5A08" stroke-width="2"/>
+
+  <!-- Water inside hint -->
+  <ellipse cx="155" cy="320" rx="35" ry="25" fill="url(#waterShine)"/>
+
+  <!-- Gourd neck -->
+  <rect x="142" y="238" width="26" height="30" rx="10" fill="#8B9A28" stroke="#4A5A08" stroke-width="1.5"/>
+
+  <!-- Cork stopper -->
+  <rect x="144" y="230" width="22" height="16" rx="6" fill="#8B5A18" stroke="#5A3808" stroke-width="1.5"/>
+  <rect x="148" y="225" width="14" height="10" rx="4" fill="#A06A20"/>
+
+  <!-- Gourd texture lines -->
+  <path d="M115,290 Q155,280 195,290" fill="none" stroke="#5A7010" stroke-width="1.5" opacity="0.4"/>
+  <path d="M112,305 Q155,295 198,305" fill="none" stroke="#5A7010" stroke-width="1.5" opacity="0.4"/>
+  <path d="M114,320 Q155,310 196,320" fill="none" stroke="#5A7010" stroke-width="1.5" opacity="0.4"/>
+  <path d="M118,335 Q155,325 192,335" fill="none" stroke="#5A7010" stroke-width="1.5" opacity="0.4"/>
+
+  <!-- Shine highlight -->
+  <ellipse cx="135" cy="275" rx="15" ry="20" fill="white" opacity="0.15" transform="rotate(-15,135,275)"/>
+
+  <!-- Water drop decoration -->
+  <path d="M155,298 Q148,310 155,318 Q162,310 155,298 Z" fill="#88CCFF" opacity="0.6"/>
+</svg>

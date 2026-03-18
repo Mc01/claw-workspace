@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <!-- Ornate Desert Collar Trait -->
+  <defs>
+    <linearGradient id="collarGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#D4A030"/>
+      <stop offset="100%" stop-color="#8B5E10"/>
+    </linearGradient>
+  </defs>
+  <!-- Main collar shape -->
+  <path d="M120,195 Q200,175 280,195 Q290,220 280,240 Q200,260 120,240 Q110,220 120,195 Z"
+        fill="url(#collarGrad)" stroke="#6B4008" stroke-width="2"/>
+  <!-- Inner collar -->
+  <path d="M135,200 Q200,183 265,200 Q272,218 265,234 Q200,248 135,234 Q128,218 135,200 Z"
+        fill="#C89028" stroke="#8B5E10" stroke-width="1"/>
+  <!-- Geometric inlay -->
+  <path d="M145,207 L200,198 L255,207 L255,228 L200,236 L145,228 Z"
+        fill="none" stroke="#E0B840" stroke-width="1.5" opacity="0.6"/>
+  <!-- Turquoise stone inlays -->
+  <ellipse cx="200" cy="218" rx="10" ry="8" fill="#3AB8C8" stroke="#2A8898" stroke-width="1.5"/>
+  <ellipse cx="165" cy="215" rx="7" ry="6" fill="#3AB8C8" stroke="#2A8898" stroke-width="1"/>
+  <ellipse cx="235" cy="215" rx="7" ry="6" fill="#3AB8C8" stroke="#2A8898" stroke-width="1"/>
+  <ellipse cx="148" cy="218" rx="5" ry="5" fill="#C83020" stroke="#8B2010" stroke-width="1"/>
+  <ellipse cx="252" cy="218" rx="5" ry="5" fill="#C83020" stroke="#8B2010" stroke-width="1"/>
+  <!-- Gold filigree lines -->
+  <path d="M125,205 Q145,200 165,205" fill="none" stroke="#F0D060" stroke-width="1.5" opacity="0.7"/>
+  <path d="M235,205 Q255,200 275,205" fill="none" stroke="#F0D060" stroke-width="1.5" opacity="0.7"/>
+  <path d="M125,230 Q145,235 165,230" fill="none" stroke="#F0D060" stroke-width="1.5" opacity="0.7"/>
+  <path d="M235,230 Q255,235 275,230" fill="none" stroke="#F0D060" stroke-width="1.5" opacity="0.7"/>
+  <!-- Pendant drop -->
+  <path d="M200,244 L200,268" stroke="#C89028" stroke-width="2"/>
+  <path d="M200,268 Q192,276 200,285 Q208,276 200,268 Z" fill="#D4A030" stroke="#8B5E10" stroke-width="1.5"/>
+  <circle cx="200" cy="272" r="5" fill="#3AB8C8" stroke="#2A8898" stroke-width="1"/>
+</svg>

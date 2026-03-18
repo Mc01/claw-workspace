@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <!-- Desert Turban / Tagelmust Trait -->
+  <defs>
+    <linearGradient id="turbanGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1A4A7A"/>
+      <stop offset="100%" stop-color="#0D2E50"/>
+    </linearGradient>
+  </defs>
+  <!-- Main turban wrap -->
+  <path d="M120,180 Q100,140 115,105 Q135,65 200,55 Q265,45 290,85 Q315,120 300,165 Q285,155 265,150 Q240,145 215,148 Q185,150 160,158 Q140,165 120,180 Z"
+        fill="url(#turbanGrad)" stroke="#0A1E38" stroke-width="2"/>
+  <!-- Turban wrap layers -->
+  <path d="M125,170 Q140,130 175,115 Q210,100 250,108 Q280,115 292,145"
+        fill="none" stroke="#2A6AAA" stroke-width="4" opacity="0.4"/>
+  <path d="M118,155 Q132,115 170,98 Q210,80 255,90 Q282,98 296,128"
+        fill="none" stroke="#2A6AAA" stroke-width="4" opacity="0.3"/>
+  <!-- Tagelmust face veil hanging part -->
+  <path d="M120,178 Q108,195 106,220 Q104,245 115,260 Q110,258 105,270 Q100,282 108,295 Q102,292 100,305"
+        fill="none" stroke="#1A4A7A" stroke-width="18" stroke-linecap="round" opacity="0.85"/>
+  <path d="M120,178 Q108,195 106,220 Q104,245 115,260 Q110,258 105,270 Q100,282 108,295"
+        fill="none" stroke="#2A5A8A" stroke-width="10" stroke-linecap="round" opacity="0.5"/>
+  <!-- Wrap folds -->
+  <path d="M130,90 Q145,80 165,78" fill="none" stroke="#3A7ABB" stroke-width="2.5" opacity="0.4"/>
+  <path d="M200,60 Q220,56 240,62" fill="none" stroke="#3A7ABB" stroke-width="2" opacity="0.35"/>
+  <!-- Gold trim -->
+  <path d="M118,160 Q200,145 295,158" fill="none" stroke="#D4A030" stroke-width="2" opacity="0.6"/>
+  <path d="M122,170 Q200,155 298,168" fill="none" stroke="#D4A030" stroke-width="1.5" opacity="0.4"/>
+</svg>

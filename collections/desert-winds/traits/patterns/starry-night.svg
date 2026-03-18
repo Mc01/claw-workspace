@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <!-- Starry Desert Night Pattern Trait -->
+  <defs>
+    <radialGradient id="nightSky" cx="50%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#1A2A5A" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#0A0A1A" stop-opacity="0.8"/>
+    </radialGradient>
+  </defs>
+  <rect width="400" height="400" fill="url(#nightSky)"/>
+  <!-- Stars - various sizes -->
+  <circle cx="30" cy="25" r="2" fill="white" opacity="0.8"/>
+  <circle cx="75" cy="50" r="1.5" fill="white" opacity="0.7"/>
+  <circle cx="120" cy="20" r="2.5" fill="#F0E0A0" opacity="0.9"/>
+  <circle cx="165" cy="45" r="1.5" fill="white" opacity="0.7"/>
+  <circle cx="210" cy="15" r="2" fill="white" opacity="0.8"/>
+  <circle cx="250" cy="38" r="3" fill="#F0E0A0" opacity="0.85"/>
+  <circle cx="300" cy="22" r="1.5" fill="white" opacity="0.7"/>
+  <circle cx="350" cy="48" r="2" fill="white" opacity="0.8"/>
+  <circle cx="380" cy="18" r="2.5" fill="#F0E0A0" opacity="0.85"/>
+  <circle cx="50" cy="90" r="1.5" fill="white" opacity="0.65"/>
+  <circle cx="100" cy="75" r="2" fill="white" opacity="0.75"/>
+  <circle cx="148" cy="95" r="1" fill="white" opacity="0.6"/>
+  <circle cx="195" cy="70" r="2.5" fill="#F0E0A0" opacity="0.8"/>
+  <circle cx="235" cy="88" r="1.5" fill="white" opacity="0.7"/>
+  <circle cx="278" cy="65" r="2" fill="white" opacity="0.75"/>
+  <circle cx="320" cy="85" r="1.5" fill="white" opacity="0.65"/>
+  <circle cx="365" cy="75" r="2" fill="white" opacity="0.75"/>
+  <circle cx="22" cy="135" r="2" fill="white" opacity="0.7"/>
+  <circle cx="60" cy="150" r="1.5" fill="white" opacity="0.65"/>
+  <circle cx="105" cy="128" r="2.5" fill="#F0E0A0" opacity="0.8"/>
+  <circle cx="142" cy="158" r="1.5" fill="white" opacity="0.65"/>
+  <circle cx="188" cy="130" r="2" fill="white" opacity="0.75"/>
+  <circle cx="225" cy="148" r="1" fill="white" opacity="0.6"/>
+  <circle cx="268" cy="122" r="2" fill="white" opacity="0.75"/>
+  <circle cx="312" cy="145" r="2.5" fill="#F0E0A0" opacity="0.8"/>
+  <circle cx="355" cy="128" r="1.5" fill="white" opacity="0.65"/>
+  <circle cx="390" cy="155" r="2" fill="white" opacity="0.7"/>
+  <!-- Star cross-sparkles for bright stars -->
+  <path d="M120,17 L120,23 M117,20 L123,20" stroke="#F0E0A0" stroke-width="1" opacity="0.7"/>
+  <path d="M250,35 L250,41 M247,38 L253,38" stroke="#F0E0A0" stroke-width="1" opacity="0.65"/>
+  <path d="M195,67 L195,73 M192,70 L198,70" stroke="#F0E0A0" stroke-width="1" opacity="0.65"/>
+  <!-- Milky way band -->
+  <path d="M0,100 Q100,85 200,95 Q300,105 400,90" fill="none" stroke="white" stroke-width="30" opacity="0.04"/>
+  <path d="M0,105 Q100,90 200,100 Q300,110 400,95" fill="none" stroke="white" stroke-width="15" opacity="0.04"/>
+  <!-- Moon -->
+  <circle cx="340" cy="55" r="22" fill="#F8F0D0" opacity="0.5"/>
+  <circle cx="350" cy="48" r="20" fill="#0A0A1A" opacity="0.7"/>
+</svg>

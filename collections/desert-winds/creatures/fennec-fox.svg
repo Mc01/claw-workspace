@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <!-- Fennec Fox - Desert Winds Collection #4 -->
+  <defs>
+    <radialGradient id="bodyGrad" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#F0D080"/>
+      <stop offset="100%" stop-color="#C8952E"/>
+    </radialGradient>
+    <radialGradient id="earInner" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#F5B8B8"/>
+      <stop offset="100%" stop-color="#D4887A"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Shadow -->
+  <ellipse cx="200" cy="378" rx="88" ry="14" fill="#8B6014" opacity="0.25"/>
+
+  <!-- Tail -->
+  <path d="M268,288 Q345,315 362,268 Q372,235 328,248 Q298,258 275,280 Z" fill="#E8C870" stroke="#A07020" stroke-width="2"/>
+  <ellipse cx="352" cy="255" rx="14" ry="10" fill="#2C2C2C"/>
+
+  <!-- Body -->
+  <ellipse cx="198" cy="262" rx="78" ry="66" fill="url(#bodyGrad)" stroke="#A07020" stroke-width="2"/>
+
+  <!-- Belly -->
+  <ellipse cx="198" cy="275" rx="42" ry="40" fill="#F5E8B0" opacity="0.6"/>
+
+  <!-- Legs -->
+  <rect x="152" y="316" width="24" height="48" rx="10" fill="#C8952E" stroke="#A07020" stroke-width="1.5"/>
+  <rect x="182" y="320" width="24" height="44" rx="10" fill="#C8952E" stroke="#A07020" stroke-width="1.5"/>
+  <rect x="214" y="320" width="24" height="44" rx="10" fill="#C8952E" stroke="#A07020" stroke-width="1.5"/>
+  <rect x="244" y="316" width="24" height="48" rx="10" fill="#C8952E" stroke="#A07020" stroke-width="1.5"/>
+
+  <!-- Paws -->
+  <ellipse cx="164" cy="365" rx="15" ry="7" fill="#D4A840"/>
+  <ellipse cx="194" cy="365" rx="15" ry="7" fill="#D4A840"/>
+  <ellipse cx="226" cy="365" rx="15" ry="7" fill="#D4A840"/>
+  <ellipse cx="256" cy="365" rx="15" ry="7" fill="#D4A840"/>
+
+  <!-- Neck -->
+  <rect x="175" y="215" width="46" height="30" rx="12" fill="#D4A840" stroke="#A07020" stroke-width="1.5"/>
+
+  <!-- Head -->
+  <ellipse cx="200" cy="178" rx="58" ry="52" fill="url(#bodyGrad)" stroke="#A07020" stroke-width="2"/>
+
+  <!-- Big Ears (fennec signature feature) -->
+  <path d="M152,148 L112,52 L148,145 Z" fill="#E8C870" stroke="#A07020" stroke-width="2"/>
+  <path d="M155,146 L122,62 L150,144 Z" fill="url(#earInner)" opacity="0.75"/>
+  <path d="M248,148 L288,52 L252,145 Z" fill="#E8C870" stroke="#A07020" stroke-width="2"/>
+  <path d="M245,146 L278,62 L250,144 Z" fill="url(#earInner)" opacity="0.75"/>
+
+  <!-- Muzzle -->
+  <ellipse cx="200" cy="200" rx="22" ry="16" fill="#F0DC90" stroke="#A07020" stroke-width="1.5"/>
+
+  <!-- Eyes -->
+  <circle cx="178" cy="172" r="12" fill="#111"/>
+  <circle cx="222" cy="172" r="12" fill="#111"/>
+  <circle cx="182" cy="168" r="4" fill="white"/>
+  <circle cx="226" cy="168" r="4" fill="white"/>
+  <circle cx="184" cy="169" r="2" fill="white" opacity="0.6"/>
+
+  <!-- Nose -->
+  <ellipse cx="200" cy="195" rx="9" ry="6" fill="#222"/>
+
+  <!-- Mouth -->
+  <path d="M192,204 Q200,212 208,204" fill="none" stroke="#A07020" stroke-width="1.5" stroke-linecap="round"/>
+
+  <!-- Whiskers -->
+  <line x1="155" y1="198" x2="183" y2="202" stroke="#8B6014" stroke-width="1.2" opacity="0.8"/>
+  <line x1="152" y1="204" x2="181" y2="206" stroke="#8B6014" stroke-width="1.2" opacity="0.8"/>
+  <line x1="217" y1="202" x2="245" y2="198" stroke="#8B6014" stroke-width="1.2" opacity="0.8"/>
+  <line x1="219" y1="206" x2="248" y2="204" stroke="#8B6014" stroke-width="1.2" opacity="0.8"/>
+
+  <!-- Forehead marking -->
+  <path d="M188,148 Q200,142 212,148 Q206,160 200,162 Q194,160 188,148 Z" fill="#D4A030" opacity="0.4"/>
+</svg>

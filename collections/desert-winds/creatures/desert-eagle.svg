@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <!-- Desert Eagle (Golden Eagle) - Desert Winds Collection #4 -->
+  <defs>
+    <linearGradient id="wingGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8B5E1A"/>
+      <stop offset="100%" stop-color="#4A2E08"/>
+    </linearGradient>
+    <radialGradient id="bodyGrad" cx="50%" cy="30%" r="60%">
+      <stop offset="0%" stop-color="#B87830"/>
+      <stop offset="100%" stop-color="#7A4E10"/>
+    </radialGradient>
+    <linearGradient id="tailGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#A06820"/>
+      <stop offset="100%" stop-color="#5A3808"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Shadow -->
+  <ellipse cx="200" cy="385" rx="70" ry="10" fill="#4A2E08" opacity="0.2"/>
+
+  <!-- Left wing (spread) -->
+  <path d="M200,210 Q140,175 80,190 Q45,200 30,225 Q45,220 65,218 Q90,215 110,220 Q130,225 145,230 Q165,235 185,228 Z"
+        fill="url(#wingGrad)" stroke="#3A2008" stroke-width="1.5"/>
+  <!-- Wing feather details -->
+  <path d="M80,190 Q85,210 95,220" fill="none" stroke="#5A3808" stroke-width="1" opacity="0.6"/>
+  <path d="M60,208 Q68,218 78,222" fill="none" stroke="#5A3808" stroke-width="1" opacity="0.6"/>
+  <path d="M45,218 Q52,225 60,228" fill="none" stroke="#5A3808" stroke-width="1" opacity="0.6"/>
+  <path d="M110,192 Q112,212 118,222" fill="none" stroke="#5A3808" stroke-width="1" opacity="0.6"/>
+  <path d="M135,195 Q135,215 140,225" fill="none" stroke="#5A3808" stroke-width="1" opacity="0.6"/>
+
+  <!-- Right wing (spread) -->
+  <path d="M200,210 Q260,175 320,190 Q355,200 370,225 Q355,220 335,218 Q310,215 290,220 Q270,225 255,230 Q235,235 215,228 Z"
+        fill="url(#wingGrad)" stroke="#3A2008" stroke-width="1.5"/>
+  <!-- Wing feather details -->
+  <path d="M320,190 Q315,210 305,220" fill="none" stroke="#5A3808" stroke-width="1" opacity="0.6"/>
+  <path d="M340,208 Q332,218 322,222" fill="none" stroke="#5A3808" stroke-width="1" opacity="0.6"/>
+  <path d="M355,218 Q348,225 340,228" fill="none" stroke="#5A3808" stroke-width="1" opacity="0.6"/>
+  <path d="M290,192 Q288,212 282,222" fill="none" stroke="#5A3808" stroke-width="1" opacity="0.6"/>
+  <path d="M265,195 Q265,215 260,225" fill="none" stroke="#5A3808" stroke-width="1" opacity="0.6"/>
+
+  <!-- Tail feathers -->
+  <path d="M175,305 Q180,340 170,365 Q178,360 185,370 Q193,355 200,365 Q207,355 215,370 Q222,360 230,370 Q220,355 225,340 Q225,320 222,305 Z"
+        fill="url(#tailGrad)" stroke="#3A2008" stroke-width="1.5"/>
+  <!-- Tail lines -->
+  <line x1="178" y1="310" x2="175" y2="360" stroke="#5A3808" stroke-width="1" opacity="0.5"/>
+  <line x1="190" y1="308" x2="190" y2="362" stroke="#5A3808" stroke-width="1" opacity="0.5"/>
+  <line x1="200" y1="308" x2="200" y2="363" stroke="#5A3808" stroke-width="1" opacity="0.5"/>
+  <line x1="210" y1="308" x2="210" y2="362" stroke="#5A3808" stroke-width="1" opacity="0.5"/>
+  <line x1="220" y1="310" x2="223" y2="360" stroke="#5A3808" stroke-width="1" opacity="0.5"/>
+
+  <!-- Body -->
+  <ellipse cx="200" cy="258" rx="48" ry="60" fill="url(#bodyGrad)" stroke="#5A3808" stroke-width="2"/>
+
+  <!-- Chest golden patch -->
+  <ellipse cx="200" cy="245" rx="28" ry="32" fill="#D4A840" opacity="0.5"/>
+
+  <!-- Nape golden -->
+  <ellipse cx="200" cy="210" rx="22" ry="18" fill="#D4A840" opacity="0.6"/>
+
+  <!-- Neck -->
+  <rect x="182" y="188" width="36" height="38" rx="14" fill="#A07828" stroke="#5A3808" stroke-width="1.5"/>
+
+  <!-- Head -->
+  <ellipse cx="200" cy="170" rx="36" ry="34" fill="#B87830" stroke="#5A3808" stroke-width="2"/>
+
+  <!-- Golden nape crown -->
+  <ellipse cx="200" cy="155" rx="28" ry="20" fill="#E8C040" opacity="0.7"/>
+
+  <!-- Beak -->
+  <path d="M200,170 Q225,168 235,178 Q228,188 218,186 Q208,182 200,178 Z" fill="#E0A830" stroke="#8B6010" stroke-width="1.5"/>
+  <!-- Beak tip hook -->
+  <path d="M230,180 Q238,188 232,192 Q226,194 222,188" fill="#C08020" stroke="#8B6010" stroke-width="1.5"/>
+  <!-- Cere (beak base) -->
+  <ellipse cx="210" cy="170" rx="12" ry="7" fill="#E8B840" opacity="0.8"/>
+
+  <!-- Eyes -->
+  <circle cx="190" cy="162" r="12" fill="#1A1008"/>
+  <circle cx="190" cy="162" r="8" fill="#B87010"/>
+  <circle cx="190" cy="162" r="5" fill="#1A1008"/>
+  <circle cx="187" cy="159" r="2.5" fill="white"/>
+  <!-- Supraorbital ridge -->
+  <path d="M178,154 Q190,148 202,155" fill="none" stroke="#5A3808" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Talons / Feet -->
+  <!-- Left foot -->
+  <path d="M175,310 Q165,325 160,340" fill="none" stroke="#B87010" stroke-width="8" stroke-linecap="round"/>
+  <path d="M160,340 Q148,348 140,352" fill="none" stroke="#B87010" stroke-width="4" stroke-linecap="round"/>
+  <path d="M160,340 Q158,355 156,362" fill="none" stroke="#B87010" stroke-width="4" stroke-linecap="round"/>
+  <path d="M160,340 Q168,352 170,360" fill="none" stroke="#B87010" stroke-width="4" stroke-linecap="round"/>
+  <!-- Talon tips -->
+  <path d="M138,352 Q133,356 135,361" fill="none" stroke="#2C1808" stroke-width="3" stroke-linecap="round"/>
+  <path d="M153,362 Q150,368 152,373" fill="none" stroke="#2C1808" stroke-width="3" stroke-linecap="round"/>
+  <path d="M170,360 Q172,366 170,371" fill="none" stroke="#2C1808" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Right foot -->
+  <path d="M225,310 Q235,325 240,340" fill="none" stroke="#B87010" stroke-width="8" stroke-linecap="round"/>
+  <path d="M240,340 Q252,348 260,352" fill="none" stroke="#B87010" stroke-width="4" stroke-linecap="round"/>
+  <path d="M240,340 Q242,355 244,362" fill="none" stroke="#B87010" stroke-width="4" stroke-linecap="round"/>
+  <path d="M240,340 Q232,352 230,360" fill="none" stroke="#B87010" stroke-width="4" stroke-linecap="round"/>
+  <path d="M262,352 Q267,356 265,361" fill="none" stroke="#2C1808" stroke-width="3" stroke-linecap="round"/>
+  <path d="M247,362 Q250,368 248,373" fill="none" stroke="#2C1808" stroke-width="3" stroke-linecap="round"/>
+  <path d="M230,360 Q228,366 230,371" fill="none" stroke="#2C1808" stroke-width="3" stroke-linecap="round"/>
+</svg>

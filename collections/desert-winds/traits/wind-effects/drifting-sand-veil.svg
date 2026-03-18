@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <!-- Drifting Sand Veil Trait -->
+  <defs>
+    <linearGradient id="veilGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#D4A840" stop-opacity="0"/>
+      <stop offset="30%" stop-color="#C89030" stop-opacity="0.35"/>
+      <stop offset="70%" stop-color="#D4A840" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#E0B050" stop-opacity="0.1"/>
+    </linearGradient>
+  </defs>
+  <!-- Main veil band -->
+  <rect x="0" y="160" width="400" height="80" fill="url(#veilGrad)"/>
+  <!-- Veil wisps and tendrils -->
+  <path d="M0,155 Q80,145 160,158 Q240,168 320,155 Q370,148 400,158" fill="none" stroke="#C89030" stroke-width="8" opacity="0.25" stroke-linecap="round"/>
+  <path d="M0,175 Q90,165 180,178 Q270,188 360,172 Q385,168 400,175" fill="none" stroke="#D4A840" stroke-width="12" opacity="0.2" stroke-linecap="round"/>
+  <path d="M0,200 Q100,190 200,202 Q300,212 400,198" fill="none" stroke="#C89030" stroke-width="10" opacity="0.22" stroke-linecap="round"/>
+  <path d="M0,225 Q85,215 175,228 Q265,238 355,222 Q380,218 400,225" fill="none" stroke="#D4A840" stroke-width="8" opacity="0.2" stroke-linecap="round"/>
+  <path d="M0,245 Q80,238 160,248 Q240,256 320,242 Q370,235 400,245" fill="none" stroke="#C89030" stroke-width="6" opacity="0.2" stroke-linecap="round"/>
+
+  <!-- Leading edge particles -->
+  <circle cx="15" cy="165" r="3" fill="#D4A840" opacity="0.4"/>
+  <circle cx="45" cy="158" r="2" fill="#C89030" opacity="0.35"/>
+  <circle cx="72" cy="162" r="2.5" fill="#D4A840" opacity="0.4"/>
+  <circle cx="110" cy="155" r="2" fill="#C89030" opacity="0.35"/>
+  <circle cx="150" cy="160" r="3" fill="#D4A840" opacity="0.4"/>
+  <circle cx="200" cy="152" r="2.5" fill="#E0B050" opacity="0.35"/>
+  <circle cx="248" cy="158" r="2" fill="#D4A840" opacity="0.4"/>
+  <circle cx="295" cy="153" r="2.5" fill="#C89030" opacity="0.35"/>
+  <circle cx="340" cy="160" r="2" fill="#D4A840" opacity="0.4"/>
+  <circle cx="375" cy="155" r="3" fill="#C89030" opacity="0.35"/>
+  <!-- Trailing edge particles -->
+  <circle cx="25" cy="240" r="2.5" fill="#D4A840" opacity="0.3"/>
+  <circle cx="85" cy="248" r="2" fill="#C89030" opacity="0.28"/>
+  <circle cx="165" cy="244" r="3" fill="#D4A840" opacity="0.3"/>
+  <circle cx="235" cy="250" r="2" fill="#C89030" opacity="0.28"/>
+  <circle cx="310" cy="242" r="2.5" fill="#D4A840" opacity="0.3"/>
+  <circle cx="380" cy="248" r="2" fill="#C89030" opacity="0.28"/>
+</svg>

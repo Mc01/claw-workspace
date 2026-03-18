@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <!-- Dromedary Camel - Desert Winds Collection #4 -->
+  <defs>
+    <linearGradient id="camelBody" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#D4A860"/>
+      <stop offset="100%" stop-color="#A07828"/>
+    </linearGradient>
+    <radialGradient id="hump" cx="50%" cy="30%" r="60%">
+      <stop offset="0%" stop-color="#E0B870"/>
+      <stop offset="100%" stop-color="#B08030"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Shadow -->
+  <ellipse cx="200" cy="382" rx="120" ry="12" fill="#7A5818" opacity="0.25"/>
+
+  <!-- Back legs -->
+  <rect x="242" y="295" width="20" height="80" rx="8" fill="#A07828" stroke="#7A5818" stroke-width="1.5"/>
+  <rect x="275" y="295" width="20" height="80" rx="8" fill="#A07828" stroke="#7A5818" stroke-width="1.5"/>
+  <!-- Back hooves -->
+  <rect x="240" y="368" width="24" height="14" rx="5" fill="#3A2808"/>
+  <rect x="273" y="368" width="24" height="14" rx="5" fill="#3A2808"/>
+
+  <!-- Body -->
+  <ellipse cx="205" cy="272" rx="115" ry="70" fill="url(#camelBody)" stroke="#7A5818" stroke-width="2"/>
+
+  <!-- Hump (single - dromedary) -->
+  <ellipse cx="195" cy="210" rx="60" ry="52" fill="url(#hump)" stroke="#7A5818" stroke-width="2"/>
+
+  <!-- Belly fur line -->
+  <path d="M108,290 Q200,325 302,290" fill="none" stroke="#C4A048" stroke-width="3" opacity="0.4"/>
+
+  <!-- Front legs -->
+  <rect x="115" y="295" width="20" height="80" rx="8" fill="#A07828" stroke="#7A5818" stroke-width="1.5"/>
+  <rect x="148" y="295" width="20" height="80" rx="8" fill="#A07828" stroke="#7A5818" stroke-width="1.5"/>
+  <!-- Front hooves -->
+  <rect x="113" y="368" width="24" height="14" rx="5" fill="#3A2808"/>
+  <rect x="146" y="368" width="24" height="14" rx="5" fill="#3A2808"/>
+
+  <!-- Neck (long and curved) -->
+  <path d="M135,255 Q118,200 130,155 Q140,130 160,120" fill="none" stroke="#B08830" stroke-width="35" stroke-linecap="round"/>
+  <path d="M135,255 Q118,200 130,155 Q140,130 160,120" fill="none" stroke="#C49840" stroke-width="28" stroke-linecap="round"/>
+
+  <!-- Head -->
+  <ellipse cx="168" cy="108" rx="42" ry="36" fill="#C49840" stroke="#7A5818" stroke-width="2" transform="rotate(-15,168,108)"/>
+
+  <!-- Muzzle (camel characteristic) -->
+  <path d="M138,118 Q130,130 135,145 Q142,158 158,155 Q170,150 172,135" fill="#D4A850" stroke="#7A5818" stroke-width="1.5"/>
+
+  <!-- Nostrils -->
+  <ellipse cx="142" cy="142" rx="5" ry="3" fill="#5A3808" transform="rotate(-10,142,142)"/>
+  <ellipse cx="155" cy="145" rx="5" ry="3" fill="#5A3808" transform="rotate(-10,155,145)"/>
+
+  <!-- Eyes -->
+  <ellipse cx="172" cy="98" rx="10" ry="9" fill="#1A1008" transform="rotate(-15,172,98)"/>
+  <ellipse cx="152" cy="94" rx="10" ry="9" fill="#1A1008" transform="rotate(-15,152,94)"/>
+  <circle cx="174" cy="95" r="3" fill="white"/>
+  <circle cx="154" cy="91" r="3" fill="white"/>
+
+  <!-- Long eyelashes -->
+  <path d="M163,88 Q158,82 152,83" fill="none" stroke="#5A3808" stroke-width="2" stroke-linecap="round"/>
+  <path d="M167,86 Q165,79 160,79" fill="none" stroke="#5A3808" stroke-width="2" stroke-linecap="round"/>
+  <path d="M180,89 Q178,82 175,83" fill="none" stroke="#5A3808" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Ear -->
+  <ellipse cx="188" cy="82" rx="10" ry="14" fill="#C49840" stroke="#7A5818" stroke-width="1.5" transform="rotate(20,188,82)"/>
+  <ellipse cx="188" cy="82" rx="6" ry="9" fill="#D4887A" opacity="0.5" transform="rotate(20,188,82)"/>
+
+  <!-- Chin tuft -->
+  <path d="M145,148 Q150,165 148,175" fill="none" stroke="#8B6020" stroke-width="3" opacity="0.6"/>
+  <path d="M150,150 Q158,168 154,178" fill="none" stroke="#8B6020" stroke-width="3" opacity="0.6"/>
+
+  <!-- Tail -->
+  <path d="M318,270 Q345,268 352,255 Q358,240 345,245 Q335,250 320,260 Z" fill="#A07828" stroke="#7A5818" stroke-width="1.5"/>
+  <path d="M348,248 Q355,238 350,252 Q347,258 342,254 Z" fill="#5A3808"/>
+</svg>

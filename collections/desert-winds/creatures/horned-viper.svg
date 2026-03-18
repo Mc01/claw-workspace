@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <!-- Saharan Horned Viper - Desert Winds Collection #4 -->
+  <defs>
+    <linearGradient id="scaleGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#C8A048"/>
+      <stop offset="100%" stop-color="#8B5E18"/>
+    </linearGradient>
+    <pattern id="scalePattern" x="0" y="0" width="12" height="8" patternUnits="userSpaceOnUse">
+      <ellipse cx="6" cy="4" rx="5" ry="3" fill="none" stroke="#7A4E10" stroke-width="0.8" opacity="0.5"/>
+    </pattern>
+  </defs>
+
+  <!-- Shadow on sand -->
+  <ellipse cx="200" cy="385" rx="95" ry="8" fill="#7A5018" opacity="0.2"/>
+
+  <!-- Coiled body - S-curve desert viper -->
+  <!-- Outer coil -->
+  <path d="M80,200 Q60,150 100,120 Q145,88 190,100 Q235,112 255,145 Q275,178 260,215 Q245,252 210,265 Q175,278 145,262 Q115,246 108,215 Q102,188 120,172 Q140,155 165,158 Q190,160 202,178 Q214,196 205,218 Q196,238 178,242 Q162,244 155,232 Q148,218 158,208 Q168,198 180,202 Q190,206 192,218"
+        fill="none" stroke="#B08830" stroke-width="32" stroke-linecap="round"/>
+
+  <!-- Body fill over stroke -->
+  <path d="M80,200 Q60,150 100,120 Q145,88 190,100 Q235,112 255,145 Q275,178 260,215 Q245,252 210,265 Q175,278 145,262 Q115,246 108,215 Q102,188 120,172 Q140,155 165,158 Q190,160 202,178 Q214,196 205,218 Q196,238 178,242 Q162,244 155,232 Q148,218 158,208 Q168,198 180,202 Q190,206 192,218"
+        fill="none" stroke="url(#scaleGrad)" stroke-width="28" stroke-linecap="round"/>
+
+  <!-- Scale texture overlay -->
+  <path d="M80,200 Q60,150 100,120 Q145,88 190,100 Q235,112 255,145 Q275,178 260,215 Q245,252 210,265 Q175,278 145,262 Q115,246 108,215 Q102,188 120,172 Q140,155 165,158 Q190,160 202,178 Q214,196 205,218 Q196,238 178,242 Q162,244 155,232 Q148,218 158,208 Q168,198 180,202 Q190,206 192,218"
+        fill="none" stroke="url(#scalePattern)" stroke-width="28" stroke-linecap="round"/>
+
+  <!-- Belly (lighter) -->
+  <path d="M80,200 Q60,150 100,120 Q145,88 190,100 Q235,112 255,145 Q275,178 260,215 Q245,252 210,265 Q175,278 145,262 Q115,246 108,215 Q102,188 120,172 Q140,155 165,158 Q190,160 202,178 Q214,196 205,218 Q196,238 178,242 Q162,244 155,232 Q148,218 158,208 Q168,198 180,202 Q190,206 192,218"
+        fill="none" stroke="#E0C870" stroke-width="10" stroke-linecap="round" opacity="0.4"/>
+
+  <!-- Dorsal zigzag pattern -->
+  <path d="M82,198 L95,192 L108,200 L120,192 L133,200 L145,192 L155,197"
+        fill="none" stroke="#6B3E08" stroke-width="2.5" stroke-linecap="round" opacity="0.7"/>
+
+  <!-- Head (triangular) -->
+  <path d="M65,195 Q55,170 80,155 Q102,142 125,148 Q148,154 155,172 Q162,190 148,205 Q132,218 108,215 Q80,210 65,195 Z"
+        fill="#C09038" stroke="#7A5018" stroke-width="2"/>
+
+  <!-- Head scale detail -->
+  <path d="M75,178 Q105,165 140,172" fill="none" stroke="#8B6018" stroke-width="1" opacity="0.5"/>
+  <path d="M72,188 Q108,178 148,185" fill="none" stroke="#8B6018" stroke-width="1" opacity="0.5"/>
+
+  <!-- Supraocular horns (signature feature) -->
+  <path d="M98,152 Q94,138 90,128 Q86,138 88,152 Z" fill="#8B6018" stroke="#5A3808" stroke-width="1"/>
+  <path d="M118,148 Q118,133 116,122 Q112,133 112,148 Z" fill="#8B6018" stroke="#5A3808" stroke-width="1"/>
+
+  <!-- Eyes (vertical slit pupils) -->
+  <circle cx="95" cy="170" r="9" fill="#C87010"/>
+  <ellipse cx="95" cy="170" rx="3" ry="7" fill="#1A1008"/>
+  <circle cx="96" cy="166" r="2" fill="white" opacity="0.5"/>
+
+  <!-- Nostrils -->
+  <circle cx="72" cy="186" r="3" fill="#4A2808"/>
+  <circle cx="80" cy="183" r="3" fill="#4A2808"/>
+
+  <!-- Forked tongue -->
+  <path d="M62,194 Q48,194 38,188" fill="none" stroke="#C82020" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M38,188 Q28,180 22,178" fill="none" stroke="#C82020" stroke-width="2" stroke-linecap="round"/>
+  <path d="M38,188 Q28,196 22,200" fill="none" stroke="#C82020" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Rattle tail tip -->
+  <circle cx="193" cy="222" r="8" fill="#A07828" stroke="#7A5018" stroke-width="1.5"/>
+  <circle cx="193" cy="222" r="5" fill="#B89030"/>
+  <circle cx="193" cy="222" r="2.5" fill="#A07828"/>
+
+  <!-- Sand dust beneath -->
+  <ellipse cx="160" cy="295" rx="80" ry="12" fill="#D4A840" opacity="0.2"/>
+  <ellipse cx="200" cy="310" rx="55" ry="8" fill="#C89828" opacity="0.15"/>
+</svg>

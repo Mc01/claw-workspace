@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <!-- Rippled Sand Pattern Trait -->
+  <defs>
+    <linearGradient id="sandGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#F0D880"/>
+      <stop offset="100%" stop-color="#C8A040"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="400" fill="url(#sandGrad)" opacity="0.15"/>
+  <!-- Ripple lines -->
+  <path d="M0,60 Q100,45 200,60 Q300,75 400,60" fill="none" stroke="#C8A040" stroke-width="2.5" opacity="0.5"/>
+  <path d="M0,80 Q100,65 200,80 Q300,95 400,80" fill="none" stroke="#C8A040" stroke-width="2" opacity="0.4"/>
+  <path d="M0,100 Q100,85 200,100 Q300,115 400,100" fill="none" stroke="#D4B050" stroke-width="2.5" opacity="0.5"/>
+  <path d="M0,120 Q100,105 200,120 Q300,135 400,120" fill="none" stroke="#C8A040" stroke-width="2" opacity="0.4"/>
+  <path d="M0,140 Q100,125 200,140 Q300,155 400,140" fill="none" stroke="#C8A040" stroke-width="2.5" opacity="0.5"/>
+  <path d="M0,160 Q100,145 200,160 Q300,175 400,160" fill="none" stroke="#B89030" stroke-width="2" opacity="0.4"/>
+  <path d="M0,180 Q100,165 200,180 Q300,195 400,180" fill="none" stroke="#C8A040" stroke-width="2.5" opacity="0.5"/>
+  <path d="M0,200 Q100,185 200,200 Q300,215 400,200" fill="none" stroke="#C8A040" stroke-width="2" opacity="0.4"/>
+  <path d="M0,220 Q100,205 200,220 Q300,235 400,220" fill="none" stroke="#D4B050" stroke-width="2.5" opacity="0.5"/>
+  <path d="M0,240 Q100,225 200,240 Q300,255 400,240" fill="none" stroke="#C8A040" stroke-width="2" opacity="0.4"/>
+  <path d="M0,260 Q100,245 200,260 Q300,275 400,260" fill="none" stroke="#C8A040" stroke-width="2.5" opacity="0.5"/>
+  <path d="M0,280 Q100,265 200,280 Q300,295 400,280" fill="none" stroke="#B89030" stroke-width="2" opacity="0.4"/>
+  <path d="M0,300 Q100,285 200,300 Q300,315 400,300" fill="none" stroke="#C8A040" stroke-width="2.5" opacity="0.5"/>
+  <path d="M0,320 Q100,305 200,320 Q300,335 400,320" fill="none" stroke="#C8A040" stroke-width="2" opacity="0.4"/>
+  <path d="M0,340 Q100,325 200,340 Q300,355 400,340" fill="none" stroke="#D4B050" stroke-width="2.5" opacity="0.5"/>
+  <path d="M0,360 Q100,345 200,360 Q300,375 400,360" fill="none" stroke="#C8A040" stroke-width="2" opacity="0.4"/>
+  <path d="M0,380 Q100,365 200,380 Q300,395 400,380" fill="none" stroke="#C8A040" stroke-width="2.5" opacity="0.5"/>
+</svg>

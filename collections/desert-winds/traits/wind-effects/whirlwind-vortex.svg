@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <!-- Whirlwind / Dust Devil Vortex Trait -->
+  <defs>
+    <linearGradient id="vortexGrad" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#C89030" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#E0B050" stop-opacity="0.1"/>
+    </linearGradient>
+  </defs>
+  <!-- Vortex funnel shape -->
+  <path d="M175,380 Q160,320 140,260 Q125,210 110,170 Q100,145 115,125 Q130,108 155,115 Q175,120 185,140 Q192,155 188,175"
+        fill="none" stroke="#C89030" stroke-width="22" opacity="0.35" stroke-linecap="round"/>
+  <path d="M225,380 Q240,320 260,260 Q275,210 290,170 Q300,145 285,125 Q270,108 245,115 Q225,120 215,140 Q208,155 212,175"
+        fill="none" stroke="#C89030" stroke-width="22" opacity="0.35" stroke-linecap="round"/>
+
+  <!-- Connecting spiral lines -->
+  <path d="M182,175 Q200,165 218,175 Q235,185 230,210 Q225,230 200,235 Q175,230 170,210 Q165,190 182,175 Z"
+        fill="none" stroke="#D4A840" stroke-width="3" opacity="0.5"/>
+  <path d="M168,210 Q200,195 232,210 Q248,240 232,270 Q200,282 168,270 Q152,240 168,210 Z"
+        fill="none" stroke="#C89030" stroke-width="2.5" opacity="0.45"/>
+  <path d="M152,270 Q200,252 248,270 Q268,308 248,345 Q200,362 152,345 Q132,308 152,270 Z"
+        fill="none" stroke="#D4A840" stroke-width="2" opacity="0.4"/>
+
+  <!-- Floating debris -->
+  <rect x="130" y="150" width="8" height="5" rx="1" fill="#A07020" opacity="0.35" transform="rotate(25,134,152)"/>
+  <rect x="262" y="180" width="6" height="4" rx="1" fill="#A07020" opacity="0.3" transform="rotate(-20,265,182)"/>
+  <rect x="145" y="235" width="9" height="5" rx="1" fill="#8B5E18" opacity="0.35" transform="rotate(40,149,237)"/>
+  <rect x="248" y="250" width="7" height="4" rx="1" fill="#A07020" opacity="0.3" transform="rotate(-35,251,252)"/>
+  <circle cx="172" cy="192" r="3" fill="#C89030" opacity="0.5"/>
+  <circle cx="228" cy="200" r="2.5" fill="#D4A840" opacity="0.45"/>
+  <circle cx="165" cy="300" r="3" fill="#C89030" opacity="0.4"/>
+  <circle cx="235" cy="320" r="2" fill="#D4A840" opacity="0.4"/>
+
+  <!-- Ground dust cloud -->
+  <ellipse cx="200" cy="380" rx="110" ry="20" fill="#D4A840" opacity="0.25"/>
+  <ellipse cx="200" cy="375" rx="75" ry="15" fill="#C89030" opacity="0.2"/>
+</svg>

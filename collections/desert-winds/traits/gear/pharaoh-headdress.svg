@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <!-- Pharaoh Nemes Headdress Trait -->
+  <defs>
+    <linearGradient id="nemesGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F0D060"/>
+      <stop offset="50%" stop-color="#D4A020"/>
+      <stop offset="100%" stop-color="#A07010"/>
+    </linearGradient>
+    <linearGradient id="nemesStripe" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1A3A8A"/>
+      <stop offset="100%" stop-color="#0D2060"/>
+    </linearGradient>
+  </defs>
+  <!-- Main Nemes cloth -->
+  <path d="M130,185 Q125,145 138,112 Q155,75 200,68 Q245,75 262,112 Q275,145 270,185 Q245,175 200,172 Q155,175 130,185 Z"
+        fill="url(#nemesGold)" stroke="#8B6008" stroke-width="2"/>
+  <!-- Side lappets (hanging cloth pieces) -->
+  <path d="M130,185 Q115,200 108,230 Q104,258 112,278 Q125,290 140,282 Q155,272 158,252 Q162,230 160,208 Q158,192 150,185 Z"
+        fill="#C8980A" stroke="#8B6008" stroke-width="1.5"/>
+  <path d="M270,185 Q285,200 292,230 Q296,258 288,278 Q275,290 260,282 Q245,272 242,252 Q238,230 240,208 Q242,192 250,185 Z"
+        fill="#C8980A" stroke="#8B6008" stroke-width="1.5"/>
+  <!-- Stripe pattern on cloth -->
+  <path d="M142,120 Q200,112 258,120" fill="none" stroke="url(#nemesStripe)" stroke-width="6" opacity="0.6"/>
+  <path d="M138,135 Q200,127 262,135" fill="none" stroke="url(#nemesStripe)" stroke-width="6" opacity="0.6"/>
+  <path d="M136,150 Q200,142 264,150" fill="none" stroke="url(#nemesStripe)" stroke-width="6" opacity="0.6"/>
+  <path d="M135,165 Q200,157 265,165" fill="none" stroke="url(#nemesStripe)" stroke-width="6" opacity="0.6"/>
+  <!-- Uraeus (cobra) at forehead -->
+  <path d="M200,90 Q196,78 192,70 Q188,60 192,52 Q198,44 206,50 Q212,58 208,68 Q206,78 200,90 Z"
+        fill="#3AB828" stroke="#1A6810" stroke-width="1.5"/>
+  <path d="M192,52 Q185,48 182,55 Q180,62 185,68 Q190,72 198,70"
+        fill="#3AB828" stroke="#1A6810" stroke-width="1.5"/>
+  <!-- Snake hood -->
+  <ellipse cx="192" cy="56" rx="14" ry="10" fill="#4AD838" stroke="#1A6810" stroke-width="1" transform="rotate(-15,192,56)"/>
+  <!-- Cobra eye -->
+  <circle cx="190" cy="53" r="3" fill="#1A1008"/>
+  <circle cx="189" cy="52" r="1.2" fill="white" opacity="0.6"/>
+  <!-- Gold cobra details -->
+  <path d="M196,72 Q198,78 200,85" fill="none" stroke="#E0B020" stroke-width="3"/>
+  <!-- Crown stripe detail on headdress -->
+  <rect x="170" y="84" width="60" height="10" rx="3" fill="#E0A010" stroke="#8B6008" stroke-width="1"/>
+  <!-- Lappet stripes -->
+  <line x1="118" y1="200" x2="145" y2="198" stroke="#C8980A" stroke-width="2" opacity="0.4"/>
+  <line x1="115" y1="215" x2="145" y2="212" stroke="#C8980A" stroke-width="2" opacity="0.4"/>
+  <line x1="255" y1="198" x2="282" y2="200" stroke="#C8980A" stroke-width="2" opacity="0.4"/>
+  <line x1="255" y1="212" x2="285" y2="215" stroke="#C8980A" stroke-width="2" opacity="0.4"/>
+</svg>
