@@ -2,7 +2,8 @@ import { Link, Outlet, useLocation } from 'react-router-dom';
 import { ConnectWallet } from './ConnectWallet';
 import { Users, Compass, PlusCircle, ArrowLeft } from 'lucide-react';
 import { cn } from '../lib/utils';
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useState } from 'react';
+import { motion, AnimatePresence, type Variants } from 'framer-motion';
 
 const navItems = [
   { path: '/app/discover', label: 'Discover', icon: Compass },
@@ -10,14 +11,17 @@ const navItems = [
   { path: '/app/my-chamas', label: 'My Chamas', icon: Users },
 ];
 
+const pageVariants: Variants = {
+  initial: { opacity: 0, y: 16 },
+  animate: { opacity: 1, y: 0, transition: { duration: 0.35, ease: [0.25, 0.46, 0.45, 0.94] as [number,number,number,number] } },
+  exit:    { opacity: 0, y: -8,  transition: { duration: 0.2,  ease: 'easeIn' } },
+};
+
 export function AppLayout() {
   const location = useLocation();
   const [scrolled, setScrolled] = useState(false);
   const [logoVisible, setLogoVisible] = useState(false);
   const [mobileNavVisible, setMobileNavVisible] = useState(false);
-  const [pageKey, setPageKey] = useState(location.pathname);
-  const [isTransitioning, setIsTransitioning] = useState(false);
-  const prevPathRef = useRef(location.pathname);
 
   // Scroll effect: blur + shadow on scroll
   useEffect(() => {
@@ -37,19 +41,6 @@ export function AppLayout() {
     const t = setTimeout(() => setMobileNavVisible(true), 200);
     return () => clearTimeout(t);
   }, []);
-
-  // Page transition animation on route change
-  useEffect(() => {
-    if (prevPathRef.current !== location.pathname) {
-      setIsTransitioning(true);
-      const t = setTimeout(() => {
-        setPageKey(location.pathname);
-        setIsTransitioning(false);
-      }, 180);
-      prevPathRef.current = location.pathname;
-      return () => clearTimeout(t);
-    }
-  }, [location.pathname]);
 
   const isActive = (path: string) => {
     if (path === '/app/discover') {
@@ -112,36 +103,45 @@ export function AppLayout() {
                 const Icon = item.icon;
                 const active = isActive(item.path);
                 return (
-                  <Link
+                  <motion.div
                     key={item.path}
-                    to={item.path}
-                    style={{ animationDelay: `${i * 60}ms` }}
-                    className={cn(
-                      'relative flex items-center gap-2 px-4 py-2 rounded-xl text-sm font-medium',
-                      'transition-all duration-200',
-                      active
-                        ? 'text-mint'
-                        : 'text-sand/70 hover:text-sand hover:bg-white/[0.04]'
-                    )}
+                    initial={{ opacity: 0, y: -8 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.3, delay: 0.1 + i * 0.06 }}
                   >
-                    {/* Active background glow pill */}
-                    {active && (
-                      <span className="absolute inset-0 rounded-xl bg-lime/[0.10] border border-mint/20 shadow-[0_0_20px_rgba(196,232,106,0.12)] pointer-events-none" />
-                    )}
-
-                    <Icon className="relative w-4 h-4 flex-shrink-0" />
-                    <span className="relative">{item.label}</span>
-
-                    {/* Animated underline */}
-                    <span
+                    <Link
+                      to={item.path}
                       className={cn(
-                        'absolute bottom-0.5 left-3 right-3 h-[2px] rounded-full',
-                        'bg-gradient-to-r from-lime to-mint',
-                        'transition-all duration-300 ease-out origin-center',
-                        active ? 'opacity-100 scale-x-100' : 'opacity-0 scale-x-0'
+                        'relative flex items-center gap-2 px-4 py-2 rounded-xl text-sm font-medium',
+                        'transition-all duration-200',
+                        active
+                          ? 'text-mint'
+                          : 'text-sand/70 hover:text-sand hover:bg-white/[0.04]'
                       )}
-                    />
-                  </Link>
+                    >
+                      {/* Active background glow pill */}
+                      {active && (
+                        <motion.span
+                          layoutId="nav-active-pill"
+                          className="absolute inset-0 rounded-xl bg-lime/[0.10] border border-mint/20 shadow-[0_0_20px_rgba(196,232,106,0.12)] pointer-events-none"
+                          transition={{ type: 'spring', stiffness: 400, damping: 30 }}
+                        />
+                      )}
+
+                      <Icon className="relative w-4 h-4 flex-shrink-0" />
+                      <span className="relative">{item.label}</span>
+
+                      {/* Animated underline */}
+                      <span
+                        className={cn(
+                          'absolute bottom-0.5 left-3 right-3 h-[2px] rounded-full',
+                          'bg-gradient-to-r from-lime to-mint',
+                          'transition-all duration-300 ease-out origin-center',
+                          active ? 'opacity-100 scale-x-100' : 'opacity-0 scale-x-0'
+                        )}
+                      />
+                    </Link>
+                  </motion.div>
                 );
               })}
             </nav>
@@ -151,18 +151,19 @@ export function AppLayout() {
         </div>
       </header>
 
-      {/* Main Content — page transition fade+slide */}
-      <main
-        key={pageKey}
-        className={cn(
-          'relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8',
-          'transition-all duration-200 ease-out',
-          isTransitioning
-            ? 'opacity-0 translate-y-2'
-            : 'opacity-100 translate-y-0'
-        )}
-      >
-        <Outlet />
+      {/* Main Content — AnimatePresence for smooth route transitions */}
+      <main className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <AnimatePresence mode="wait" initial={false}>
+          <motion.div
+            key={location.pathname}
+            variants={pageVariants}
+            initial="initial"
+            animate="animate"
+            exit="exit"
+          >
+            <Outlet />
+          </motion.div>
+        </AnimatePresence>
       </main>
 
       {/* Mobile Bottom Nav — fixed floating pill, slides up on mount */}

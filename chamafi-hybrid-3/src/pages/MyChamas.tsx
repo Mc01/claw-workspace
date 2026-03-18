@@ -4,7 +4,7 @@ import { useChamaFactory, useUserChamas } from '../hooks/useChamaFactory';
 import { ChamaCard, ChamaCardSkeleton } from '../components/ChamaCard';
 import { Wallet, PlusCircle, Compass, Users, TrendingUp, Trophy, LayoutGrid } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import { StaggerContainer, StaggerItem } from '../components/animations';
+import { StaggerContainer, StaggerItem, AnimatedNumber, StaggerGrid, StaggerGridItem, HoverCard } from '../components/animations';
 
 export function MyChamas() {
   const { isConnected, address: userAddress } = useAccount();
@@ -178,13 +178,15 @@ export function MyChamas() {
           >
             Your Chamas
           </motion.h2>
-          <StaggerContainer className="grid md:grid-cols-2 lg:grid-cols-3 gap-6" staggerDelay={0.08}>
+          <StaggerGrid className="grid md:grid-cols-2 lg:grid-cols-3 gap-6" staggerDelay={0.07}>
             {userChamas.map((chamaAddress) => (
-              <StaggerItem key={chamaAddress}>
-                <ChamaCard address={chamaAddress} />
-              </StaggerItem>
+              <StaggerGridItem key={chamaAddress}>
+                <HoverCard>
+                  <ChamaCard address={chamaAddress} />
+                </HoverCard>
+              </StaggerGridItem>
             ))}
-          </StaggerContainer>
+          </StaggerGrid>
         </motion.div>
       ) : (
         <motion.div
@@ -241,14 +243,19 @@ function DashboardStat({
           </motion.div>
           <span className="text-sm text-sand/50 font-medium">{label}</span>
         </div>
-        <motion.p 
-          className={`text-3xl font-bold ${accentColor}`}
+        <motion.div
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.4, delay: 0.2 }}
         >
-          {value}
-        </motion.p>
+          {/^\d+$/.test(value) ? (
+            <p className={`text-3xl font-bold ${accentColor}`}>
+              <AnimatedNumber value={parseInt(value, 10)} duration={1.2} delay={0.3} />
+            </p>
+          ) : (
+            <p className={`text-3xl font-bold ${accentColor}`}>{value}</p>
+          )}
+        </motion.div>
       </div>
     </motion.div>
   );

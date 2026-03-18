@@ -1,5 +1,206 @@
-import { motion } from 'framer-motion';
+import { motion, useMotionValue, useTransform, animate } from 'framer-motion';
+import { useEffect, useState, useRef } from 'react';
 import type { ReactNode } from 'react';
+
+// ─── useCountUp Hook ────────────────────────────────────────────────────────
+// Animates a number from 0 to the target value on mount
+export function useCountUp(target: number, duration = 1.2, delay = 0) {
+  const motionVal = useMotionValue(0);
+  const rounded = useTransform(motionVal, (v) => Math.round(v));
+  const [display, setDisplay] = useState(0);
+
+  useEffect(() => {
+    const unsubscribe = rounded.on('change', (v) => setDisplay(v));
+    const controls = animate(motionVal, target, {
+      duration,
+      delay,
+      ease: [0.25, 0.46, 0.45, 0.94],
+    });
+    return () => {
+      controls.stop();
+      unsubscribe();
+    };
+  }, [target, duration, delay]);
+
+  return display;
+}
+
+// ─── AnimatedNumber ─────────────────────────────────────────────────────────
+// Renders a number that counts up from 0 to value
+export function AnimatedNumber({
+  value,
+  duration = 1.2,
+  delay = 0,
+  className,
+}: {
+  value: number;
+  duration?: number;
+  delay?: number;
+  className?: string;
+}) {
+  const count = useCountUp(value, duration, delay);
+  return <span className={className}>{count}</span>;
+}
+
+// ─── FocusRing ───────────────────────────────────────────────────────────────
+// Animated focus ring for form inputs (wrap around input containers)
+export function FocusRing({
+  children,
+  isFocused,
+  hasError = false,
+  className,
+}: {
+  children: ReactNode;
+  isFocused: boolean;
+  hasError?: boolean;
+  className?: string;
+}) {
+  return (
+    <div className={`relative ${className || ''}`}>
+      {children}
+      <motion.div
+        className="absolute inset-0 rounded-xl pointer-events-none"
+        animate={{
+          boxShadow: isFocused
+            ? hasError
+              ? '0 0 0 2px rgba(239,68,68,0.6), 0 0 16px rgba(239,68,68,0.15)'
+              : '0 0 0 2px rgba(196,232,106,0.6), 0 0 16px rgba(196,232,106,0.15)'
+            : '0 0 0 0px rgba(196,232,106,0)',
+          opacity: isFocused ? 1 : 0,
+        }}
+        transition={{ duration: 0.2, ease: 'easeOut' }}
+      />
+    </div>
+  );
+}
+
+// ─── StaggerGrid ─────────────────────────────────────────────────────────────
+// Drop-in grid with staggered card reveals (whileInView)
+export function StaggerGrid({
+  children,
+  className,
+  staggerDelay = 0.08,
+  once = true,
+}: {
+  children: ReactNode;
+  className?: string;
+  staggerDelay?: number;
+  once?: boolean;
+}) {
+  return (
+    <motion.div
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once, margin: '-40px' }}
+      variants={{
+        hidden: { opacity: 0 },
+        visible: {
+          opacity: 1,
+          transition: { staggerChildren: staggerDelay, delayChildren: 0.05 },
+        },
+      }}
+      className={className}
+    >
+      {children}
+    </motion.div>
+  );
+}
+
+// ─── StaggerGridItem ─────────────────────────────────────────────────────────
+export function StaggerGridItem({
+  children,
+  className,
+}: {
+  children: ReactNode;
+  className?: string;
+}) {
+  return (
+    <motion.div
+      variants={{
+        hidden: { opacity: 0, y: 24, scale: 0.97 },
+        visible: {
+          opacity: 1,
+          y: 0,
+          scale: 1,
+          transition: { duration: 0.45, ease: [0.25, 0.46, 0.45, 0.94] },
+        },
+      }}
+      className={className}
+    >
+      {children}
+    </motion.div>
+  );
+}
+
+// ─── StatReveal ──────────────────────────────────────────────────────────────
+// Reveals a stat card with slide-up + fade, triggered by viewport entry
+export function StatReveal({
+  children,
+  delay = 0,
+  className,
+}: {
+  children: ReactNode;
+  delay?: number;
+  className?: string;
+}) {
+  return (
+    <motion.div
+      initial={{ opacity: 0, y: 20, scale: 0.95 }}
+      whileInView={{ opacity: 1, y: 0, scale: 1 }}
+      viewport={{ once: true, margin: '-20px' }}
+      transition={{ duration: 0.5, delay, ease: [0.25, 0.46, 0.45, 0.94] }}
+      className={className}
+    >
+      {children}
+    </motion.div>
+  );
+}
+
+// ─── ProgressShimmer ─────────────────────────────────────────────────────────
+// Animated progress bar with a running shimmer overlay (framer-motion driven)
+export function ProgressShimmer({
+  percentage,
+  isComplete = false,
+  className,
+}: {
+  percentage: number;
+  isComplete?: boolean;
+  className?: string;
+}) {
+  const clampedPct = Math.min(Math.max(percentage, 0), 100);
+  return (
+    <div className={`relative w-full h-4 rounded-full overflow-hidden bg-white/[0.06] ${className || ''}`}>
+      <motion.div
+        className={`h-full rounded-full relative overflow-hidden ${
+          isComplete
+            ? 'bg-gradient-to-r from-sun-gold via-ochre to-sun-gold'
+            : 'bg-gradient-to-r from-forest via-leaf to-lime'
+        }`}
+        initial={{ width: '0%' }}
+        animate={{ width: `${clampedPct}%` }}
+        transition={{ duration: 1.4, ease: [0.25, 0.46, 0.45, 0.94] }}
+      >
+        {clampedPct > 0 && (
+          <motion.div
+            className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent"
+            animate={{ x: ['-100%', '150%'] }}
+            transition={{ duration: 2, repeat: Infinity, ease: 'linear', repeatDelay: 0.5 }}
+          />
+        )}
+      </motion.div>
+      {/* Glow tip */}
+      {!isComplete && clampedPct > 0 && clampedPct < 100 && (
+        <motion.div
+          className="absolute top-0 h-full w-5 rounded-full blur-md opacity-70"
+          initial={{ left: '0%' }}
+          animate={{ left: `calc(${clampedPct}% - 10px)` }}
+          transition={{ duration: 1.4, ease: [0.25, 0.46, 0.45, 0.94] }}
+          style={{ background: 'rgba(122,191,66,0.9)' }}
+        />
+      )}
+    </div>
+  );
+}
 
 // Page transition wrapper - fade in + slide up
 export function PageTransition({ children, className }: { children: ReactNode; className?: string }) {

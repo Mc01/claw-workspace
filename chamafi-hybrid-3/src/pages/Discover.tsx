@@ -5,7 +5,7 @@ import { Search, Filter, PlusCircle, Compass } from 'lucide-react';
 import { useChamaFactory } from '../hooks/useChamaFactory';
 import { ChamaCard, ChamaCardSkeleton } from '../components/ChamaCard';
 import { useChamaDetailsBatch } from '../hooks/useChama';
-import { StaggerContainer, StaggerItem, HoverCard } from '../components/animations';
+import { StaggerContainer, StaggerItem, StaggerGrid, StaggerGridItem } from '../components/animations';
 import type { Address } from 'viem';
 
 type FilterType = 'all' | 'open' | 'graduated';
@@ -208,19 +208,33 @@ export function Discover() {
               ))}
             </StaggerContainer>
           ) : filteredChamas && filteredChamas.length > 0 ? (
-            <StaggerContainer 
-              key="grid"
-              className="grid md:grid-cols-2 lg:grid-cols-3 gap-6" 
-              staggerDelay={0.08}
-            >
-              {filteredChamas.map((chamaAddress) => (
-                <StaggerItem key={chamaAddress}>
-                  <HoverCard>
+            <motion.div key="grid">
+              {/* Results count indicator */}
+              <motion.p
+                className="text-sm text-sand/40 mb-4 flex items-center gap-1.5"
+                initial={{ opacity: 0, x: -10 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.35, delay: 0.1 }}
+              >
+                <motion.span
+                  className="font-semibold text-sand/60"
+                  key={filteredChamas.length}
+                  initial={{ opacity: 0, scale: 0.8 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  transition={{ type: 'spring', stiffness: 400, damping: 20 }}
+                >
+                  {filteredChamas.length}
+                </motion.span>
+                {filteredChamas.length === 1 ? 'chama found' : 'chamas found'}
+              </motion.p>
+              <StaggerGrid className="grid md:grid-cols-2 lg:grid-cols-3 gap-6" staggerDelay={0.07}>
+                {filteredChamas.map((chamaAddress) => (
+                  <StaggerGridItem key={chamaAddress}>
                     <ChamaCard address={chamaAddress} />
-                  </HoverCard>
-                </StaggerItem>
-              ))}
-            </StaggerContainer>
+                  </StaggerGridItem>
+                ))}
+              </StaggerGrid>
+            </motion.div>
           ) : (
             <motion.div
               key="empty"
