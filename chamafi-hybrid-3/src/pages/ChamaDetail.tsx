@@ -3,13 +3,13 @@ import { useAccount, useChainId } from 'wagmi';
 import {
   ArrowLeft, Users, Clock, User, ExternalLink,
   Target, TrendingUp, Loader2, AlertTriangle, CheckCircle,
-  Coins, GraduationCap, Unlock,
+  Coins, GraduationCap, Unlock, Sparkles,
 } from 'lucide-react';
 import { useChama, useJoinChama, useContribute, useRefund, useGraduate } from '../hooks/useChama';
 import { ProgressBar } from '../components/ProgressBar';
 import { formatAddress, formatAmount, formatDateTime, isExpired, getDaysRemaining, cn } from '../lib/utils';
 import { getExplorerUrl } from '../config/contracts';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { useToast } from '../components/Toast';
 import { useTokenAllowance } from '../hooks/useToken';
 import { parseUnits } from 'viem';
@@ -58,7 +58,6 @@ export function ChamaDetail() {
   const expired = isExpired(deadline);
   const daysLeft = getDaysRemaining(deadline);
   const hasContributed = userContribution !== undefined && userContribution > BigInt(0);
-  // getProgress returns percentage 0–100
   const pct = Number(progress?.percentage || 0);
   const targetReached = pct >= 100;
   const isCreator = creator && userAddress && creator.toLowerCase() === userAddress.toLowerCase();
@@ -91,7 +90,6 @@ export function ChamaDetail() {
     if (!contributionAmount) return;
     addToast('Approving tokens... Confirm in wallet', 'pending', 0);
     try {
-      // Approve a large amount to avoid future approvals
       await approve('1000000', 18);
       addToast('Approval successful! You can now contribute.', 'success');
       refetchAllowance();
@@ -137,11 +135,11 @@ export function ChamaDetail() {
   if (!address) {
     return (
       <div className="glass-card p-12 text-center animate-fade-in">
-        <div className="w-16 h-16 rounded-2xl bg-red-500/10 flex items-center justify-center mx-auto mb-4">
-          <AlertTriangle className="w-8 h-8 text-red-400/60" />
+        <div className="w-16 h-16 rounded-2xl bg-clay/20 flex items-center justify-center mx-auto mb-4">
+          <AlertTriangle className="w-8 h-8 text-ochre" />
         </div>
-        <h2 className="text-xl font-semibold text-white mb-2">Chama Not Found</h2>
-        <p className="text-white/40 mb-6">This Chama doesn&apos;t exist or couldn&apos;t be loaded.</p>
+        <h2 className="text-xl font-semibold text-cream mb-2">Chama Not Found</h2>
+        <p className="text-sand/60 mb-6">This Chama doesn&apos;t exist or couldn&apos;t be loaded.</p>
         <Link to="/app/discover" className="btn-primary inline-flex items-center gap-2">
           <ArrowLeft className="w-4 h-4" />
           Back to Discover
@@ -155,69 +153,82 @@ export function ChamaDetail() {
       {/* Back Link */}
       <Link
         to="/app/discover"
-        className="inline-flex items-center gap-2 text-white/40 hover:text-white/70 transition-colors text-sm"
+        className="inline-flex items-center gap-2 text-sand/60 hover:text-cream transition-colors text-sm group"
       >
-        <ArrowLeft className="w-4 h-4" />
+        <ArrowLeft className="w-4 h-4 group-hover:-translate-x-1 transition-transform" />
         Back to Discover
       </Link>
 
-      {/* Header Card */}
-      <div className="glass-card p-6 md:p-8">
-        <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4 mb-6">
-          <div>
-            <h1 className="text-2xl md:text-3xl font-bold text-white mb-2">
-              {chamaName || `Chama #${address.slice(-6)}`}
-            </h1>
-            <p className="text-sm text-white/30 font-mono">
-              {formatAddress(address)}
-            </p>
+      {/* Header Card with Gradient */}
+      <div className="glass-card p-6 md:p-8 relative overflow-hidden">
+        {/* Background gradient accent */}
+        <div className="absolute top-0 right-0 w-64 h-64 bg-gradient-to-bl from-lime/10 via-leaf/5 to-transparent rounded-full blur-3xl pointer-events-none" />
+        
+        <div className="relative z-10">
+          <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4 mb-6">
+            <div>
+              <div className="flex items-center gap-3 mb-2">
+                <h1 className="text-2xl md:text-3xl font-bold text-cream">
+                  {chamaName || `Chama #${address.slice(-6)}`}
+                </h1>
+                {graduated && (
+                  <Sparkles className="w-5 h-5 text-sun-gold" />
+                )}
+              </div>
+              <p className="text-sm text-sand/40 font-mono">
+                {formatAddress(address)}
+              </p>
+            </div>
+            <StatusBadge graduated={graduated} expired={expired} />
           </div>
-          <span className={cn(
-            graduated ? "badge-graduated" : expired ? "badge-expired" : "badge-active",
-            "self-start text-sm px-4 py-1.5"
-          )}>
-            {graduated ? '🏆 Graduated' : expired ? '⏰ Expired' : '🟢 Active'}
-          </span>
-        </div>
 
-        {/* Large progress visualization */}
-        <div className="glass-card p-6 bg-white/[0.02]">
-          <div className="flex items-center justify-between mb-4">
-            <span className="text-white/50 text-sm font-medium">Savings Progress</span>
-            <span className={cn(
-              "text-2xl font-bold",
-              pct >= 100 ? "text-amber-400" : "text-primary-400"
-            )}>
-              {pct.toFixed(1)}%
-            </span>
+          {/* Large progress visualization with earth tone styling */}
+          <div className="glass-card p-6 bg-gradient-to-br from-white/[0.02] to-transparent border-mint/10">
+            <div className="flex items-center justify-between mb-4">
+              <span className="text-sand/60 text-sm font-medium">Savings Progress</span>
+              <span className={cn(
+                "text-2xl font-bold",
+                pct >= 100 ? "text-sun-gold" : "text-lime"
+              )}>
+                {pct.toFixed(1)}%
+              </span>
+            </div>
+            <ProgressBar
+              current={progress?.current}
+              target={progress?.target}
+              percentage={progress?.percentage}
+            />
           </div>
-          <ProgressBar
-            current={progress?.current}
-            target={progress?.target}
-            percentage={progress?.percentage}
-          />
         </div>
       </div>
 
-      {/* Stats Grid */}
+      {/* Stats Grid with Earth Tone Icons */}
       <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
         <StatCard
-          icon={<Users className="w-5 h-5 text-blue-400" />}
+          icon={<Users className="w-5 h-5" />}
+          iconBg="from-blue-500/20 to-cyan-500/20"
+          iconColor="text-blue-400"
           label="Members"
           value={memberCount ? memberCount.toString() : '0'}
         />
         <StatCard
-          icon={<Clock className="w-5 h-5 text-amber-400" />}
+          icon={<Clock className="w-5 h-5" />}
+          iconBg="from-amber-500/20 to-orange-500/20"
+          iconColor="text-amber-400"
           label={expired ? 'Status' : deadline ? 'Time Left' : 'Deadline'}
           value={expired ? 'Ended' : deadline ? `${daysLeft} days` : 'No deadline'}
         />
         <StatCard
-          icon={<Target className="w-5 h-5 text-primary-400" />}
+          icon={<Target className="w-5 h-5" />}
+          iconBg="from-lime/20 to-mint/20"
+          iconColor="text-lime"
           label="Target"
           value={formatAmount(targetCapital, 18)}
         />
         <StatCard
-          icon={<TrendingUp className="w-5 h-5 text-emerald-400" />}
+          icon={<TrendingUp className="w-5 h-5" />}
+          iconBg="from-emerald-500/20 to-green-500/20"
+          iconColor="text-emerald-400"
           label="Raised"
           value={formatAmount(progress?.current, 18)}
         />
@@ -229,8 +240,12 @@ export function ChamaDetail() {
         <div className="space-y-6">
           {/* Join Section */}
           {!isMember && !graduated && !expired && (
-            <ActionCard title="Join Chama" icon={<Users className="w-5 h-5 text-primary-400" />}>
-              <p className="text-white/40 text-sm mb-4">
+            <ActionCard 
+              title="Join Chama" 
+              icon={<Users className="w-5 h-5 text-lime" />}
+              gradient="from-lime/10 to-forest/10"
+            >
+              <p className="text-sand/60 text-sm mb-4">
                 Join this savings group to start contributing towards the goal.
               </p>
               <button
@@ -252,10 +267,14 @@ export function ChamaDetail() {
 
           {/* Contribute Section */}
           {isMember && !graduated && !expired && (
-            <ActionCard title="Contribute" icon={<Coins className="w-5 h-5 text-primary-400" />}>
+            <ActionCard 
+              title="Contribute" 
+              icon={<Coins className="w-5 h-5 text-lime" />}
+              gradient="from-lime/10 to-forest/10"
+            >
               <div className="space-y-4">
                 <div>
-                  <label className="block text-sm font-medium text-white/50 mb-2">
+                  <label className="block text-sm font-medium text-sand/60 mb-2">
                     Amount
                   </label>
                   <input
@@ -306,7 +325,7 @@ export function ChamaDetail() {
                 )}
                 
                 {needsApproval && (
-                  <p className="text-xs text-amber-400/80">
+                  <p className="text-xs text-ochre/80">
                     You need to approve tokens before contributing.
                   </p>
                 )}
@@ -316,14 +335,18 @@ export function ChamaDetail() {
 
           {/* Graduate Section - Only for creator when target reached */}
           {isCreator && targetReached && !graduated && !expired && (
-            <ActionCard title="Graduate Chama" icon={<GraduationCap className="w-5 h-5 text-amber-400" />}>
-              <p className="text-white/40 text-sm mb-4">
+            <ActionCard 
+              title="Graduate Chama" 
+              icon={<GraduationCap className="w-5 h-5 text-sun-gold" />}
+              gradient="from-sun-gold/10 to-ochre/10"
+            >
+              <p className="text-sand/60 text-sm mb-4">
                 Target reached! Graduate this Chama to mint tokens and distribute to members.
               </p>
               <button
                 onClick={handleGraduate}
                 disabled={isGraduating}
-                className="w-full py-3 rounded-xl font-semibold bg-amber-500/20 text-amber-400 border border-amber-500/30 hover:bg-amber-500/30 transition-all flex items-center justify-center gap-2"
+                className="w-full py-3 rounded-xl font-semibold bg-sun-gold/20 text-sun-gold border border-sun-gold/30 hover:bg-sun-gold/30 transition-all flex items-center justify-center gap-2"
               >
                 {isGraduating ? (
                   <>
@@ -342,14 +365,18 @@ export function ChamaDetail() {
 
           {/* Refund Section */}
           {isMember && expired && !graduated && hasContributed && (
-            <ActionCard title="Claim Refund" icon={<AlertTriangle className="w-5 h-5 text-amber-400" />}>
-              <p className="text-white/40 text-sm mb-4">
+            <ActionCard 
+              title="Claim Refund" 
+              icon={<AlertTriangle className="w-5 h-5 text-ochre" />}
+              gradient="from-ochre/10 to-red-500/10"
+            >
+              <p className="text-sand/60 text-sm mb-4">
                 This Chama did not reach its target. You can claim your contribution back.
               </p>
               <button
                 onClick={handleRefund}
                 disabled={isRefunding}
-                className="w-full py-3 rounded-xl font-semibold bg-amber-500/20 text-amber-400 border border-amber-500/30 hover:bg-amber-500/30 transition-all flex items-center justify-center gap-2"
+                className="w-full py-3 rounded-xl font-semibold bg-ochre/20 text-ochre border border-ochre/30 hover:bg-ochre/30 transition-all flex items-center justify-center gap-2"
               >
                 {isRefunding ? (
                   <>
@@ -366,13 +393,13 @@ export function ChamaDetail() {
           {/* Your Contribution */}
           {isMember && (
             <div className="glass-card p-6">
-              <h3 className="font-semibold text-white mb-4 flex items-center gap-2">
-                <CheckCircle className="w-5 h-5 text-primary-400" />
+              <h3 className="font-semibold text-cream mb-4 flex items-center gap-2">
+                <CheckCircle className="w-5 h-5 text-lime" />
                 Your Contribution
               </h3>
               <div className="flex items-center justify-between">
-                <span className="text-white/40">Total Contributed</span>
-                <span className="text-2xl font-bold text-primary-400">
+                <span className="text-sand/60">Total Contributed</span>
+                <span className="text-2xl font-bold text-lime">
                   {formatAmount(userContribution, 18)}
                 </span>
               </div>
@@ -384,7 +411,7 @@ export function ChamaDetail() {
         <div className="space-y-6">
           {/* Chama Info */}
           <div className="glass-card p-6">
-            <h3 className="font-semibold text-white mb-4">Chama Details</h3>
+            <h3 className="font-semibold text-cream mb-4">Chama Details</h3>
             <div className="space-y-0">
               <DetailRow label="Creator" value={formatAddress(creator)} mono />
               <DetailRow label="Asset" value={formatAddress(asset)} mono />
@@ -402,7 +429,7 @@ export function ChamaDetail() {
 
           {/* Members List */}
           <div className="glass-card p-6">
-            <h3 className="font-semibold text-white mb-4">
+            <h3 className="font-semibold text-cream mb-4">
               Members ({memberCount ? memberCount.toString() : '0'})
             </h3>
             <div className="space-y-2 max-h-64 overflow-y-auto pr-1">
@@ -410,26 +437,26 @@ export function ChamaDetail() {
                 members.map((member) => (
                   <div
                     key={member}
-                    className="flex items-center gap-2 py-2.5 px-3 bg-white/[0.03] rounded-xl"
+                    className="flex items-center gap-2 py-2.5 px-3 bg-white/[0.03] rounded-xl hover:bg-white/[0.05] transition-colors"
                   >
-                    <div className="w-7 h-7 rounded-lg bg-white/[0.06] flex items-center justify-center">
-                      <User className="w-3.5 h-3.5 text-white/40" />
+                    <div className="w-7 h-7 rounded-lg bg-gradient-to-br from-clay/30 to-soil/30 flex items-center justify-center">
+                      <User className="w-3.5 h-3.5 text-sand/60" />
                     </div>
-                    <span className="font-mono text-sm text-white/60 flex-1">
+                    <span className="font-mono text-sm text-sand/60 flex-1">
                       {formatAddress(member)}
                     </span>
                     {member === creator && (
                       <span className="badge-active text-[10px]">Creator</span>
                     )}
                     {member === userAddress && (
-                      <span className="px-2 py-0.5 rounded-full text-[10px] font-semibold bg-white/10 text-white/60">
+                      <span className="px-2 py-0.5 rounded-full text-[10px] font-semibold bg-white/10 text-sand/60">
                         You
                       </span>
                     )}
                   </div>
                 ))
               ) : (
-                <p className="text-white/30 text-sm text-center py-4">No members yet</p>
+                <p className="text-sand/40 text-sm text-center py-4">No members yet</p>
               )}
             </div>
           </div>
@@ -450,34 +477,86 @@ export function ChamaDetail() {
   );
 }
 
-function StatCard({ icon, label, value }: {
+// Status Badge Component
+function StatusBadge({ graduated, expired }: { graduated: boolean; expired: boolean }) {
+  if (graduated) {
+    return (
+      <span className="inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full text-sm font-semibold bg-sun-gold/15 text-sun-gold border border-sun-gold/30 self-start">
+        <Sparkles className="w-3.5 h-3.5" />
+        Graduated
+      </span>
+    );
+  }
+  if (expired) {
+    return (
+      <span className="inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full text-sm font-semibold bg-red-500/15 text-red-400 border border-red-500/30 self-start">
+        <Clock className="w-3.5 h-3.5" />
+        Expired
+      </span>
+    );
+  }
+  return (
+    <span className="inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full text-sm font-semibold bg-lime/15 text-lime border border-lime/30 self-start">
+      <div className="w-2 h-2 rounded-full bg-lime animate-pulse" />
+      Active
+    </span>
+  );
+}
+
+// Enhanced Stat Card with gradient icon background
+function StatCard({ 
+  icon, 
+  iconBg, 
+  iconColor,
+  label, 
+  value 
+}: {
   icon: React.ReactNode;
+  iconBg: string;
+  iconColor: string;
   label: string;
   value: string;
 }) {
   return (
-    <div className="glass-card p-4">
+    <div className="glass-card p-4 group hover:bg-white/[0.05] transition-all duration-300">
       <div className="flex items-center gap-2 mb-2">
-        {icon}
-        <span className="text-xs text-white/40 font-medium">{label}</span>
+        <div className={`w-8 h-8 rounded-lg bg-gradient-to-br ${iconBg} flex items-center justify-center ${iconColor} group-hover:scale-110 transition-transform duration-300`}>
+          {icon}
+        </div>
+        <span className="text-xs text-sand/50 font-medium">{label}</span>
       </div>
-      <p className="text-xl font-bold text-white">{value}</p>
+      <p className="text-xl font-bold text-cream">{value}</p>
     </div>
   );
 }
 
-function ActionCard({ title, icon, children }: {
+// Enhanced Action Card with optional gradient
+function ActionCard({ 
+  title, 
+  icon, 
+  gradient,
+  children 
+}: {
   title: string;
   icon: React.ReactNode;
+  gradient?: string;
   children: React.ReactNode;
 }) {
   return (
-    <div className="glass-card p-6">
-      <h3 className="font-semibold text-white mb-4 flex items-center gap-2">
-        {icon}
-        {title}
-      </h3>
-      {children}
+    <div className={cn(
+      "glass-card p-6 relative overflow-hidden",
+      gradient && "bg-gradient-to-br"
+    )} style={gradient ? { backgroundImage: `linear-gradient(to bottom right, var(--tw-gradient-stops))` } : undefined}>
+      {gradient && (
+        <div className={`absolute inset-0 bg-gradient-to-br ${gradient} opacity-30 pointer-events-none`} />
+      )}
+      <div className="relative z-10">
+        <h3 className="font-semibold text-cream mb-4 flex items-center gap-2">
+          {icon}
+          {title}
+        </h3>
+        {children}
+      </div>
     </div>
   );
 }
@@ -493,8 +572,8 @@ function DetailRow({ label, value, mono, last }: {
       "flex justify-between items-center py-3",
       !last && "border-b border-white/[0.06]"
     )}>
-      <span className="text-white/40 text-sm">{label}</span>
-      <span className={cn("text-sm text-white/80", mono && "font-mono")}>{value}</span>
+      <span className="text-sand/50 text-sm">{label}</span>
+      <span className={cn("text-sm text-sand/80", mono && "font-mono")}>{value}</span>
     </div>
   );
 }
