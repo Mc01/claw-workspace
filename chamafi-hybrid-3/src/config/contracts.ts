@@ -36,7 +36,8 @@ export const CONTRACT_ADDRESSES: Record<number, ChainContracts> = {
     featherYieldAdapter: '0x9D33A537645D62351d57510238ccF251A61b2cC2' as Address,
     // Mock tokens on Sepolia
     cUSD: '0x367cB784BF701587CA03bE93Ec29b76ffd430091' as Address,
-    USDT: '0xF5fF68ab2Bc0217C2135fc4EC25577AFE54C60ad' as Address,
+    // Fixed: USDT now has a unique address (different from factory)
+    USDT: '0x27cF1E9609D5e9Fb5C5E48B8b7C15E5E0c9F2b6E' as Address,
     CELO: '0x826BF3D7254AB8fE2ab080FB92e47f575993B861' as Address,
   },
   // Hardhat local

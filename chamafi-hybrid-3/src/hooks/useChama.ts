@@ -2,8 +2,17 @@ import { useReadContract, useWriteContract, useAccount } from 'wagmi';
 import { ChamaIncubationABI } from '../abi';
 import { parseUnits } from 'viem';
 import type { Address } from 'viem';
+import { useEffect, useState } from 'react';
+import { createPublicClient, http } from 'viem';
+import { celoSepolia } from 'viem/chains';
 
 const ZERO_ADDRESS: Address = '0x0000000000000000000000000000000000000000';
+
+interface ChamaInfo {
+  address: Address;
+  name?: string;
+  graduated?: boolean;
+}
 
 export function useChama(chamaAddress: string | null) {
   const { address: userAddress } = useAccount();
@@ -140,6 +149,62 @@ export function useChama(chamaAddress: string | null) {
       isLoadingContribution ||
       isLoadingCreator,
   };
+}
+
+// Batch fetch chama details (name and graduated status) for filtering
+export function useChamaDetailsBatch(chamaAddresses: Address[] | undefined) {
+  const [chamaDetails, setChamaDetails] = useState<ChamaInfo[]>([]);
+  const [isLoading, setIsLoading] = useState(false);
+
+  useEffect(() => {
+    if (!chamaAddresses || chamaAddresses.length === 0) {
+      setChamaDetails([]);
+      return;
+    }
+
+    const fetchDetails = async () => {
+      setIsLoading(true);
+      try {
+        const publicClient = createPublicClient({
+          chain: celoSepolia,
+          transport: http(),
+        });
+
+        const details = await Promise.all(
+          chamaAddresses.map(async (address) => {
+            try {
+              const [name, graduated] = await Promise.all([
+                publicClient.readContract({
+                  address,
+                  abi: ChamaIncubationABI,
+                  functionName: 'name',
+                }).catch(() => undefined),
+                publicClient.readContract({
+                  address,
+                  abi: ChamaIncubationABI,
+                  functionName: 'graduated',
+                }).catch(() => false),
+              ]);
+              return { address, name: name as string | undefined, graduated: graduated as boolean };
+            } catch {
+              return { address, name: undefined, graduated: false };
+            }
+          })
+        );
+
+        setChamaDetails(details);
+      } catch (error) {
+        console.error('Error fetching chama details:', error);
+        setChamaDetails([]);
+      } finally {
+        setIsLoading(false);
+      }
+    };
+
+    fetchDetails();
+  }, [chamaAddresses]);
+
+  return { chamaDetails, isLoading };
 }
 
 export function useJoinChama(chamaAddress: string | null) {

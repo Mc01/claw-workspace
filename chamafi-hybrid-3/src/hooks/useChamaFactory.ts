@@ -3,6 +3,10 @@ import { ChamaFactoryABI } from '../abi';
 import { getFactoryAddress, getTokenDecimals, type TokenSymbol } from '../config/contracts';
 import { parseUnits } from 'viem';
 import type { Address } from 'viem';
+import { useEffect, useState } from 'react';
+import { createPublicClient, http } from 'viem';
+import { celoSepolia } from 'viem/chains';
+import { ChamaIncubationABI } from '../abi';
 
 const ZERO_ADDRESS: Address = '0x0000000000000000000000000000000000000000';
 
@@ -79,4 +83,61 @@ export function useCreateChama() {
     isError,
     error,
   };
+}
+
+// Helper hook to filter chamas by user membership
+export function useUserChamas(
+  allChamas: Address[] | undefined,
+  userAddress: Address | undefined
+) {
+  const [userChamas, setUserChamas] = useState<Address[]>([]);
+  const [isLoading, setIsLoading] = useState(false);
+
+  useEffect(() => {
+    if (!allChamas || !userAddress || allChamas.length === 0) {
+      setUserChamas([]);
+      return;
+    }
+
+    const checkMembership = async () => {
+      setIsLoading(true);
+      try {
+        const publicClient = createPublicClient({
+          chain: celoSepolia,
+          transport: http(),
+        });
+
+        const membershipResults = await Promise.all(
+          allChamas.map(async (chamaAddress) => {
+            try {
+              const isMember = await publicClient.readContract({
+                address: chamaAddress,
+                abi: ChamaIncubationABI,
+                functionName: 'isMember',
+                args: [userAddress],
+              });
+              return { address: chamaAddress, isMember };
+            } catch {
+              return { address: chamaAddress, isMember: false };
+            }
+          })
+        );
+
+        const filtered = membershipResults
+          .filter((result) => result.isMember)
+          .map((result) => result.address);
+
+        setUserChamas(filtered);
+      } catch (error) {
+        console.error('Error checking memberships:', error);
+        setUserChamas([]);
+      } finally {
+        setIsLoading(false);
+      }
+    };
+
+    checkMembership();
+  }, [allChamas, userAddress]);
+
+  return { userChamas, isLoading };
 }

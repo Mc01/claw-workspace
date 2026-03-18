@@ -1,22 +1,65 @@
-import { useState } from 'react';
+import { useState, useEffect, useMemo } from 'react';
 import { Link } from 'react-router-dom';
 import { Search, Filter, PlusCircle, Compass } from 'lucide-react';
 import { useChamaFactory } from '../hooks/useChamaFactory';
 import { ChamaCard, ChamaCardSkeleton } from '../components/ChamaCard';
+import { useChamaDetailsBatch } from '../hooks/useChama';
+import type { Address } from 'viem';
 
 type FilterType = 'all' | 'open' | 'graduated';
+
+interface ChamaInfo {
+  address: Address;
+  name?: string;
+  graduated?: boolean;
+}
 
 export function Discover() {
   const { allChamas, isLoadingChamas } = useChamaFactory();
   const [searchTerm, setSearchTerm] = useState('');
   const [filter, setFilter] = useState<FilterType>('all');
 
-  const filteredChamas = allChamas?.filter((chamaAddress) => {
-    if (searchTerm && !chamaAddress.toLowerCase().includes(searchTerm.toLowerCase())) {
-      return false;
-    }
-    return true;
-  });
+  // Fetch chama details (names and graduation status) for search and filtering
+  const { chamaDetails, isLoading: isLoadingDetails } = useChamaDetailsBatch(allChamas);
+
+  // Create a map for quick lookup
+  const chamaInfoMap = useMemo(() => {
+    const map = new Map<Address, ChamaInfo>();
+    chamaDetails.forEach((info) => {
+      map.set(info.address, info);
+    });
+    return map;
+  }, [chamaDetails]);
+
+  const filteredChamas = useMemo(() => {
+    if (!allChamas) return [];
+
+    return allChamas.filter((chamaAddress) => {
+      const info = chamaInfoMap.get(chamaAddress);
+
+      // Apply filter
+      if (filter === 'graduated' && !info?.graduated) {
+        return false;
+      }
+      if (filter === 'open' && info?.graduated) {
+        return false;
+      }
+
+      // Apply search
+      if (searchTerm) {
+        const searchLower = searchTerm.toLowerCase();
+        const addressMatch = chamaAddress.toLowerCase().includes(searchLower);
+        const nameMatch = info?.name?.toLowerCase().includes(searchLower);
+        if (!addressMatch && !nameMatch) {
+          return false;
+        }
+      }
+
+      return true;
+    });
+  }, [allChamas, chamaInfoMap, filter, searchTerm]);
+
+  const isLoading = isLoadingChamas || isLoadingDetails;
 
   return (
     <div className="space-y-8 animate-fade-in">
@@ -45,7 +88,7 @@ export function Discover() {
           <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 text-white/30" />
           <input
             type="text"
-            placeholder="Search by address..."
+            placeholder="Search by name or address..."
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
             className="input-dark pl-11"
@@ -71,7 +114,7 @@ export function Discover() {
       </div>
 
       {/* Chama Grid */}
-      {isLoadingChamas ? (
+      {isLoading ? (
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {[...Array(6)].map((_, i) => (
             <ChamaCardSkeleton key={i} />
@@ -101,7 +144,7 @@ function EmptyState({ searchTerm }: { searchTerm: string }) {
       </h3>
       <p className="text-white/40 mb-6 max-w-sm mx-auto">
         {searchTerm
-          ? 'No Chamas match your search. Try a different address.'
+          ? 'No Chamas match your search. Try a different name or address.'
           : 'Be the first to create a savings circle for your community.'}
       </p>
       {!searchTerm && (

@@ -1,16 +1,22 @@
 import { useAccount } from 'wagmi';
-import { useChamaFactory } from '../hooks/useChamaFactory';
+import { useChamaFactory, useUserChamas } from '../hooks/useChamaFactory';
 import { ChamaCard, ChamaCardSkeleton } from '../components/ChamaCard';
 import { Wallet, PlusCircle, Compass, Users, TrendingUp, Trophy, LayoutGrid } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 export function MyChamas() {
-  const { isConnected } = useAccount();
+  const { isConnected, address: userAddress } = useAccount();
   const { allChamas, isLoadingChamas } = useChamaFactory();
-
+  
   // Filter chamas where user is a member
-  // Note: In a production app, this should be indexed for efficiency
-  const userChamas = allChamas;
+  const { userChamas, isLoading: isLoadingUserChamas } = useUserChamas(
+    allChamas,
+    userAddress
+  );
+
+  // Calculate stats
+  const activeCount = userChamas?.length || 0;
+  const graduatedCount = 0; // TODO: fetch graduation status for each chama
 
   if (!isConnected) {
     return (
@@ -56,25 +62,25 @@ export function MyChamas() {
         <DashboardStat
           icon={<Users className="w-5 h-5 text-blue-400" />}
           label="Joined Chamas"
-          value={isLoadingChamas ? '—' : (userChamas?.length || 0).toString()}
+          value={isLoadingChamas || isLoadingUserChamas ? '—' : (userChamas?.length || 0).toString()}
           gradient="from-blue-500/20 to-cyan-500/20"
         />
         <DashboardStat
           icon={<TrendingUp className="w-5 h-5 text-primary-400" />}
           label="Active"
-          value={isLoadingChamas ? '—' : '0'}
+          value={isLoadingChamas || isLoadingUserChamas ? '—' : activeCount.toString()}
           gradient="from-primary-500/20 to-emerald-500/20"
         />
         <DashboardStat
           icon={<Trophy className="w-5 h-5 text-amber-400" />}
           label="Graduated"
-          value={isLoadingChamas ? '—' : '0'}
+          value={isLoadingChamas || isLoadingUserChamas ? '—' : graduatedCount.toString()}
           gradient="from-amber-500/20 to-orange-500/20"
         />
       </div>
 
       {/* Chama List */}
-      {isLoadingChamas ? (
+      {isLoadingChamas || isLoadingUserChamas ? (
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {[...Array(3)].map((_, i) => (
             <ChamaCardSkeleton key={i} />

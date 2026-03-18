@@ -3,14 +3,16 @@ import { useAccount, useChainId } from 'wagmi';
 import {
   ArrowLeft, Users, Clock, User, ExternalLink,
   Target, TrendingUp, Loader2, AlertTriangle, CheckCircle,
-  Coins,
+  Coins, GraduationCap, Unlock,
 } from 'lucide-react';
-import { useChama, useJoinChama, useContribute, useRefund } from '../hooks/useChama';
+import { useChama, useJoinChama, useContribute, useRefund, useGraduate } from '../hooks/useChama';
 import { ProgressBar } from '../components/ProgressBar';
 import { formatAddress, formatAmount, formatDateTime, isExpired, getDaysRemaining, cn } from '../lib/utils';
 import { getExplorerUrl } from '../config/contracts';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useToast } from '../components/Toast';
+import { useTokenAllowance } from '../hooks/useToken';
+import { parseUnits } from 'viem';
 
 export function ChamaDetail() {
   const { address } = useParams<{ address: string }>();
@@ -39,12 +41,38 @@ export function ChamaDetail() {
   const { join, isPending: isJoining } = useJoinChama(address || null);
   const { contribute, isPending: isContributing } = useContribute(address || null);
   const { refund, isPending: isRefunding } = useRefund(address || null);
+  const { graduate, isPending: isGraduating } = useGraduate(address || null);
+
+  // Token approval for contributions
+  const { 
+    allowance, 
+    refetch: refetchAllowance, 
+    approve, 
+    isPending: isApproving 
+  } = useTokenAllowance(
+    asset || null,
+    userAddress,
+    address
+  );
 
   const expired = isExpired(deadline);
   const daysLeft = getDaysRemaining(deadline);
   const hasContributed = userContribution !== undefined && userContribution > BigInt(0);
   // getProgress returns percentage 0–100
   const pct = Number(progress?.percentage || 0);
+  const targetReached = pct >= 100;
+  const isCreator = creator && userAddress && creator.toLowerCase() === userAddress.toLowerCase();
+
+  // Check if approval is needed
+  const needsApproval = (() => {
+    if (!contributionAmount || !allowance) return false;
+    try {
+      const amount = parseUnits(contributionAmount, 18);
+      return allowance < amount;
+    } catch {
+      return false;
+    }
+  })();
 
   const handleContribute = async () => {
     if (!contributionAmount) return;
@@ -53,8 +81,22 @@ export function ChamaDetail() {
       await contribute(contributionAmount, 18);
       addToast('Contribution successful!', 'success');
       setContributionAmount('');
+      refetchAllowance();
     } catch {
       addToast('Contribution failed', 'error');
+    }
+  };
+
+  const handleApprove = async () => {
+    if (!contributionAmount) return;
+    addToast('Approving tokens... Confirm in wallet', 'pending', 0);
+    try {
+      // Approve a large amount to avoid future approvals
+      await approve('1000000', 18);
+      addToast('Approval successful! You can now contribute.', 'success');
+      refetchAllowance();
+    } catch {
+      addToast('Approval failed', 'error');
     }
   };
 
@@ -75,6 +117,16 @@ export function ChamaDetail() {
       addToast('Refund claimed!', 'success');
     } catch {
       addToast('Refund failed', 'error');
+    }
+  };
+
+  const handleGraduate = async () => {
+    addToast('Graduating Chama... Confirm in wallet', 'pending', 0);
+    try {
+      await graduate();
+      addToast('Chama graduated successfully!', 'success');
+    } catch {
+      addToast('Graduation failed', 'error');
     }
   };
 
@@ -216,21 +268,75 @@ export function ChamaDetail() {
                     step="0.01"
                   />
                 </div>
-                <button
-                  onClick={handleContribute}
-                  disabled={isContributing || !contributionAmount}
-                  className="w-full btn-primary py-3 flex items-center justify-center gap-2 disabled:opacity-50"
-                >
-                  {isContributing ? (
-                    <>
-                      <Loader2 className="w-4 h-4 animate-spin" />
-                      Confirming...
-                    </>
-                  ) : (
-                    'Contribute'
-                  )}
-                </button>
+                
+                {/* Approval UI */}
+                {needsApproval ? (
+                  <button
+                    onClick={handleApprove}
+                    disabled={isApproving || !contributionAmount}
+                    className="w-full btn-secondary py-3 flex items-center justify-center gap-2 disabled:opacity-50"
+                  >
+                    {isApproving ? (
+                      <>
+                        <Loader2 className="w-4 h-4 animate-spin" />
+                        Approving...
+                      </>
+                    ) : (
+                      <>
+                        <Unlock className="w-4 h-4" />
+                        Approve Tokens
+                      </>
+                    )}
+                  </button>
+                ) : (
+                  <button
+                    onClick={handleContribute}
+                    disabled={isContributing || !contributionAmount}
+                    className="w-full btn-primary py-3 flex items-center justify-center gap-2 disabled:opacity-50"
+                  >
+                    {isContributing ? (
+                      <>
+                        <Loader2 className="w-4 h-4 animate-spin" />
+                        Confirming...
+                      </>
+                    ) : (
+                      'Contribute'
+                    )}
+                  </button>
+                )}
+                
+                {needsApproval && (
+                  <p className="text-xs text-amber-400/80">
+                    You need to approve tokens before contributing.
+                  </p>
+                )}
               </div>
+            </ActionCard>
+          )}
+
+          {/* Graduate Section - Only for creator when target reached */}
+          {isCreator && targetReached && !graduated && !expired && (
+            <ActionCard title="Graduate Chama" icon={<GraduationCap className="w-5 h-5 text-amber-400" />}>
+              <p className="text-white/40 text-sm mb-4">
+                Target reached! Graduate this Chama to mint tokens and distribute to members.
+              </p>
+              <button
+                onClick={handleGraduate}
+                disabled={isGraduating}
+                className="w-full py-3 rounded-xl font-semibold bg-amber-500/20 text-amber-400 border border-amber-500/30 hover:bg-amber-500/30 transition-all flex items-center justify-center gap-2"
+              >
+                {isGraduating ? (
+                  <>
+                    <Loader2 className="w-4 h-4 animate-spin" />
+                    Graduating...
+                  </>
+                ) : (
+                  <>
+                    <GraduationCap className="w-4 h-4" />
+                    Graduate Now
+                  </>
+                )}
+              </button>
             </ActionCard>
           )}
 
