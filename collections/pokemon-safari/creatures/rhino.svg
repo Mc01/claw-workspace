@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <!-- Rhino - side profile, Pokemon style -->
+  <!-- Body (massive, tank-like) -->
+  <ellipse cx="55" cy="65" rx="30" ry="22" fill="#696969"/>
+  <!-- Head (large, heavy) -->
+  <ellipse cx="20" cy="58" rx="16" ry="13" fill="#696969"/>
+  <!-- Skin folds (armor plates) -->
+  <path d="M28,46 Q30,44 32,46" stroke="#505050" stroke-width="2" fill="none"/>
+  <path d="M40,46 Q42,44 44,46" stroke="#505050" stroke-width="2" fill="none"/>
+  <path d="M56,46 Q58,44 60,46" stroke="#505050" stroke-width="2" fill="none"/>
+  <!-- Neck fold -->
+  <path d="M28,52 Q30,56 28,62" stroke="#505050" stroke-width="2.5" fill="none"/>
+  <!-- Main horn -->
+  <polygon points="8,52 4,32 12,52" fill="#3a3a3a"/>
+  <!-- Small second horn -->
+  <polygon points="13,51 10,43 16,51" fill="#4a4a4a"/>
+  <!-- Ear -->
+  <polygon points="20,46 24,36 28,46" fill="#696969"/>
+  <polygon points="21,46 24,39 27,46" fill="#C0A0A0"/>
+  <!-- Eye (small, deep-set) -->
+  <circle cx="16" cy="55" r="2" fill="#1a1a1a"/>
+  <circle cx="15.4" cy="54.4" r="0.6" fill="white"/>
+  <!-- Lips (thick) -->
+  <path d="M6,63 Q8,67 12,65" stroke="#505050" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <!-- Legs (stubby, strong) -->
+  <rect x="30" y="82" width="9" height="13" rx="3" fill="#5E5E5E"/>
+  <rect x="44" y="82" width="9" height="13" rx="3" fill="#5E5E5E"/>
+  <rect x="59" y="82" width="9" height="13" rx="3" fill="#5E5E5E"/>
+  <rect x="70" y="82" width="9" height="13" rx="3" fill="#5E5E5E"/>
+  <!-- Toes -->
+  <ellipse cx="34" cy="95" rx="4" ry="1.5" fill="#4a4a4a"/>
+  <ellipse cx="48" cy="95" rx="4" ry="1.5" fill="#4a4a4a"/>
+  <ellipse cx="63" cy="95" rx="4" ry="1.5" fill="#4a4a4a"/>
+  <ellipse cx="74" cy="95" rx="4" ry="1.5" fill="#4a4a4a"/>
+  <!-- Tail (short, stubby) -->
+  <path d="M84,65 Q90,60 88,55" stroke="#696969" stroke-width="3" fill="none" stroke-linecap="round"/>
+</svg>

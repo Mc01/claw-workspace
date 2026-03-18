@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="20" height="20">
+  <!-- Sleepy eye trait - half-closed -->
+  <circle cx="10" cy="11" r="4" fill="#1a1a1a"/>
+  <!-- Half-lid -->
+  <rect x="5.5" y="4" width="9" height="7" rx="1" fill="white"/>
+  <path d="M5,8 Q10,6 15,8" stroke="#1a1a1a" stroke-width="1.5" fill="none"/>
+  <circle cx="8.5" cy="10" r="1" fill="white"/>
+</svg>

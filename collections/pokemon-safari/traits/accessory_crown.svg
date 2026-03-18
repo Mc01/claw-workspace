@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 20" width="30" height="20">
+  <!-- Crown accessory -->
+  <polygon points="2,18 2,6 8,12 15,2 22,12 28,6 28,18" fill="#FFD700"/>
+  <rect x="2" y="15" width="26" height="4" rx="1" fill="#FFD700"/>
+  <!-- Crown gems -->
+  <circle cx="8" cy="17" r="2" fill="#E74C3C"/>
+  <circle cx="15" cy="17" r="2" fill="#3498DB"/>
+  <circle cx="22" cy="17" r="2" fill="#2ECC71"/>
+</svg>

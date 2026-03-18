@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 40" width="60" height="40">
+  <!-- Plain/solid coat pattern - subtle texture lines -->
+  <path d="M0,10 Q15,8 30,10 Q45,12 60,10" stroke="#C49010" stroke-width="1" fill="none" opacity="0.4"/>
+  <path d="M0,20 Q15,18 30,20 Q45,22 60,20" stroke="#C49010" stroke-width="1" fill="none" opacity="0.4"/>
+  <path d="M0,30 Q15,28 30,30 Q45,32 60,30" stroke="#C49010" stroke-width="1" fill="none" opacity="0.4"/>
+</svg>

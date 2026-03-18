@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <!-- Elephant - side profile, Pokemon style -->
+  <!-- Body -->
+  <ellipse cx="55" cy="65" rx="28" ry="22" fill="#808080"/>
+  <!-- Head -->
+  <circle cx="22" cy="52" r="16" fill="#808080"/>
+  <!-- Ear (large, flat) -->
+  <ellipse cx="18" cy="52" rx="14" ry="18" fill="#9E9E9E" transform="rotate(-10,18,52)"/>
+  <ellipse cx="18" cy="52" rx="10" ry="14" fill="#C0A0A0" transform="rotate(-10,18,52)"/>
+  <!-- Trunk -->
+  <path d="M10,58 Q2,65 5,78 Q6,82 10,80 Q12,78 10,74 Q8,65 14,62" fill="#808080"/>
+  <!-- Tusk -->
+  <path d="M10,62 Q0,68 2,74" stroke="#F5F5DC" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <!-- Eye -->
+  <circle cx="16" cy="48" r="2.5" fill="#1a1a1a"/>
+  <circle cx="15.2" cy="47.2" r="0.7" fill="white"/>
+  <!-- Legs (thick) -->
+  <rect x="30" y="82" width="8" height="14" rx="3" fill="#707070"/>
+  <rect x="44" y="82" width="8" height="14" rx="3" fill="#707070"/>
+  <rect x="58" y="82" width="8" height="14" rx="3" fill="#707070"/>
+  <rect x="68" y="82" width="8" height="14" rx="3" fill="#707070"/>
+  <!-- Tail -->
+  <path d="M82,65 Q90,60 88,52" stroke="#808080" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <ellipse cx="88" cy="50" rx="3" ry="4" fill="#606060"/>
+</svg>

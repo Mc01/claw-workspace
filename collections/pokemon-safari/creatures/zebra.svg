@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <!-- Zebra - side profile, Pokemon style -->
+  <!-- Body base -->
+  <ellipse cx="52" cy="65" rx="26" ry="18" fill="#F0F0F0"/>
+  <!-- Zebra stripes on body -->
+  <path d="M30,55 Q34,50 32,78" stroke="#1a1a1a" stroke-width="3" fill="none"/>
+  <path d="M40,52 Q44,47 42,82" stroke="#1a1a1a" stroke-width="3" fill="none"/>
+  <path d="M52,51 Q56,47 54,83" stroke="#1a1a1a" stroke-width="3" fill="none"/>
+  <path d="M62,52 Q66,48 64,82" stroke="#1a1a1a" stroke-width="3" fill="none"/>
+  <path d="M70,55 Q73,52 72,78" stroke="#1a1a1a" stroke-width="3" fill="none"/>
+  <!-- Neck -->
+  <rect x="24" y="40" width="12" height="28" rx="5" fill="#F0F0F0"/>
+  <!-- Neck stripes -->
+  <path d="M24,48 Q30,44 36,50" stroke="#1a1a1a" stroke-width="2.5" fill="none"/>
+  <path d="M24,58 Q30,54 36,60" stroke="#1a1a1a" stroke-width="2.5" fill="none"/>
+  <!-- Head -->
+  <ellipse cx="18" cy="34" rx="12" ry="9" fill="#F0F0F0"/>
+  <!-- Head stripes -->
+  <path d="M10,28 Q14,24 18,30" stroke="#1a1a1a" stroke-width="2" fill="none"/>
+  <path d="M10,34 Q14,30 18,36" stroke="#1a1a1a" stroke-width="2" fill="none"/>
+  <!-- Ear -->
+  <polygon points="12,26 16,16 20,26" fill="#F0F0F0"/>
+  <polygon points="13,26 16,19 19,26" fill="#E8B4B8"/>
+  <!-- Mane (mohawk style) -->
+  <path d="M14,24 Q18,16 24,18 Q28,20 30,26 Q28,22 26,26 Q24,18 20,22 Q18,18 14,24" fill="#1a1a1a"/>
+  <!-- Eye -->
+  <circle cx="13" cy="33" r="2.5" fill="#1a1a1a"/>
+  <circle cx="12.2" cy="32.2" r="0.7" fill="white"/>
+  <!-- Nostril -->
+  <ellipse cx="8" cy="37" rx="1.5" ry="1" fill="#888"/>
+  <!-- Legs -->
+  <rect x="30" y="78" width="6" height="15" rx="2" fill="#E0E0E0"/>
+  <rect x="42" y="78" width="6" height="15" rx="2" fill="#E0E0E0"/>
+  <rect x="55" y="78" width="6" height="15" rx="2" fill="#E0E0E0"/>
+  <rect x="65" y="78" width="6" height="15" rx="2" fill="#E0E0E0"/>
+  <!-- Leg stripes -->
+  <rect x="30" y="82" width="6" height="2.5" fill="#1a1a1a"/>
+  <rect x="42" y="82" width="6" height="2.5" fill="#1a1a1a"/>
+  <rect x="55" y="82" width="6" height="2.5" fill="#1a1a1a"/>
+  <rect x="65" y="82" width="6" height="2.5" fill="#1a1a1a"/>
+  <!-- Hooves -->
+  <rect x="30" y="90" width="6" height="3" rx="1" fill="#1a1a1a"/>
+  <rect x="42" y="90" width="6" height="3" rx="1" fill="#1a1a1a"/>
+  <rect x="55" y="90" width="6" height="3" rx="1" fill="#1a1a1a"/>
+  <rect x="65" y="90" width="6" height="3" rx="1" fill="#1a1a1a"/>
+  <!-- Tail -->
+  <path d="M77,65 Q86,58 84,50" stroke="#F0F0F0" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <ellipse cx="84" cy="48" rx="3" ry="5" fill="#1a1a1a"/>
+</svg>

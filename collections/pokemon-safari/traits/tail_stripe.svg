@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 50" width="40" height="50">
+  <!-- Striped tail (zebra style) -->
+  <path d="M5,5 Q15,15 18,30 Q20,40 22,48" stroke="#F0F0F0" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <!-- Stripes on tail -->
+  <path d="M8,12 Q12,14 14,18" stroke="#1a1a1a" stroke-width="2" fill="none"/>
+  <path d="M12,22 Q16,24 17,28" stroke="#1a1a1a" stroke-width="2" fill="none"/>
+  <path d="M16,34 Q19,36 20,40" stroke="#1a1a1a" stroke-width="2" fill="none"/>
+  <ellipse cx="22" cy="48" rx="4" ry="4" fill="#1a1a1a"/>
+</svg>

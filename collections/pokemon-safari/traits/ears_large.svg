@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 40" width="30" height="40">
+  <!-- Large elephant-style ear trait -->
+  <ellipse cx="15" cy="20" rx="13" ry="18" fill="#9E9E9E"/>
+  <ellipse cx="15" cy="20" rx="9" ry="13" fill="#C8A0A0"/>
+</svg>

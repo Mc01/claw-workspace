@@ -1,0 +1,156 @@
+{
+  "name": "Pokemon Safari",
+  "description": "Pokemon-style African Safari creature collection. Minimal vector, side-profile sprites with flat colors and clean lines.",
+  "style": "minimal-vector",
+  "viewStyle": "side-profile",
+  "background": "white",
+  "creatures": [
+    {
+      "id": "lion",
+      "name": "Lion",
+      "file": "creatures/lion.svg",
+      "baseColor": "#D4A017",
+      "accentColor": "#8B4513",
+      "tags": ["predator", "mane", "savanna"]
+    },
+    {
+      "id": "elephant",
+      "name": "Elephant",
+      "file": "creatures/elephant.svg",
+      "baseColor": "#808080",
+      "accentColor": "#C0A0A0",
+      "tags": ["large", "trunk", "tusk", "savanna"]
+    },
+    {
+      "id": "giraffe",
+      "name": "Giraffe",
+      "file": "creatures/giraffe.svg",
+      "baseColor": "#DAA520",
+      "accentColor": "#8B4513",
+      "tags": ["tall", "neck", "spots", "savanna"]
+    },
+    {
+      "id": "zebra",
+      "name": "Zebra",
+      "file": "creatures/zebra.svg",
+      "baseColor": "#F0F0F0",
+      "accentColor": "#1a1a1a",
+      "tags": ["stripes", "mane", "savanna"]
+    },
+    {
+      "id": "rhino",
+      "name": "Rhino",
+      "file": "creatures/rhino.svg",
+      "baseColor": "#696969",
+      "accentColor": "#3a3a3a",
+      "tags": ["horn", "armored", "savanna"]
+    }
+  ],
+  "traits": [
+    {
+      "id": "eyes_normal",
+      "name": "Normal Eyes",
+      "category": "eyes",
+      "file": "traits/eyes_normal.svg",
+      "rarity": "common"
+    },
+    {
+      "id": "eyes_fierce",
+      "name": "Fierce Eyes",
+      "category": "eyes",
+      "file": "traits/eyes_fierce.svg",
+      "rarity": "uncommon"
+    },
+    {
+      "id": "eyes_sleepy",
+      "name": "Sleepy Eyes",
+      "category": "eyes",
+      "file": "traits/eyes_sleepy.svg",
+      "rarity": "rare"
+    },
+    {
+      "id": "ears_pointed",
+      "name": "Pointed Ears",
+      "category": "ears",
+      "file": "traits/ears_pointed.svg",
+      "rarity": "common"
+    },
+    {
+      "id": "ears_round",
+      "name": "Round Ears",
+      "category": "ears",
+      "file": "traits/ears_round.svg",
+      "rarity": "common"
+    },
+    {
+      "id": "ears_large",
+      "name": "Large Ears",
+      "category": "ears",
+      "file": "traits/ears_large.svg",
+      "rarity": "uncommon"
+    },
+    {
+      "id": "tail_tuft",
+      "name": "Tuft Tail",
+      "category": "tails",
+      "file": "traits/tail_tuft.svg",
+      "rarity": "common"
+    },
+    {
+      "id": "tail_whip",
+      "name": "Whip Tail",
+      "category": "tails",
+      "file": "traits/tail_whip.svg",
+      "rarity": "common"
+    },
+    {
+      "id": "tail_stripe",
+      "name": "Striped Tail",
+      "category": "tails",
+      "file": "traits/tail_stripe.svg",
+      "rarity": "uncommon"
+    },
+    {
+      "id": "pattern_spots",
+      "name": "Spots",
+      "category": "patterns",
+      "file": "traits/pattern_spots.svg",
+      "rarity": "uncommon"
+    },
+    {
+      "id": "pattern_stripes",
+      "name": "Stripes",
+      "category": "patterns",
+      "file": "traits/pattern_stripes.svg",
+      "rarity": "uncommon"
+    },
+    {
+      "id": "pattern_plain",
+      "name": "Plain Coat",
+      "category": "patterns",
+      "file": "traits/pattern_plain.svg",
+      "rarity": "common"
+    },
+    {
+      "id": "accessory_crown",
+      "name": "Crown",
+      "category": "accessories",
+      "file": "traits/accessory_crown.svg",
+      "rarity": "legendary"
+    },
+    {
+      "id": "accessory_necklace",
+      "name": "Tribal Necklace",
+      "category": "accessories",
+      "file": "traits/accessory_necklace.svg",
+      "rarity": "rare"
+    },
+    {
+      "id": "accessory_bandana",
+      "name": "Bandana",
+      "category": "accessories",
+      "file": "traits/accessory_bandana.svg",
+      "rarity": "uncommon"
+    }
+  ]
+}
