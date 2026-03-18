@@ -144,6 +144,26 @@ export function Landing() {
     return () => obs.disconnect();
   }, []);
 
+  // IntersectionObserver: FAQ visibility tracked in React state (prevents visible class loss on re-render)
+  useEffect(() => {
+    const obs = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          const idx = parseInt((entry.target as HTMLElement).dataset.faqIndex ?? '-1');
+          if (idx >= 0) {
+            const delay = parseInt((entry.target as HTMLElement).dataset.delay ?? '0');
+            setTimeout(() => {
+              setVisibleFaqs(prev => new Set([...prev, idx]));
+            }, delay);
+            obs.unobserve(entry.target);
+          }
+        }
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -60px 0px' });
+    faqItemRefs.current.forEach(el => { if (el) obs.observe(el); });
+    return () => obs.disconnect();
+  }, []);
+
   const faqs: FaqItem[] = [
     { q: 'What is a chama?', a: 'A chama is a traditional savings group common in East and West Africa. Members pool regular contributions and either take turns receiving the full pot or save collectively. ChamaFi brings this practice on-chain for transparency and yield generation.' },
     { q: 'What happens if the Chama deadline is missed?', a: 'If a Chama fails to reach 100% funding before its on-chain deadline, the smart contract automatically refunds all contributors. No admin action needed, no funds lost, no trust required.' },
@@ -508,7 +528,7 @@ export function Landing() {
           </div>
           <div className="faq-list">
             {faqs.map((faq, i) => (
-              <div key={i} className={`faq-item reveal-up${visibleFaqs.has(i) ? ' visible' : ''}${openFaq === i ? ' open' : ''}`} data-delay={String(i * 80)} ref={(el) => { if (el) faqItemRefs.current[i] = el; }}>
+              <div key={i} className={`faq-item reveal-up${visibleFaqs.has(i) ? ' visible' : ''}${openFaq === i ? ' open' : ''}`} data-delay={String(i * 80)} data-faq-index={String(i)} ref={(el) => { if (el) faqItemRefs.current[i] = el; }}>
                 <button className="faq-q" onClick={() => setOpenFaq(openFaq === i ? null : i)}>
                   <span>{faq.q}</span>
                   <span className="faq-icon">+</span>
