@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" shape-rendering="crispEdges">
+  <title>Trait: Deep Moss Eyes</title>
+  <desc>Shared eye variant - deep green mossy eyes</desc>
+  <rect x="12" y="7" width="2" height="2" fill="#2d6b2a"/>
+  <rect x="13" y="7" width="1" height="1" fill="#44aa44"/>
+  <rect x="11" y="7" width="1" height="1" fill="#1a4a1a" opacity="0.5"/>
+</svg>

@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" shape-rendering="crispEdges">
+  <title>Beetle - Bark Shell</title>
+  <rect width="24" height="24" fill="#2d4a22"/>
+  <!-- Log ground -->
+  <rect x="0" y="18" width="24" height="6" fill="#5c3a1e"/>
+  <rect x="0" y="18" width="24" height="1" fill="#6b4422"/>
+  <!-- Shell (bark) -->
+  <rect x="7" y="7" width="10" height="8" fill="#5c3a1e"/>
+  <rect x="6" y="8" width="1" height="6" fill="#4a2e14"/>
+  <rect x="17" y="8" width="1" height="6" fill="#4a2e14"/>
+  <rect x="7" y="15" width="10" height="1" fill="#4a2e14"/>
+  <!-- Bark texture -->
+  <rect x="8" y="8" width="1" height="6" fill="#6b4422"/>
+  <rect x="11" y="7" width="1" height="8" fill="#4a2e14"/>
+  <rect x="14" y="8" width="1" height="6" fill="#6b4422"/>
+  <rect x="9" y="9" width="2" height="1" fill="#6b4422"/>
+  <rect x="13" y="11" width="2" height="1" fill="#6b4422"/>
+  <rect x="9" y="13" width="3" height="1" fill="#6b4422"/>
+  <!-- Moss on shell -->
+  <rect x="7" y="7" width="3" height="1" fill="#4a7c34"/>
+  <rect x="15" y="7" width="2" height="1" fill="#3d6b2a"/>
+  <rect x="6" y="9" width="1" height="2" fill="#5a8f3e"/>
+  <!-- Head -->
+  <rect x="16" y="10" width="4" height="4" fill="#3d2b18"/>
+  <rect x="18" y="9" width="2" height="1" fill="#3d2b18"/>
+  <!-- Eye -->
+  <rect x="18" y="11" width="1" height="1" fill="#ccaa00"/>
+  <!-- Mandibles -->
+  <rect x="20" y="11" width="2" height="1" fill="#5c3a1e"/>
+  <rect x="20" y="12" width="2" height="1" fill="#4a2e14"/>
+  <rect x="21" y="10" width="1" height="1" fill="#5c3a1e"/>
+  <!-- Antennae -->
+  <rect x="19" y="8" width="1" height="1" fill="#3d2b18"/>
+  <rect x="20" y="7" width="1" height="1" fill="#3d2b18"/>
+  <rect x="21" y="6" width="1" height="1" fill="#4a2e14"/>
+  <rect x="18" y="7" width="1" height="2" fill="#3d2b18"/>
+  <rect x="17" y="6" width="1" height="1" fill="#4a2e14"/>
+  <!-- Legs -->
+  <rect x="16" y="14" width="1" height="2" fill="#3d2b18"/>
+  <rect x="17" y="16" width="1" height="2" fill="#3d2b18"/>
+  <rect x="14" y="15" width="1" height="2" fill="#3d2b18"/>
+  <rect x="15" y="17" width="1" height="1" fill="#3d2b18"/>
+  <rect x="10" y="15" width="1" height="2" fill="#3d2b18"/>
+  <rect x="9" y="17" width="1" height="1" fill="#3d2b18"/>
+  <rect x="8" y="15" width="1" height="2" fill="#2d1e10"/>
+  <rect x="12" y="15" width="1" height="2" fill="#2d1e10"/>
+</svg>

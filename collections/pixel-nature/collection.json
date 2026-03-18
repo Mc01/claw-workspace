@@ -1,0 +1,70 @@
+{
+  "name": "Pixel Nature",
+  "description": "Forest-dwelling pixel creatures with nature-infused traits. Side-profile pixel art in forest greens and browns.",
+  "style": "pixel-art",
+  "palette": ["#2d4a22", "#4a7c34", "#5a8f3e", "#3d6b2a", "#7ab356", "#5c3a1e", "#6b4422", "#3d2b1a", "#8B6914", "#9a7518"],
+  "canvas": "24x24",
+  "archetypes": [
+    {
+      "id": "lion",
+      "name": "Lion - Leaf Mane",
+      "base": "bases/lion-leaf-mane.svg",
+      "traits": [
+        "traits/mane/autumn-crown.svg",
+        "traits/mane/fern-wreath.svg",
+        "traits/mane/pine-needle-mane.svg",
+        "traits/mane/flower-bloom.svg"
+      ]
+    },
+    {
+      "id": "serpent",
+      "name": "Serpent - Vine Coil",
+      "base": "bases/serpent-vine-coil.svg",
+      "traits": [
+        "traits/coil/thorny-vine.svg",
+        "traits/coil/moss-scales.svg",
+        "traits/coil/mushroom-spots.svg",
+        "traits/coil/lichen-wrap.svg"
+      ]
+    },
+    {
+      "id": "eagle",
+      "name": "Eagle - Branch Talon",
+      "base": "bases/eagle-branch-talon.svg",
+      "traits": [
+        "traits/talon/iron-bark-grip.svg",
+        "traits/talon/vine-wrapped-talon.svg",
+        "traits/talon/moss-wing.svg",
+        "traits/talon/golden-plume.svg"
+      ]
+    },
+    {
+      "id": "croc",
+      "name": "Croc - Moss Jaw",
+      "base": "bases/croc-moss-jaw.svg",
+      "traits": [
+        "traits/jaw/algae-bloom-jaw.svg",
+        "traits/jaw/stone-teeth.svg",
+        "traits/jaw/lily-pad-back.svg",
+        "traits/jaw/swamp-fire-eye.svg"
+      ]
+    },
+    {
+      "id": "beetle",
+      "name": "Beetle - Bark Shell",
+      "base": "bases/beetle-bark-shell.svg",
+      "traits": [
+        "traits/shell/emerald-bark.svg",
+        "traits/shell/petrified-shell.svg",
+        "traits/shell/fungus-cap.svg",
+        "traits/shell/bioluminescent.svg"
+      ]
+    }
+  ],
+  "sharedTraits": [
+    "traits/eyes/forest-ember.svg",
+    "traits/eyes/deep-moss.svg",
+    "traits/background/twilight-canopy.svg",
+    "traits/background/morning-mist.svg"
+  ]
+}

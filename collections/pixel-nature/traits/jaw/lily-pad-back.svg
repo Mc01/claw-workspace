@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" shape-rendering="crispEdges">
+  <title>Trait: Lily Pad Back</title>
+  <desc>Croc body variant - lily pads growing on back</desc>
+  <rect x="3" y="8" width="3" height="2" fill="#3da85e"/>
+  <rect x="4" y="8" width="1" height="1" fill="#4cc070"/>
+  <rect x="8" y="8" width="3" height="2" fill="#3da85e"/>
+  <rect x="9" y="7" width="1" height="1" fill="#4cc070"/>
+  <!-- Flowers -->
+  <rect x="4" y="7" width="1" height="1" fill="#ffaacc"/>
+  <rect x="9" y="7" width="1" height="1" fill="#ffaacc"/>
+  <rect x="13" y="8" width="2" height="1" fill="#3da85e"/>
+</svg>

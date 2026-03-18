@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" shape-rendering="crispEdges">
+  <title>Trait: Swamp Fire Eye</title>
+  <desc>Croc eye variant - glowing swamp fire eyes</desc>
+  <rect x="17" y="9" width="2" height="2" fill="#ff6600"/>
+  <rect x="18" y="9" width="1" height="1" fill="#ffaa00"/>
+  <!-- Glow effect -->
+  <rect x="16" y="8" width="1" height="1" fill="#ff6600" opacity="0.4"/>
+  <rect x="19" y="8" width="1" height="1" fill="#ff6600" opacity="0.4"/>
+  <rect x="16" y="11" width="1" height="1" fill="#ff6600" opacity="0.3"/>
+  <rect x="19" y="11" width="1" height="1" fill="#ff6600" opacity="0.3"/>
+</svg>

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" shape-rendering="crispEdges">
+  <title>Trait: Fungus Cap</title>
+  <desc>Beetle shell variant - shelf fungus growing on shell</desc>
+  <!-- Shelf fungi on top -->
+  <rect x="7" y="6" width="3" height="1" fill="#cc8855"/>
+  <rect x="8" y="5" width="2" height="1" fill="#ddaa77"/>
+  <rect x="13" y="6" width="3" height="1" fill="#bb7744"/>
+  <rect x="14" y="5" width="2" height="1" fill="#cc8855"/>
+  <!-- Side fungi -->
+  <rect x="5" y="9" width="2" height="1" fill="#ddaa77"/>
+  <rect x="5" y="10" width="1" height="1" fill="#cc8855"/>
+  <rect x="17" y="11" width="2" height="1" fill="#bb7744"/>
+  <rect x="18" y="10" width="1" height="1" fill="#cc8855"/>
+  <!-- Gills underneath -->
+  <rect x="8" y="6" width="1" height="1" fill="#eeccaa"/>
+  <rect x="14" y="6" width="1" height="1" fill="#eeccaa"/>
+</svg>
