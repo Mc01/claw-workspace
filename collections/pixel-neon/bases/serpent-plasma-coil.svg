@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <rect width="200" height="200" fill="#0a0015"/>
+  <!-- Head -->
+  <rect x="120" y="20" width="50" height="12" fill="#1a0035"/>
+  <rect x="115" y="32" width="60" height="12" fill="#220044"/>
+  <rect x="110" y="44" width="65" height="12" fill="#1a0035"/>
+  <!-- Snout taper -->
+  <rect x="165" y="24" width="18" height="6" fill="#150028"/>
+  <rect x="170" y="30" width="16" height="8" fill="#150028"/>
+  <!-- Forked tongue - neon pink -->
+  <rect x="183" y="35" width="8" height="3" fill="#ff00ff"/>
+  <rect x="188" y="32" width="4" height="3" fill="#ff00ff"/>
+  <rect x="188" y="38" width="4" height="3" fill="#ff00ff"/>
+  <!-- Eye -->
+  <rect x="148" y="34" width="12" height="10" fill="#000a00"/>
+  <rect x="150" y="35" width="8" height="8" fill="#00ff99"/>
+  <rect x="152" y="37" width="4" height="4" fill="#ffffff"/>
+  <rect x="144" y="31" width="20" height="16" fill="#00ff99" opacity="0.1"/>
+  <!-- Neck -->
+  <rect x="100" y="56" width="75" height="12" fill="#1a0035"/>
+  <rect x="95" y="56" width="8" height="12" fill="#220044"/>
+  <!-- Scale pattern on neck -->
+  <rect x="100" y="57" width="10" height="5" fill="#9900ff" opacity="0.6"/>
+  <rect x="115" y="57" width="10" height="5" fill="#ff00cc" opacity="0.6"/>
+  <rect x="130" y="57" width="10" height="5" fill="#9900ff" opacity="0.6"/>
+  <rect x="145" y="57" width="10" height="5" fill="#ff00cc" opacity="0.6"/>
+  <!-- Body coil 1 -->
+  <rect x="70" y="68" width="90" height="14" fill="#220044"/>
+  <rect x="68" y="68" width="8" height="14" fill="#1a0035"/>
+  <rect x="70" y="73" width="90" height="4" fill="#9900ff" opacity="0.5"/>
+  <!-- Body coil 2 -->
+  <rect x="40" y="82" width="90" height="14" fill="#1a0035"/>
+  <rect x="36" y="82" width="8" height="14" fill="#220044"/>
+  <rect x="40" y="87" width="90" height="4" fill="#ff00cc" opacity="0.5"/>
+  <!-- Body coil 3 -->
+  <rect x="55" y="96" width="95" height="14" fill="#220044"/>
+  <rect x="55" y="101" width="95" height="4" fill="#9900ff" opacity="0.5"/>
+  <!-- Underbelly -->
+  <rect x="62" y="110" width="80" height="12" fill="#150028"/>
+  <rect x="65" y="110" width="74" height="4" fill="#cc00ff" opacity="0.3"/>
+  <!-- Lower body -->
+  <rect x="50" y="122" width="85" height="14" fill="#220044"/>
+  <rect x="50" y="127" width="85" height="4" fill="#ff00ff" opacity="0.5"/>
+  <!-- Tail coil -->
+  <rect x="80" y="136" width="80" height="14" fill="#1a0035"/>
+  <rect x="80" y="141" width="80" height="4" fill="#9900ff" opacity="0.5"/>
+  <!-- Tail end -->
+  <rect x="140" y="150" width="45" height="12" fill="#220044"/>
+  <rect x="160" y="162" width="28" height="10" fill="#1a0035"/>
+  <rect x="175" y="172" width="16" height="8" fill="#220044"/>
+  <!-- Tail tip neon -->
+  <rect x="182" y="175" width="10" height="8" fill="#ff00ff"/>
+  <rect x="180" y="173" width="14" height="12" fill="#ff00ff" opacity="0.25"/>
+  <rect x="182" y="168" width="10" height="5" fill="#cc00ff"/>
+  <rect x="182" y="162" width="10" height="4" fill="#9900ff"/>
+  <!-- Body glow -->
+  <rect x="40" y="68" width="120" height="82" fill="#9900ff" opacity="0.04"/>
+</svg>

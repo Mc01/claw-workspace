@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <rect width="200" height="200" fill="none"/>
+  <!-- Electric aura radiating from body -->
+  <rect x="38" y="88" width="114" height="54" fill="#ff00ff" opacity="0.04"/>
+  <!-- Spark bolts -->
+  <rect x="38" y="100" width="6" height="2" fill="#ff00ff" opacity="0.7"/>
+  <rect x="34" y="98" width="6" height="2" fill="#cc00ff" opacity="0.7"/>
+  <rect x="30" y="102" width="8" height="2" fill="#ff00ff" opacity="0.5"/>
+  <!-- Right sparks -->
+  <rect x="146" y="102" width="6" height="2" fill="#ff00ff" opacity="0.7"/>
+  <rect x="152" y="100" width="6" height="2" fill="#cc00ff" opacity="0.7"/>
+  <rect x="156" y="104" width="8" height="2" fill="#ff00ff" opacity="0.5"/>
+  <!-- Top sparks -->
+  <rect x="88" y="30" width="2" height="6" fill="#ff00ff" opacity="0.7"/>
+  <rect x="96" y="26" width="2" height="8" fill="#cc00ff" opacity="0.7"/>
+  <rect x="104" y="30" width="2" height="6" fill="#ff00ff" opacity="0.5"/>
+  <!-- Bottom sparks -->
+  <rect x="80" y="170" width="2" height="8" fill="#cc00ff" opacity="0.6"/>
+  <rect x="100" y="168" width="2" height="10" fill="#ff00ff" opacity="0.6"/>
+  <rect x="118" y="172" width="2" height="8" fill="#cc00ff" opacity="0.5"/>
+</svg>

@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <rect width="200" height="200" fill="#0a0015"/>
+  <!-- Antennae -->
+  <rect x="72" y="16" width="4" height="30" fill="#220044"/>
+  <rect x="62" y="10" width="4" height="16" fill="#9900ff"/>
+  <rect x="58" y="8" width="8" height="6" fill="#ff00ff"/>
+  <rect x="102" y="16" width="4" height="30" fill="#220044"/>
+  <rect x="104" y="10" width="4" height="16" fill="#9900ff"/>
+  <rect x="102" y="8" width="8" height="6" fill="#ff00ff"/>
+  <!-- Antennae glow tips -->
+  <rect x="56" y="6" width="12" height="8" fill="#ff00ff" opacity="0.35"/>
+  <rect x="100" y="6" width="12" height="8" fill="#ff00ff" opacity="0.35"/>
+  <!-- Head -->
+  <rect x="58" y="46" width="62" height="14" fill="#1a0030"/>
+  <rect x="55" y="58" width="68" height="12" fill="#220044"/>
+  <!-- Compound eyes -->
+  <rect x="60" y="50" width="14" height="10" fill="#0a000f"/>
+  <rect x="62" y="51" width="10" height="8" fill="#cc00ff"/>
+  <rect x="64" y="53" width="6" height="4" fill="#ff99ff"/>
+  <rect x="104" y="50" width="14" height="10" fill="#0a000f"/>
+  <rect x="106" y="51" width="10" height="8" fill="#cc00ff"/>
+  <rect x="108" y="53" width="6" height="4" fill="#ff99ff"/>
+  <rect x="58" y="48" width="18" height="14" fill="#cc00ff" opacity="0.12"/>
+  <rect x="102" y="48" width="18" height="14" fill="#cc00ff" opacity="0.12"/>
+  <!-- Mandibles -->
+  <rect x="72" y="68" width="12" height="8" fill="#150025"/>
+  <rect x="94" y="68" width="12" height="8" fill="#150025"/>
+  <rect x="70" y="74" width="8" height="5" fill="#cc00ff" opacity="0.5"/>
+  <rect x="100" y="74" width="8" height="5" fill="#cc00ff" opacity="0.5"/>
+  <!-- Thorax -->
+  <rect x="52" y="72" width="74" height="18" fill="#1a0030"/>
+  <rect x="55" y="78" width="68" height="6" fill="#220044"/>
+  <!-- Elytra (wing covers) left half -->
+  <rect x="48" y="90" width="50" height="58" fill="#1a0030"/>
+  <rect x="50" y="92" width="46" height="54" fill="#200038"/>
+  <!-- Elytra right half -->
+  <rect x="80" y="90" width="50" height="58" fill="#1a0030"/>
+  <rect x="82" y="92" width="46" height="54" fill="#200038"/>
+  <!-- Neon seam line down center -->
+  <rect x="78" y="90" width="4" height="58" fill="#ff00ff" opacity="0.8"/>
+  <!-- Elytra circuit patterns left -->
+  <rect x="54" y="98" width="22" height="2" fill="#9900ff" opacity="0.7"/>
+  <rect x="54" y="104" width="2" height="20" fill="#9900ff" opacity="0.7"/>
+  <rect x="56" y="118" width="16" height="2" fill="#cc00ff" opacity="0.7"/>
+  <rect x="58" y="108" width="12" height="2" fill="#ff00ff" opacity="0.5"/>
+  <!-- Elytra circuit patterns right -->
+  <rect x="102" y="98" width="22" height="2" fill="#9900ff" opacity="0.7"/>
+  <rect x="122" y="104" width="2" height="20" fill="#9900ff" opacity="0.7"/>
+  <rect x="108" y="118" width="16" height="2" fill="#cc00ff" opacity="0.7"/>
+  <rect x="108" y="108" width="12" height="2" fill="#ff00ff" opacity="0.5"/>
+  <!-- Elytra edge glow -->
+  <rect x="48" y="90" width="2" height="58" fill="#cc00ff" opacity="0.5"/>
+  <rect x="128" y="90" width="2" height="58" fill="#cc00ff" opacity="0.5"/>
+  <!-- Abdomen tip -->
+  <rect x="58" y="148" width="62" height="12" fill="#1a0030"/>
+  <rect x="66" y="160" width="46" height="10" fill="#220044"/>
+  <rect x="74" y="170" width="30" height="8" fill="#1a0030"/>
+  <!-- Legs - 3 pairs -->
+  <rect x="44" y="80" width="10" height="22" fill="#1a0030"/>
+  <rect x="36" y="102" width="14" height="6" fill="#150025"/>
+  <rect x="44" y="100" width="10" height="22" fill="#1a0030"/>
+  <rect x="36" y="122" width="14" height="6" fill="#150025"/>
+  <rect x="44" y="120" width="10" height="22" fill="#1a0030"/>
+  <rect x="36" y="142" width="14" height="6" fill="#150025"/>
+  <rect x="124" y="80" width="10" height="22" fill="#1a0030"/>
+  <rect x="128" y="102" width="14" height="6" fill="#150025"/>
+  <rect x="124" y="100" width="10" height="22" fill="#1a0030"/>
+  <rect x="128" y="122" width="14" height="6" fill="#150025"/>
+  <rect x="124" y="120" width="10" height="22" fill="#1a0030"/>
+  <rect x="128" y="142" width="14" height="6" fill="#150025"/>
+  <!-- Leg neon tips -->
+  <rect x="34" y="106" width="6" height="4" fill="#cc00ff" opacity="0.6"/>
+  <rect x="34" y="126" width="6" height="4" fill="#cc00ff" opacity="0.6"/>
+  <rect x="34" y="146" width="6" height="4" fill="#cc00ff" opacity="0.6"/>
+  <rect x="136" y="106" width="6" height="4" fill="#cc00ff" opacity="0.6"/>
+  <rect x="136" y="126" width="6" height="4" fill="#cc00ff" opacity="0.6"/>
+  <rect x="136" y="146" width="6" height="4" fill="#cc00ff" opacity="0.6"/>
+</svg>

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <rect width="200" height="200" fill="none"/>
+  <!-- Cyber visor over head/eyes -->
+  <rect x="55" y="49" width="80" height="14" fill="#111122" opacity="0.9"/>
+  <rect x="57" y="51" width="76" height="10" fill="#1a1a33" opacity="0.9"/>
+  <!-- Visor lens glow strip -->
+  <rect x="60" y="54" width="70" height="4" fill="#ff00ff" opacity="0.85"/>
+  <!-- Visor edge chrome -->
+  <rect x="55" y="49" width="80" height="2" fill="#888899"/>
+  <rect x="55" y="61" width="80" height="2" fill="#888899"/>
+  <!-- Side tabs -->
+  <rect x="53" y="51" width="4" height="10" fill="#666677"/>
+  <rect x="133" y="51" width="4" height="10" fill="#666677"/>
+  <!-- Data readout flickers -->
+  <rect x="62" y="52" width="6" height="2" fill="#00ffff" opacity="0.7"/>
+  <rect x="72" y="52" width="8" height="2" fill="#00ffff" opacity="0.5"/>
+  <rect x="118" y="52" width="10" height="2" fill="#ff00ff" opacity="0.6"/>
+</svg>

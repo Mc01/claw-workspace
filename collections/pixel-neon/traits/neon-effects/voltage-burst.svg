@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <rect width="200" height="200" fill="none"/>
+  <!-- Voltage burst radiating from center of body -->
+  <!-- Bolt 1 - up right -->
+  <rect x="100" y="80" width="4" height="10" fill="#ffff00" opacity="0.85"/>
+  <rect x="104" y="74" width="4" height="8" fill="#ffff00" opacity="0.85"/>
+  <rect x="108" y="68" width="4" height="8" fill="#ffff00" opacity="0.7"/>
+  <!-- Bolt 2 - up left -->
+  <rect x="92" y="80" width="4" height="10" fill="#ff00ff" opacity="0.85"/>
+  <rect x="86" y="74" width="4" height="8" fill="#ff00ff" opacity="0.85"/>
+  <rect x="80" y="68" width="4" height="8" fill="#ff00ff" opacity="0.7"/>
+  <!-- Bolt 3 - right -->
+  <rect x="130" y="110" width="10" height="4" fill="#ffff00" opacity="0.85"/>
+  <rect x="140" y="106" width="8" height="4" fill="#ffff00" opacity="0.7"/>
+  <rect x="148" y="102" width="8" height="4" fill="#ffff00" opacity="0.5"/>
+  <!-- Bolt 4 - left -->
+  <rect x="52" y="110" width="10" height="4" fill="#ff00ff" opacity="0.85"/>
+  <rect x="42" y="106" width="8" height="4" fill="#ff00ff" opacity="0.7"/>
+  <rect x="34" y="102" width="8" height="4" fill="#ff00ff" opacity="0.5"/>
+  <!-- Central flash -->
+  <rect x="94" y="106" width="12" height="12" fill="#ffffff" opacity="0.4"/>
+  <rect x="90" y="102" width="20" height="20" fill="#ffff00" opacity="0.1"/>
+</svg>

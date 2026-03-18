@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <rect width="200" height="200" fill="none"/>
+  <!-- Mechanical arm replacing front leg -->
+  <!-- Upper arm -->
+  <rect x="58" y="130" width="18" height="20" fill="#333344"/>
+  <rect x="60" y="132" width="14" height="16" fill="#444455"/>
+  <!-- Elbow joint -->
+  <rect x="56" y="150" width="22" height="8" fill="#555566"/>
+  <rect x="58" y="152" width="18" height="4" fill="#666677"/>
+  <!-- Lower arm -->
+  <rect x="58" y="158" width="18" height="16" fill="#333344"/>
+  <rect x="60" y="160" width="14" height="12" fill="#444455"/>
+  <!-- Hand / claw -->
+  <rect x="56" y="172" width="24" height="8" fill="#222233"/>
+  <rect x="54" y="172" width="6" height="12" fill="#333344"/>
+  <rect x="70" y="172" width="6" height="12" fill="#333344"/>
+  <rect x="62" y="172" width="6" height="10" fill="#333344"/>
+  <!-- Arm circuit lines -->
+  <rect x="64" y="134" width="8" height="2" fill="#ff00ff" opacity="0.7"/>
+  <rect x="68" y="134" width="2" height="14" fill="#ff00ff" opacity="0.7"/>
+  <rect x="64" y="162" width="8" height="2" fill="#cc00ff" opacity="0.7"/>
+  <!-- Joint glow -->
+  <rect x="56" y="150" width="22" height="4" fill="#ff00ff" opacity="0.2"/>
+  <!-- Claw tips glow -->
+  <rect x="54" y="180" width="6" height="4" fill="#ff00ff" opacity="0.5"/>
+  <rect x="70" y="180" width="6" height="4" fill="#ff00ff" opacity="0.5"/>
+</svg>

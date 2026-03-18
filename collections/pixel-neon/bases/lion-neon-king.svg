@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <rect width="200" height="200" fill="#0a0015"/>
+  <!-- Mane - neon pink/purple plasma -->
+  <rect x="45" y="35" width="10" height="10" fill="#cc00ff"/>
+  <rect x="55" y="25" width="10" height="10" fill="#ff00cc"/>
+  <rect x="65" y="20" width="10" height="10" fill="#cc00ff"/>
+  <rect x="75" y="18" width="10" height="10" fill="#ff00ff"/>
+  <rect x="85" y="15" width="10" height="10" fill="#cc00ff"/>
+  <rect x="95" y="15" width="10" height="10" fill="#ff00ff"/>
+  <rect x="105" y="18" width="10" height="10" fill="#cc00ff"/>
+  <rect x="115" y="20" width="10" height="10" fill="#ff00cc"/>
+  <rect x="125" y="25" width="10" height="10" fill="#cc00ff"/>
+  <rect x="135" y="35" width="10" height="10" fill="#ff00cc"/>
+  <rect x="40" y="45" width="10" height="10" fill="#ff00ff"/>
+  <rect x="140" y="45" width="10" height="10" fill="#ff00ff"/>
+  <rect x="38" y="55" width="10" height="10" fill="#cc00ff"/>
+  <rect x="142" y="55" width="10" height="10" fill="#cc00ff"/>
+  <rect x="40" y="30" width="110" height="50" fill="#ff00ff" opacity="0.06"/>
+  <!-- Head -->
+  <rect x="60" y="38" width="70" height="10" fill="#2a004a"/>
+  <rect x="55" y="48" width="80" height="10" fill="#2a004a"/>
+  <rect x="55" y="58" width="80" height="10" fill="#330055"/>
+  <rect x="60" y="68" width="70" height="10" fill="#2a004a"/>
+  <!-- Eyes - neon cyan -->
+  <rect x="70" y="52" width="14" height="10" fill="#000a1a"/>
+  <rect x="106" y="52" width="14" height="10" fill="#000a1a"/>
+  <rect x="72" y="53" width="10" height="8" fill="#00ffff"/>
+  <rect x="108" y="53" width="10" height="8" fill="#00ffff"/>
+  <rect x="75" y="54" width="4" height="6" fill="#ffffff"/>
+  <rect x="111" y="54" width="4" height="6" fill="#ffffff"/>
+  <rect x="68" y="50" width="18" height="14" fill="#00ffff" opacity="0.15"/>
+  <rect x="104" y="50" width="18" height="14" fill="#00ffff" opacity="0.15"/>
+  <!-- Snout -->
+  <rect x="73" y="73" width="44" height="10" fill="#220040"/>
+  <rect x="82" y="83" width="26" height="8" fill="#1a0030"/>
+  <rect x="90" y="74" width="10" height="7" fill="#cc00ff"/>
+  <!-- Fangs -->
+  <rect x="78" y="83" width="5" height="9" fill="#e0d0ff"/>
+  <rect x="107" y="83" width="5" height="9" fill="#e0d0ff"/>
+  <!-- Body -->
+  <rect x="52" y="92" width="86" height="10" fill="#220040"/>
+  <rect x="48" y="102" width="90" height="12" fill="#1a0030"/>
+  <rect x="48" y="114" width="88" height="12" fill="#220040"/>
+  <rect x="50" y="126" width="82" height="10" fill="#1a0030"/>
+  <!-- Neon circuit lines on body -->
+  <rect x="60" y="100" width="30" height="2" fill="#ff00ff" opacity="0.7"/>
+  <rect x="90" y="100" width="2" height="20" fill="#ff00ff" opacity="0.7"/>
+  <rect x="92" y="114" width="25" height="2" fill="#ff00ff" opacity="0.7"/>
+  <rect x="65" y="120" width="20" height="2" fill="#cc00ff" opacity="0.7"/>
+  <!-- Front legs -->
+  <rect x="60" y="136" width="16" height="14" fill="#220040"/>
+  <rect x="60" y="150" width="16" height="14" fill="#1a0030"/>
+  <rect x="57" y="164" width="20" height="8" fill="#0a0015"/>
+  <rect x="57" y="164" width="20" height="8" fill="#ff00ff" opacity="0.2"/>
+  <!-- Back legs -->
+  <rect x="112" y="136" width="16" height="14" fill="#220040"/>
+  <rect x="112" y="150" width="16" height="14" fill="#1a0030"/>
+  <rect x="109" y="164" width="20" height="8" fill="#0a0015"/>
+  <rect x="109" y="164" width="20" height="8" fill="#ff00ff" opacity="0.2"/>
+  <!-- Tail -->
+  <rect x="138" y="115" width="10" height="12" fill="#220040"/>
+  <rect x="148" y="103" width="10" height="12" fill="#1a0030"/>
+  <rect x="153" y="92" width="10" height="12" fill="#2a004a"/>
+  <rect x="152" y="84" width="14" height="14" fill="#ff00ff"/>
+  <rect x="150" y="82" width="18" height="18" fill="#ff00ff" opacity="0.25"/>
+</svg>

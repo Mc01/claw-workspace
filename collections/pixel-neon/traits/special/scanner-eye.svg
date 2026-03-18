@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <rect width="200" height="200" fill="none"/>
+  <!-- Cybernetic scanner eye replacing left eye -->
+  <rect x="68" y="48" width="20" height="16" fill="#000511"/>
+  <rect x="70" y="50" width="16" height="12" fill="#001133"/>
+  <!-- Scanner lens rings -->
+  <rect x="72" y="52" width="12" height="8" fill="#002244"/>
+  <rect x="74" y="54" width="8" height="4" fill="#003355"/>
+  <rect x="76" y="55" width="4" height="2" fill="#ff0000"/>
+  <!-- Scan beam extending right -->
+  <rect x="88" y="55" width="60" height="2" fill="#ff0000" opacity="0.7"/>
+  <rect x="88" y="53" width="50" height="6" fill="#ff0000" opacity="0.1"/>
+  <rect x="138" y="54" width="20" height="4" fill="#ff0000" opacity="0.05"/>
+  <!-- Eye socket neon ring -->
+  <rect x="68" y="48" width="20" height="2" fill="#ff0000" opacity="0.5"/>
+  <rect x="68" y="62" width="20" height="2" fill="#ff0000" opacity="0.5"/>
+  <rect x="68" y="48" width="2" height="16" fill="#ff0000" opacity="0.5"/>
+  <rect x="86" y="48" width="2" height="16" fill="#ff0000" opacity="0.5"/>
+  <!-- Data readout under eye -->
+  <rect x="64" y="66" width="30" height="2" fill="#ff0000" opacity="0.4"/>
+  <rect x="66" y="69" width="20" height="2" fill="#ff0000" opacity="0.3"/>
+</svg>

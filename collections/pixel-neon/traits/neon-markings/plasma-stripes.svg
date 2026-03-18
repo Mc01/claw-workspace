@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <rect width="200" height="200" fill="none"/>
+  <!-- Diagonal plasma stripes overlay on body area -->
+  <rect x="52" y="96" width="86" height="3" fill="#ff00ff" opacity="0.75"/>
+  <rect x="56" y="106" width="82" height="3" fill="#cc00ff" opacity="0.75"/>
+  <rect x="52" y="116" width="88" height="3" fill="#ff00ff" opacity="0.75"/>
+  <rect x="56" y="126" width="80" height="3" fill="#cc00ff" opacity="0.75"/>
+  <!-- Glow halos -->
+  <rect x="50" y="94" width="90" height="7" fill="#ff00ff" opacity="0.08"/>
+  <rect x="50" y="114" width="90" height="7" fill="#ff00ff" opacity="0.08"/>
+</svg>

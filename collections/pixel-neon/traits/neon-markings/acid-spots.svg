@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <rect width="200" height="200" fill="none"/>
+  <!-- Acid neon spots scattered on body -->
+  <rect x="64" y="98" width="8" height="8" fill="#00ff99" opacity="0.85"/>
+  <rect x="62" y="96" width="12" height="12" fill="#00ff99" opacity="0.15"/>
+  <rect x="80" y="112" width="10" height="10" fill="#ff00ff" opacity="0.85"/>
+  <rect x="78" y="110" width="14" height="14" fill="#ff00ff" opacity="0.15"/>
+  <rect x="100" y="100" width="8" height="8" fill="#00ff99" opacity="0.85"/>
+  <rect x="98" y="98" width="12" height="12" fill="#00ff99" opacity="0.15"/>
+  <rect x="115" y="118" width="10" height="10" fill="#ff00ff" opacity="0.85"/>
+  <rect x="113" y="116" width="14" height="14" fill="#ff00ff" opacity="0.15"/>
+  <rect x="70" y="125" width="8" height="8" fill="#00ffcc" opacity="0.85"/>
+  <rect x="68" y="123" width="12" height="12" fill="#00ffcc" opacity="0.15"/>
+  <rect x="92" y="130" width="10" height="10" fill="#cc00ff" opacity="0.85"/>
+  <rect x="90" y="128" width="14" height="14" fill="#cc00ff" opacity="0.15"/>
+</svg>

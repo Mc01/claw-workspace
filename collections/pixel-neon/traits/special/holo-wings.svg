@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <rect width="200" height="200" fill="none"/>
+  <!-- Holographic wings emerging from back -->
+  <!-- Left holo wing -->
+  <rect x="20" y="80" width="34" height="6" fill="#ff00ff" opacity="0.4"/>
+  <rect x="14" y="72" width="28" height="6" fill="#cc00ff" opacity="0.35"/>
+  <rect x="10" y="64" width="22" height="6" fill="#ff00ff" opacity="0.3"/>
+  <rect x="8" y="56" width="16" height="6" fill="#9900ff" opacity="0.25"/>
+  <!-- Wing grid lines left -->
+  <rect x="18" y="56" width="2" height="32" fill="#ff00ff" opacity="0.5"/>
+  <rect x="26" y="60" width="2" height="28" fill="#cc00ff" opacity="0.5"/>
+  <rect x="34" y="64" width="2" height="24" fill="#ff00ff" opacity="0.5"/>
+  <!-- Right holo wing -->
+  <rect x="136" y="80" width="34" height="6" fill="#ff00ff" opacity="0.4"/>
+  <rect x="148" y="72" width="28" height="6" fill="#cc00ff" opacity="0.35"/>
+  <rect x="158" y="64" width="22" height="6" fill="#ff00ff" opacity="0.3"/>
+  <rect x="166" y="56" width="16" height="6" fill="#9900ff" opacity="0.25"/>
+  <!-- Wing grid lines right -->
+  <rect x="170" y="56" width="2" height="32" fill="#ff00ff" opacity="0.5"/>
+  <rect x="162" y="60" width="2" height="28" fill="#cc00ff" opacity="0.5"/>
+  <rect x="154" y="64" width="2" height="24" fill="#ff00ff" opacity="0.5"/>
+</svg>

@@ -1,0 +1,57 @@
+{
+  "id": "pixel-neon",
+  "name": "Neon Beasts",
+  "description": "5 cyberpunk pixel-art creatures prowling the neon-soaked undercity. Electric, dangerous, and dripping with plasma.",
+  "theme": "neon-city",
+  "style": "pixel-art-side-profile",
+  "palette": {
+    "background": "#0a0015",
+    "primary": "#ff00ff",
+    "secondary": "#9900ff",
+    "accent1": "#00ffff",
+    "accent2": "#00ff99",
+    "dark": "#220044"
+  },
+  "bases": [
+    { "id": "lion-neon-king",      "name": "Neon Lion",    "type": "Electric/Dark",   "file": "bases/lion-neon-king.svg"     },
+    { "id": "serpent-plasma-coil", "name": "Neon Serpent", "type": "Poison/Electric", "file": "bases/serpent-plasma-coil.svg"},
+    { "id": "eagle-volt-talon",    "name": "Neon Eagle",   "type": "Flying/Electric", "file": "bases/eagle-volt-talon.svg"   },
+    { "id": "croc-grid-jaw",       "name": "Neon Croc",    "type": "Water/Electric",  "file": "bases/croc-grid-jaw.svg"      },
+    { "id": "beetle-data-shell",   "name": "Neon Beetle",  "type": "Bug/Electric",    "file": "bases/beetle-data-shell.svg"  }
+  ],
+  "traits": {
+    "neon-markings": [
+      { "id": "plasma-stripes", "name": "Plasma Stripes", "rarity": "common",    "file": "traits/neon-markings/plasma-stripes.svg" },
+      { "id": "grid-tattoo",    "name": "Grid Tattoo",    "rarity": "uncommon",  "file": "traits/neon-markings/grid-tattoo.svg"    },
+      { "id": "rune-glyph",     "name": "Rune Glyph",     "rarity": "rare",      "file": "traits/neon-markings/rune-glyph.svg"     },
+      { "id": "acid-spots",     "name": "Acid Spots",     "rarity": "common",    "file": "traits/neon-markings/acid-spots.svg"     }
+    ],
+    "city-gear": [
+      { "id": "cyber-visor",   "name": "Cyber Visor",   "rarity": "uncommon", "file": "traits/city-gear/cyber-visor.svg"   },
+      { "id": "sewer-chain",   "name": "Sewer Chain",   "rarity": "common",   "file": "traits/city-gear/sewer-chain.svg"   },
+      { "id": "data-backpack", "name": "Data Backpack", "rarity": "rare",     "file": "traits/city-gear/data-backpack.svg" },
+      { "id": "spike-collar",  "name": "Spike Collar",  "rarity": "common",   "file": "traits/city-gear/spike-collar.svg"  }
+    ],
+    "neon-effects": [
+      { "id": "electric-aura", "name": "Electric Aura", "rarity": "uncommon",  "file": "traits/neon-effects/electric-aura.svg" },
+      { "id": "plasma-trail",  "name": "Plasma Trail",  "rarity": "rare",      "file": "traits/neon-effects/plasma-trail.svg"  },
+      { "id": "city-glow",     "name": "City Glow",     "rarity": "common",    "file": "traits/neon-effects/city-glow.svg"     },
+      { "id": "voltage-burst", "name": "Voltage Burst", "rarity": "epic",      "file": "traits/neon-effects/voltage-burst.svg" }
+    ],
+    "special": [
+      { "id": "cyber-crown",  "name": "Cyber Crown",  "rarity": "legendary", "file": "traits/special/cyber-crown.svg"  },
+      { "id": "holo-wings",   "name": "Holo Wings",   "rarity": "epic",      "file": "traits/special/holo-wings.svg"   },
+      { "id": "data-horns",   "name": "Data Horns",   "rarity": "rare",      "file": "traits/special/data-horns.svg"   },
+      { "id": "neon-mask",    "name": "Neon Mask",    "rarity": "uncommon",  "file": "traits/special/neon-mask.svg"    },
+      { "id": "pulse-tail",   "name": "Pulse Tail",   "rarity": "rare",      "file": "traits/special/pulse-tail.svg"   },
+      { "id": "scanner-eye",  "name": "Scanner Eye",  "rarity": "rare",      "file": "traits/special/scanner-eye.svg"  },
+      { "id": "mech-arm",     "name": "Mech Arm",     "rarity": "epic",      "file": "traits/special/mech-arm.svg"     },
+      { "id": "neon-bomb",    "name": "Neon Bomb",    "rarity": "uncommon",  "file": "traits/special/neon-bomb.svg"    }
+    ]
+  },
+  "stats": {
+    "total_bases": 5,
+    "total_traits": 20,
+    "trait_categories": 4
+  }
+}

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <rect width="200" height="200" fill="none"/>
+  <!-- Plasma trail behind body (rightward motion trail) -->
+  <rect x="148" y="100" width="30" height="6" fill="#ff00ff" opacity="0.6"/>
+  <rect x="152" y="106" width="26" height="4" fill="#cc00ff" opacity="0.5"/>
+  <rect x="156" y="110" width="22" height="4" fill="#9900ff" opacity="0.4"/>
+  <rect x="160" y="114" width="18" height="4" fill="#cc00ff" opacity="0.3"/>
+  <rect x="164" y="118" width="14" height="4" fill="#ff00ff" opacity="0.2"/>
+  <!-- Particle sparks in trail -->
+  <rect x="158" y="98" width="4" height="4" fill="#ffffff" opacity="0.5"/>
+  <rect x="168" y="104" width="4" height="4" fill="#ff00ff" opacity="0.6"/>
+  <rect x="174" y="112" width="4" height="4" fill="#cc00ff" opacity="0.5"/>
+  <rect x="180" y="108" width="4" height="4" fill="#ffffff" opacity="0.4"/>
+</svg>
