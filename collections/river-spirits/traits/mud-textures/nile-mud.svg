@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <!-- Trait: Nile Mud - mud-textures (rich black Nile silt) -->
+  <defs>
+    <radialGradient id="mudGrad" cx="50%" cy="30%" r="60%">
+      <stop offset="0%" stop-color="#4A3820"/>
+      <stop offset="100%" stop-color="#1E1408"/>
+    </radialGradient>
+  </defs>
+  <!-- Mud ground -->
+  <path d="M0 320 Q80 308 160 320 Q240 332 320 315 Q370 305 400 312 L400 400 L0 400Z" fill="url(#mudGrad)"/>
+
+  <!-- Mud texture - cracks -->
+  <path d="M50 335 Q65 325 80 332 Q92 338 105 328" fill="none" stroke="#0E0A04" stroke-width="2" stroke-linecap="round"/>
+  <path d="M65 332 Q68 342 72 350" fill="none" stroke="#0E0A04" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M150 322 Q168 312 185 320 Q198 328 215 318" fill="none" stroke="#0E0A04" stroke-width="2" stroke-linecap="round"/>
+  <path d="M170 318 Q172 328 175 338" fill="none" stroke="#0E0A04" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M270 316 Q288 306 305 314 Q318 322 335 312" fill="none" stroke="#0E0A04" stroke-width="2" stroke-linecap="round"/>
+  <path d="M288 312 Q290 322 294 332" fill="none" stroke="#0E0A04" stroke-width="1.5" stroke-linecap="round"/>
+
+  <!-- Mud lumps / texture -->
+  <ellipse cx="100" cy="342" rx="18" ry="8" fill="#3A2C16" opacity="0.8"/>
+  <ellipse cx="220" cy="350" rx="22" ry="9" fill="#2A2010" opacity="0.8"/>
+  <ellipse cx="340" cy="338" rx="20" ry="8" fill="#3A2C16" opacity="0.8"/>
+  <ellipse cx="160" cy="360" rx="15" ry="6" fill="#2A2010" opacity="0.7"/>
+  <ellipse cx="280" cy="365" rx="18" ry="7" fill="#3A2C16" opacity="0.7"/>
+
+  <!-- Mud shine spots (wet) -->
+  <ellipse cx="80" cy="328" rx="10" ry="4" fill="#5A4828" opacity="0.5"/>
+  <ellipse cx="200" cy="325" rx="12" ry="5" fill="#5A4828" opacity="0.45"/>
+  <ellipse cx="320" cy="320" rx="10" ry="4" fill="#5A4828" opacity="0.5"/>
+</svg>

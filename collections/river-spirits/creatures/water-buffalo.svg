@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <!-- River Spirits #5 - Water Buffalo Base Creature | Nile/Congo Theme -->
+  <defs>
+    <radialGradient id="bodyGrad" cx="50%" cy="45%" r="55%">
+      <stop offset="0%" stop-color="#3A3028"/>
+      <stop offset="60%" stop-color="#282018"/>
+      <stop offset="100%" stop-color="#1A140E"/>
+    </radialGradient>
+    <radialGradient id="headGrad" cx="50%" cy="40%" r="55%">
+      <stop offset="0%" stop-color="#3E342A"/>
+      <stop offset="100%" stop-color="#1E180E"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Mud splatter on legs -->
+  <ellipse cx="130" cy="370" rx="30" ry="12" fill="#6B5A3E" opacity="0.5"/>
+  <ellipse cx="270" cy="370" rx="30" ry="12" fill="#6B5A3E" opacity="0.5"/>
+
+  <!-- Hind legs -->
+  <rect x="240" y="310" width="42" height="75" rx="14" fill="#282018"/>
+  <rect x="295" y="305" width="42" height="80" rx="14" fill="#282018"/>
+  <!-- Front legs -->
+  <rect x="100" y="308" width="42" height="77" rx="14" fill="#282018"/>
+  <rect x="155" y="312" width="40" height="73" rx="14" fill="#282018"/>
+
+  <!-- Hooves -->
+  <rect x="100" y="372" width="42" height="18" rx="8" fill="#1A140E"/>
+  <rect x="155" y="372" width="40" height="18" rx="8" fill="#1A140E"/>
+  <rect x="240" y="372" width="42" height="18" rx="8" fill="#1A140E"/>
+  <rect x="295" y="372" width="42" height="18" rx="8" fill="#1A140E"/>
+  <line x1="121" y1="372" x2="121" y2="390" stroke="#0A0806" stroke-width="2"/>
+  <line x1="175" y1="372" x2="175" y2="390" stroke="#0A0806" stroke-width="2"/>
+  <line x1="261" y1="372" x2="261" y2="390" stroke="#0A0806" stroke-width="2"/>
+  <line x1="316" y1="372" x2="316" y2="390" stroke="#0A0806" stroke-width="2"/>
+
+  <!-- Body -->
+  <ellipse cx="210" cy="270" rx="155" ry="100" fill="url(#bodyGrad)"/>
+
+  <!-- Shoulder hump -->
+  <ellipse cx="155" cy="215" rx="55" ry="38" fill="#3A3028"/>
+
+  <!-- Neck -->
+  <rect x="120" y="195" width="75" height="80" rx="20" fill="#2E2420"/>
+
+  <!-- Tail -->
+  <path d="M365 268 Q388 258 382 278 Q395 268 390 290 Q380 285 372 278" fill="none" stroke="#282018" stroke-width="10" stroke-linecap="round"/>
+  <path d="M390 290 Q395 305 388 315" fill="none" stroke="#1A140E" stroke-width="6" stroke-linecap="round"/>
+  <!-- Tail tuft -->
+  <ellipse cx="388" cy="318" rx="10" ry="6" fill="#1A140E" transform="rotate(-20 388 318)"/>
+
+  <!-- Head -->
+  <ellipse cx="112" cy="200" rx="75" ry="65" fill="url(#headGrad)"/>
+
+  <!-- Muzzle -->
+  <ellipse cx="80" cy="218" rx="42" ry="32" fill="#2E2420"/>
+  <ellipse cx="78" cy="225" rx="30" ry="20" fill="#3E342A"/>
+
+  <!-- Nostrils -->
+  <ellipse cx="68" cy="220" rx="9" ry="7" fill="#0A0806"/>
+  <ellipse cx="88" cy="218" rx="9" ry="7" fill="#0A0806"/>
+
+  <!-- Eyes -->
+  <ellipse cx="115" cy="178" rx="18" ry="16" fill="#0A0806"/>
+  <ellipse cx="115" cy="178" rx="10" ry="10" fill="#5A3A18"/>
+  <circle cx="115" cy="178" r="6" fill="#0A0806"/>
+  <circle cx="117" cy="176" r="2.5" fill="white" opacity="0.85"/>
+
+  <!-- Ears -->
+  <ellipse cx="80" cy="150" rx="22" ry="15" fill="#2E2420" transform="rotate(-25 80 150)"/>
+  <ellipse cx="80" cy="150" rx="12" ry="8" fill="#8B6A4A" transform="rotate(-25 80 150)"/>
+  <ellipse cx="148" cy="145" rx="22" ry="15" fill="#2E2420" transform="rotate(20 148 145)"/>
+  <ellipse cx="148" cy="145" rx="12" ry="8" fill="#8B6A4A" transform="rotate(20 148 145)"/>
+
+  <!-- Horns (wide curved Cape buffalo style) -->
+  <path d="M78 148 Q40 120 25 150 Q18 172 38 178" fill="none" stroke="#1A140E" stroke-width="14" stroke-linecap="round"/>
+  <path d="M38 178 Q55 185 68 175" fill="none" stroke="#1A140E" stroke-width="10" stroke-linecap="round"/>
+  <path d="M78 148 Q40 120 25 150 Q18 172 38 178" fill="none" stroke="#3A3028" stroke-width="8" stroke-linecap="round"/>
+
+  <path d="M148 143 Q186 115 200 146 Q206 168 186 174" fill="none" stroke="#1A140E" stroke-width="14" stroke-linecap="round"/>
+  <path d="M186 174 Q170 182 158 172" fill="none" stroke="#1A140E" stroke-width="10" stroke-linecap="round"/>
+  <path d="M148 143 Q186 115 200 146 Q206 168 186 174" fill="none" stroke="#3A3028" stroke-width="8" stroke-linecap="round"/>
+
+  <!-- Horn boss (center plate) -->
+  <ellipse cx="113" cy="145" rx="35" ry="18" fill="#1A140E"/>
+  <ellipse cx="113" cy="145" rx="28" ry="12" fill="#2E2420"/>
+</svg>

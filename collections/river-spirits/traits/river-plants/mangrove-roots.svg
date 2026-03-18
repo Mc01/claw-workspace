@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <!-- Trait: Mangrove Roots - river-plants (prop roots in river delta) -->
+  <!-- Main trunks -->
+  <path d="M150 0 Q145 80 140 160 Q130 240 100 320 Q85 360 60 400" fill="none" stroke="#5A4A2A" stroke-width="18" stroke-linecap="round"/>
+  <path d="M250 0 Q255 80 260 160 Q272 240 300 320 Q315 360 340 400" fill="none" stroke="#5A4A2A" stroke-width="18" stroke-linecap="round"/>
+
+  <!-- Prop roots - left trunk -->
+  <path d="M135 200 Q110 230 85 260 Q70 280 55 310" fill="none" stroke="#6B5A3A" stroke-width="8" stroke-linecap="round"/>
+  <path d="M130 240 Q100 260 75 285 Q60 305 45 335" fill="none" stroke="#6B5A3A" stroke-width="7" stroke-linecap="round"/>
+  <path d="M125 280 Q95 295 70 315 Q50 332 38 360" fill="none" stroke="#6B5A3A" stroke-width="6" stroke-linecap="round"/>
+  <path d="M138 180 Q160 205 170 235 Q178 260 172 295" fill="none" stroke="#6B5A3A" stroke-width="7" stroke-linecap="round"/>
+
+  <!-- Prop roots - right trunk -->
+  <path d="M265 200 Q290 230 315 260 Q330 280 345 310" fill="none" stroke="#6B5A3A" stroke-width="8" stroke-linecap="round"/>
+  <path d="M270 240 Q300 260 325 285 Q340 305 355 335" fill="none" stroke="#6B5A3A" stroke-width="7" stroke-linecap="round"/>
+  <path d="M275 280 Q305 295 330 315 Q350 332 362 360" fill="none" stroke="#6B5A3A" stroke-width="6" stroke-linecap="round"/>
+  <path d="M262 180 Q240 205 230 235 Q222 260 228 295" fill="none" stroke="#6B5A3A" stroke-width="7" stroke-linecap="round"/>
+
+  <!-- Canopy hints -->
+  <ellipse cx="150" cy="40" rx="80" ry="45" fill="#3A6A1A" opacity="0.8"/>
+  <ellipse cx="250" cy="35" rx="80" ry="45" fill="#4A7A24" opacity="0.8"/>
+  <ellipse cx="200" cy="20" rx="60" ry="30" fill="#5A8A2A" opacity="0.7"/>
+
+  <!-- Water at base -->
+  <path d="M0 375 Q100 365 200 375 Q300 385 400 373" fill="none" stroke="#1A6EA0" stroke-width="4" opacity="0.6"/>
+</svg>

@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <!-- Trait: Water Lilies - river-plants -->
+  <!-- Lily pad 1 (left) -->
+  <ellipse cx="100" cy="355" rx="58" ry="32" fill="#3A6A2A" opacity="0.9"/>
+  <path d="M100 323 L100 355" fill="none" stroke="#2A5A1A" stroke-width="2.5"/>
+  <ellipse cx="100" cy="355" rx="58" ry="32" fill="none" stroke="#2A5A1A" stroke-width="1.5" opacity="0.5"/>
+  <!-- Lily veins -->
+  <path d="M100 323 Q75 340 58 355" fill="none" stroke="#2A5A1A" stroke-width="1.5" opacity="0.5"/>
+  <path d="M100 323 Q82 338 72 356" fill="none" stroke="#2A5A1A" stroke-width="1.5" opacity="0.5"/>
+  <path d="M100 323 Q100 338 100 356" fill="none" stroke="#2A5A1A" stroke-width="1.5" opacity="0.5"/>
+  <path d="M100 323 Q118 338 128 356" fill="none" stroke="#2A5A1A" stroke-width="1.5" opacity="0.5"/>
+  <path d="M100 323 Q130 338 142 355" fill="none" stroke="#2A5A1A" stroke-width="1.5" opacity="0.5"/>
+
+  <!-- Lily pad 2 (right) -->
+  <ellipse cx="300" cy="348" rx="65" ry="35" fill="#456A30" opacity="0.9"/>
+  <path d="M300 313 L300 348" fill="none" stroke="#2A5A1A" stroke-width="2.5"/>
+  <ellipse cx="300" cy="348" rx="65" ry="35" fill="none" stroke="#2A5A1A" stroke-width="1.5" opacity="0.5"/>
+  <path d="M300 313 Q272 330 238 348" fill="none" stroke="#2A5A1A" stroke-width="1.5" opacity="0.5"/>
+  <path d="M300 313 Q278 328 265 348" fill="none" stroke="#2A5A1A" stroke-width="1.5" opacity="0.5"/>
+  <path d="M300 313 Q295 330 300 349" fill="none" stroke="#2A5A1A" stroke-width="1.5" opacity="0.5"/>
+  <path d="M300 313 Q322 330 335 348" fill="none" stroke="#2A5A1A" stroke-width="1.5" opacity="0.5"/>
+  <path d="M300 313 Q335 330 362 348" fill="none" stroke="#2A5A1A" stroke-width="1.5" opacity="0.5"/>
+
+  <!-- Lotus flower 1 -->
+  <ellipse cx="100" cy="320" rx="8" ry="4" fill="#F4A0C0" opacity="0.8"/>
+  <path d="M100 316 Q90 305 88 295 Q100 302 100 316Z" fill="#F4A0C0"/>
+  <path d="M100 316 Q110 305 112 295 Q100 302 100 316Z" fill="#F4B0C8"/>
+  <path d="M100 316 Q85 308 80 298 Q95 308 100 316Z" fill="#F090B8"/>
+  <path d="M100 316 Q115 308 120 298 Q105 308 100 316Z" fill="#F4A0C0"/>
+  <path d="M100 316 Q92 303 94 290 Q100 300 100 316Z" fill="#F4B0CC"/>
+  <path d="M100 316 Q108 303 106 290 Q100 300 100 316Z" fill="#F4A8C4"/>
+  <!-- Stamen -->
+  <circle cx="100" cy="314" r="5" fill="#F8D040"/>
+
+  <!-- Lotus flower 2 -->
+  <ellipse cx="300" cy="310" rx="9" ry="5" fill="#F8C8E0" opacity="0.8"/>
+  <path d="M300 305 Q288 292 286 280 Q300 288 300 305Z" fill="#F8C8E0"/>
+  <path d="M300 305 Q312 292 314 280 Q300 288 300 305Z" fill="#F8D0E4"/>
+  <path d="M300 305 Q282 296 276 284 Q292 295 300 305Z" fill="#F0B0D0"/>
+  <path d="M300 305 Q318 296 324 284 Q308 295 300 305Z" fill="#F8C8E0"/>
+  <path d="M300 305 Q290 290 292 276 Q300 286 300 305Z" fill="#F8CCE4"/>
+  <path d="M300 305 Q310 290 308 276 Q300 286 300 305Z" fill="#F8C4DC"/>
+  <circle cx="300" cy="302" r="6" fill="#F8D840"/>
+</svg>

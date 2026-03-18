@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <!-- Trait: Dried Riverbed - mud-textures (dry season cracked earth) -->
+  <defs>
+    <linearGradient id="dryGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#9A7A50"/>
+      <stop offset="100%" stop-color="#6A5030"/>
+    </linearGradient>
+  </defs>
+  <!-- Cracked ground -->
+  <rect x="0" y="300" width="400" height="100" fill="url(#dryGrad)"/>
+
+  <!-- Crack network -->
+  <path d="M30 320 Q70 310 110 325 Q140 335 180 315 Q210 300 250 318 Q290 335 330 318 Q365 305 395 315" fill="none" stroke="#4A3020" stroke-width="3" stroke-linecap="round"/>
+  <path d="M110 325 Q105 345 108 365" fill="none" stroke="#4A3020" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M180 315 Q175 332 172 352" fill="none" stroke="#4A3020" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M250 318 Q255 338 252 358" fill="none" stroke="#4A3020" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M330 318 Q335 338 332 358" fill="none" stroke="#4A3020" stroke-width="2.5" stroke-linecap="round"/>
+
+  <!-- Secondary cracks -->
+  <path d="M50 330 Q80 322 110 332" fill="none" stroke="#5A4028" stroke-width="2" stroke-linecap="round"/>
+  <path d="M80 325 Q78 338 82 350" fill="none" stroke="#4A3020" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M145 322 Q165 315 190 325" fill="none" stroke="#5A4028" stroke-width="2" stroke-linecap="round"/>
+  <path d="M168 318 Q164 332 168 344" fill="none" stroke="#4A3020" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M210 325 Q235 316 262 328" fill="none" stroke="#5A4028" stroke-width="2" stroke-linecap="round"/>
+  <path d="M270 320 Q268 334 272 346" fill="none" stroke="#4A3020" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M295 328 Q318 320 345 330" fill="none" stroke="#5A4028" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Lifted plate edges (shadow) -->
+  <path d="M30 320 Q70 310 110 325" fill="none" stroke="#7A6040" stroke-width="1.5" opacity="0.5"/>
+  <path d="M250 318 Q290 335 330 318" fill="none" stroke="#7A6040" stroke-width="1.5" opacity="0.5"/>
+
+  <!-- Dust/sand particles -->
+  <circle cx="148" cy="305" r="2" fill="#B89A68" opacity="0.6"/>
+  <circle cx="225" cy="308" r="2.5" fill="#B89A68" opacity="0.55"/>
+  <circle cx="310" cy="302" r="2" fill="#B89A68" opacity="0.6"/>
+  <circle cx="65" cy="312" r="2" fill="#B89A68" opacity="0.55"/>
+  <circle cx="375" cy="308" r="2" fill="#B89A68" opacity="0.5"/>
+</svg>

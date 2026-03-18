@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <!-- River Spirits #5 - River Otter Base Creature | Nile/Congo Theme -->
+  <defs>
+    <radialGradient id="bodyGrad" cx="50%" cy="45%" r="55%">
+      <stop offset="0%" stop-color="#7A5A3A"/>
+      <stop offset="60%" stop-color="#5A3E24"/>
+      <stop offset="100%" stop-color="#3A2814"/>
+    </radialGradient>
+    <radialGradient id="bellyGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#D4B890"/>
+      <stop offset="100%" stop-color="#B09870"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Water ripples under otter -->
+  <ellipse cx="200" cy="335" rx="130" ry="14" fill="#1A6EA0" opacity="0.3"/>
+  <ellipse cx="200" cy="340" rx="100" ry="10" fill="#1A6EA0" opacity="0.2"/>
+
+  <!-- Tail (long, thick, tapered) -->
+  <path d="M310 250 Q355 245 372 265 Q360 278 345 270 Q365 285 355 300 Q338 295 328 282 Q332 300 320 305 Q308 292 312 275" fill="#5A3E24" stroke="#3A2814" stroke-width="1.5"/>
+
+  <!-- Body (long and sleek) -->
+  <ellipse cx="190" cy="255" rx="140" ry="70" fill="url(#bodyGrad)"/>
+  <!-- Belly -->
+  <ellipse cx="185" cy="265" rx="110" ry="48" fill="url(#bellyGrad)" opacity="0.75"/>
+
+  <!-- Hind feet (webbed) -->
+  <path d="M285 295 Q295 310 288 322 Q278 318 275 308 Q268 322 260 315 Q258 304 265 295Z" fill="#5A3E24"/>
+  <path d="M255 298 Q262 314 255 326 Q245 320 243 310 Q235 323 228 316 Q227 305 235 297Z" fill="#5A3E24"/>
+
+  <!-- Front paws -->
+  <ellipse cx="100" cy="290" rx="20" ry="12" fill="#5A3E24" transform="rotate(-15 100 290)"/>
+  <ellipse cx="128" cy="295" rx="18" ry="11" fill="#5A3E24" transform="rotate(-10 128 295)"/>
+  <!-- Paw toes -->
+  <path d="M88 285 Q82 278 86 273" fill="none" stroke="#3A2814" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M95 281 Q90 274 94 269" fill="none" stroke="#3A2814" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M102 280 Q98 273 102 268" fill="none" stroke="#3A2814" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M109 283 Q106 276 110 271" fill="none" stroke="#3A2814" stroke-width="2.5" stroke-linecap="round"/>
+
+  <!-- Neck -->
+  <rect x="85" y="200" width="65" height="60" rx="22" fill="#5A3E24"/>
+
+  <!-- Head -->
+  <ellipse cx="105" cy="188" rx="68" ry="60" fill="url(#bodyGrad)"/>
+
+  <!-- Cheeks (fluffy) -->
+  <ellipse cx="62" cy="200" rx="28" ry="24" fill="#7A5A3A" opacity="0.8"/>
+  <ellipse cx="148" cy="200" rx="28" ry="24" fill="#7A5A3A" opacity="0.8"/>
+
+  <!-- Muzzle -->
+  <ellipse cx="78" cy="205" rx="35" ry="28" fill="#6B4E30"/>
+  <!-- Nose -->
+  <ellipse cx="63" cy="197" rx="14" ry="10" fill="#2A1810"/>
+  <ellipse cx="63" cy="196" rx="8" ry="6" fill="#3A2418" opacity="0.6"/>
+  <!-- Nose shine -->
+  <circle cx="60" cy="194" r="2.5" fill="white" opacity="0.7"/>
+
+  <!-- Whisker dots -->
+  <circle cx="78" cy="205" r="2" fill="#3A2414"/>
+  <circle cx="86" cy="202" r="2" fill="#3A2414"/>
+  <circle cx="94" cy="205" r="2" fill="#3A2414"/>
+  <circle cx="78" cy="212" r="2" fill="#3A2414"/>
+  <circle cx="86" cy="210" r="2" fill="#3A2414"/>
+
+  <!-- Whiskers -->
+  <line x1="75" y1="204" x2="30" y2="195" stroke="#D4C090" stroke-width="1.5" opacity="0.8"/>
+  <line x1="75" y1="208" x2="28" y2="210" stroke="#D4C090" stroke-width="1.5" opacity="0.8"/>
+  <line x1="75" y1="212" x2="32" y2="222" stroke="#D4C090" stroke-width="1.5" opacity="0.8"/>
+  <line x1="95" y1="204" x2="130" y2="195" stroke="#D4C090" stroke-width="1.5" opacity="0.8"/>
+  <line x1="95" y1="208" x2="132" y2="210" stroke="#D4C090" stroke-width="1.5" opacity="0.8"/>
+
+  <!-- Eyes -->
+  <ellipse cx="88" cy="175" rx="16" ry="15" fill="#1A1008"/>
+  <ellipse cx="88" cy="175" rx="9" ry="10" fill="#5A3A18"/>
+  <circle cx="88" cy="175" r="6" fill="#0A0804"/>
+  <circle cx="90" cy="173" r="3" fill="white" opacity="0.9"/>
+
+  <ellipse cx="130" cy="172" rx="16" ry="15" fill="#1A1008"/>
+  <ellipse cx="130" cy="172" rx="9" ry="10" fill="#5A3A18"/>
+  <circle cx="130" cy="172" r="6" fill="#0A0804"/>
+  <circle cx="132" cy="170" r="3" fill="white" opacity="0.9"/>
+
+  <!-- Ears (small rounded) -->
+  <ellipse cx="72" cy="135" rx="18" ry="14" fill="#5A3E24"/>
+  <ellipse cx="72" cy="135" rx="10" ry="8" fill="#8B6A4A"/>
+  <ellipse cx="138" cy="132" rx="18" ry="14" fill="#5A3E24"/>
+  <ellipse cx="138" cy="132" rx="10" ry="8" fill="#8B6A4A"/>
+
+  <!-- Mouth -->
+  <path d="M68 213 Q78 218 88 213" fill="none" stroke="#2A1810" stroke-width="2.5" stroke-linecap="round"/>
+</svg>

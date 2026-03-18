@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <!-- Trait: Volcanic Silt - mud-textures (dark grey volcanic silt from Congo volcanoes) -->
+  <defs>
+    <radialGradient id="siltGrad" cx="50%" cy="40%" r="55%">
+      <stop offset="0%" stop-color="#5A5A5A"/>
+      <stop offset="60%" stop-color="#3A3A3A"/>
+      <stop offset="100%" stop-color="#1A1A1A"/>
+    </radialGradient>
+  </defs>
+  <!-- Silt body coating -->
+  <ellipse cx="200" cy="240" rx="158" ry="122" fill="url(#siltGrad)" opacity="0.7"/>
+
+  <!-- Volcanic mineral flecks (mica-like shimmer) -->
+  <ellipse cx="155" cy="195" rx="4" ry="2" fill="#8A8A8A" opacity="0.8" transform="rotate(30 155 195)"/>
+  <ellipse cx="175" cy="210" rx="5" ry="2" fill="#9A9A9A" opacity="0.75" transform="rotate(-20 175 210)"/>
+  <ellipse cx="225" cy="200" rx="4" ry="2" fill="#8A8A8A" opacity="0.8" transform="rotate(45 225 200)"/>
+  <ellipse cx="245" cy="218" rx="5" ry="2" fill="#9A9A9A" opacity="0.75" transform="rotate(-30 245 218)"/>
+  <ellipse cx="200" cy="225" rx="4" ry="2" fill="#7A7A7A" opacity="0.8" transform="rotate(15 200 225)"/>
+  <ellipse cx="165" cy="240" rx="4.5" ry="2" fill="#8A8A8A" opacity="0.7" transform="rotate(60 165 240)"/>
+  <ellipse cx="235" cy="245" rx="4.5" ry="2" fill="#9A9A9A" opacity="0.7" transform="rotate(-45 235 245)"/>
+  <ellipse cx="185" cy="262" rx="4" ry="2" fill="#8A8A8A" opacity="0.7" transform="rotate(25 185 262)"/>
+  <ellipse cx="218" cy="268" rx="5" ry="2" fill="#9A9A9A" opacity="0.7" transform="rotate(-15 218 268)"/>
+
+  <!-- Dark texture lines -->
+  <path d="M145 200 Q162 208 152 222" fill="none" stroke="#1A1A1A" stroke-width="1.5" opacity="0.6"/>
+  <path d="M240 198 Q255 208 248 224" fill="none" stroke="#1A1A1A" stroke-width="1.5" opacity="0.6"/>
+  <path d="M168 250 Q180 260 172 272" fill="none" stroke="#1A1A1A" stroke-width="1.5" opacity="0.6"/>
+  <path d="M230 248 Q244 258 236 272" fill="none" stroke="#1A1A1A" stroke-width="1.5" opacity="0.6"/>
+
+  <!-- Orange ember specks (volcanic origin) -->
+  <circle cx="178" cy="205" r="2" fill="#E87A20" opacity="0.6"/>
+  <circle cx="228" cy="212" r="2" fill="#E87A20" opacity="0.55"/>
+  <circle cx="195" cy="255" r="2.5" fill="#D06010" opacity="0.6"/>
+  <circle cx="215" cy="240" r="2" fill="#E87A20" opacity="0.5"/>
+  <circle cx="158" cy="260" r="2" fill="#D06010" opacity="0.55"/>
+</svg>

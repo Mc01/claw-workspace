@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <!-- Trait: Diving Wake - flow-effects (V-shaped wake from diving) -->
+  <!-- Wake V-shape -->
+  <path d="M200 280 Q150 295 80 310 Q50 315 20 318" fill="none" stroke="#3A9EC8" stroke-width="5" stroke-linecap="round" opacity="0.8"/>
+  <path d="M200 280 Q250 295 320 310 Q350 315 380 318" fill="none" stroke="#3A9EC8" stroke-width="5" stroke-linecap="round" opacity="0.8"/>
+
+  <!-- Wake secondary lines -->
+  <path d="M200 290 Q155 303 88 316 Q60 320 32 323" fill="none" stroke="#5AB8E0" stroke-width="3" stroke-linecap="round" opacity="0.6"/>
+  <path d="M200 290 Q245 303 312 316 Q340 320 368 323" fill="none" stroke="#5AB8E0" stroke-width="3" stroke-linecap="round" opacity="0.6"/>
+
+  <path d="M200 300 Q158 312 95 323 Q68 327 38 330" fill="none" stroke="#7AD0F0" stroke-width="2" stroke-linecap="round" opacity="0.5"/>
+  <path d="M200 300 Q242 312 305 323 Q332 327 362 330" fill="none" stroke="#7AD0F0" stroke-width="2" stroke-linecap="round" opacity="0.5"/>
+
+  <!-- Foam at apex -->
+  <ellipse cx="200" cy="278" rx="20" ry="8" fill="white" opacity="0.6"/>
+  <ellipse cx="200" cy="278" rx="12" ry="5" fill="white" opacity="0.7"/>
+
+  <!-- Bubble trail going down -->
+  <circle cx="200" cy="260" r="4" fill="#7AD0F0" opacity="0.5"/>
+  <circle cx="198" cy="245" r="3.5" fill="#7AD0F0" opacity="0.45"/>
+  <circle cx="202" cy="230" r="3" fill="#7AD0F0" opacity="0.4"/>
+  <circle cx="199" cy="215" r="2.5" fill="#7AD0F0" opacity="0.35"/>
+
+  <!-- Water surface line -->
+  <path d="M0 278 Q100 270 200 278 Q300 286 400 278" fill="none" stroke="#1A7AB0" stroke-width="3" opacity="0.5"/>
+</svg>

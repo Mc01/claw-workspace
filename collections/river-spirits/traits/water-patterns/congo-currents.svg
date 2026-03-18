@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <!-- Trait: Congo Currents - water-patterns -->
+  <defs>
+    <linearGradient id="flowGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0D4A6E" stop-opacity="0.6"/>
+      <stop offset="50%" stop-color="#1A7AB0" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#0D4A6E" stop-opacity="0.6"/>
+    </linearGradient>
+  </defs>
+  <!-- Current lines -->
+  <path d="M0 280 Q80 268 160 280 Q240 292 320 280 Q360 274 400 280" fill="none" stroke="#1A7AB0" stroke-width="12" stroke-linecap="round" opacity="0.7"/>
+  <path d="M0 295 Q100 283 200 295 Q300 307 400 295" fill="none" stroke="#1A90C8" stroke-width="8" stroke-linecap="round" opacity="0.6"/>
+  <path d="M0 310 Q80 298 160 310 Q240 322 320 310 Q360 304 400 310" fill="none" stroke="#1A7AB0" stroke-width="6" stroke-linecap="round" opacity="0.5"/>
+  <path d="M0 322 Q120 312 240 322 Q320 330 400 322" fill="none" stroke="#2A9AD8" stroke-width="4" stroke-linecap="round" opacity="0.4"/>
+  <!-- Foam flecks -->
+  <ellipse cx="85" cy="284" rx="8" ry="4" fill="white" opacity="0.4" transform="rotate(-5 85 284)"/>
+  <ellipse cx="210" cy="290" rx="10" ry="4" fill="white" opacity="0.35" transform="rotate(3 210 290)"/>
+  <ellipse cx="335" cy="284" rx="8" ry="4" fill="white" opacity="0.4" transform="rotate(-3 335 284)"/>
+  <ellipse cx="150" cy="305" rx="7" ry="3" fill="white" opacity="0.3" transform="rotate(5 150 305)"/>
+  <ellipse cx="280" cy="298" rx="9" ry="3.5" fill="white" opacity="0.35" transform="rotate(-5 280 298)"/>
+</svg>

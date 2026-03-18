@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <!-- Trait: Clay Coating - mud-textures (dried red clay from Congo basin) -->
+  <defs>
+    <radialGradient id="clayBodyGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#C87840"/>
+      <stop offset="70%" stop-color="#A85C28"/>
+      <stop offset="100%" stop-color="#7A3C14"/>
+    </radialGradient>
+  </defs>
+  <!-- Clay body overlay (semi-transparent) -->
+  <ellipse cx="200" cy="240" rx="160" ry="125" fill="url(#clayBodyGrad)" opacity="0.75"/>
+
+  <!-- Clay crack patterns -->
+  <path d="M140 185 Q158 195 145 210" fill="none" stroke="#7A3C14" stroke-width="2" stroke-linecap="round"/>
+  <path d="M158 195 Q168 205 162 220" fill="none" stroke="#7A3C14" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M200 178 Q215 190 205 208" fill="none" stroke="#7A3C14" stroke-width="2" stroke-linecap="round"/>
+  <path d="M215 190 Q225 202 218 218" fill="none" stroke="#7A3C14" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M258 185 Q270 198 260 215" fill="none" stroke="#7A3C14" stroke-width="2" stroke-linecap="round"/>
+  <path d="M160 230 Q175 242 165 258" fill="none" stroke="#7A3C14" stroke-width="2" stroke-linecap="round"/>
+  <path d="M175 242 Q185 255 178 268" fill="none" stroke="#7A3C14" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M238 228 Q252 240 242 255" fill="none" stroke="#7A3C14" stroke-width="2" stroke-linecap="round"/>
+  <path d="M180 270 Q195 282 188 298" fill="none" stroke="#7A3C14" stroke-width="2" stroke-linecap="round"/>
+  <path d="M220 268 Q235 280 228 295" fill="none" stroke="#7A3C14" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Flaking clay patches -->
+  <ellipse cx="155" cy="200" rx="22" ry="12" fill="#D88848" opacity="0.7" transform="rotate(-10 155 200)"/>
+  <ellipse cx="250" cy="195" rx="20" ry="11" fill="#C87840" opacity="0.65" transform="rotate(8 250 195)"/>
+  <ellipse cx="172" cy="252" rx="18" ry="10" fill="#D88848" opacity="0.65" transform="rotate(-5 172 252)"/>
+  <ellipse cx="238" cy="248" rx="20" ry="10" fill="#C07030" opacity="0.65" transform="rotate(6 238 248)"/>
+</svg>

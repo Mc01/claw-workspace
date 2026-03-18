@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <!-- Trait: Silt Spray - mud-textures (river silt splattered) -->
+  <!-- Silt splatter droplets -->
+  <circle cx="180" cy="150" r="6" fill="#8B7040" opacity="0.7"/>
+  <circle cx="220" cy="165" r="4" fill="#7A6030" opacity="0.65"/>
+  <circle cx="155" cy="170" r="8" fill="#9A8050" opacity="0.7"/>
+  <circle cx="245" cy="155" r="5" fill="#8B7040" opacity="0.65"/>
+  <circle cx="165" cy="195" r="7" fill="#7A6030" opacity="0.65"/>
+  <circle cx="235" cy="188" r="9" fill="#9A8050" opacity="0.7"/>
+  <circle cx="200" cy="175" r="5" fill="#8B7040" opacity="0.6"/>
+  <circle cx="175" cy="215" r="6" fill="#7A6030" opacity="0.65"/>
+  <circle cx="222" cy="210" r="4" fill="#8B7040" opacity="0.6"/>
+  <circle cx="145" cy="220" r="10" fill="#9A8050" opacity="0.7"/>
+  <circle cx="258" cy="208" r="7" fill="#7A6030" opacity="0.65"/>
+  <circle cx="190" cy="235" r="8" fill="#8B7040" opacity="0.65"/>
+  <circle cx="215" cy="230" r="5" fill="#9A8050" opacity="0.6"/>
+
+  <!-- Silt splash tails -->
+  <path d="M180 150 Q172 142 168 135" fill="none" stroke="#7A6030" stroke-width="2" stroke-linecap="round" opacity="0.5"/>
+  <path d="M155 170 Q146 161 142 152" fill="none" stroke="#7A6030" stroke-width="2.5" stroke-linecap="round" opacity="0.5"/>
+  <path d="M145 220 Q136 210 131 200" fill="none" stroke="#8B7040" stroke-width="3" stroke-linecap="round" opacity="0.5"/>
+  <path d="M235 188 Q246 180 252 172" fill="none" stroke="#7A6030" stroke-width="2.5" stroke-linecap="round" opacity="0.5"/>
+
+  <!-- Fine silt mist -->
+  <circle cx="168" cy="138" r="2" fill="#9A8050" opacity="0.4"/>
+  <circle cx="172" cy="130" r="1.5" fill="#8B7040" opacity="0.35"/>
+  <circle cx="140" cy="155" r="2" fill="#7A6030" opacity="0.4"/>
+  <circle cx="255" cy="168" r="2" fill="#9A8050" opacity="0.4"/>
+  <circle cx="262" cy="160" r="1.5" fill="#8B7040" opacity="0.35"/>
+</svg>

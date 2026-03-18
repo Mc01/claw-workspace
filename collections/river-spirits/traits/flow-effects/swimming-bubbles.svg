@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <!-- Trait: Swimming Bubbles - flow-effects -->
+  <!-- Bubble trails -->
+  <!-- Trail 1 - rising left -->
+  <circle cx="100" cy="350" r="10" fill="none" stroke="#7AD0F0" stroke-width="2" opacity="0.7"/>
+  <circle cx="95" cy="325" r="8" fill="none" stroke="#7AD0F0" stroke-width="2" opacity="0.65"/>
+  <circle cx="102" cy="300" r="12" fill="none" stroke="#5AB8E0" stroke-width="2" opacity="0.6"/>
+  <circle cx="98" cy="272" r="7" fill="none" stroke="#7AD0F0" stroke-width="2" opacity="0.55"/>
+  <circle cx="105" cy="248" r="9" fill="none" stroke="#5AB8E0" stroke-width="2" opacity="0.5"/>
+  <circle cx="100" cy="222" r="6" fill="none" stroke="#7AD0F0" stroke-width="1.5" opacity="0.4"/>
+  <!-- Bubble sheen -->
+  <circle cx="97" cy="347" r="3" fill="white" opacity="0.4"/>
+  <circle cx="99" cy="297" r="4" fill="white" opacity="0.35"/>
+
+  <!-- Trail 2 - rising center -->
+  <circle cx="200" cy="360" r="12" fill="none" stroke="#5AB8E0" stroke-width="2.5" opacity="0.7"/>
+  <circle cx="205" cy="333" r="9" fill="none" stroke="#7AD0F0" stroke-width="2" opacity="0.65"/>
+  <circle cx="198" cy="308" r="14" fill="none" stroke="#5AB8E0" stroke-width="2" opacity="0.6"/>
+  <circle cx="203" cy="278" r="10" fill="none" stroke="#7AD0F0" stroke-width="2" opacity="0.55"/>
+  <circle cx="200" cy="250" r="8" fill="none" stroke="#5AB8E0" stroke-width="2" opacity="0.5"/>
+  <circle cx="198" cy="225" r="11" fill="none" stroke="#7AD0F0" stroke-width="1.5" opacity="0.45"/>
+  <circle cx="202" cy="198" r="7" fill="none" stroke="#5AB8E0" stroke-width="1.5" opacity="0.35"/>
+  <circle cx="202" cy="330" r="3" fill="white" opacity="0.4"/>
+  <circle cx="196" cy="305" r="5" fill="white" opacity="0.35"/>
+
+  <!-- Trail 3 - rising right -->
+  <circle cx="300" cy="345" r="9" fill="none" stroke="#7AD0F0" stroke-width="2" opacity="0.7"/>
+  <circle cx="295" cy="320" r="12" fill="none" stroke="#5AB8E0" stroke-width="2" opacity="0.65"/>
+  <circle cx="302" cy="293" r="8" fill="none" stroke="#7AD0F0" stroke-width="2" opacity="0.6"/>
+  <circle cx="298" cy="268" r="11" fill="none" stroke="#5AB8E0" stroke-width="2" opacity="0.55"/>
+  <circle cx="303" cy="242" r="7" fill="none" stroke="#7AD0F0" stroke-width="1.5" opacity="0.45"/>
+  <circle cx="299" cy="218" r="9" fill="none" stroke="#5AB8E0" stroke-width="1.5" opacity="0.4"/>
+  <circle cx="293" cy="317" r="4" fill="white" opacity="0.35"/>
+</svg>

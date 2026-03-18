@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <!-- River Spirits #5 - Crocodile Base Creature | Nile/Congo Theme -->
+  <defs>
+    <linearGradient id="bodyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#4A6741"/>
+      <stop offset="50%" stop-color="#3A5533"/>
+      <stop offset="100%" stop-color="#2C4227"/>
+    </linearGradient>
+    <linearGradient id="bellyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#C8B88A"/>
+      <stop offset="100%" stop-color="#A8986A"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Tail -->
+  <path d="M340 215 Q370 210 388 225 Q375 235 360 230 Q380 245 372 260 Q355 255 345 245" fill="#3A5533" stroke="#2C4227" stroke-width="1.5"/>
+
+  <!-- Body -->
+  <ellipse cx="200" cy="225" rx="150" ry="55" fill="url(#bodyGrad)"/>
+  <!-- Belly -->
+  <ellipse cx="200" cy="235" rx="130" ry="35" fill="url(#bellyGrad)" opacity="0.8"/>
+
+  <!-- Dorsal scutes (spine bumps) -->
+  <ellipse cx="130" cy="172" rx="10" ry="14" fill="#2C4227"/>
+  <ellipse cx="155" cy="168" rx="10" ry="14" fill="#2C4227"/>
+  <ellipse cx="180" cy="168" rx="10" ry="14" fill="#2C4227"/>
+  <ellipse cx="205" cy="170" rx="10" ry="14" fill="#2C4227"/>
+  <ellipse cx="230" cy="170" rx="10" ry="14" fill="#2C4227"/>
+  <ellipse cx="255" cy="172" rx="10" ry="14" fill="#2C4227"/>
+  <ellipse cx="278" cy="174" rx="9" ry="12" fill="#2C4227"/>
+  <ellipse cx="300" cy="177" rx="8" ry="11" fill="#2C4227"/>
+
+  <!-- Scale pattern on body -->
+  <path d="M90 215 Q120 205 150 215 Q120 225 90 215Z" fill="#4A6741" opacity="0.5"/>
+  <path d="M150 208 Q180 198 210 208 Q180 218 150 208Z" fill="#4A6741" opacity="0.5"/>
+  <path d="M210 208 Q240 198 270 208 Q240 218 210 208Z" fill="#4A6741" opacity="0.5"/>
+  <path d="M100 228 Q130 218 160 228 Q130 238 100 228Z" fill="#3A5533" opacity="0.4"/>
+  <path d="M160 222 Q190 212 220 222 Q190 232 160 222Z" fill="#3A5533" opacity="0.4"/>
+  <path d="M220 222 Q250 212 280 222 Q250 232 220 222Z" fill="#3A5533" opacity="0.4"/>
+
+  <!-- Legs -->
+  <path d="M115 260 Q100 290 90 305 Q105 308 118 295 Q125 310 135 298 Q128 280 128 262Z" fill="#3A5533" stroke="#2C4227" stroke-width="1"/>
+  <path d="M155 265 Q148 292 142 308 Q155 312 162 298 Q170 312 178 298 Q168 282 168 267Z" fill="#3A5533" stroke="#2C4227" stroke-width="1"/>
+  <path d="M232 265 Q238 292 242 308 Q228 312 222 298 Q214 312 206 298 Q214 282 216 267Z" fill="#3A5533" stroke="#2C4227" stroke-width="1"/>
+  <path d="M272 260 Q282 290 288 305 Q273 308 263 295 Q257 310 247 298 Q254 280 258 262Z" fill="#3A5533" stroke="#2C4227" stroke-width="1"/>
+
+  <!-- Claws -->
+  <path d="M88 305 Q82 315 88 318" fill="none" stroke="#1A2A18" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M100 310 Q95 320 102 322" fill="none" stroke="#1A2A18" stroke-width="2.5" stroke-linecap="round"/>
+
+  <!-- Head / snout -->
+  <ellipse cx="105" cy="218" rx="80" ry="32" fill="url(#bodyGrad)"/>
+  <!-- Long snout -->
+  <path d="M30 210 Q55 202 85 208 L88 228 Q55 232 30 226Z" fill="#4A6741"/>
+  <path d="M30 214 Q55 224 88 222" fill="none" stroke="#C8B88A" stroke-width="8" opacity="0.7"/>
+
+  <!-- Teeth - upper -->
+  <path d="M42 212 L38 200 L46 212" fill="#F0DDB8"/>
+  <path d="M58 208 L56 196 L63 209" fill="#F0DDB8"/>
+  <path d="M72 207 L71 194 L77 207" fill="#F0DDB8"/>
+  <!-- Teeth - lower -->
+  <path d="M48 222 L44 234 L52 222" fill="#F0DDB8"/>
+  <path d="M64 220 L62 233 L68 221" fill="#F0DDB8"/>
+
+  <!-- Eyes (on top of head) -->
+  <ellipse cx="98" cy="193" rx="14" ry="12" fill="#1A2A18"/>
+  <ellipse cx="98" cy="193" rx="8" ry="9" fill="#6B8B3A"/>
+  <ellipse cx="98" cy="193" rx="4" ry="6" fill="#0A1208"/>
+  <circle cx="100" cy="191" r="2.5" fill="white" opacity="0.8"/>
+
+  <ellipse cx="130" cy="190" rx="14" ry="12" fill="#1A2A18"/>
+  <ellipse cx="130" cy="190" rx="8" ry="9" fill="#6B8B3A"/>
+  <ellipse cx="130" cy="190" rx="4" ry="6" fill="#0A1208"/>
+  <circle cx="132" cy="188" r="2.5" fill="white" opacity="0.8"/>
+
+  <!-- Eye ridges -->
+  <path d="M88 185 Q98 181 108 185" fill="none" stroke="#2C4227" stroke-width="4" stroke-linecap="round"/>
+  <path d="M120 182 Q130 178 140 182" fill="none" stroke="#2C4227" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- Nostril slits on snout -->
+  <ellipse cx="38" cy="208" rx="5" ry="3" fill="#2C4227" transform="rotate(-15 38 208)"/>
+  <ellipse cx="52" cy="205" rx="5" ry="3" fill="#2C4227" transform="rotate(-10 52 205)"/>
+</svg>

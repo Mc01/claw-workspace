@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <!-- River Spirits #5 - Kingfisher Base Creature | Nile/Congo Theme -->
+  <defs>
+    <linearGradient id="bodyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1A6B9A"/>
+      <stop offset="50%" stop-color="#1558842"/>
+      <stop offset="100%" stop-color="#0F4268"/>
+    </linearGradient>
+    <linearGradient id="wingGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#2A85B8"/>
+      <stop offset="100%" stop-color="#1A5A80"/>
+    </linearGradient>
+    <radialGradient id="bellyGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#E8883A"/>
+      <stop offset="100%" stop-color="#C86828"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Branch the kingfisher perches on -->
+  <path d="M50 310 Q200 295 360 308" fill="none" stroke="#6B4A2A" stroke-width="18" stroke-linecap="round"/>
+  <path d="M50 310 Q200 295 360 308" fill="none" stroke="#8B6A4A" stroke-width="10" stroke-linecap="round" opacity="0.5"/>
+  <!-- Branch texture -->
+  <path d="M90 305 Q110 298 130 305" fill="none" stroke="#5A3A1A" stroke-width="2.5" opacity="0.6"/>
+  <path d="M200 298 Q220 292 240 298" fill="none" stroke="#5A3A1A" stroke-width="2.5" opacity="0.6"/>
+  <path d="M290 302 Q310 296 330 303" fill="none" stroke="#5A3A1A" stroke-width="2.5" opacity="0.6"/>
+
+  <!-- Tail feathers -->
+  <path d="M270 235 Q305 248 312 270 Q295 268 282 255" fill="#0F4268" stroke="#0A2E48" stroke-width="1"/>
+  <path d="M265 240 Q295 260 298 285 Q280 280 270 262" fill="#1A5A80" stroke="#0A2E48" stroke-width="1"/>
+  <path d="M258 245 Q282 268 280 295 Q264 288 258 268" fill="#2A85B8" stroke="#1A5A80" stroke-width="1"/>
+
+  <!-- Wings -->
+  <ellipse cx="175" cy="215" rx="95" ry="55" fill="url(#wingGrad)" transform="rotate(-8 175 215)"/>
+  <!-- Wing feather details -->
+  <path d="M100 220 Q140 210 180 222" fill="none" stroke="#1A4A68" stroke-width="2.5" opacity="0.7"/>
+  <path d="M105 232 Q145 222 182 234" fill="none" stroke="#1A4A68" stroke-width="2.5" opacity="0.7"/>
+  <path d="M112 244 Q148 234 182 246" fill="none" stroke="#1A4A68" stroke-width="2.5" opacity="0.6"/>
+
+  <!-- Wing secondary (brighter blue) -->
+  <ellipse cx="185" cy="210" rx="75" ry="42" fill="#2A8BC8" opacity="0.7" transform="rotate(-5 185 210)"/>
+
+  <!-- Body -->
+  <ellipse cx="200" cy="210" rx="72" ry="88" fill="url(#bodyGrad)"/>
+
+  <!-- Belly (orange/rufous) -->
+  <ellipse cx="200" cy="238" rx="45" ry="60" fill="url(#bellyGrad)"/>
+
+  <!-- Chest white patch -->
+  <ellipse cx="200" cy="195" rx="22" ry="15" fill="white" opacity="0.9"/>
+
+  <!-- Neck / throat orange -->
+  <ellipse cx="200" cy="178" rx="28" ry="20" fill="#E8883A"/>
+
+  <!-- Head (large, distinctive) -->
+  <ellipse cx="200" cy="155" rx="58" ry="52" fill="#1A6B9A"/>
+
+  <!-- Crown (darker blue with pattern) -->
+  <ellipse cx="200" cy="128" rx="52" ry="30" fill="#0F4268"/>
+  <!-- Crown streaks -->
+  <path d="M168 120 Q200 115 232 120" fill="none" stroke="#2A8BC8" stroke-width="2" opacity="0.6"/>
+  <path d="M172 128 Q200 123 228 128" fill="none" stroke="#2A8BC8" stroke-width="2" opacity="0.5"/>
+
+  <!-- Eye mask (dark) -->
+  <path d="M155 155 Q175 148 195 155 Q175 165 155 155Z" fill="#0A2030" opacity="0.8"/>
+  <path d="M205 155 Q225 148 245 155 Q225 165 205 155Z" fill="#0A2030" opacity="0.8"/>
+
+  <!-- Eyes -->
+  <ellipse cx="175" cy="155" rx="15" ry="14" fill="#0A1820"/>
+  <ellipse cx="175" cy="155" rx="9" ry="9" fill="#8B4A18"/>
+  <circle cx="175" cy="155" r="5" fill="#050A0E"/>
+  <circle cx="177" cy="153" r="2.5" fill="white" opacity="0.9"/>
+
+  <ellipse cx="225" cy="155" rx="15" ry="14" fill="#0A1820"/>
+  <ellipse cx="225" cy="155" rx="9" ry="9" fill="#8B4A18"/>
+  <circle cx="225" cy="155" r="5" fill="#050A0E"/>
+  <circle cx="227" cy="153" r="2.5" fill="white" opacity="0.9"/>
+
+  <!-- Bill (long, dagger-like) -->
+  <path d="M168 170 L70 195 L168 180Z" fill="#1A1208"/>
+  <path d="M232 170 L330 195 L232 180Z" fill="#1A1208"/>
+  <path d="M168 170 L80 193" fill="none" stroke="#3A2A18" stroke-width="3" stroke-linecap="round"/>
+  <path d="M232 170 L320 193" fill="none" stroke="#3A2A18" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Feet gripping branch -->
+  <path d="M185 295 Q180 305 172 310 Q168 318 178 320 Q185 315 190 308" fill="none" stroke="#8B6A3A" stroke-width="5" stroke-linecap="round"/>
+  <path d="M188 296 Q186 310 182 318 Q178 326 188 326 Q193 318 194 308" fill="none" stroke="#8B6A3A" stroke-width="4.5" stroke-linecap="round"/>
+  <path d="M195 296 Q196 310 198 318 Q198 328 208 326 Q205 318 202 308" fill="none" stroke="#8B6A3A" stroke-width="4.5" stroke-linecap="round"/>
+  <path d="M215 295 Q220 306 225 310 Q230 318 220 320 Q215 312 210 306" fill="none" stroke="#8B6A3A" stroke-width="5" stroke-linecap="round"/>
+</svg>

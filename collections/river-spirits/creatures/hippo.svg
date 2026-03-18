@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <!-- River Spirits #5 - Hippo Base Creature | Nile/Congo Theme -->
+  <defs>
+    <radialGradient id="bodyGrad" cx="50%" cy="40%" r="55%">
+      <stop offset="0%" stop-color="#8B7355"/>
+      <stop offset="60%" stop-color="#6B5A3E"/>
+      <stop offset="100%" stop-color="#4A3728"/>
+    </radialGradient>
+    <radialGradient id="bellyGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#C4A882"/>
+      <stop offset="100%" stop-color="#A08060"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Water surface -->
+  <ellipse cx="200" cy="318" rx="175" ry="18" fill="#1A6EA0" opacity="0.35"/>
+
+  <!-- Legs -->
+  <rect x="102" y="335" width="40" height="48" rx="13" fill="#5C4A32"/>
+  <rect x="158" y="340" width="37" height="43" rx="12" fill="#5C4A32"/>
+  <rect x="205" y="340" width="37" height="43" rx="12" fill="#5C4A32"/>
+  <rect x="258" y="335" width="40" height="48" rx="13" fill="#5C4A32"/>
+  <!-- Feet -->
+  <ellipse cx="122" cy="383" rx="24" ry="10" fill="#3D2A1A"/>
+  <ellipse cx="176" cy="383" rx="22" ry="9" fill="#3D2A1A"/>
+  <ellipse cx="224" cy="383" rx="22" ry="9" fill="#3D2A1A"/>
+  <ellipse cx="278" cy="383" rx="24" ry="10" fill="#3D2A1A"/>
+
+  <!-- Body -->
+  <ellipse cx="200" cy="265" rx="148" ry="112" fill="url(#bodyGrad)"/>
+  <!-- Belly highlight -->
+  <ellipse cx="200" cy="285" rx="105" ry="72" fill="url(#bellyGrad)" opacity="0.65"/>
+
+  <!-- Tail -->
+  <path d="M348 258 Q378 248 368 272 Q382 262 370 285" fill="none" stroke="#5C4A32" stroke-width="9" stroke-linecap="round"/>
+
+  <!-- Head -->
+  <ellipse cx="200" cy="168" rx="98" ry="78" fill="url(#bodyGrad)"/>
+
+  <!-- Snout / muzzle -->
+  <ellipse cx="200" cy="195" rx="75" ry="45" fill="#7A6548"/>
+
+  <!-- Nostrils -->
+  <ellipse cx="180" cy="185" rx="13" ry="9" fill="#2E1E0F"/>
+  <ellipse cx="220" cy="185" rx="13" ry="9" fill="#2E1E0F"/>
+  <ellipse cx="180" cy="184" rx="7" ry="5" fill="#1A0E05" opacity="0.7"/>
+  <ellipse cx="220" cy="184" rx="7" ry="5" fill="#1A0E05" opacity="0.7"/>
+
+  <!-- Eye ridges -->
+  <path d="M143 137 Q162 129 182 137" fill="none" stroke="#3D2A1A" stroke-width="6" stroke-linecap="round"/>
+  <path d="M218 137 Q237 129 257 137" fill="none" stroke="#3D2A1A" stroke-width="6" stroke-linecap="round"/>
+
+  <!-- Eyes -->
+  <ellipse cx="162" cy="147" rx="20" ry="17" fill="#2A1E10"/>
+  <ellipse cx="238" cy="147" rx="20" ry="17" fill="#2A1E10"/>
+  <ellipse cx="162" cy="147" rx="12" ry="11" fill="#8B6914"/>
+  <ellipse cx="238" cy="147" rx="12" ry="11" fill="#8B6914"/>
+  <circle cx="162" cy="147" r="7" fill="#0D0804"/>
+  <circle cx="238" cy="147" r="7" fill="#0D0804"/>
+  <circle cx="164" cy="145" r="3" fill="white" opacity="0.85"/>
+  <circle cx="240" cy="145" r="3" fill="white" opacity="0.85"/>
+
+  <!-- Ears -->
+  <ellipse cx="128" cy="110" rx="22" ry="16" fill="#6B5A3E"/>
+  <ellipse cx="272" cy="110" rx="22" ry="16" fill="#6B5A3E"/>
+  <ellipse cx="128" cy="110" rx="11" ry="8" fill="#C4A882"/>
+  <ellipse cx="272" cy="110" rx="11" ry="8" fill="#C4A882"/>
+
+  <!-- Mouth line -->
+  <path d="M135 212 Q200 224 265 212" fill="none" stroke="#2E1E0F" stroke-width="3.5" stroke-linecap="round"/>
+
+  <!-- Tusks -->
+  <path d="M158 220 Q150 238 158 248" fill="none" stroke="#F0DDB8" stroke-width="7" stroke-linecap="round"/>
+  <path d="M242 220 Q250 238 242 248" fill="none" stroke="#F0DDB8" stroke-width="7" stroke-linecap="round"/>
+
+  <!-- Skin texture dots -->
+  <circle cx="155" cy="255" r="3.5" fill="#3D2A1A" opacity="0.45"/>
+  <circle cx="198" cy="248" r="3.5" fill="#3D2A1A" opacity="0.45"/>
+  <circle cx="242" cy="255" r="3.5" fill="#3D2A1A" opacity="0.45"/>
+  <circle cx="175" cy="272" r="3" fill="#3D2A1A" opacity="0.35"/>
+  <circle cx="225" cy="272" r="3" fill="#3D2A1A" opacity="0.35"/>
+  <circle cx="200" cy="268" r="2.5" fill="#3D2A1A" opacity="0.3"/>
+</svg>

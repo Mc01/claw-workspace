@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <!-- Trait: Papyrus Reeds - river-plants (Nile papyrus) -->
+  <defs>
+    <linearGradient id="stemGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#6B8A3A"/>
+      <stop offset="100%" stop-color="#3A5A1A"/>
+    </linearGradient>
+  </defs>
+  <!-- Papyrus stems -->
+  <!-- Stem 1 -->
+  <line x1="80" y1="400" x2="75" y2="180" stroke="url(#stemGrad)" stroke-width="7" stroke-linecap="round"/>
+  <!-- Papyrus head 1 -->
+  <ellipse cx="75" cy="168" rx="8" ry="5" fill="#8BAA4A"/>
+  <path d="M75 168 Q55 145 40 130" fill="none" stroke="#6B8A3A" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M75 168 Q60 140 65 120" fill="none" stroke="#6B8A3A" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M75 168 Q75 138 78 118" fill="none" stroke="#6B8A3A" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M75 168 Q90 140 88 122" fill="none" stroke="#6B8A3A" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M75 168 Q100 148 112 135" fill="none" stroke="#6B8A3A" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- Umbel tips -->
+  <circle cx="40" cy="130" r="4" fill="#4A6A22"/>
+  <circle cx="65" cy="120" r="4" fill="#4A6A22"/>
+  <circle cx="78" cy="118" r="4" fill="#4A6A22"/>
+  <circle cx="88" cy="122" r="4" fill="#4A6A22"/>
+  <circle cx="112" cy="135" r="4" fill="#4A6A22"/>
+
+  <!-- Stem 2 -->
+  <line x1="160" y1="400" x2="168" y2="150" stroke="url(#stemGrad)" stroke-width="8" stroke-linecap="round"/>
+  <ellipse cx="168" cy="138" rx="9" ry="5" fill="#8BAA4A"/>
+  <path d="M168 138 Q145 112 128 95" fill="none" stroke="#6B8A3A" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M168 138 Q155 108 162 88" fill="none" stroke="#6B8A3A" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M168 138 Q170 108 172 88" fill="none" stroke="#6B8A3A" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M168 138 Q182 110 188 92" fill="none" stroke="#6B8A3A" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M168 138 Q195 115 210 102" fill="none" stroke="#6B8A3A" stroke-width="2.5" stroke-linecap="round"/>
+  <circle cx="128" cy="95" r="4" fill="#4A6A22"/>
+  <circle cx="162" cy="88" r="4" fill="#4A6A22"/>
+  <circle cx="172" cy="88" r="4" fill="#4A6A22"/>
+  <circle cx="188" cy="92" r="4" fill="#4A6A22"/>
+  <circle cx="210" cy="102" r="4" fill="#4A6A22"/>
+
+  <!-- Stem 3 -->
+  <line x1="310" y1="400" x2="305" y2="165" stroke="url(#stemGrad)" stroke-width="7" stroke-linecap="round"/>
+  <ellipse cx="305" cy="153" rx="8" ry="5" fill="#8BAA4A"/>
+  <path d="M305 153 Q282 128 265 112" fill="none" stroke="#6B8A3A" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M305 153 Q292 123 298 103" fill="none" stroke="#6B8A3A" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M305 153 Q305 123 308 103" fill="none" stroke="#6B8A3A" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M305 153 Q320 125 328 108" fill="none" stroke="#6B8A3A" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M305 153 Q332 132 348 118" fill="none" stroke="#6B8A3A" stroke-width="2.5" stroke-linecap="round"/>
+  <circle cx="265" cy="112" r="4" fill="#4A6A22"/>
+  <circle cx="298" cy="103" r="4" fill="#4A6A22"/>
+  <circle cx="308" cy="103" r="4" fill="#4A6A22"/>
+  <circle cx="328" cy="108" r="4" fill="#4A6A22"/>
+  <circle cx="348" cy="118" r="4" fill="#4A6A22"/>
+</svg>

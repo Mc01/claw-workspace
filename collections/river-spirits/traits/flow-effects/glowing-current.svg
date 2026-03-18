@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <!-- Trait: Glowing Current - flow-effects (bioluminescent river spirits) -->
+  <defs>
+    <radialGradient id="glowCore" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#A0F0E0" stop-opacity="1"/>
+      <stop offset="60%" stop-color="#40C8B0" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#10806A" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="blur">
+      <feGaussianBlur stdDeviation="3"/>
+    </filter>
+  </defs>
+  <!-- Glow trails -->
+  <path d="M0 300 Q80 285 160 300 Q240 315 320 295 Q370 282 400 290" fill="none" stroke="#40E8C8" stroke-width="8" stroke-linecap="round" opacity="0.4" filter="url(#blur)"/>
+  <path d="M0 300 Q80 285 160 300 Q240 315 320 295 Q370 282 400 290" fill="none" stroke="#A0F0E0" stroke-width="3" stroke-linecap="round" opacity="0.8"/>
+
+  <path d="M0 320 Q100 308 200 320 Q300 332 400 318" fill="none" stroke="#30D8B0" stroke-width="6" stroke-linecap="round" opacity="0.35" filter="url(#blur)"/>
+  <path d="M0 320 Q100 308 200 320 Q300 332 400 318" fill="none" stroke="#90E8D0" stroke-width="2.5" stroke-linecap="round" opacity="0.7"/>
+
+  <!-- Glowing orbs -->
+  <circle cx="100" cy="295" r="18" fill="url(#glowCore)" opacity="0.7"/>
+  <circle cx="100" cy="295" r="8" fill="#A0F0E0" opacity="0.9"/>
+  <circle cx="200" cy="308" r="22" fill="url(#glowCore)" opacity="0.7"/>
+  <circle cx="200" cy="308" r="10" fill="#C0FAF0" opacity="0.9"/>
+  <circle cx="300" cy="293" r="16" fill="url(#glowCore)" opacity="0.7"/>
+  <circle cx="300" cy="293" r="7" fill="#A0F0E0" opacity="0.9"/>
+  <circle cx="155" cy="318" r="12" fill="url(#glowCore)" opacity="0.6"/>
+  <circle cx="155" cy="318" r="5" fill="#B0F5E8" opacity="0.85"/>
+  <circle cx="260" cy="312" r="14" fill="url(#glowCore)" opacity="0.6"/>
+  <circle cx="260" cy="312" r="6" fill="#A8F2E5" opacity="0.85"/>
+
+  <!-- Particle sparkles -->
+  <circle cx="80" cy="278" r="2.5" fill="#C0FFF0" opacity="0.9"/>
+  <circle cx="140" cy="285" r="2" fill="#B0F5E8" opacity="0.8"/>
+  <circle cx="220" cy="292" r="3" fill="#C0FFF0" opacity="0.85"/>
+  <circle cx="280" cy="280" r="2.5" fill="#B0F5E8" opacity="0.8"/>
+  <circle cx="340" cy="288" r="2" fill="#C0FFF0" opacity="0.75"/>
+  <circle cx="360" cy="305" r="3" fill="#A0F0E0" opacity="0.8"/>
+  <circle cx="50" cy="308" r="2.5" fill="#B0F5E8" opacity="0.75"/>
+</svg>

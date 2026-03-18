@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <!-- Trait: Mud Armor - mud-textures (thick protective mud plating) -->
+  <defs>
+    <radialGradient id="plateGrad" cx="50%" cy="30%" r="60%">
+      <stop offset="0%" stop-color="#6B5038"/>
+      <stop offset="100%" stop-color="#3A2818"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Armor plates on body -->
+  <!-- Shoulder plates -->
+  <ellipse cx="128" cy="190" rx="48" ry="30" fill="url(#plateGrad)" stroke="#2A1808" stroke-width="2.5"/>
+  <ellipse cx="272" cy="190" rx="48" ry="30" fill="url(#plateGrad)" stroke="#2A1808" stroke-width="2.5"/>
+  <!-- Plate cracks -->
+  <path d="M110 182 Q128 192 145 185" fill="none" stroke="#2A1808" stroke-width="2" stroke-linecap="round"/>
+  <path d="M120 195 Q128 188 136 198" fill="none" stroke="#2A1808" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M255 182 Q272 192 289 185" fill="none" stroke="#2A1808" stroke-width="2" stroke-linecap="round"/>
+  <path d="M265 195 Q272 188 280 198" fill="none" stroke="#2A1808" stroke-width="1.5" stroke-linecap="round"/>
+
+  <!-- Chest plate -->
+  <ellipse cx="200" cy="235" rx="75" ry="50" fill="url(#plateGrad)" stroke="#2A1808" stroke-width="2.5"/>
+  <path d="M165 222 Q200 235 235 222" fill="none" stroke="#2A1808" stroke-width="2" stroke-linecap="round"/>
+  <path d="M160 240 Q200 252 240 240" fill="none" stroke="#2A1808" stroke-width="2" stroke-linecap="round"/>
+  <path d="M185 220 Q192 235 188 248" fill="none" stroke="#2A1808" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M215 220 Q208 235 212 248" fill="none" stroke="#2A1808" stroke-width="1.5" stroke-linecap="round"/>
+
+  <!-- Lower belly plates -->
+  <ellipse cx="165" cy="285" rx="38" ry="22" fill="url(#plateGrad)" stroke="#2A1808" stroke-width="2"/>
+  <ellipse cx="235" cy="285" rx="38" ry="22" fill="url(#plateGrad)" stroke="#2A1808" stroke-width="2"/>
+
+  <!-- Plate shine (dried mud highlights) -->
+  <path d="M115 182 Q125 178 135 183" fill="none" stroke="#8B7058" stroke-width="2.5" opacity="0.6" stroke-linecap="round"/>
+  <path d="M260 182 Q270 178 280 183" fill="none" stroke="#8B7058" stroke-width="2.5" opacity="0.6" stroke-linecap="round"/>
+  <path d="M168 224 Q200 220 232 224" fill="none" stroke="#8B7058" stroke-width="2.5" opacity="0.5" stroke-linecap="round"/>
+</svg>

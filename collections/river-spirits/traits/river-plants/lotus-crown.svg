@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <!-- Trait: Lotus Crown - river-plants (wearable lotus flower crown) -->
+  <!-- Stem arc -->
+  <path d="M100 380 Q200 320 300 380" fill="none" stroke="#4A7A2A" stroke-width="8" stroke-linecap="round"/>
+
+  <!-- Lotus flowers along crown arc -->
+  <!-- Center bloom -->
+  <path d="M200 318 Q188 295 190 278 Q200 290 200 318Z" fill="#F8C0E0"/>
+  <path d="M200 318 Q212 295 210 278 Q200 290 200 318Z" fill="#F8D0E8"/>
+  <path d="M200 318 Q183 300 178 282 Q195 300 200 318Z" fill="#F0A8D0"/>
+  <path d="M200 318 Q217 300 222 282 Q205 300 200 318Z" fill="#F8C0E0"/>
+  <path d="M200 318 Q192 298 194 278 Q200 292 200 318Z" fill="#F8C8E4"/>
+  <path d="M200 318 Q208 298 206 278 Q200 292 200 318Z" fill="#F8C0DC"/>
+  <circle cx="200" cy="315" r="7" fill="#F8D040"/>
+
+  <!-- Left bloom -->
+  <path d="M148 345 Q138 325 140 308 Q148 320 148 345Z" fill="#F8C0E0"/>
+  <path d="M148 345 Q158 325 156 308 Q148 320 148 345Z" fill="#F8D0E8"/>
+  <path d="M148 345 Q132 328 128 312 Q142 328 148 345Z" fill="#F0A8D0"/>
+  <path d="M148 345 Q164 328 168 312 Q154 328 148 345Z" fill="#F8C0E0"/>
+  <circle cx="148" cy="342" r="6" fill="#F8D040"/>
+
+  <!-- Right bloom -->
+  <path d="M252 345 Q242 325 244 308 Q252 320 252 345Z" fill="#F8C0E0"/>
+  <path d="M252 345 Q262 325 260 308 Q252 320 252 345Z" fill="#F8D0E8"/>
+  <path d="M252 345 Q236 328 232 312 Q246 328 252 345Z" fill="#F0A8D0"/>
+  <path d="M252 345 Q268 328 272 312 Q258 328 252 345Z" fill="#F8C0E0"/>
+  <circle cx="252" cy="342" r="6" fill="#F8D040"/>
+
+  <!-- Leaf accents -->
+  <ellipse cx="175" cy="350" rx="18" ry="9" fill="#4A7A2A" transform="rotate(-20 175 350)"/>
+  <ellipse cx="225" cy="350" rx="18" ry="9" fill="#4A7A2A" transform="rotate(20 225 350)"/>
+</svg>
