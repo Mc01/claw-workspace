@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" shape-rendering="crispEdges">
+  <rect width="32" height="32" fill="none"/>
+  <!-- Shield outline -->
+  <rect x="22" y="10" width="2" height="2" fill="#d4a017"/>
+  <rect x="24" y="10" width="2" height="2" fill="#ffd700"/>
+  <rect x="26" y="10" width="2" height="2" fill="#d4a017"/>
+  <rect x="22" y="12" width="2" height="2" fill="#ffd700"/>
+  <rect x="24" y="12" width="2" height="2" fill="#7b2d8e"/>
+  <rect x="26" y="12" width="2" height="2" fill="#ffd700"/>
+  <rect x="22" y="14" width="2" height="2" fill="#ffd700"/>
+  <rect x="24" y="14" width="2" height="2" fill="#7b2d8e"/>
+  <rect x="26" y="14" width="2" height="2" fill="#ffd700"/>
+  <rect x="22" y="16" width="2" height="2" fill="#d4a017"/>
+  <rect x="24" y="16" width="2" height="2" fill="#ffd700"/>
+  <rect x="26" y="16" width="2" height="2" fill="#d4a017"/>
+  <rect x="24" y="18" width="2" height="2" fill="#d4a017"/>
+  <!-- Crown emblem -->
+  <rect x="24" y="12" width="2" height="2" fill="#ffd700"/>
+</svg>

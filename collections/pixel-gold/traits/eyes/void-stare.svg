@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" shape-rendering="crispEdges">
+  <rect width="32" height="32" fill="none"/>
+  <rect x="8" y="8" width="2" height="2" fill="#0a0018"/>
+  <rect x="14" y="8" width="2" height="2" fill="#0a0018"/>
+  <!-- Purple rim -->
+  <rect x="7" y="7" width="4" height="1" fill="#7b2d8e"/>
+  <rect x="7" y="10" width="4" height="1" fill="#7b2d8e"/>
+  <rect x="13" y="7" width="4" height="1" fill="#7b2d8e"/>
+  <rect x="13" y="10" width="4" height="1" fill="#7b2d8e"/>
+</svg>

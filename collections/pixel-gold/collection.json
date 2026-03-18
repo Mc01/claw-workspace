@@ -1,0 +1,73 @@
+{
+  "name": "Pixel Gold",
+  "description": "Royal pixel art collection featuring golden-crowned beasts. 5 archetypes with 20 combinable traits in gold/purple palette.",
+  "style": "Pixel art, gold/purple, side profile",
+  "canvas": "32x32",
+  "palette": {
+    "gold": ["#ffd700", "#d4a017", "#b8860b", "#b87a2e"],
+    "purple": ["#7b2d8e", "#9b59b6", "#4a3568", "#2d1b4e", "#1a0a2e"],
+    "accent": ["#c0392b", "#e74c3c", "#2e8b57", "#e0e0ff"]
+  },
+  "archetypes": [
+    {
+      "id": "lion",
+      "name": "Lion - Crown Mane",
+      "file": "bases/lion-crown-mane.svg",
+      "description": "Regal lion with flowing golden mane and ruby crown"
+    },
+    {
+      "id": "serpent",
+      "name": "Serpent - Jewel Coil",
+      "file": "bases/serpent-jewel-coil.svg",
+      "description": "Emerald serpent coiled with gold-studded jewels"
+    },
+    {
+      "id": "eagle",
+      "name": "Eagle - Royal Talon",
+      "file": "bases/eagle-royal-talon.svg",
+      "description": "Majestic eagle with golden talons and gilded wing feathers"
+    },
+    {
+      "id": "croc",
+      "name": "Croc - Golden Jaw",
+      "file": "bases/croc-golden-jaw.svg",
+      "description": "Armored crocodile with gold-plated jaw and spine ridges"
+    },
+    {
+      "id": "beetle",
+      "name": "Beetle - Treasure Shell",
+      "file": "bases/beetle-treasure-shell.svg",
+      "description": "Scarab beetle with treasure-encrusted golden shell"
+    }
+  ],
+  "traits": {
+    "backgrounds": [
+      {"id": "royal-purple", "name": "Royal Purple", "file": "traits/backgrounds/royal-purple.svg", "rarity": "common"},
+      {"id": "golden-chamber", "name": "Golden Chamber", "file": "traits/backgrounds/golden-chamber.svg", "rarity": "uncommon"},
+      {"id": "throne-room", "name": "Throne Room", "file": "traits/backgrounds/throne-room.svg", "rarity": "rare"},
+      {"id": "starlit-void", "name": "Starlit Void", "file": "traits/backgrounds/starlit-void.svg", "rarity": "uncommon"},
+      {"id": "amethyst-cave", "name": "Amethyst Cave", "file": "traits/backgrounds/amethyst-cave.svg", "rarity": "rare"}
+    ],
+    "headgear": [
+      {"id": "pharaoh-crown", "name": "Pharaoh Crown", "file": "traits/headgear/pharaoh-crown.svg", "rarity": "legendary"},
+      {"id": "diamond-tiara", "name": "Diamond Tiara", "file": "traits/headgear/diamond-tiara.svg", "rarity": "rare"},
+      {"id": "viking-helm", "name": "Viking Helm", "file": "traits/headgear/viking-helm.svg", "rarity": "uncommon"},
+      {"id": "halo-ring", "name": "Halo Ring", "file": "traits/headgear/halo-ring.svg", "rarity": "rare"},
+      {"id": "samurai-kabuto", "name": "Samurai Kabuto", "file": "traits/headgear/samurai-kabuto.svg", "rarity": "legendary"}
+    ],
+    "eyes": [
+      {"id": "ruby-gaze", "name": "Ruby Gaze", "file": "traits/eyes/ruby-gaze.svg", "rarity": "uncommon"},
+      {"id": "emerald-sight", "name": "Emerald Sight", "file": "traits/eyes/emerald-sight.svg", "rarity": "uncommon"},
+      {"id": "gold-sovereign", "name": "Gold Sovereign", "file": "traits/eyes/gold-sovereign.svg", "rarity": "rare"},
+      {"id": "void-stare", "name": "Void Stare", "file": "traits/eyes/void-stare.svg", "rarity": "rare"},
+      {"id": "diamond-eyes", "name": "Diamond Eyes", "file": "traits/eyes/diamond-eyes.svg", "rarity": "legendary"}
+    ],
+    "accessories": [
+      {"id": "royal-pendant", "name": "Royal Pendant", "file": "traits/accessories/royal-pendant.svg", "rarity": "uncommon"},
+      {"id": "treasure-scepter", "name": "Treasure Scepter", "file": "traits/accessories/treasure-scepter.svg", "rarity": "rare"},
+      {"id": "shield-crest", "name": "Shield Crest", "file": "traits/accessories/shield-crest.svg", "rarity": "uncommon"},
+      {"id": "gold-chain", "name": "Gold Chain", "file": "traits/accessories/gold-chain.svg", "rarity": "common"},
+      {"id": "royal-cape", "name": "Royal Cape", "file": "traits/accessories/royal-cape.svg", "rarity": "rare"}
+    ]
+  }
+}

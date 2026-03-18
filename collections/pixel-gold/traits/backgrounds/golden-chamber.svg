@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" shape-rendering="crispEdges">
+  <rect width="32" height="32" fill="#1a0a2e"/>
+  <!-- Gold brick pattern -->
+  <rect x="0" y="28" width="8" height="2" fill="#b8860b"/>
+  <rect x="10" y="28" width="8" height="2" fill="#d4a017"/>
+  <rect x="20" y="28" width="8" height="2" fill="#b8860b"/>
+  <rect x="4" y="30" width="8" height="2" fill="#d4a017"/>
+  <rect x="14" y="30" width="8" height="2" fill="#b8860b"/>
+  <rect x="24" y="30" width="8" height="2" fill="#d4a017"/>
+  <!-- Gold dust particles -->
+  <rect x="6" y="4" width="2" height="2" fill="#ffd700" opacity="0.3"/>
+  <rect x="22" y="8" width="2" height="2" fill="#ffd700" opacity="0.3"/>
+  <rect x="14" y="2" width="2" height="2" fill="#ffd700" opacity="0.2"/>
+  <rect x="26" y="18" width="2" height="2" fill="#ffd700" opacity="0.3"/>
+</svg>

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" shape-rendering="crispEdges">
+  <rect width="32" height="32" fill="#0d0520"/>
+  <!-- Columns -->
+  <rect x="0" y="0" width="4" height="32" fill="#2d1b4e"/>
+  <rect x="2" y="0" width="2" height="32" fill="#3d2b5e"/>
+  <rect x="28" y="0" width="4" height="32" fill="#2d1b4e"/>
+  <rect x="28" y="0" width="2" height="32" fill="#3d2b5e"/>
+  <!-- Gold trim -->
+  <rect x="0" y="0" width="4" height="2" fill="#ffd700"/>
+  <rect x="28" y="0" width="4" height="2" fill="#ffd700"/>
+  <!-- Floor -->
+  <rect x="0" y="28" width="32" height="4" fill="#1a0a2e"/>
+  <rect x="4" y="28" width="2" height="2" fill="#d4a017"/>
+  <rect x="14" y="28" width="4" height="2" fill="#d4a017"/>
+  <rect x="26" y="28" width="2" height="2" fill="#d4a017"/>
+</svg>
